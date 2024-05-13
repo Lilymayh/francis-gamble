@@ -26,6 +26,5 @@ gem 'bootstrap'
 gem 'greensock-rails', '~> 1.20', '>= 1.20.4.0'
 
 # dotenv
-
 gem 'dotenv-rails', groups: [:development, :test]
 

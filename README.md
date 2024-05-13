@@ -1,22 +1,24 @@
-# FrancisGamble
-<!-- description from google doc -->
-FrancisGamble.fun offers a refreshing twist to online gambling, featuring unconventional games like tic-tac-toe for players seeking unique experiences. With a playful approach and user-friendly interface, FrancisGamble.fun invites users to explore exciting wagering opportunities beyond traditional casino games. Join the fun and discover a new realm of online entertainment!
+# README
 
-## Screenshots
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Setup
+Things you may want to cover:
 
-1. Run `bundle install` to install dependencies
+* Ruby version
 
-## Database
+* System dependencies
 
-## Stripe Testing
+* Configuration
 
-## Dependencies
+* Database creation
 
-- Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
-- Bootstrap 5
-- PostgreSQL 9.x
-- Stripe
-- Bcrypt: 3.1.7
-- GSAP: 1.20.4.0
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
