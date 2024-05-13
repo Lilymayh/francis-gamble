@@ -33,3 +33,5 @@ gem 'spring'
 gem 'bootsnap'
 
 gem 'listen'
+
+gem 'puma'
