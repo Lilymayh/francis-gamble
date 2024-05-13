@@ -8,6 +8,8 @@ FrancisGamble.fun offers a refreshing twist to online gambling, featuring unconv
 
 1. Run `bundle install` to install dependencies
 
+2. bin/rails server
+
 ## Database
 
 rails db:migrate
