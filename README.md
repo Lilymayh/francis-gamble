@@ -12,7 +12,7 @@ FrancisGamble.fun offers a refreshing twist to online gambling, featuring unconv
 
 ## Database
 
-rails db:migrate
+> `rails db:migrate`
 
 ## Stripe Testing
 
