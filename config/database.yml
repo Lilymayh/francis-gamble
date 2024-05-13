@@ -9,15 +9,15 @@ default: &default
 
 development:
   <<: *default
-  database: your_app_name_development
+  database: <%= ENV.fetch("DB_NAME_DEVELOPMENT") {"your_app_name_development"}%>
 
 test:
   <<: *default
-  database: your_app_name_test
+  database: <%= ENV.fetch("DB_NAME_TEST") { "your_app_name_test" } %>
 
 production:
   <<: *default
-  database: your_app_name_production
+  database: <%= ENV.fetch("DB_NAME_PRODUCTION") { "your_app_name_production" }%>
   username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
 
