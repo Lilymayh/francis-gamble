@@ -1,3 +1,5 @@
+<% require 'dotenv/load' if File.exist?('.env') %>
+
 default: &default
   adapter: postgresql
   encoding: unicode
