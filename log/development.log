@@ -1871,3 +1871,406 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 212ms (Views: 211.4ms | ActiveRecord: 0.0ms | Allocations: 6078)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 15:05:58 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 952)
+  Rendered layout layouts/application.html.erb (Duration: 712.9ms | Allocations: 16521)
+Completed 200 OK in 717ms (Views: 714.6ms | ActiveRecord: 0.0ms | Allocations: 19527)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-05-14 15:06:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2024-05-14 15:06:37 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1957)
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 3.5ms | Allocations: 9466)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/users/new" for 127.0.0.1 at 2024-05-14 15:07:36 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 4158)
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 9046)
+Completed 200 OK in 74ms (Views: 65.0ms | ActiveRecord: 1.8ms | Allocations: 18504)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-14 15:07:49 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1189)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2624)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2966)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:09:19 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 795)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5643)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 8650)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:09:21 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1764)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2074)
+
+
+Started GET "/users" for ::1 at 2024-05-14 15:09:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2024-05-14 15:09:45 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3266)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4885)
+Completed 200 OK in 14ms (Views: 5.8ms | ActiveRecord: 2.1ms | Allocations: 12392)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 15:11:10 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 919)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5767)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 8774)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 15:11:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1706)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2016)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-05-14 15:11:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2024-05-14 15:11:19 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3259)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4878)
+Completed 200 OK in 15ms (Views: 6.0ms | ActiveRecord: 2.2ms | Allocations: 12385)
+
+
+Started GET "/users/new" for ::1 at 2024-05-14 15:15:06 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1189)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2623)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2969)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/users/new" for ::1 at 2024-05-14 15:15:30 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3743)
+  Rendered layout layouts/application.html.erb (Duration: 466.5ms | Allocations: 17809)
+Completed 200 OK in 478ms (Views: 468.3ms | ActiveRecord: 2.0ms | Allocations: 27267)
+
+
+Started GET "/users/new" for ::1 at 2024-05-14 15:15:37 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2592)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2932)
+
+
+Started GET "/users/new" for ::1 at 2024-05-14 15:15:38 -0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1179)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2593)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2886)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:15:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2117)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 3150)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:18:56 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6467)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 9412)
+
+
+  
+ActionView::Template::Error (Missing partial users/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:     <div class='main_logo'>Francis Gamble</div>
+    12:     <%= render 'users/new' %>
+    13:   </body>
+    14: </html>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2024-05-14 15:19:21 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2077)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2363)
+
+
+  
+ActionView::Template::Error (Missing partial users/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:     <div class='main_logo'>Francis Gamble</div>
+    12:     <%= render 'users/new' %>
+    13:   </body>
+    14: </html>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2024-05-14 15:20:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2744)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3856)
+
+
+  
+ActionView::Template::Error (Missing partial ../users/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:     <div class='main_logo'>Francis Gamble</div>
+    12:     <%= render '../users/new' %>
+    13:   </body>
+    14: </html>
+  
+app/views/layouts/application.html.erb:12
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:20:23 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6469)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 9414)
+
+
+  
+ActionView::Template::Error (Missing partial ../users/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:     <div class='main_logo'>Francis Gamble</div>
+    12:     <%= render '../users/new' %>
+    13:   </body>
+    14: </html>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2024-05-14 15:20:24 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2078)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2356)
+
+
+  
+ActionView::Template::Error (Missing partial ../users/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:     <div class='main_logo'>Francis Gamble</div>
+    12:     <%= render '../users/new' %>
+    13:   </body>
+    14: </html>
+  
+app/views/layouts/application.html.erb:12
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:20:36 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6470)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 9415)
+
+
+  
+ActionView::Template::Error (Missing partial users/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:     <div class='main_logo'>Francis Gamble</div>
+    12:     <%= render 'users/new' %>
+    13:   </body>
+    14: </html>
+  
+app/views/layouts/application.html.erb:12
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:21:04 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 946)
+  Rendered users/_new.html.erb (Duration: 2.8ms | Allocations: 2908)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8909)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 11914)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:22:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 544)
+  Rendered users/_new.html.erb (Duration: 1.8ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3629)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:22:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 511)
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1133)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3569)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4728)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:23:34 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 523)
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1133)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3607)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4766)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:24:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 538)
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 1.5ms | Allocations: 1013)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4840)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5989)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:24:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3343)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3628)
+
+

@@ -196,7 +196,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
-  bootstrap
+  bootstrap (~> 5.3)
   cypress-on-rails (~> 1.17)
   dotenv-rails
   esbuild-rails (~> 0.1.4)
