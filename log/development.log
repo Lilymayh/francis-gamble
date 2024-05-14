@@ -2274,3 +2274,1382 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3628)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:27:54 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 9749)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 12694)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000008b10>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:27:55 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5321)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5598)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000008cf0>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:28:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5475)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 6033)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000009c68>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:28:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5119)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5381)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000009e20>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:28:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5116)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5354)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000009f60>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:28:56 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 9767)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 12712)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000008ca0>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:28:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 5339)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5616)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000008e58>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:29:50 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8882)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 11827)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<ActionDispatch::Request::Session:0x00007f4c20a50118 @by=#<ActionDispatch::Session::CookieStore:0x00007f4c2054c298 @app=#<ActionDispatch::ContentSecurityPolicy::Middleware:0x00007f4c2054c388 @app=#<ActionDispatch::PermissionsPolicy::Middleware:0x00007f4c2054c428 @app=#<Rack::Head:0x00007f4c2054c4c8 @app=#<Rack::ConditionalGet:0x00007f4c2054c568 @app=#<Rack::ETag:0x00007f4c2054c658 @app=#<Rack::TempfileReaper:0x00007f4c2054c6f8 @app=#<CypressOnRails::Middleware:0x00007f4c2054c7e8 @app=#<ActionDispatch::Routing::RouteSet:0x00007f4c209edf68>, @command_executor=CypressOnRails::CommandExecutor, @file=File>>, @cache_control="max-age=0, private, must-revalidate", @no_cache_control="no-cache">>>>>, @default_options={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false}, @key="_francis_gamble_session", @cookie_only=true, @same_site=nil>, @req=#<ActionDispatch::Request GET "http://localhost:3000/" for ::1>, @delegate={"session_id"=>"b709fa4f2316bf79bf8721b9364ca41e", "_csrf_token"=>"dLK-Gze_tY68UAwhVvQzjzsmMeE2g5stt4PC83Ml-Vg="}, @loaded=true, @exists=true>
+
+            model = record.to_model
+                          ^^^^^^^^^
+Did you mean?  to_yaml):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag session, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:30:00 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 9771)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 12716)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `session_path' for #<ActionView::Base:0x00000000008c78>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag session_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:30:01 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5343)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5620)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `session_path' for #<ActionView::Base:0x00000000008e58>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag session_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:30:13 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 946)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 9767)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 12712)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000008c78>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:31:28 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5475)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 6034)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000009c40>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:31:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5119)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5380)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000009df8>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:31:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5119)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5361)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000009f88>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for ::1 at 2024-05-14 15:31:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5116)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5353)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x0000000000a0c8>
+Did you mean?  session):
+    14:       <%= submit_tag 'Register', id: 'registerBtn' %>
+    15:     <% end %>
+    16:     or
+    17:     <%= form_tag sessions_path, method: :get, id: 'loginForm' do %>
+    18:       <%= submit_tag 'Login', id: 'loginBtn' %>
+    19:     <% end %>
+    20:   </div>
+  
+app/views/layouts/application.html.erb:17
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:33:58 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 946)
+  Rendered users/_new.html.erb (Duration: 2.5ms | Allocations: 2793)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 1044)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 13304)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 16249)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:36:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 353)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 808)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 6225)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 6503)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:36:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 764)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5960)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 6203)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:36:39 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.5ms | Allocations: 764)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 5960)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 6203)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:36:39 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5955)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 6193)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:38:28 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 535)
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1094)
+  Rendered users/_existing.html.erb (Duration: 1.6ms | Allocations: 1012)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 8593)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 9697)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009510>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:38:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 6853)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 7108)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x000000000096c8>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:38:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 6853)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 7090)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009808>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:39:01 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 532)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1081)
+  Rendered users/_existing.html.erb (Duration: 1.5ms | Allocations: 1012)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 8531)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 9624)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009a38>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:39:02 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 6853)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 7108)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009bf0>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:41:48 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 946)
+  Rendered users/_new.html.erb (Duration: 2.5ms | Allocations: 2793)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 1044)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 14210)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 17163)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008cc8>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for ::1 at 2024-05-14 15:41:49 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 353)
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 808)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 7129)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 7406)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008ed0>
+Did you mean?  javascript_path
+               javascript_tag):
+    20:   </div>
+    21:   <%= render 'users/new' %>
+    22:   <%= render 'users/existing' %>
+    23:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    24: </body>
+    25: </html>
+  
+app/views/layouts/application.html.erb:23
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:43:08 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 946)
+  Rendered users/_new.html.erb (Duration: 2.4ms | Allocations: 2793)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 1044)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 6986840bfeaa5ba51984
+Version: webpack 4.47.0
+Time: 280ms
+Built at: 05/14/2024 3:43:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-30e6148f1d9f18ae52c8.js   8.62 KiB  application  [emitted] [immutable]  application
+js/application-30e6148f1d9f18ae52c8.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-30e6148f1d9f18ae52c8.js js/application-30e6148f1d9f18ae52c8.js.map
+[./app/javascript/packs/application.js] 4.72 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /home/animward/Projects/francis-gamble/babel-virtual-resolve-base.js
+    at new NodeError (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:194:5)
+    at packageResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:908:9)
+    at moduleResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:937:20)
+    at defaultResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:1007:15)
+    at resolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:1020:12)
+    at tryImportMetaResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:142:45)
+    at resolveStandardizedNameForImport (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:164:19)
+    at resolveStandardizedName (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:173:22)
+    at loadPlugin (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:52:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-descriptors.js:140:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:291:5)
+    at /home/animward/Projects/francis-gamble/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:43:15)
+    at Function.all (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-descriptors.js:102:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-descriptors.js:99:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/gensync-utils/functional.js:39:27
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:349:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:316:14)
+    at chainWalker.next (<anonymous>)
+    at loadFileChain (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:191:24)
+    at loadFileChain.next (<anonymous>)
+    at buildRootChain (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:77:27)
+    at buildRootChain.next (<anonymous>)
+    at loadPrivatePartialConfig (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/partial.js:72:62)
+    at loadPrivatePartialConfig.next (<anonymous>)
+    at loadPartialConfig (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/partial.js:115:25)
+    at loadPartialConfig.next (<anonymous>)
+    at step (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:269:25)
+    at evaluateAsync (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:291:5)
+    at /home/animward/Projects/francis-gamble/node_modules/gensync/index.js:93:9
+    at new Promise (<anonymous>)
+    at async (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:92:14)
+    at stopHiding - secret - don't use this - v1 (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/errors/rewrite-stack-trace.js:47:12)
+    at loadPartialConfigAsync (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/index.js:34:85)
+    at Object.<anonymous> (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:126:26)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:3:103)
+    at _next (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:4:194)
+    at /home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:4:364
+    at new Promise (<anonymous>)
+
+
+warning ../../package.json: No license field
+
+  Rendered layout layouts/application.html.erb (Duration: 1265.4ms | Allocations: 12531)
+Completed 200 OK in 1269ms (Views: 1266.9ms | ActiveRecord: 0.0ms | Allocations: 15532)
+
+
+Started GET "/login?commit=Login" for ::1 at 2024-05-14 15:43:12 -0700
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController
+Did you mean?  create):
+  
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-05-14 15:45:14 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 517)
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1122)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6279)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7425)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:45:24 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.4ms | Allocations: 532)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 1083)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 6320)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 7480)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:45:25 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 287)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4648)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4940)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:45:26 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4639)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-14 15:46:30 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 940)
+  Rendered users/_new.html.erb (Duration: 2.5ms | Allocations: 2916)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 11937)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 14938)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:46:31 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:46:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 286)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 824)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4816)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 5138)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:46:36 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:46:39 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 290)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4714)
+Completed 200 OK in 16ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4982)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:46:40 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:47:06 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:47:07 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:47:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 529)
+  Rendered users/_new.html.erb (Duration: 4.4ms | Allocations: 1125)
+  Rendered users/_existing.html.erb (Duration: 4.7ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 6368)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 7506)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:47:08 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:47:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 529)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1123)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6365)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7516)
+
+
+Started POST "/users/new" for ::1 at 2024-05-14 15:47:30 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:47:33 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4691)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4975)
+
+
+Started POST "/users/new" for ::1 at 2024-05-14 15:47:34 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:47:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4679)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4946)
+
+
+Started POST "/users/new" for ::1 at 2024-05-14 15:47:36 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:47:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 529)
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1083)
+  Rendered users/_existing.html.erb (Duration: 3.3ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6482)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 7617)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:47:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 275)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4791)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 5080)
+
+
+Started POST "/?id=loginBtn" for ::1 at 2024-05-14 15:47:53 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/?id=loginBtn" for ::1 at 2024-05-14 15:48:46 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:48:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 541)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1124)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 6387)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 7517)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:48:48 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:48:49 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:48:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 532)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1123)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6376)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 7527)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:49:00 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:02 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:10 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:18 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:18 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:49:19 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 523)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1123)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6359)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7508)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:49:20 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:22 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:23 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:34 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:49:35 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:49:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 526)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1124)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6364)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 7512)
+
+
+Started POST "/home" for ::1 at 2024-05-14 15:49:36 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/home"):
+  
+Started POST "/home" for ::1 at 2024-05-14 15:49:41 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/home"):
+  
+Started POST "/home" for ::1 at 2024-05-14 15:50:06 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/home"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:50:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 521)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1083)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6466)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7614)
+
+
+Started POST "/?id=loginBtn" for ::1 at 2024-05-14 15:50:08 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/?id=registerBtn" for ::1 at 2024-05-14 15:50:12 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/?id=registerBtn" for ::1 at 2024-05-14 15:50:15 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/?id=registerBtn" for ::1 at 2024-05-14 15:50:26 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:50:27 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 535)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 1083)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 6438)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 7586)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:50:28 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:50:31 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:51:07 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 517)
+  Rendered users/_new.html.erb (Duration: 1.4ms | Allocations: 1137)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5986)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7136)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:51:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4347)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4631)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:51:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 536)
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1133)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6010)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7147)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:51:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 523)
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5749)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6897)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:51:55 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-14 15:52:05 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-14 15:52:06 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 272)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4171)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4456)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:52:43 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 263)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 402.0ms | Allocations: 11157)
+Completed 200 OK in 403ms (Views: 402.4ms | Allocations: 11420)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:52:43 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4163)
+Completed 200 OK in 5ms (Views: 5.1ms | Allocations: 4427)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:53:27 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 528)
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5755)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 6879)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:54:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 222.9ms | Allocations: 9902)
+Completed 200 OK in 224ms (Views: 223.5ms | Allocations: 10182)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:54:23 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 290)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 227.6ms | Allocations: 9747)
+Completed 200 OK in 228ms (Views: 228.0ms | Allocations: 10010)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:54:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 296)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 227.4ms | Allocations: 9743)
+Completed 200 OK in 228ms (Views: 227.9ms | Allocations: 10006)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:54:53 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 224.8ms | Allocations: 9716)
+Completed 200 OK in 226ms (Views: 225.2ms | Allocations: 9979)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:55:05 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 227.3ms | Allocations: 9716)
+Completed 200 OK in 228ms (Views: 227.7ms | Allocations: 9979)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:55:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 272)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4212)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 4476)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:55:32 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 266)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 223.9ms | Allocations: 9713)
+Completed 200 OK in 224ms (Views: 224.2ms | Allocations: 9976)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:55:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+  Rendered users/_new.html.erb (Duration: 4.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 2.2ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 238.1ms | Allocations: 9741)
+Completed 200 OK in 239ms (Views: 238.5ms | Allocations: 10004)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:56:20 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 218.5ms | Allocations: 9746)
+Completed 200 OK in 219ms (Views: 219.0ms | Allocations: 10009)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:56:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 308)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 227.6ms | Allocations: 9779)
+Completed 200 OK in 228ms (Views: 228.2ms | Allocations: 10043)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:56:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 287)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4184)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 4448)
+
+
+Started POST "/" for ::1 at 2024-05-14 15:56:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  

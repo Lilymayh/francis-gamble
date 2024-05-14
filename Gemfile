@@ -40,3 +40,4 @@ gem 'esbuild-rails', '~> 0.1.4'
 
 gem 'importmap-rails', '~> 0.6.2'
 
+gem 'webpacker', '~> 5.0'
