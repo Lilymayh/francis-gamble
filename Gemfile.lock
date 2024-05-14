@@ -79,6 +79,8 @@ GEM
       dotenv (= 3.1.2)
       railties (>= 6.1)
     erubi (1.12.0)
+    esbuild-rails (0.1.4)
+      rails (>= 6.0.0)
     execjs (2.9.1)
     ffi (1.16.3)
     globalid (1.2.1)
@@ -86,6 +88,8 @@ GEM
     greensock-rails (1.20.4.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
+    importmap-rails (0.6.3)
+      rails (>= 6.0.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -195,7 +199,9 @@ DEPENDENCIES
   bootstrap
   cypress-on-rails (~> 1.17)
   dotenv-rails
+  esbuild-rails (~> 0.1.4)
   greensock-rails (~> 1.20, >= 1.20.4.0)
+  importmap-rails (~> 0.6.2)
   listen
   pg
   puma

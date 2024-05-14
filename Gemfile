@@ -35,3 +35,7 @@ gem 'bootsnap'
 gem 'listen'
 
 gem 'puma'
+
+gem 'esbuild-rails', '~> 0.1.4'
+
+gem 'importmap-rails', '~> 0.6.2'

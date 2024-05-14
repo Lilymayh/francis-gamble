@@ -1162,3 +1162,712 @@ app/views/layouts/application.html.erb:9
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:13:31 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 277)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6423)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 9306)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:17:07 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.2ms | Allocations: 400)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2931)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:17:08 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 213)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 954)
+
+
+Started GET "/home" for 127.0.0.1 at 2024-05-14 10:17:15 -0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 4212)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4304)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 5588)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x00000000007e68>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/home/index.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:17:40 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.1ms | Allocations: 400)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2931)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:17:41 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/animward/.rvm/gems/ruby-3.1.1/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 213)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 954)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:20:51 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant PagesController
+
+        Object.const_get(camel_cased_word)
+              ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:22:36 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 2509)
+
+
+  
+ActionController::MissingExactTemplate (PagesController#home is missing a template for request formats: text/html):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:24:27 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.7ms | Allocations: 4353)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 4453)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 7327)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x00000000007c60>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:24:28 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3548)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3625)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3902)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x00000000007e18>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:25:59 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.7ms | Allocations: 4353)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 4453)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 7327)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x00000000008250>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:25:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.0ms | Allocations: 3548)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3625)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3902)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x00000000008408>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:26:29 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 795)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6595)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 9479)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:26:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 37.7ms | Allocations: 3790)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 3871)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 4996)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x000000000085c0>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:26:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.6ms | Allocations: 3472)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3549)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3812)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tags' for #<ActionView::Base:0x00000000008778>
+Did you mean?  javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:27:19 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 461.1ms | Allocations: 14044)
+  Rendered layout layouts/application.html.erb (Duration: 466.2ms | Allocations: 20049)
+Completed 500 Internal Server Error in 470ms (ActiveRecord: 0.0ms | Allocations: 22980)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:27:59 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+Importmap skipped missing path: application.js
+Importmap skipped missing path: react.js
+Importmap skipped missing path: react-dom.js
+Importmap skipped missing path: application.js
+Importmap skipped missing path: react.js
+Importmap skipped missing path: react-dom.js
+  Rendered pages/home.html.erb within layouts/application (Duration: 59.5ms | Allocations: 11304)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 15284)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 18215)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:28:00 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1815)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 5353)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 5631)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:28:01 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1646)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 5179)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 5422)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:28:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.7ms | Allocations: 3892)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3973)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 5076)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tag' for #<ActionView::Base:0x00000000008f20>
+Did you mean?  javascript_importmap_tags
+               javascript_importmap_shim_tag
+               javascript_import_module_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tag %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:28:22 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 42.4ms | Allocations: 4455)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 4555)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms | Allocations: 7476)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tag' for #<ActionView::Base:0x000000000088e0>
+Did you mean?  javascript_importmap_tags
+               javascript_importmap_shim_tag
+               javascript_import_module_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tag %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:28:24 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.3ms | Allocations: 3651)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3728)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4005)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_importmap_tag' for #<ActionView::Base:0x00000000008a98>
+Did you mean?  javascript_importmap_tags
+               javascript_importmap_shim_tag
+               javascript_import_module_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_importmap_tag %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:28:38 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+Importmap skipped missing path: application.js
+Importmap skipped missing path: react.js
+Importmap skipped missing path: react-dom.js
+Importmap skipped missing path: application.js
+Importmap skipped missing path: react.js
+Importmap skipped missing path: react-dom.js
+  Rendered pages/home.html.erb within layouts/application (Duration: 54.5ms | Allocations: 11304)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 15284)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms | Allocations: 18215)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:33:11 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.6ms | Allocations: 4454)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4554)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 7475)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_pack_tag' for #<ActionView::Base:0x000000000088e0>
+Did you mean?  javascript_path
+               javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_pack_tag %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:33:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3650)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3727)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 4004)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_pack_tag' for #<ActionView::Base:0x00000000008a98>
+Did you mean?  javascript_path
+               javascript_tag):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= javascript_pack_tag %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/pages/home.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:33:36 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 795)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 7748)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 10679)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:33:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 239)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 4007)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 4285)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= yield %>
+  
+app/views/layouts/application.html.erb:9
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:33:59 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 795)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 5189)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms | Allocations: 8182)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:34:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2231)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3434)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:35:56 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 383.3ms | Allocations: 6610)
+Completed 200 OK in 384ms (Views: 383.7ms | ActiveRecord: 0.0ms | Allocations: 6903)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:36:09 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 308)
+  Rendered layout layouts/application.html.erb (Duration: 207.8ms | Allocations: 5864)
+Completed 200 OK in 208ms (Views: 208.2ms | ActiveRecord: 0.0ms | Allocations: 6136)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-14 10:36:16 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 210.9ms | Allocations: 5812)
+Completed 200 OK in 212ms (Views: 211.4ms | ActiveRecord: 0.0ms | Allocations: 6078)
+
+
