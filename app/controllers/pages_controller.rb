@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
   def home
-    # Your home action code here
+
+  end
+
+  def tictactoe
+    render layout: false
   end
 end

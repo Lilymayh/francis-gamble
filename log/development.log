@@ -3653,3 +3653,477 @@ Started POST "/" for ::1 at 2024-05-14 15:56:57 -0700
   
 ActionController::RoutingError (No route matches [POST] "/"):
   
+Started GET "/" for ::1 at 2024-05-14 15:57:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4233)
+Completed 200 OK in 7ms (Views: 7.2ms | Allocations: 4501)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:58:21 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 287)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4199)
+Completed 200 OK in 5ms (Views: 5.2ms | Allocations: 4462)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:58:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 220.7ms | Allocations: 9751)
+Completed 200 OK in 221ms (Views: 221.1ms | Allocations: 10014)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:58:56 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4172)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 4435)
+
+
+Started GET "/" for ::1 at 2024-05-14 15:59:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 272)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4178)
+Completed 200 OK in 5ms (Views: 5.3ms | Allocations: 4443)
+
+
+Started GET "/" for ::1 at 2024-05-14 16:02:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 272)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4185)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4448)
+
+
+Started GET "/" for ::1 at 2024-05-14 16:02:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 284)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4181)
+Completed 200 OK in 5ms (Views: 5.3ms | Allocations: 4445)
+
+
+Started POST "/" for ::1 at 2024-05-14 16:08:13 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-15 09:38:13 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 931)
+  Rendered users/_new.html.erb (Duration: 3.8ms | Allocations: 2940)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 15405)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 18405)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:38:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:38:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:39:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:40:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:41:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:41:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:41:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:41:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:41:51 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-15 09:42:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-15 09:43:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 485)
+  Rendered users/_new.html.erb (Duration: 2.7ms | Allocations: 2829)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 10667)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 13042)
+
+
+Started GET "/pages" for 127.0.0.1 at 2024-05-15 09:43:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-15 09:44:02 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 0.7ms | Allocations: 431)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 779)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4362)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4785)
+
+
+Started GET "/tictactoe" for 127.0.0.1 at 2024-05-15 09:44:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/tictactoe" for 127.0.0.1 at 2024-05-15 09:44:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tictactoe"):
+  
+Started GET "/page/tictactoe" for ::1 at 2024-05-15 09:46:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/page/tictactoe"):
+  
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:46:14 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 775)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4185)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4457)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:47:48 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 0.5ms | Allocations: 293)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4209)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4476)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:49:28 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 3.6ms | Allocations: 962)
+  Rendered users/_new.html.erb (Duration: 2.6ms | Allocations: 2944)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 11345)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 14346)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:49:30 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 774)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 4253)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4560)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:50:44 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.4ms | Allocations: 389)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 911)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:50:45 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.4ms | Allocations: 264)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 489)
+
+
+Started GET "/" for ::1 at 2024-05-15 09:50:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 416)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1232)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4964)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 5404)
+
+
+Started GET "/" for ::1 at 2024-05-15 09:51:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 532)
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1133)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 10449)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 11580)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_tictactoe' for #<ActionView::Base:0x0000000000a640>
+Did you mean?  pages_tictactoe_url):
+    40:       });
+    41:     });
+    42:   </script>
+    43:   <%= link_to "Tic Tac Toe", pages_tictactoe %>
+    44: </body>
+    45: </html>
+    46: 
+  
+app/views/layouts/application.html.erb:43
+Started GET "/" for ::1 at 2024-05-15 09:52:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 532)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1134)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5851)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 7005)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:52:24 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.6ms | Allocations: 436)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 780)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:53:06 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 12.0ms | Allocations: 3868)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 4517)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `layouts_application_path' for #<ActionView::Base:0x0000000000aa00>):
+    13:   <div class='gameboard'>
+    14: 		<h1>Tic Tac Toe!</h1>
+    15: 	</div>
+    16: 	<%= link_to "Home Route", layouts_application_path %>
+    17: 
+    18:   </body>
+    19: </html>
+  
+app/views/pages/tictactoe.html.erb:16
+app/controllers/pages_controller.rb:7:in `tictactoe'
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:53:37 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.9ms | Allocations: 616)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1306)
+
+
+Started GET "/" for ::1 at 2024-05-15 09:53:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 396)
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1116)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5621)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 6432)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:53:39 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.5ms | Allocations: 314)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:53:40 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.4ms | Allocations: 309)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 517)
+
+
+Started GET "/" for ::1 at 2024-05-15 09:53:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4193)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4459)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:53:42 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.8ms | Allocations: 311)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 512)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:54:09 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.8ms | Allocations: 629)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1300)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:54:45 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.7ms | Allocations: 635)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1324)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:55:34 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.6ms | Allocations: 314)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 533)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:55:35 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 0.4ms | Allocations: 305)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 506)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:56:08 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 398.1ms | Allocations: 10021)
+Completed 200 OK in 399ms (Views: 399.3ms | ActiveRecord: 0.0ms | Allocations: 10692)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:56:09 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 1580)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1800)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:56:47 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 218.2ms | Allocations: 7205)
+Completed 200 OK in 219ms (Views: 218.6ms | Allocations: 7403)
+
+
+Started GET "/" for ::1 at 2024-05-15 09:56:55 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 413)
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1116)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 5476)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 6267)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:56:57 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 1532)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 1730)
+
+
+Started GET "/" for ::1 at 2024-05-15 09:56:57 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4200)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 4463)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-15 09:56:58 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.4ms | Allocations: 1544)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 1742)
+
+
