@@ -1,0 +1,22 @@
+h1 {
+	font-size: 5rem;
+	color: pink;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkers-board {
+	display: flex;
+	justify-content: center;
+}
+
+.a {
+	background-color: rgb(255, 192, 231);
+	width: 5em;
+	height: 5em
+}
+
+.b {
+	background-color: rgb(252, 80, 175);
+}
