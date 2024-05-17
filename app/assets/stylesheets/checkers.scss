@@ -6,17 +6,19 @@ h1 {
 	align-items: center;
 }
 
-.checkers-board {
-	display: flex;
+.game-board {
+	display: grid;
+	grid-template-columns: repeat(8, 5em); /* Adjust the size of the squares as needed */
+	grid-template-rows: repeat(8, 5em);    /* Adjust the size of the squares as needed */
+	border: 2px solid black;
+	width: 55%;
 	justify-content: center;
 }
 
-.a {
-	background-color: rgb(255, 192, 231);
-	width: 5em;
-	height: 5em
+.square.black-square {
+	background-color: rgb(54, 52, 52);
 }
 
-.b {
-	background-color: rgb(252, 80, 175);
+.square.white-square {
+	background-color: white;
 }

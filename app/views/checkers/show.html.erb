@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>checkers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+<h1>Checkers!</h1>
+  <div class="game-board">
+    <% @game_board.squares.each do |square| %>
+      <div class="square <%= square.colour %>">
+			<% if square.piece.present? %>
+			<div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>"></div>
+		<% end %>
+      </div>
+    <% end %>
+  </div>
+  </body>
+</html>

@@ -1,10 +1,19 @@
-class Piece < ApplicationRecord
-  belongs_to :square
+class Piece 
+  attr_accessor :color, :square
 
+  def initialize(color)
+    @color = color
+    @king = false
+    @square = nil
+  end
 
-  def update_piece
+  def king?
+    @king
+  end
+
+  def update_to_king
     if (color == "red" && square.row == 8) || (color == "black" && square.row == 1)
-      update(king: true)
+      @king = true
     end
   end
 
