@@ -8,6 +8,6 @@ class GameBoard < ApplicationRecord
 				squares.create(row: row, column: column)
 			end
 		end
-	endw
+	end
 
 end
