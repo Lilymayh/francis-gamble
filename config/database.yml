@@ -1,0 +1,25 @@
+<% require 'dotenv/load' if File.exist?('.env') %>
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("DB_POOL") { 5 } %>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  host: <%= ENV.fetch("DB_HOST") { "localhost" } %>
+  port: <%= ENV.fetch("DB_PORT") { 5432 } %>
+
+development:
+  <<: *default
+  database: <%= ENV.fetch("DB_NAME_DEVELOPMENT") {"your_app_name_development"}%>
+
+test:
+  <<: *default
+  database: <%= ENV.fetch("DB_NAME_TEST") { "your_app_name_test" } %>
+
+production:
+  <<: *default
+  database: <%= ENV.fetch("DB_NAME_PRODUCTION") { "your_app_name_production" }%>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+
