@@ -1,9 +1,7 @@
 class PagesController < ApplicationController
-<<<<<<< HEAD
 	def checkers
   end
 end
-=======
   def home
 
   end
@@ -12,4 +10,3 @@ end
     render layout: false
   end
 end
->>>>>>> game/tic-tac-toe
