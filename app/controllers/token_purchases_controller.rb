@@ -1,10 +1,10 @@
 class TokenPurchasesController < ApplicationController
-  #update 
-  def new_token_purchase
+  def new
     @user = FakeUser.find_by(email: 'a@a.a')
+    render layout: false
   end
     
-  def create_token_purchase
+  def create
     amount = params[:amount].to_f
     @user = FakeUser.find_by(email: 'a@a.a')
     if @user
@@ -12,5 +12,4 @@ class TokenPurchasesController < ApplicationController
     end
     puts @user.inspect
   end
-
 end
