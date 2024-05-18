@@ -6,6 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+<<<<<<< HEAD
 module FrancisGamble
   class Application < Rails::Application
 
@@ -15,6 +16,13 @@ module FrancisGamble
     # Load contents from .env
     Dotenv::Rails.load
 
+=======
+module Flowers
+  class Application < Rails::Application
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 6.1
+
+>>>>>>> origin/feature/tokens-page
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

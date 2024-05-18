@@ -3,5 +3,11 @@
 #
 # Examples:
 #
+<<<<<<< HEAD
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+=======
+#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
+#   Character.create(name: "Luke", movie: movies.first)
+FakeUser.create!(email: 'a@a.a', password: 'a', balance: 0)
+>>>>>>> origin/feature/tokens-page

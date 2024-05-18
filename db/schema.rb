@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2024_05_13_174225) do
 
   # These are extensions that must be enabled in order to support this database
@@ -42,6 +43,14 @@ ActiveRecord::Schema.define(version: 2024_05_13_174225) do
   end
 
   create_table "winnings", force: :cascade do |t|
+=======
+ActiveRecord::Schema.define(version: 2024_05_16_022748) do
+
+  create_table "fake_users", force: :cascade do |t|
+    t.string "email"
+    t.string "password"
+    t.integer "balance"
+>>>>>>> origin/feature/tokens-page
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

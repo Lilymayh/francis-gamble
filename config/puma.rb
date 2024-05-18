@@ -39,5 +39,9 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 #
 # preload_app!
 
+<<<<<<< HEAD
 # Allow puma to be restarted by `rails restart` command.
+=======
+# Allow puma to be restarted by `bin/rails restart` command.
+>>>>>>> origin/feature/tokens-page
 plugin :tmp_restart

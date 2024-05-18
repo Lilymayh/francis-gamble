@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ENV['RAILS_ENV'] ||= 'test'
+=======
+ENV["RAILS_ENV"] ||= "test"
+>>>>>>> origin/feature/tokens-page
 require_relative "../config/environment"
 require "rails/test_help"
 
