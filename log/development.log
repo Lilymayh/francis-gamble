@@ -5410,3 +5410,548 @@ Processing by CheckersController#show as HTML
 Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 8604)
 
 
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:32:10 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1529)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/animward/Projects/francis-gamble/public/packs
+[Webpacker] warning ../../package.json: No license field
+
+[Webpacker] Hash: 8ca6729e12b0dbff15ed
+Version: webpack 4.47.0
+Time: 844ms
+Built at: 05/17/2024 7:32:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1ce57dc84c43dd65af67.js    121 KiB  application  [emitted] [immutable]  application
+js/application-1ce57dc84c43dd65af67.js.map    134 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1ce57dc84c43dd65af67.js js/application-1ce57dc84c43dd65af67.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+    + 3 hidden modules
+
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 774)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1640.4ms | Allocations: 8860)
+Completed 200 OK in 1641ms (Views: 1640.8ms | Allocations: 9415)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:32:26 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 773)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 8066)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 8623)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:35:10 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2028)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/animward/Projects/francis-gamble/public/packs
+[Webpacker] warning ../../package.json: No license field
+
+[Webpacker] Hash: 8ca6729e12b0dbff15ed
+Version: webpack 4.47.0
+Time: 390ms
+Built at: 05/17/2024 7:35:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1ce57dc84c43dd65af67.js    121 KiB  application  [emitted] [immutable]  application
+js/application-1ce57dc84c43dd65af67.js.map    134 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1ce57dc84c43dd65af67.js js/application-1ce57dc84c43dd65af67.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+    + 3 hidden modules
+
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1206.2ms | Allocations: 10638)
+Completed 200 OK in 1208ms (Views: 1207.1ms | Allocations: 12092)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:35:56 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1508)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8047)
+Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 8625)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:37:40 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 8060)
+Completed 200 OK in 7ms (Views: 7.2ms | Allocations: 8616)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:43:12 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.4ms | Allocations: 1277)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 8916)
+Completed 200 OK in 13ms (Views: 9.2ms | Allocations: 10035)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:44:29 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1274)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8920)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 10042)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:45:20 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2041)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1133)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 803)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 7991)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 9468)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:45:42 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1511)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 6224)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 6801)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:45:45 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.8ms | Allocations: 2233)
+Completed 200 OK in 3ms (Views: 2.7ms | Allocations: 2892)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:45:46 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 1720)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 1934)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:45:46 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 411)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 866)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5459)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 6118)
+
+
+Started GET "/games" for 127.0.0.1 at 2024-05-17 19:45:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:46:07 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1506)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 773)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6229)
+Completed 200 OK in 10ms (Views: 10.2ms | Allocations: 6791)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:47:21 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1793)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2837)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:47:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 388)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1271)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 6042)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 6624)
+
+
+Started GET "/home" for 127.0.0.1 at 2024-05-17 19:47:45 -0700
+Processing by HomeController#index as HTML
+Completed 406 Not Acceptable in 1ms (Allocations: 1504)
+
+
+  
+ActionController::MissingExactTemplate (HomeController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:47:52 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.7ms | Allocations: 1949)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2176)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:47:52 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 1715)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 1913)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:48:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 529)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 10315)
+Completed 500 Internal Server Error in 19ms (Allocations: 11416)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_show_path' for #<ActionView::Base:0x00000000010ef0>
+Did you mean?  check_box_tag):
+    45:     });
+    46:   </script>
+    47:   <%= link_to "Tic Tac Toe", pages_tictactoe_path %>
+    48:   <%= link_to "Checkers", checkers_show_path %>
+    49: </body>
+    50: 
+    51: </html>
+  
+app/views/layouts/application.html.erb:48
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:50:22 -0700
+  
+SyntaxError (/home/animward/Projects/francis-gamble/config/routes.rb:22: syntax error, unexpected string literal, expecting `do' or '{' or '('
+...ers', to: 'checkers#show', as 'checkers_show'
+...                              ^
+):
+  
+config/routes.rb:22: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:22: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:51:47 -0700
+  
+SyntaxError (/home/animward/Projects/francis-gamble/config/routes.rb:22: syntax error, unexpected local variable or method, expecting `end'
+...eckers', to: 'checkers#show' as: 'checkers_show'
+...                             ^~
+):
+  
+config/routes.rb:22: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:22: syntax error, unexpected local variable or method, expecting `end'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:53:18 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 12.4ms | Allocations: 6384)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 9398)
+
+
+Started GET "/games" for 127.0.0.1 at 2024-05-17 19:53:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:53:23 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.7ms | Allocations: 2852)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 8997)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 10213)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:53:24 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5390)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 5695)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:53:25 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 1927)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2266)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:53:25 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.4ms | Allocations: 1718)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:53:26 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5211)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 5478)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:53:27 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1500)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2005)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:53:27 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.2ms | Allocations: 1493)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1986)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:54:02 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 2110)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3075)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:54:03 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 6851)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 7905)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:54:09 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5214)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 5498)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:54:10 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 1906)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2235)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:54:10 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.3ms | Allocations: 1718)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:54:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5209)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:54:11 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.3ms | Allocations: 1536)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:54:11 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1529)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2022)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:54:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5209)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:54:18 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1556)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2052)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:54:18 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.3ms | Allocations: 1535)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 2028)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:54:21 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5209)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+

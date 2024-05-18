@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>FrancisGamble</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>FrancisGamble</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+</head>
 
-  <body>
-    <div class='main_logo'>Francis Gamble</div>
-    <div class='buttonz'>
-      <button id="registerBtn">Register</button> or <button id="loginBtn">Login</button>
-    </div>
+<body>
+  <div class='main_logo'>Francis Gamble</div>
+  <div class='buttonz'>
+    <button id="registerBtn">Register</button> or <button id="loginBtn">Login</button>
+  </div>
 
-    <div id="registerForm" style="display: none;">
-      <%= render 'users/new' %>
-    </div>
+  <div id="registerForm" style="display: none;">
+    <%= render 'users/new' %>
+  </div>
 
-    <div id="loginForm" style="display: none;">
-      <%= render 'users/existing' %>
-    </div>
+  <div id="loginForm" style="display: none;">
+    <%= render 'users/existing' %>
+  </div>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const registerBtn = document.getElementById('registerBtn');
-        const loginBtn = document.getElementById('loginBtn');
-        const registerForm = document.getElementById('registerForm');
-        const loginForm = document.getElementById('loginForm');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const registerBtn = document.getElementById('registerBtn');
+      const loginBtn = document.getElementById('loginBtn');
+      const registerForm = document.getElementById('registerForm');
+      const loginForm = document.getElementById('loginForm');
 
-        registerBtn.addEventListener('click', function() {
-          registerForm.style.display = 'block';
-          loginForm.style.display = 'none';
-        });
-
-        loginBtn.addEventListener('click', function() {
-          registerForm.style.display = 'none';
-          loginForm.style.display = 'block';
-        });
+      registerBtn.addEventListener('click', function () {
+        registerForm.style.display = 'block';
+        loginForm.style.display = 'none';
       });
-    </script>
-    <%= link_to "Tic Tac Toe", pages_tictactoe_path %>
-  </body>
+
+      loginBtn.addEventListener('click', function () {
+        registerForm.style.display = 'none';
+        loginForm.style.display = 'block';
+      });
+    });
+  </script>
+  <%= link_to "Tic Tac Toe", pages_tictactoe_path %>
+  <%= link_to "Checkers", checkers_show_path %>
+</body>
 
 </html>

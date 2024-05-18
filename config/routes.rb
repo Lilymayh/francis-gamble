@@ -19,5 +19,5 @@ Rails.application.routes.draw do
   get '/pages/tictactoe', to: 'pages#tictactoe'
 
    # Define route for the checkers game
-   get '/games/checkers', to: 'checkers#show'
+   get '/games/checkers', to: 'checkers#show', as: 'checkers_show'
 end
