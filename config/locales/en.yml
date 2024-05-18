@@ -4,19 +4,11 @@
 #
 # To use the locales, use `I18n.t`:
 #
-<<<<<<< HEAD
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-=======
 #     I18n.t "hello"
 #
 # In views, this is aliased to just `t`:
 #
 #     <%= t("hello") %>
->>>>>>> origin/feature/tokens-page
 #
 # To use a different locale, set it with `I18n.locale`:
 #
@@ -32,14 +24,14 @@
 # Instead, surround them with single quotes.
 #
 # en:
-<<<<<<< HEAD
 #   'true': 'foo'
-=======
 #   "true": "foo"
->>>>>>> origin/feature/tokens-page
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  key1: "Value 1"
+  key2: "Value 2"
   hello: "Hello world"
+  # Add more key-value pairs as needed

@@ -4143,3 +4143,1270 @@ Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 1742)
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-17 18:50:02 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20240513173845_create_games.rb
+20240513174057_create_bets.rb
+20240513174225_create_winnings.rb
+
+
+):
+  
+activerecord (6.1.5.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.5.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.5.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.5.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.5.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2024-05-17 18:50:06 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGames (20240513173845)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "games" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar, "game_type" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513173845"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBets (20240513174057)
+  
+StandardError (An error has occurred, this and all later migrations canceled:
+
+undefined method `uuid' for #<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x00007f22d9046340 @conn=#<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x00007f22dbfa9d80 @transaction_manager=#<ActiveRecord::ConnectionAdapters::TransactionManager:0x00007f22dbfb6648 @stack=[], @connection=#<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x00007f22dbfa9d80 ...>, @has_unmaterialized_transactions=true, @materializing_transactions=false, @lazy_transactions_enabled=true>, @query_cache={}, @query_cache_enabled=true, @connection=#<SQLite3::Database:0x00007f22dbfaa208 @tracefunc=nil, @authorizer=nil, @encoding=#<Encoding:UTF-8>, @busy_handler=nil, @collations={}, @functions={}, @results_as_hash=true, @type_translation=nil, @type_translator=#<Proc:0x00007f22de444820 /home/animward/.rvm/gems/ruby-3.1.1/gems/sqlite3-1.7.3-x86_64-linux/lib/sqlite3/database.rb:747 (lambda)>, @readonly=false, @default_transaction_mode=:deferred>, @owner=#<Thread:0x00007f22dd5703a8@puma srv tp 002 /home/animward/.rvm/gems/ruby-3.1.1/gems/puma-6.4.2/lib/puma/thread_pool.rb:113 run>, @instrumenter=#<ActiveSupport::Notifications::Instrumenter:0x00007f22db4ca4c8 @id="be515457487833039e63", @notifier=#<ActiveSupport::Notifications::Fanout:0x00007f22de29d648 @string_subscribers={"service_download.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 ...>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_streaming_download.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 ...>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_delete.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 ...>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_delete_prefixed.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 ...>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_exist.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 ...>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_url.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 ...>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_mirror.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 ...>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>}>, @can_publish=false>], "service_upload.active_storage"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 @pattern="service_upload.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 @queue_key="ActiveStorage::LogSubscriber-3400", @patterns={"service_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25330 @pattern="service_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_streaming_download.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda25060 @pattern="service_streaming_download.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24f98 @pattern="service_delete.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_delete_prefixed.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24ed0 @pattern="service_delete_prefixed.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_exist.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24e08 @pattern="service_exist.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_url.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24d40 @pattern="service_url.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_mirror.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24c78 @pattern="service_mirror.active_storage", @delegate=#<ActiveStorage::LogSubscriber:0x00007f22dda25920 ...>, @can_publish=false>, "service_upload.active_storage"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dda24bb0 ...>}>, @can_publish=false>], "logger.dotenv"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd436140 @pattern="logger.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 @queue_key="Dotenv::LogSubscriber-4220", @patterns={"logger.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd436140 ...>, "load.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435f10 @pattern="load.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "update.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435d30 @pattern="update.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "save.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435880 @pattern="save.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "restore.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435790 @pattern="restore.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>}>, @can_publish=false>], "load.dotenv"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435f10 @pattern="load.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 @queue_key="Dotenv::LogSubscriber-4220", @patterns={"logger.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd436140 @pattern="logger.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "load.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435f10 ...>, "update.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435d30 @pattern="update.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "save.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435880 @pattern="save.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "restore.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435790 @pattern="restore.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>}>, @can_publish=false>, #<ActiveSupport::Notifications::Fanout::Subscribers::Timed:0x00007f22dcb02290 @pattern="load.dotenv", @delegate=#<Proc:0x00007f22dcb02420 /home/animward/.rvm/gems/ruby-3.1.1/gems/dotenv-3.1.2/lib/dotenv/rails.rb:15>, @can_publish=false>], "update.dotenv"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435d30 @pattern="update.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 @queue_key="Dotenv::LogSubscriber-4220", @patterns={"logger.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd436140 @pattern="logger.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "load.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435f10 @pattern="load.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "update.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435d30 ...>, "save.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435880 @pattern="save.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "restore.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435790 @pattern="restore.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>}>, @can_publish=false>], "save.dotenv"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435880 @pattern="save.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 @queue_key="Dotenv::LogSubscriber-4220", @patterns={"logger.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd436140 @pattern="logger.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "load.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435f10 @pattern="load.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "update.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435d30 @pattern="update.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "save.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435880 ...>, "restore.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435790 @pattern="restore.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>}>, @can_publish=false>], "restore.dotenv"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435790 @pattern="restore.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 @queue_key="Dotenv::LogSubscriber-4220", @patterns={"logger.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd436140 @pattern="logger.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "load.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435f10 @pattern="load.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "update.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435d30 @pattern="update.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "save.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435880 @pattern="save.dotenv", @delegate=#<Dotenv::LogSubscriber:0x00007f22dd436a78 ...>, @can_publish=false>, "restore.dotenv"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd435790 ...>}>, @can_publish=false>], "strict_loading_violation.active_record"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed5030 @pattern="strict_loading_violation.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 @queue_key="ActiveRecord::LogSubscriber-11740", @patterns={"strict_loading_violation.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed5030 ...>, "sql.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4ef0 @pattern="sql.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner=.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4e28 @pattern="backtrace_cleaner=.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4d60 @pattern="backtrace_cleaner.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner?.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4c98 @pattern="backtrace_cleaner?.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>}>, @can_publish=false>], "sql.active_record"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4ef0 @pattern="sql.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 @queue_key="ActiveRecord::LogSubscriber-11740", @patterns={"strict_loading_violation.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed5030 @pattern="strict_loading_violation.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "sql.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4ef0 ...>, "backtrace_cleaner=.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4e28 @pattern="backtrace_cleaner=.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4d60 @pattern="backtrace_cleaner.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner?.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4c98 @pattern="backtrace_cleaner?.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>}>, @can_publish=false>, #<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbf345d0 @pattern="sql.active_record", @delegate=#<ActiveRecord::ExplainSubscriber:0x00007f22dbf346c0>, @can_publish=false>], "backtrace_cleaner=.active_record"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4e28 @pattern="backtrace_cleaner=.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 @queue_key="ActiveRecord::LogSubscriber-11740", @patterns={"strict_loading_violation.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed5030 @pattern="strict_loading_violation.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "sql.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4ef0 @pattern="sql.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner=.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4e28 ...>, "backtrace_cleaner.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4d60 @pattern="backtrace_cleaner.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner?.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4c98 @pattern="backtrace_cleaner?.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>}>, @can_publish=false>], "backtrace_cleaner.active_record"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4d60 @pattern="backtrace_cleaner.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 @queue_key="ActiveRecord::LogSubscriber-11740", @patterns={"strict_loading_violation.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed5030 @pattern="strict_loading_violation.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "sql.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4ef0 @pattern="sql.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner=.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4e28 @pattern="backtrace_cleaner=.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4d60 ...>, "backtrace_cleaner?.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4c98 @pattern="backtrace_cleaner?.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>}>, @can_publish=false>], "backtrace_cleaner?.active_record"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4c98 @pattern="backtrace_cleaner?.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 @queue_key="ActiveRecord::LogSubscriber-11740", @patterns={"strict_loading_violation.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed5030 @pattern="strict_loading_violation.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "sql.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4ef0 @pattern="sql.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner=.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4e28 @pattern="backtrace_cleaner=.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4d60 @pattern="backtrace_cleaner.active_record", @delegate=#<ActiveRecord::LogSubscriber:0x00007f22dbed5530 ...>, @can_publish=false>, "backtrace_cleaner?.active_record"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dbed4c98 ...>}>, @can_publish=false>], "load_config_initializer.railties"=>[], "process_middleware.action_dispatch"=>[], "start_processing.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 ...>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "halted_callback.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 ...>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "send_file.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 ...>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "send_data.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 ...>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "unpermitted_parameters.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 ...>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "exist_fragment?.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 ...>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "expire_fragment.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 ...>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "expire_page.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 ...>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "write_page.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 ...>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "redirect_to.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 ...>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "process_action.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 ...>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "read_fragment.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 ...>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>}>, @can_publish=false>], "write_fragment.action_controller"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 @pattern="write_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 @queue_key="ActionController::LogSubscriber-16400", @patterns={"start_processing.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4ab2d8 @pattern="start_processing.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "halted_callback.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aadb0 @pattern="halted_callback.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_file.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aaba8 @pattern="send_file.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "send_data.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa860 @pattern="send_data.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "unpermitted_parameters.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4aa068 @pattern="unpermitted_parameters.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "exist_fragment?.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9fc8 @pattern="exist_fragment?.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9e88 @pattern="expire_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "expire_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9dc0 @pattern="expire_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_page.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9cf8 @pattern="write_page.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "redirect_to.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9bb8 @pattern="redirect_to.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "process_action.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9ac8 @pattern="process_action.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "read_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a99d8 @pattern="read_fragment.action_controller", @delegate=#<ActionController::LogSubscriber:0x00007f22dd4a5428 ...>, @can_publish=false>, "write_fragment.action_controller"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd4a9690 ...>}>, @can_publish=false>], "!connection.active_record"=>[], "perform.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 ...>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>}>, @can_publish=false>], "retry_stopped.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 ...>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>}>, @can_publish=false>], "enqueue_retry.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 ...>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>}>, @can_publish=false>], "discard.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 ...>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>}>, @can_publish=false>], "enqueue.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 ...>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>}>, @can_publish=false>], "enqueue_at.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 ...>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>}>, @can_publish=false>], "perform_start.active_job"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 @pattern="perform_start.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 @queue_key="ActiveJob::LogSubscriber-16800", @patterns={"perform.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd552560 @pattern="perform.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "retry_stopped.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5522e0 @pattern="retry_stopped.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_retry.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd551610 @pattern="enqueue_retry.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "discard.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5507b0 @pattern="discard.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557df8 @pattern="enqueue.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "enqueue_at.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd557bf0 @pattern="enqueue_at.active_job", @delegate=#<ActiveJob::LogSubscriber:0x00007f22dd553e10 ...>, @can_publish=false>, "perform_start.active_job"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22dd5576c8 ...>}>, @can_publish=false>], "request.action_dispatch"=>[], "render_layout.action_view"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5767c8 @pattern="render_layout.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 @root=nil, @queue_key="ActionView::LogSubscriber-17300", @patterns={"render_layout.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5767c8 ...>, "render_collection.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5766b0 @pattern="render_collection.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_partial.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5765c0 @pattern="render_partial.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_template.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db576520 @pattern="render_template.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>}>, @can_publish=false>], "render_collection.action_view"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5766b0 @pattern="render_collection.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 @root=nil, @queue_key="ActionView::LogSubscriber-17300", @patterns={"render_layout.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5767c8 @pattern="render_layout.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_collection.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5766b0 ...>, "render_partial.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5765c0 @pattern="render_partial.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_template.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db576520 @pattern="render_template.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>}>, @can_publish=false>], "render_partial.action_view"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5765c0 @pattern="render_partial.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 @root=nil, @queue_key="ActionView::LogSubscriber-17300", @patterns={"render_layout.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5767c8 @pattern="render_layout.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_collection.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5766b0 @pattern="render_collection.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_partial.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5765c0 ...>, "render_template.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db576520 @pattern="render_template.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>}>, @can_publish=false>], "render_template.action_view"=>[#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db576520 @pattern="render_template.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 @root=nil, @queue_key="ActionView::LogSubscriber-17300", @patterns={"render_layout.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5767c8 @pattern="render_layout.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_collection.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5766b0 @pattern="render_collection.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_partial.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db5765c0 @pattern="render_partial.action_view", @delegate=#<ActionView::LogSubscriber:0x00007f22db576fe8 ...>, @can_publish=false>, "render_template.action_view"=>#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x00007f22db576520 ...>}>, @can_publish=false>], "!render_template.action_view"=>[], "!compile_template.action_view"=>[]}, @other_subscribers=[], @listeners_for=#<Concurrent::Map:0x00007f22de29d4e0 entries=12 default_proc=nil>, @_mutex=#<Thread::Mutex:0x00007f22de29d238>>>, @logger=#<ActiveSupport::Logger:0x00007f22dbfbdba0 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00007f22dbfbdf38 @datetime_format=nil>, @formatter=#<ActiveSupport::Logger::SimpleFormatter:0x00007f22dbfbda88 @datetime_format=nil, @thread_key="activesupport_tagged_logging_tags:17000">, @logdev=#<Logger::LogDevice:0x00007f22dbfbde48 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename="/home/animward/Projects/francis-gamble/log/development.log", @dev=#<File:/home/animward/Projects/francis-gamble/log/development.log>, @binmode=false, @mon_data=#<Monitor:0x00007f22dbfbddf8>, @mon_data_owner_object_id=4720>>, @config={:adapter=>"sqlite3", :pool=>5, :timeout=>5000, :database=>"/home/animward/Projects/francis-gamble/db/development.sqlite3"}, @pool=#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x00007f22db4c91e0 @mon_data=#<Monitor:0x00007f22db4c9000>, @mon_data_owner_object_id=16720, @query_cache_enabled=#<Concurrent::Map:0x00007f22db4c8f10 entries=1 default_proc=#<Proc:0x00007f22db4c8e98 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract/query_cache.rb:32>>, @pool_config=#<ActiveRecord::ConnectionAdapters::PoolConfig:0x00007f22db4ca9a0 @_mutex=#<Thread::Mutex:0x00007f22db4ca860>, @connection_klass=ActiveRecord::Base, @db_config=#<ActiveRecord::DatabaseConfigurations::HashConfig:0x00007f22db536a88 @env_name="development", @name="primary", @configuration_hash={:adapter=>"sqlite3", :pool=>5, :timeout=>5000, :database=>"db/development.sqlite3"}>, @pool=#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x00007f22db4c91e0 ...>, @schema_cache=#<ActiveRecord::ConnectionAdapters::SchemaCache:0x00007f22dbefcf18 @connection=#<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x00007f22dbfa9d80 ...>, @columns={"schema_migrations"=>[#<ActiveRecord::ConnectionAdapters::Column:0x00007f22dba371e0 @name="version", @sql_type_metadata=#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007f22dba33928 @sql_type="varchar", @type=:string, @limit=nil, @precision=nil, @scale=nil>, @null=false, @default=nil, @default_function=nil, @collation=nil, @comment=nil>]}, @columns_hash={"schema_migrations"=>{"version"=>#<ActiveRecord::ConnectionAdapters::Column:0x00007f22dba371e0 @name="version", @sql_type_metadata=#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007f22dba33928 @sql_type="varchar", @type=:string, @limit=nil, @precision=nil, @scale=nil>, @null=false, @default=nil, @default_function=nil, @collation=nil, @comment=nil>}}, @primary_keys={}, @data_sources={"schema_migrations"=>true, "ar_internal_metadata"=>true, "games"=>true}, @indexes={}>>, @db_config=#<ActiveRecord::DatabaseConfigurations::HashConfig:0x00007f22db536a88 @env_name="development", @name="primary", @configuration_hash={:adapter=>"sqlite3", :pool=>5, :timeout=>5000, :database=>"db/development.sqlite3"}>, @connection_klass=ActiveRecord::Base, @checkout_timeout=5.0, @idle_timeout=300.0, @size=5, @thread_cached_conns=#<Concurrent::Map:0x00007f22db4c8c18 entries=1 default_proc=nil>, @connections=[#<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x00007f22dbfa9d80 ...>], @automatic_reconnect=true, @now_connecting=0, @threads_blocking_new_connections=0, @available=#<ActiveRecord::ConnectionAdapters::ConnectionPool::ConnectionLeasingQueue:0x00007f22db4c8b00 @lock=#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x00007f22db4c91e0 ...>, @cond=#<MonitorMixin::ConditionVariable:0x00007f22db4c8a10 @monitor=#<Monitor:0x00007f22db4c9000>, @cond=#<Thread::ConditionVariable:0x00007f22db4c8998>>, @num_waiting=0, @queue=[]>, @lock_thread=false, @reaper=#<ActiveRecord::ConnectionAdapters::ConnectionPool::Reaper:0x00007f22db4c88d0 @pool=#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x00007f22db4c91e0 ...>, @frequency=60.0>>, @idle_since=2267.393043416, @visitor=#<Arel::Visitors::SQLite:0x00007f22dbfb5c48 @dispatch={Arel::Nodes::SelectStatement=>"visit_Arel_Nodes_SelectStatement", Arel::Attributes::Attribute=>"visit_Arel_Attributes_Attribute", Arel::Nodes::JoinSource=>"visit_Arel_Nodes_JoinSource", Arel::Table=>"visit_Arel_Table", Arel::Nodes::Ascending=>"visit_Arel_Nodes_Ascending", Arel::Nodes::InsertStatement=>"visit_Arel_Nodes_InsertStatement", Arel::Nodes::ValuesList=>"visit_Arel_Nodes_ValuesList", Arel::Nodes::BindParam=>"visit_Arel_Nodes_BindParam"}, @connection=#<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x00007f22dbfa9d80 ...>>, @statements=#<ActiveRecord::ConnectionAdapters::SQLite3Adapter::StatementPool:0x00007f22dbfb5180 @cache={24138=>{"SELECT \"schema_migrations\".\"version\" FROM \"schema_migrations\" ORDER BY \"schema_migrations\".\"version\" ASC"=>#<SQLite3::Statement:0x00007f22db5ac170 @connection=#<SQLite3::Database:0x00007f22dbfaa208 @tracefunc=nil, @authorizer=nil, @encoding=#<Encoding:UTF-8>, @busy_handler=nil, @collations={}, @functions={}, @results_as_hash=true, @type_translation=nil, @type_translator=#<Proc:0x00007f22de444820 /home/animward/.rvm/gems/ruby-3.1.1/gems/sqlite3-1.7.3-x86_64-linux/lib/sqlite3/database.rb:747 (lambda)>, @readonly=false, @default_transaction_mode=:deferred>, @remainder="", @columns=["version"], @types=["varchar"]>}}, @statement_limit=1000>, @lock=#<ActiveSupport::Concurrency::LoadInterlockAwareMonitor:0x00007f22dbfb4d48>, @prepared_statements=true, @advisory_locks_enabled=true, @type_map=#<ActiveRecord::Type::TypeMap:0x00007f22dba2dd48 @mapping={/boolean/i=>#<Proc:0x00007f22dba2d938 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:648>, /char/i=>#<Proc:0x00007f22dba2d898 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:648>, /binary/i=>#<Proc:0x00007f22dba2d820 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:648>, /text/i=>#<Proc:0x00007f22dba2d690 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:648>, /date/i=>#<Proc:0x00007f22dba2d4d8 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:655>, /time/i=>#<Proc:0x00007f22dba2d370 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:655>, /datetime/i=>#<Proc:0x00007f22dba2d2f8 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:655>, /float/i=>#<Proc:0x00007f22dba2d280 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:648>, /int/i=>#<Proc:0x00007f22dba2cd80 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:648>, /blob/i=>#<Proc:0x00007f22dba2d168 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:37>, /clob/i=>#<Proc:0x00007f22dba2d118 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:37>, /timestamp/i=>#<Proc:0x00007f22dba2d0c8 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:37>, /numeric/i=>#<Proc:0x00007f22dba2d050 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:37>, /number/i=>#<Proc:0x00007f22dba2d000 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:37>, /double/i=>#<Proc:0x00007f22dba2cfb0 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:37>, /^json/i=>#<Proc:0x00007f22dba2ce70 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:32>, /decimal/i=>#<Proc:0x00007f22dba2cdf8 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:629>}, @cache=#<Concurrent::Map:0x00007f22dba2dc30 entries=1 default_proc=#<Proc:0x00007f22dba2db90 /home/animward/.rvm/gems/ruby-3.1.1/gems/activerecord-6.1.5.1/lib/active_record/type/type_map.rb:10>>>>, @columns_hash={"id"=>#<struct ActiveRecord::ConnectionAdapters::ColumnDefinition name="id", type=:uuid, options={:primary_key=>true, :null=>false}, sql_type=nil>}, @indexes=[], @foreign_keys=[], @primary_keys=nil, @check_constraints=[], @temporary=false, @if_not_exists=false, @options=nil, @as=nil, @name="bets", @comment=nil>
+
+      t.uuid :user_id
+       ^^^^^):
+  
+db/migrate/20240513174057_create_bets.rb:4:in `block in change'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:314:in `create_table'
+activerecord (6.1.5.1) lib/active_record/migration.rb:929:in `block in method_missing'
+activerecord (6.1.5.1) lib/active_record/migration.rb:897:in `block in say_with_time'
+/home/animward/.rvm/rubies/ruby-3.1.1/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+activerecord (6.1.5.1) lib/active_record/migration.rb:897:in `say_with_time'
+activerecord (6.1.5.1) lib/active_record/migration.rb:918:in `method_missing'
+db/migrate/20240513174057_create_bets.rb:3:in `change'
+activerecord (6.1.5.1) lib/active_record/migration.rb:867:in `exec_migration'
+activerecord (6.1.5.1) lib/active_record/migration.rb:851:in `block (2 levels) in migrate'
+/home/animward/.rvm/rubies/ruby-3.1.1/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+activerecord (6.1.5.1) lib/active_record/migration.rb:850:in `block in migrate'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:462:in `with_connection'
+activerecord (6.1.5.1) lib/active_record/migration.rb:849:in `migrate'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1037:in `migrate'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1329:in `block in execute_migration_in_transaction'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1380:in `block in ddl_transaction'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `block in transaction'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/transaction.rb:319:in `block in within_new_transaction'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/transaction.rb:317:in `within_new_transaction'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `transaction'
+activerecord (6.1.5.1) lib/active_record/transactions.rb:209:in `transaction'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1380:in `ddl_transaction'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1328:in `execute_migration_in_transaction'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1302:in `each'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1302:in `migrate_without_lock'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1253:in `migrate'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1086:in `up'
+activerecord (6.1.5.1) lib/active_record/migration.rb:1061:in `migrate'
+activerecord (6.1.5.1) lib/active_record/tasks/database_tasks.rb:237:in `migrate'
+activerecord (6.1.5.1) lib/active_record/migration.rb:137:in `block in <class:PendingMigrationError>'
+activesupport (6.1.5.1) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:20:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bets" ("id" uuid NOT NULL PRIMARY KEY, "user_id" uuid NOT NULL, "game_id" uuid NOT NULL, "bet_amount" decimal(10,2) NOT NULL, "bet_date" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_87dbfdd206"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_65def5c9e5"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_user_id" ON "bets" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_game_id" ON "bets" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWinnings (20240513174225)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "bets"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bets" ("id" uuid NOT NULL PRIMARY KEY, "user_id" uuid NOT NULL, "game_id" uuid NOT NULL, "bet_amount" decimal(10,2) NOT NULL, "bet_date" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_87dbfdd206"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_65def5c9e5"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_user_id" ON "bets" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_game_id" ON "bets" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWinnings (20240513174225)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWinnings (20240513174225)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "bets"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bets" ("id" uuid NOT NULL PRIMARY KEY, "user_id" uuid NOT NULL, "game_id" uuid NOT NULL, "bet_amount" decimal(10,2) NOT NULL, "bet_date" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_87dbfdd206"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_65def5c9e5"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_user_id" ON "bets" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_game_id" ON "bets" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWinnings (20240513174225)
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWinnings (20240513174225)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "winnings" ("id" uuid NOT NULL PRIMARY KEY, "bet_id" uuid NOT NULL, "winnings_amount" decimal(10,2), "win_date" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_e261ff059d"
+FOREIGN KEY ("bet_id")
+  REFERENCES "bets" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_winnings_on_bet_id" ON "winnings" ("bet_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174225"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-05-18 01:59:10.993029"], ["updated_at", "2024-05-18 01:59:10.993029"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/rails/actions" for 127.0.0.1 at 2024-05-17 18:59:50 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-05-17 18:59:50 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/animward/Projects/francis-gamble/app/controllers/pages_controller.rb:12: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/pages_controller.rb:12: syntax error, unexpected `end', expecting end-of-input
+app/controllers/pages_controller.rb:12: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:00:31 -0700
+  
+SyntaxError (/home/animward/Projects/francis-gamble/app/controllers/application_controller.rb:2: syntax error, unexpected <<
+<<<<<<< HEAD
+^~
+/home/animward/Projects/francis-gamble/app/controllers/application_controller.rb:6: syntax error, unexpected >>, expecting `end'
+>>>>>>> origin/feature/tokens-p...
+^~
+/home/animward/Projects/francis-gamble/app/controllers/application_controller.rb:7: syntax error, unexpected ===, expecting `end'
+=======
+^~~
+):
+  
+app/controllers/application_controller.rb:2: syntax error, unexpected <<
+app/controllers/application_controller.rb:6: syntax error, unexpected >>, expecting `end'
+app/controllers/application_controller.rb:7: syntax error, unexpected ===, expecting `end'
+app/controllers/application_controller.rb:2: syntax error, unexpected <<
+app/controllers/application_controller.rb:6: syntax error, unexpected >>, expecting `end'
+app/controllers/application_controller.rb:7: syntax error, unexpected ===, expecting `end'
+app/controllers/pages_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:01:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 495)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.22
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error SyntaxError: /home/animward/Projects/francis-gamble/package.json: Unexpected token < in JSON at position 2
+    at JSON.parse (<anonymous>)
+    at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+    at Generator.next (<anonymous>)
+    at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+    at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+error SyntaxError: /home/animward/Projects/francis-gamble/package.json: Unexpected token < in JSON at position 2
+    at JSON.parse (<anonymous>)
+    at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+    at Generator.next (<anonymous>)
+    at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+    at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1369)
+  Rendered layout layouts/application.html.erb (Duration: 1720.7ms | Allocations: 31896)
+Completed 500 Internal Server Error in 1723ms (Allocations: 34077)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/animward/Projects/francis-gamble/config/locales/en.yml: expects it to return a hash, but does not):
+    1: <%= form_with(model: @user, local: true, class: "row g-3") do |form| %>
+    2:   <div class="col-md-6">
+    3:     <%= form.label :email, class: "form-label" %>
+    4:     <%= form.email_field :email, class: "form-control" %>
+    5:   </div>
+    6: 
+  
+app/views/users/_new.html.erb:3
+app/views/users/_new.html.erb:1
+app/views/layouts/application.html.erb:29
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:01:25 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5229)
+Completed 500 Internal Server Error in 5ms (Allocations: 5485)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/animward/Projects/francis-gamble/config/locales/en.yml: expects it to return a hash, but does not):
+    1: <%= form_with(model: @user, local: true, class: "row g-3") do |form| %>
+    2:   <div class="col-md-6">
+    3:     <%= form.label :email, class: "form-label" %>
+    4:     <%= form.email_field :email, class: "form-control" %>
+    5:   </div>
+    6: 
+  
+app/views/users/_new.html.erb:3
+app/views/users/_new.html.erb:1
+app/views/layouts/application.html.erb:29
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:01:33 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 795)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1512)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 11446)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 13999)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/animward/Projects/francis-gamble/config/locales/en.yml: expects it to return a hash, but does not):
+    1: <%= form_with(model: @user, local: true, class: "row g-3") do |form| %>
+    2:   <div class="col-md-6">
+    3:     <%= form.label :email, class: "form-label" %>
+    4:     <%= form.email_field :email, class: "form-control" %>
+    5:   </div>
+    6: 
+  
+app/views/users/_new.html.erb:3
+app/views/users/_new.html.erb:1
+app/views/layouts/application.html.erb:29
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:03:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 649)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5396)
+Completed 500 Internal Server Error in 7ms (Allocations: 5976)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/animward/Projects/francis-gamble/config/locales/en.yml: expects it to return a hash, but does not):
+    1: <%= form_with(model: @user, local: true, class: "row g-3") do |form| %>
+    2:   <div class="col-md-6">
+    3:     <%= form.label :email, class: "form-label" %>
+    4:     <%= form.email_field :email, class: "form-control" %>
+    5:   </div>
+    6: 
+  
+app/views/users/_new.html.erb:3
+app/views/users/_new.html.erb:1
+app/views/layouts/application.html.erb:29
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:03:32 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 576)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5009)
+Completed 500 Internal Server Error in 5ms (Allocations: 5266)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/animward/Projects/francis-gamble/config/locales/en.yml: expects it to return a hash, but does not):
+    1: <%= form_with(model: @user, local: true, class: "row g-3") do |form| %>
+    2:   <div class="col-md-6">
+    3:     <%= form.label :email, class: "form-label" %>
+    4:     <%= form.email_field :email, class: "form-control" %>
+    5:   </div>
+    6: 
+  
+app/views/users/_new.html.erb:3
+app/views/users/_new.html.erb:1
+app/views/layouts/application.html.erb:29
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:04:43 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.5ms | Allocations: 2332)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 835)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 9314)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 9963)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:04:58 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2001)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 767)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 8091)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 8483)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:05:00 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 7816)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 8080)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:06:01 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1112)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 9557)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 10600)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:06:04 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 411)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 7138)
+Completed 200 OK in 7ms (Views: 7.0ms | Allocations: 7518)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:06:05 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7008)
+Completed 200 OK in 8ms (Views: 7.9ms | Allocations: 7272)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:06:29 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1741)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'fake_users'):
+  
+app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:06:51 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new_token_purchase as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2060)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'fake_users'):
+  
+app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFakeUsers (20240518020747)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "fake_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240518020747"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:08:04 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 3584)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: fake_users.email):
+  
+app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:08:17 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms | Allocations: 883)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: fake_users.email):
+  
+app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:08:27 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 3584)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: fake_users.email):
+  
+app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddEmailToFakeUsers (20240518020907)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "email" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240518020907"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:09:32 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 19.2ms | Allocations: 11122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.8ms | Allocations: 2763)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 21192)
+Completed 200 OK in 79ms (Views: 74.3ms | ActiveRecord: 0.2ms | Allocations: 26647)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:09:35 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8451)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 9277)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:10:15 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 12.5ms | Allocations: 7152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 22.5ms | Allocations: 2763)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 17228)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 0.3ms | Allocations: 22684)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:12:49 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2023)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 8553)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 9379)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:13:27 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 864)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 8495)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 9459)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:13:29 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1720)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 7807)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 8095)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:13:30 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7802)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 8069)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:13:35 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tictactoe.html.erb within layouts/application
+  Rendered pages/tictactoe.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1723)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7810)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 8079)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:14:49 -0700
+  
+SyntaxError (/home/animward/Projects/francis-gamble/app/controllers/pages_controller.rb:16: syntax error, unexpected `end', expecting end-of-input
+  end
+  ^~~
+):
+  
+app/controllers/pages_controller.rb:16: syntax error, unexpected `end', expecting end-of-input
+app/controllers/pages_controller.rb:16: syntax error, unexpected `end', expecting end-of-input
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:15:02 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 2036)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2581)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:15:04 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1249)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 7707)
+Completed 200 OK in 12ms (Views: 7.6ms | Allocations: 8159)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:15:07 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.4ms | Allocations: 1733)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 1932)
+
+
+Started GET "/checkers" for 127.0.0.1 at 2024-05-17 19:15:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:15:29 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 827)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 8891)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 12008)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:15:39 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2210)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1210)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 9253)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 12402)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:15:44 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 8406)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 9192)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:15:45 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 2025)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2540)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:15:46 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 285)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 866)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 7156)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 7452)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:16:04 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:4:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 764)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8422)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 9198)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:16:25 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 1716)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1920)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:17:15 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 12.4ms | Allocations: 6683)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 9173)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:17:16 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 27.1ms | Allocations: 2930)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 10467)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms | Allocations: 11395)
+
+
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:17:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tokens"):
+  
+Started GET "/token_purchases" for 127.0.0.1 at 2024-05-17 19:17:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/token_purchases"):
+  
+Started GET "/token_purchases" for 127.0.0.1 at 2024-05-17 19:18:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/token_purchases"):
+  
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:18:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tokens"):
+  
+Started GET "/tokens" for 127.0.0.1 at 2024-05-17 19:18:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/tokens"):
+  
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:18:10 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.9ms | Allocations: 2038)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 2592)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 19:18:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 1251)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 7536)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 7830)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-17 19:18:18 -0700
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController
+Did you mean?  create):
+  
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/games" for 127.0.0.1 at 2024-05-17 19:18:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:18:30 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 16.0ms | Allocations: 6550)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 893)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 13287)
+Completed 200 OK in 25ms (Views: 23.3ms | Allocations: 15005)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:25:53 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 2020)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2567)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 19:26:34 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 2.7ms | Allocations: 2014)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 2559)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:26:50 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1273)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 8894)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 9968)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:29:40 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1517)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 6986840bfeaa5ba51984
+Version: webpack 4.47.0
+Time: 279ms
+Built at: 05/17/2024 7:29:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-30e6148f1d9f18ae52c8.js   8.62 KiB  application  [emitted] [immutable]  application
+js/application-30e6148f1d9f18ae52c8.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-30e6148f1d9f18ae52c8.js js/application-30e6148f1d9f18ae52c8.js.map
+[./app/javascript/packs/application.js] 4.72 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /home/animward/Projects/francis-gamble/babel-virtual-resolve-base.js
+    at new NodeError (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:194:5)
+    at packageResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:908:9)
+    at moduleResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:937:20)
+    at defaultResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:1007:15)
+    at resolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:1020:12)
+    at tryImportMetaResolve (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:142:45)
+    at resolveStandardizedNameForImport (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:164:19)
+    at resolveStandardizedName (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:173:22)
+    at loadPlugin (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/files/plugins.js:52:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-descriptors.js:140:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:291:5)
+    at /home/animward/Projects/francis-gamble/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:43:15)
+    at Function.all (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-descriptors.js:102:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-descriptors.js:99:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/gensync-utils/functional.js:39:27
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:349:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:316:14)
+    at chainWalker.next (<anonymous>)
+    at loadFileChain (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:191:24)
+    at loadFileChain.next (<anonymous>)
+    at buildRootChain (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:77:27)
+    at buildRootChain.next (<anonymous>)
+    at loadPrivatePartialConfig (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/partial.js:72:62)
+    at loadPrivatePartialConfig.next (<anonymous>)
+    at loadPartialConfig (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/partial.js:115:25)
+    at loadPartialConfig.next (<anonymous>)
+    at step (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:269:25)
+    at evaluateAsync (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:291:5)
+    at /home/animward/Projects/francis-gamble/node_modules/gensync/index.js:93:9
+    at new Promise (<anonymous>)
+    at async (/home/animward/Projects/francis-gamble/node_modules/gensync/index.js:92:14)
+    at stopHiding - secret - don't use this - v1 (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/errors/rewrite-stack-trace.js:47:12)
+    at loadPartialConfigAsync (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/index.js:34:85)
+    at Object.<anonymous> (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:126:26)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:3:103)
+    at _next (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:4:194)
+    at /home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:4:364
+    at new Promise (<anonymous>)
+
+
+warning ../../package.json: No license field
+
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1240.4ms | Allocations: 8857)
+Completed 200 OK in 1241ms (Views: 1240.7ms | Allocations: 9433)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:30:09 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1511)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 962471423c81dbbaf832
+Version: webpack 4.47.0
+Time: 219ms
+Built at: 05/17/2024 7:30:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-400f27564188631eecef.js   5.44 KiB  application  [emitted] [immutable]  application
+js/application-400f27564188631eecef.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-400f27564188631eecef.js js/application-400f27564188631eecef.js.map
+[./app/javascript/packs/application.js] 1.54 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: [BABEL]: --- PLACEHOLDER PACKAGE ---
+This @babel/plugin-proposal-private-property-in-object version is not meant to
+be imported. Something is importing
+@babel/plugin-proposal-private-property-in-object without declaring it in its
+dependencies (or devDependencies) in the package.json file.
+Add "@babel/plugin-proposal-private-property-in-object" to your devDependencies
+to work around this error. This will make this message go away.
+ (While processing: /home/animward/Projects/francis-gamble/node_modules/@babel/plugin-proposal-private-property-in-object/lib/index.js)
+    at Object.<anonymous> (/home/animward/Projects/francis-gamble/node_modules/@babel/plugin-proposal-private-property-in-object/lib/index.js:28:7)
+    at Module._compile (/home/animward/Projects/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (/home/animward/Projects/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at loadPartialConfigAsync (/home/animward/Projects/francis-gamble/node_modules/@babel/core/lib/config/index.js:34:85)
+    at Object.<anonymous> (/home/animward/Projects/francis-gamble/node_modules/babel-loader/lib/index.js:126:26)
+
+
+warning ../../package.json: No license field
+
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 773)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1106.9ms | Allocations: 8764)
+Completed 200 OK in 1112ms (Views: 1107.3ms | Allocations: 9322)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 19:30:13 -0700
+Processing by CheckersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/show.html.erb within layouts/application
+  Rendered checkers/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1514)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 8048)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 8604)
+
+

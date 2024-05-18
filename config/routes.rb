@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  get '/tokens' => 'token_purchases#new_token_purchase'
-  post '/tokens' => 'token_purchases#create_token_purchase'
+  # Define routes for token purchases
+  get '/token_purchases/new', to: 'token_purchases#new', as: 'new_token_purchase'
+  post '/token_purchases', to: 'token_purchases#create'
 
-  get '/games/checkers', to: 'checkers#show'
+  # Define routes for user management
   root 'pages#home'
-  get '/home' => 'home#index'
+  get '/home', to: 'home#index'
   resources :users, only: [:create]
   
   # Define routes for login sessions
@@ -14,5 +15,9 @@ Rails.application.routes.draw do
   post '/login', to: 'users#create'
   delete '/logout', to: 'sessions#destroy'
 
+  # Route for the tic-tac-toe page
   get '/pages/tictactoe', to: 'pages#tictactoe'
+
+   # Define route for the checkers game
+   get '/games/checkers', to: 'checkers#show'
 end

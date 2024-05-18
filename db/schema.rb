@@ -10,49 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2024_05_13_174225) do
+ActiveRecord::Schema.define(version: 2024_05_18_020907) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "bets", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.uuid "user_id"
-    t.uuid "game_id"
-    t.decimal "bet_amount", precision: 10, scale: 2
-    t.datetime "bet_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "games", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.string "name"
-    t.string "game_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.string "username"
-    t.string "password"
-    t.string "email"
-    t.datetime "registration_date"
-    t.decimal "balance", precision: 10, scale: 2
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "winnings", force: :cascade do |t|
-=======
-ActiveRecord::Schema.define(version: 2024_05_16_022748) do
+# Could not dump table "bets" because of following StandardError
+#   Unknown type 'uuid' for column 'id'
 
   create_table "fake_users", force: :cascade do |t|
-    t.string "email"
-    t.string "password"
-    t.integer "balance"
->>>>>>> origin/feature/tokens-page
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "email"
   end
 
+# Could not dump table "games" because of following StandardError
+#   Unknown type 'uuid' for column 'id'
+
+# Could not dump table "winnings" because of following StandardError
+#   Unknown type 'uuid' for column 'id'
+
+  add_foreign_key "bets", "games"
+  add_foreign_key "bets", "users"
+  add_foreign_key "winnings", "bets"
 end

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <% require 'dotenv/load' if File.exist?('.env') %>
 
 default: &default
@@ -24,7 +23,6 @@ production:
   username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
 
-=======
 # SQLite. Versions 3.8.0 and up are supported.
 #   gem install sqlite3
 #
@@ -50,4 +48,3 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
->>>>>>> origin/feature/tokens-page
