@@ -6,13 +6,14 @@ FrancisGamble.fun offers a refreshing twist to online gambling, featuring unconv
 
 ## Setup
 
-1. Run `bundle install` to install dependencies
+1. Run `bundle` to install dependencies
 
-2. Run `bin/rails server` to start local server on port 3000
+2. Run `npm i` 
 
-## Database
+3. `rails db:migrate`
 
-> `rails db:migrate`
+4. Run `bin/rails server` to start local server on port 3000
+
 
 ## Stripe Testing
 

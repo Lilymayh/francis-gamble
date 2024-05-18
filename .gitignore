@@ -43,3 +43,5 @@ node_modules# See https://help.github.com/articles/ignoring-files for more about
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+node_modules
