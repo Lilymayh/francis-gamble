@@ -182,6 +182,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.7.3-arm64-darwin)
+    sqlite3 (1.7.3-x86_64-linux)
     stripe (11.4.0)
     thor (1.3.1)
     tilt (2.3.0)
@@ -216,11 +217,8 @@ DEPENDENCIES
   puma
   rails (= 6.1.5.1)
   sass-rails (>= 6)
-<<<<<<< HEAD
   spring
-=======
   sqlite3 (~> 1.4)
->>>>>>> origin/feature/tokens-page
   stripe (~> 11.4)
   webpacker (~> 5.0)
 
