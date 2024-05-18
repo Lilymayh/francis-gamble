@@ -79,6 +79,8 @@ GEM
       dotenv (= 3.1.2)
       railties (>= 6.1)
     erubi (1.12.0)
+    esbuild-rails (0.1.4)
+      rails (>= 6.0.0)
     execjs (2.9.1)
     ffi (1.16.3)
     globalid (1.2.1)
@@ -86,6 +88,8 @@ GEM
     greensock-rails (1.20.4.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
+    importmap-rails (0.6.3)
+      rails (>= 6.0.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -122,6 +126,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (2.2.9)
+    rack-proxy (0.7.7)
+      rack
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (6.1.5.1)
@@ -166,6 +172,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    semantic_range (3.0.0)
     spring (4.2.1)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -181,6 +188,11 @@ GEM
     timeout (0.4.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    webpacker (5.4.4)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -193,10 +205,12 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
-  bootstrap
+  bootstrap (~> 5.3)
   cypress-on-rails (~> 1.17)
   dotenv-rails
+  esbuild-rails (~> 0.1.4)
   greensock-rails (~> 1.20, >= 1.20.4.0)
+  importmap-rails (~> 0.6.2)
   listen
   pg
   puma
@@ -208,6 +222,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
 >>>>>>> origin/feature/tokens-page
   stripe (~> 11.4)
+  webpacker (~> 5.0)
 
 RUBY VERSION
    ruby 3.1.1p18
