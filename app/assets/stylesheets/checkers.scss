@@ -8,11 +8,11 @@ h1 {
 
 .game-board {
 	display: grid;
-	grid-template-columns: repeat(8, 5em); /* Adjust the size of the squares as needed */
-	grid-template-rows: repeat(8, 5em);    /* Adjust the size of the squares as needed */
+	grid-template-columns: repeat(8, 5em); 
+	grid-template-rows: repeat(8, 5em);    
 	border: 2px solid black;
 	width: 55%;
-	justify-content: center;
+	justify-content: center
 }
 
 .square.black-square {
@@ -21,4 +21,24 @@ h1 {
 
 .square.white-square {
 	background-color: white;
+}
+
+.piece {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+	margin-left: 20%;
+	margin-bottom: 20%
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: rgb(3, 3, 3);
+}
+
+.king {
+  background-color: gold
 }
