@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_tag %>
   </head>
 
   <body>
-  <div class='gameboard'>
-		<h1>Tic Tac Toe!</h1>
-		<table id="board">
+    <div class='gameboard'>
+      <h1>Tic Tac Toe!</h1>
+      <table id="board">
         <tr>
           <td id="cell-1"></td>
           <td id="cell-2"></td>
@@ -29,9 +29,9 @@
           <td id="cell-9"></td>
         </tr>
       </table>
-	</div>
+    </div>
 
-	<%= link_to "Home", root_path %>
+    <%= link_to "Home", root_path %>
 
   </body>
 </html>
