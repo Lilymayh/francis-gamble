@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "francis-gamble",
   "private": true,
   "dependencies": {
@@ -8,4 +9,9 @@
     "@rails/actioncable": "^6.0.0"
   },
   "version": "0.1.0"
+=======
+  "dependencies": {
+    "@dnd-kit/core": "^6.1.0"
+  }
+>>>>>>> origin/game/checkers
 }

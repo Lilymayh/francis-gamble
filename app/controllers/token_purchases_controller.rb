@@ -1,5 +1,5 @@
 class TokenPurchasesController < ApplicationController
-
+  #update 
   def new_token_purchase
     @user = FakeUser.find_by(email: 'a@a.a')
   end
@@ -10,7 +10,7 @@ class TokenPurchasesController < ApplicationController
     if @user
       @user.update_attribute(:balance, @user.balance + amount)
     end
-    puts @user.inspect # This line will output the user object to the console
+    puts @user.inspect
   end
 
 end
