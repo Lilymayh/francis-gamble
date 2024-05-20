@@ -8583,3 +8583,1618 @@ Processing by GamesController#show as HTML
 Completed 200 OK in 8ms (Views: 8.1ms | Allocations: 3819)
 
 
+Started GET "/" for ::1 at 2024-05-20 10:03:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 528)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.1ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6820)
+Completed 200 OK in 12ms (Views: 11.7ms | Allocations: 7956)
+
+
+Started GET "/" for ::1 at 2024-05-20 10:03:33 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 5225)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 5512)
+
+
+Started GET "/" for ::1 at 2024-05-20 10:03:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5194)
+Completed 200 OK in 5ms (Views: 5.3ms | Allocations: 5457)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:03:36 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.5ms | Allocations: 4212)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4783)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 10:03:37 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.2ms | Allocations: 2125)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 3001)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 10:03:37 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1532)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2044)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:03:38 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3627)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 3827)
+
+
+Started GET "/" for ::1 at 2024-05-20 10:03:40 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 826)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5258)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 5531)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:28:36 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.0ms | Allocations: 3600)
+Completed 200 OK in 5ms (Views: 4.5ms | Allocations: 3801)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 10:28:38 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.0ms | Allocations: 1541)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2034)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 10:28:38 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1547)
+Completed 200 OK in 3ms (Views: 2.2ms | Allocations: 2037)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:28:40 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 3600)
+Completed 200 OK in 4ms (Views: 4.3ms | Allocations: 3798)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 10:28:41 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.1ms | Allocations: 2237)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 3093)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 10:28:41 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1745)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2257)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:28:42 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.4ms | Allocations: 3642)
+Completed 200 OK in 7ms (Views: 3.9ms | Allocations: 3843)
+
+
+Started GET "/" for ::1 at 2024-05-20 12:47:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 827)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 483.2ms | Allocations: 16797)
+Completed 200 OK in 484ms (Views: 483.8ms | Allocations: 17068)
+
+
+Started GET "/" for ::1 at 2024-05-20 12:47:24 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5180)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 5444)
+
+
+Started GET "/" for ::1 at 2024-05-20 12:58:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 516)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6828)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 7961)
+
+
+Started GET "/images/FrancisGamble.png" for ::1 at 2024-05-20 12:58:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/FrancisGamble.png"):
+  
+Started GET "/" for ::1 at 2024-05-20 12:59:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 7.8ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 3.9ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 6805)
+Completed 200 OK in 36ms (Views: 35.1ms | Allocations: 7941)
+
+
+Started GET "/images/FrancisGamble.png" for ::1 at 2024-05-20 12:59:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/FrancisGamble.png"):
+  
+Started GET "/" for ::1 at 2024-05-20 12:59:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5194)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 5474)
+
+
+Started GET "/images/FrancisGamble.png" for ::1 at 2024-05-20 12:59:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/FrancisGamble.png"):
+  
+Started GET "/" for ::1 at 2024-05-20 12:59:26 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5198)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 5462)
+
+
+Started GET "/images/FrancisGamble.png" for ::1 at 2024-05-20 12:59:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/FrancisGamble.png"):
+  
+Started GET "/" for ::1 at 2024-05-20 12:59:26 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5186)
+Completed 200 OK in 5ms (Views: 5.2ms | Allocations: 5449)
+
+
+Started GET "/images/FrancisGamble.png" for ::1 at 2024-05-20 12:59:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/FrancisGamble.png"):
+  
+Started GET "/" for ::1 at 2024-05-20 13:00:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 538)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6859)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 7984)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:01:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.3ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 315.8ms | Allocations: 13813)
+Completed 200 OK in 317ms (Views: 316.3ms | Allocations: 14093)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:01:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5201)
+Completed 200 OK in 7ms (Views: 7.0ms | Allocations: 5464)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:01:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5196)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 5460)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:02:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 254.6ms | Allocations: 13661)
+Completed 200 OK in 255ms (Views: 254.9ms | Allocations: 13924)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:02:43 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5192)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 5455)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:02:57 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 244.5ms | Allocations: 13625)
+Completed 200 OK in 245ms (Views: 244.9ms | Allocations: 13888)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:02:57 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 5199)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 5463)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:03:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6845)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 7974)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:03:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5189)
+Completed 200 OK in 6ms (Views: 6.0ms | Allocations: 5469)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:04:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 237.7ms | Allocations: 13824)
+Completed 200 OK in 238ms (Views: 238.1ms | Allocations: 14087)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:04:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 302)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 238.6ms | Allocations: 13651)
+Completed 200 OK in 239ms (Views: 238.9ms | Allocations: 13914)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:04:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 240.3ms | Allocations: 13636)
+Completed 200 OK in 241ms (Views: 240.7ms | Allocations: 13899)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:17:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 271.3ms | Allocations: 13638)
+Completed 200 OK in 272ms (Views: 271.9ms | Allocations: 13902)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:17:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 237.6ms | Allocations: 13618)
+Completed 200 OK in 238ms (Views: 237.9ms | Allocations: 13881)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:17:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 243.4ms | Allocations: 13632)
+Completed 200 OK in 244ms (Views: 243.7ms | Allocations: 13895)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:17:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5223)
+Completed 200 OK in 5ms (Views: 5.2ms | Allocations: 5487)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:17:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 239.8ms | Allocations: 13638)
+Completed 200 OK in 240ms (Views: 240.2ms | Allocations: 13901)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:17:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 5201)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 5464)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:19:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 5.5ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 2.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 299.7ms | Allocations: 13658)
+Completed 200 OK in 300ms (Views: 300.2ms | Allocations: 13922)
+
+
+Started GET "/" for ::1 at 2024-05-20 13:20:00 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5199)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 5462)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:12:09 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6826)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 7956)
+
+
+Started GET "/app/audio/poker.mp3" for ::1 at 2024-05-20 14:12:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/audio/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:12:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 517)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.9ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6807)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 7944)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/audio/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:12:54 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6831)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 7974)
+
+
+Started GET "/app/assets/audio/poker.mp3" for ::1 at 2024-05-20 14:12:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/audio/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:13:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 514)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6807)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 7945)
+
+
+Started GET "/app/assets/audio/poker.mp3" for ::1 at 2024-05-20 14:13:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/audio/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:13:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 802)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6828)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 7970)
+
+
+Started GET "/poker.mp3" for ::1 at 2024-05-20 14:13:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:15:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.5ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 10029)
+Completed 500 Internal Server Error in 14ms (Allocations: 11147)
+
+
+  
+ActionView::Template::Error (The asset "poker.mp3" is not present in the asset pipeline.
+):
+    48:   <%= link_to "Games", games_show_path %>
+    49: 
+    50:   <audio controls autoplay muted>
+    51:   <%= audio_tag 'poker.mp3', controls: true, preload: 'auto' %>
+    52: 
+    53: Your browser does not support the audio element.
+    54: </audio>
+  
+app/views/layouts/application.html.erb:51
+Started GET "/" for ::1 at 2024-05-20 14:16:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 8337)
+Completed 500 Internal Server Error in 9ms (Allocations: 8590)
+
+
+  
+ActionView::Template::Error (The asset "poker.mp3" is not present in the asset pipeline.
+):
+    48:   <%= link_to "Games", games_show_path %>
+    49: 
+    50:   <audio controls autoplay muted>
+    51:   <%= audio_tag 'poker.mp3', controls: true, preload: 'auto' %>
+    52: 
+    53: Your browser does not support the audio element.
+    54: </audio>
+  
+app/views/layouts/application.html.erb:51
+Started GET "/" for ::1 at 2024-05-20 14:16:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 8348)
+Completed 500 Internal Server Error in 10ms (Allocations: 8584)
+
+
+  
+ActionView::Template::Error (The asset "poker.mp3" is not present in the asset pipeline.
+):
+    48:   <%= link_to "Games", games_show_path %>
+    49: 
+    50:   <audio controls autoplay muted>
+    51:   <%= audio_tag 'poker.mp3', controls: true, preload: 'auto' %>
+    52: 
+    53: Your browser does not support the audio element.
+    54: </audio>
+  
+app/views/layouts/application.html.erb:51
+Started GET "/" for ::1 at 2024-05-20 14:16:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 8328)
+Completed 500 Internal Server Error in 7ms (Allocations: 8564)
+
+
+  
+ActionView::Template::Error (The asset "poker.mp3" is not present in the asset pipeline.
+):
+    48:   <%= link_to "Games", games_show_path %>
+    49: 
+    50:   <audio controls autoplay muted>
+    51:   <%= audio_tag 'poker.mp3', controls: true, preload: 'auto' %>
+    52: 
+    53: Your browser does not support the audio element.
+    54: </audio>
+  
+app/views/layouts/application.html.erb:51
+Started GET "/" for ::1 at 2024-05-20 14:16:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 8328)
+Completed 500 Internal Server Error in 8ms (Allocations: 8564)
+
+
+  
+ActionView::Template::Error (The asset "poker.mp3" is not present in the asset pipeline.
+):
+    48:   <%= link_to "Games", games_show_path %>
+    49: 
+    50:   <audio controls autoplay muted>
+    51:   <%= audio_tag 'poker.mp3', controls: true, preload: 'auto' %>
+    52: 
+    53: Your browser does not support the audio element.
+    54: </audio>
+  
+app/views/layouts/application.html.erb:51
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:18:36 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.8ms | Allocations: 2987)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 1397.8ms | Allocations: 44080)
+Completed 500 Internal Server Error in 1401ms (ActiveRecord: 0.0ms | Allocations: 47033)
+
+
+  
+ActionView::Template::Error (Asset `poker.mp3` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link poker.mp3
+
+and restart your server):
+    49: 
+    50:   <audio controls autoplay muted>
+    51:   <audio controls autoplay muted>
+    52:   <%= audio_tag 'poker.mp3', controls: true, preload: 'auto' %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:24:57 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 3.0ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 21659)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 24670)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:26:42 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 946)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.9ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 15248)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 18260)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:28:14 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.6ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 15884)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 18837)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'audios/poker.mp3' %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:28:45 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.8ms | Allocations: 1134)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 7506)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 8738)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/audios/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:29:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 829)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6077)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 6392)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:30:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.7ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 7945)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 9042)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'audios/poker.mp3' %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:30:25 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.8ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 15501)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 18454)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'audios/poker.mp3' %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:31:26 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 3.5ms | Allocations: 2983)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 15496)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 18449)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'poker.mp3', src: asset_path('audios/poker.mp3') %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:31:27 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 341)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.8ms | Allocations: 836)
+  Rendered users/_existing.html.erb (Duration: 1.8ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6607)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 6885)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'poker.mp3', src: asset_path('audios/poker.mp3') %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:31:28 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 773)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6334)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 6577)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'poker.mp3', src: asset_path('audios/poker.mp3') %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:31:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 773)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6334)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 6577)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls="controls" preload="auto">
+    52:   <%= audio_tag 'poker.mp3', src: asset_path('audios/poker.mp3') %>
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:32:08 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.7ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 15021)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 18033)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:33:49 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 334)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 6128)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 6435)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:33:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6006)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 6277)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:33:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6015)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 6286)
+
+
+Started GET "/games" for ::1 at 2024-05-20 14:34:23 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 5.7ms | Allocations: 4485)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5159)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 14:34:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 15.0ms | Allocations: 2394)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3595)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 14:34:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.5ms | Allocations: 1878)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2393)
+
+
+Started GET "/games" for ::1 at 2024-05-20 14:34:25 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.0ms | Allocations: 3913)
+Completed 200 OK in 4ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4115)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:34:27 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 829)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6076)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 6353)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:35:46 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 9243)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 10373)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:37:34 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1472)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1552)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2675)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:37:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1492)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:37:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1474)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:37:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1474)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:32 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:33 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1236)
+Completed 500 Internal Server Error in 2ms (Allocations: 1472)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+     9: 
+    10: <body>
+    11:   <audio controls>
+    12:     <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    13:     Your browser does not support the audio element.
+    14:   </audio>
+    15: </body>
+  
+app/views/pages/home.html.erb:12
+Started GET "/" for ::1 at 2024-05-20 14:39:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.4ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.4ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 7977)
+Completed 500 Internal Server Error in 12ms (Allocations: 9067)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:39:48 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6317)
+Completed 500 Internal Server Error in 6ms (Allocations: 6570)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:39:49 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6317)
+Completed 500 Internal Server Error in 7ms (Allocations: 6553)
+
+
+  
+ActionView::Template::Error (The asset "audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:40:06 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.4ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 7950)
+Completed 500 Internal Server Error in 10ms (Allocations: 9040)
+
+
+  
+ActionView::Template::Error (The asset "assets/audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('assets/audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:40:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.4ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7949)
+Completed 500 Internal Server Error in 11ms (Allocations: 9056)
+
+
+  
+ActionView::Template::Error (The asset "app/assets/audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('app/assets/audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:40:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 6316)
+Completed 500 Internal Server Error in 6ms (Allocations: 6569)
+
+
+  
+ActionView::Template::Error (The asset "app/assets/audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('app/assets/audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:40:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.2ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 7293)
+Completed 500 Internal Server Error in 11ms (Allocations: 8383)
+
+
+  
+ActionView::Template::Error (The asset "../audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('../audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:40:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5629)
+Completed 500 Internal Server Error in 7ms (Allocations: 5882)
+
+
+  
+ActionView::Template::Error (The asset "../audios/poker.mp3" is not present in the asset pipeline.
+):
+    49: 
+    50:   
+    51: <audio controls>
+    52:   <source src="<%= asset_path('../audios/poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:40:45 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 7078)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 8203)
+
+
+Started GET "/audios/poker.mp3" for ::1 at 2024-05-20 14:40:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/audios/poker.mp3"):
+  
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:41:34 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 51.2ms | Allocations: 2988)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 839)
+  Rendered layout layouts/application.html.erb (Duration: 1335.1ms | Allocations: 42399)
+Completed 200 OK in 1339ms (Views: 1336.5ms | ActiveRecord: 0.0ms | Allocations: 45411)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:42:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5690)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 5997)
+
+
+Started GET "/audios/poker.mp3" for ::1 at 2024-05-20 14:42:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/audios/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:42:45 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1133)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 7064)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 8229)
+
+
+Started GET "/poker.mp3" for ::1 at 2024-05-20 14:42:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/poker.mp3"):
+  
+Started GET "/" for ::1 at 2024-05-20 14:42:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 492)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 7447)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 8596)
+
+

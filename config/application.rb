@@ -8,12 +8,14 @@ Bundler.require(*Rails.groups)
 
 module FrancisGamble
   class Application < Rails::Application
-
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
-    # Load contents from .env
-    Dotenv::Rails.load
+    # Conditionally load Dotenv in development and test environments
+    if ['development', 'test'].include?(Rails.env)
+      require 'dotenv-rails'
+      Dotenv::Railtie.load
+    end
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -28,18 +30,3 @@ module FrancisGamble
   end
 end
 
-# If you need to keep the Flowers module for some reason, it should be outside the FrancisGamble module
-module Flowers
-  class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.1
-
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
-  end
-end

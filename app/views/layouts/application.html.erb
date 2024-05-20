@@ -13,9 +13,10 @@
 </head>
 
 <body>
-  <div class='main_logo'>Francis Gamble</div>
-  <div class='buttonz'>
-    <button id="registerBtn">Register</button> or <button id="loginBtn">Login</button>
+  <div class='main_logo'>
+  <img src='assets/FrancisGamble.png'></div>
+  <button id="loginBtn">Login</button>
+  <button id="registerBtn">Register</button>
   </div>
 
   <div id="registerForm" style="display: none;">
@@ -45,6 +46,14 @@
     });
   </script>
   <%= link_to "Games", games_show_path %>
+
+  
+<audio controls>
+  <source src="<%= asset_path('poker.mp3') %>" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 </body>
 
 </html>
