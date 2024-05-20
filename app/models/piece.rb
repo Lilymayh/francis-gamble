@@ -1,7 +1,8 @@
 class Piece 
-  attr_accessor :color, :square
+  attr_accessor :id, :color, :square
 
   def initialize(color)
+    @id = nil
     @color = color
     @king = false
     @square = nil
