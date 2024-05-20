@@ -10198,3 +10198,181 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 8596)
 
 
+Started GET "/" for ::1 at 2024-05-20 14:45:07 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 495)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.4ms | Allocations: 1133)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 7443)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 8609)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:45:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5809)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 6093)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:45:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1137)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 7440)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8577)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:45:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 483)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 1.5ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 7458)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8612)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:45:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 5791)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 6075)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:45:44 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5809)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 6075)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:45:48 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.7ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.9ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 19175)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms | Allocations: 22128)
+
+
+  
+ActionView::Template::Error (Asset `poker.mp3` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link poker.mp3
+
+and restart your server):
+    49: 
+    50:   
+    51: <audio controls autoplay>
+    52:   <source src="<%= asset_path('poker.mp3') %>" type="audio/mpeg">
+    53:   Your browser does not support the audio element.
+    54: </audio>
+    55: 
+  
+app/views/layouts/application.html.erb:52
+Started GET "/" for ::1 at 2024-05-20 14:46:26 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 834)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 17018)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 17364)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:46:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5806)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 6072)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:46:33 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 3.5ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 1.0ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 15595)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 18607)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 14:46:54 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.6ms | Allocations: 2982)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 15599)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 18611)
+
+
+Started GET "/" for ::1 at 2024-05-20 14:47:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 5914)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 6221)
+
+
