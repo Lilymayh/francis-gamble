@@ -12,5 +12,9 @@ class PagesController < ApplicationController
     # Action for displaying the tic-tac-toe page without layout
     render layout: false
   end
+
+  def games
+		render layout: false
+	end
 end
 

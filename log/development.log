@@ -6544,3 +6544,2042 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5633)
 
 
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:15:33 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.4ms | Allocations: 2595)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 3777)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:15:33 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.6ms | Allocations: 1887)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2607)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:15:34 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 1109)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6888)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 7932)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:15:35 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.7ms | Allocations: 1918)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2265)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:15:35 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 1718)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:15:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5251)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5518)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:15:38 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.9ms | Allocations: 2116)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2993)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:15:38 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1538)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2054)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:15:39 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 817)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 5333)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 5606)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:24:29 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.8ms | Allocations: 1909)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 3164)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:24:29 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.8ms | Allocations: 1875)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2513)
+
+
+Started POST "/token_purchases" for 127.0.0.1 at 2024-05-17 20:24:29 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"100", "button"=>""}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:9:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 1983)
+
+
+Started POST "/token_purchases" for 127.0.0.1 at 2024-05-17 20:24:33 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"200", "button"=>""}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:9:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 786)
+
+
+Started POST "/token_purchases" for 127.0.0.1 at 2024-05-17 20:24:34 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"300", "button"=>""}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:9:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:24:35 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5236)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 5502)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:26:36 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.7ms | Allocations: 1541)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2037)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:26:36 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.7ms | Allocations: 1532)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2025)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:33:03 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5248)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 5511)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:33:04 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.8ms | Allocations: 1907)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 3061)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:33:04 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.6ms | Allocations: 1890)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2528)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:33:06 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5264)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5530)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:33:07 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.7ms | Allocations: 1893)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2534)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:33:07 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.5ms | Allocations: 1902)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2541)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:33:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5241)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5507)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:33:09 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 1719)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1923)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:33:09 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.5ms | Allocations: 1709)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1910)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:33:09 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5234)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 5500)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:33:10 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.7ms | Allocations: 1559)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2056)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:33:10 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1556)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2049)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:33:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5230)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 5496)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:33:24 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5236)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 5502)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:34:07 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 1715)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:34:07 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.8ms | Allocations: 1727)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1928)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:34:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5263)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5530)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:34:09 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.5ms | Allocations: 1541)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:34:09 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1553)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2046)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:34:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5233)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5499)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:34:12 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.3ms | Allocations: 1902)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 2544)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:34:12 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.7ms | Allocations: 1898)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2536)
+
+
+Started POST "/token_purchases" for 127.0.0.1 at 2024-05-17 20:34:13 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"100", "button"=>""}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:9:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 795)
+
+
+Started POST "/token_purchases" for 127.0.0.1 at 2024-05-17 20:34:14 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"200", "button"=>""}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:9:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 774)
+
+
+Started POST "/token_purchases" for 127.0.0.1 at 2024-05-17 20:34:14 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"300", "button"=>""}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:9:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 780)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:34:14 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5250)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5516)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:34:19 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.7ms | Allocations: 1544)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2040)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:34:19 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.2ms | Allocations: 1544)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 2037)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:34:21 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5234)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5500)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:34:22 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.6ms | Allocations: 1706)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1910)
+
+
+Started GET "/pages/tictactoe" for 127.0.0.1 at 2024-05-17 20:34:22 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.4ms | Allocations: 1706)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:34:25 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5230)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5496)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:34:26 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.3ms | Allocations: 1547)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2044)
+
+
+Started GET "/games/checkers" for 127.0.0.1 at 2024-05-17 20:34:26 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.5ms | Allocations: 1544)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2037)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:35:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 5251)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5518)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-17 20:38:10 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5241)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 5508)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:38:10 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.7ms | Allocations: 1904)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2545)
+
+
+Started GET "/token_purchases/new" for 127.0.0.1 at 2024-05-17 20:38:10 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.7ms | Allocations: 1905)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2544)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:23:07 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 197)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5186)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 5449)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:27:40 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5255)
+Completed 200 OK in 7ms (Views: 7.2ms | Allocations: 5518)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:27:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5242)
+Completed 200 OK in 5ms (Views: 5.2ms | Allocations: 5505)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:28:58 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.9ms | Allocations: 1538)
+Completed 200 OK in 3ms (Views: 2.3ms | Allocations: 2032)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:28:58 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.7ms | Allocations: 1537)
+Completed 200 OK in 2ms (Views: 2.3ms | Allocations: 2027)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:29:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5230)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 5493)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:29:10 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1547)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2041)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:29:10 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.4ms | Allocations: 1538)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2028)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:29:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5272)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 5536)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:29:12 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 1.8ms | Allocations: 1725)
+Completed 200 OK in 2ms (Views: 2.3ms | Allocations: 1926)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:29:12 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 2.0ms | Allocations: 1720)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 1918)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:29:52 -0700
+Processing by PagesController#tictactoe as HTML
+  Rendering pages/tictactoe.html.erb
+  Rendered pages/tictactoe.html.erb (Duration: 2.3ms | Allocations: 2220)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 2903)
+
+
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:30:55 -0700
+Processing by PagesController#tictactoe as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 1138)
+
+
+  
+ActionView::MissingTemplate (Missing template pages/tictactoe, application/tictactoe with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/pages_controller.rb:13:in `tictactoe'
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:32:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/tictactoe"):
+  
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:32:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/tictactoe"):
+  
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:32:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/tictactoe"):
+  
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:33:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/tictactoe"):
+  
+Started GET "/pages/tictactoe" for ::1 at 2024-05-20 09:33:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/tictactoe"):
+  
+Started GET "/" for ::1 at 2024-05-20 09:33:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 538)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1497)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 10634)
+Completed 500 Internal Server Error in 19ms (Allocations: 11849)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_tictactoe_path' for #<ActionView::Base:0x00000000014460>):
+    45:       });
+    46:     });
+    47:   </script>
+    48:   <%= link_to "Tic Tac Toe", pages_tictactoe_path %>
+    49:   <%= link_to "Checkers", checkers_show_path %>
+    50: </body>
+    51: 
+  
+app/views/layouts/application.html.erb:48
+Started GET "/" for ::1 at 2024-05-20 09:34:00 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 762)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 8542)
+Completed 500 Internal Server Error in 16ms (Allocations: 8793)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_tictactoe_path' for #<ActionView::Base:0x000000000145a0>):
+    45:       });
+    46:     });
+    47:   </script>
+    48:   <%= link_to "Tic Tac Toe", pages_tictactoe_path %>
+    49:   <%= link_to "Checkers", checkers_show_path %>
+    50: </body>
+    51: 
+  
+app/views/layouts/application.html.erb:48
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-20 09:34:26 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 940)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.7ms | Allocations: 2919)
+  Rendered users/_existing.html.erb (Duration: 7.7ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 17014)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 19967)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_tictactoe_path' for #<ActionView::Base:0x000000000098a8>):
+    45:       });
+    46:     });
+    47:   </script>
+    48:   <%= link_to "Tic Tac Toe", pages_tictactoe_path %>
+    49:   <%= link_to "Checkers", checkers_show_path %>
+    50: </body>
+    51: 
+  
+app/views/layouts/application.html.erb:48
+Started GET "/" for ::1 at 2024-05-20 09:34:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1112)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6942)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 8145)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:34:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.0ms | Allocations: 2230)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3441)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:34:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1712)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2227)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:34:54 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 819)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5335)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5617)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:34:55 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 3.1ms | Allocations: 2274)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3235)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:34:55 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.3ms | Allocations: 1535)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2050)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:34:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 819)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 5329)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5609)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:35:01 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1715)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:35:01 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.0ms | Allocations: 1724)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2217)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:35:02 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5244)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 5510)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:35:03 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1535)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2031)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:35:03 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1565)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2058)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:35:04 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 761)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5248)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5514)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:35:28 -0700
+Processing by PagesController#home as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1457)
+
+
+  
+ActionController::MissingExactTemplate (PagesController#home is missing a template for request formats: text/html):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-05-20 09:35:29 -0700
+Processing by PagesController#home as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 209)
+
+
+  
+ActionController::MissingExactTemplate (PagesController#home is missing a template for request formats: text/html):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-05-20 09:37:18 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 544)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1113)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6960)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 8094)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:40:04 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.7ms | Allocations: 1497)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 7308)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 8614)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:41:08 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 391)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1254)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6103)
+Completed 200 OK in 11ms (Views: 10.8ms | Allocations: 6726)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:41:11 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1543)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/games" for ::1 at 2024-05-20 09:41:15 -0700
+  
+SyntaxError (/home/animward/Projects/francis-gamble/app/controllers/games_controller.rb:12: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/games_controller.rb:12: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/games_controller.rb:12: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/games" for ::1 at 2024-05-20 09:41:47 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 4153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1257)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 8985)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 9970)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:43:35 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 4122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1111)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 803)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 9593)
+Completed 200 OK in 12ms (Views: 11.6ms | Allocations: 10646)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:43:36 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3557)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 764)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 7851)
+Completed 200 OK in 14ms (Views: 14.1ms | Allocations: 8136)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:44:45 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1255)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 8698)
+Completed 200 OK in 9ms (Views: 9.2ms | Allocations: 9321)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:44:46 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3565)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 7857)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 8140)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:45:02 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1256)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 596)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 8737)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 9360)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:45:02 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3547)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 7839)
+Completed 200 OK in 8ms (Views: 7.9ms | Allocations: 8123)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:45:14 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3553)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 7845)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 8112)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:45:16 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7874)
+Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 8138)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:45:17 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3549)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 763)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 7841)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 8109)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-05-20 09:45:56 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 8674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 41.7ms | Allocations: 2931)
+  Rendered users/_existing.html.erb (Duration: 1.5ms | Allocations: 836)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 16121)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms | Allocations: 18746)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:45:57 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3727)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 8024)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 8327)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:46:40 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3570)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7865)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 8137)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:48:20 -0700
+  
+ActionController::RoutingError (uninitialized constant GamesController
+
+        Object.const_get(camel_cased_word)
+              ^^^^^^^^^^
+Did you mean?  GameController
+               PagesController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/games" for ::1 at 2024-05-20 09:48:31 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 1256)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 8703)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 9325)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:48:33 -0700
+Processing by GamesController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/show.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7859)
+Completed 200 OK in 9ms (Views: 9.2ms | Allocations: 8146)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:49:09 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.4ms | Allocations: 3914)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 4461)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:49:14 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 543)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1257)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6224)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 7234)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:49:16 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 3558)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3776)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:49:36 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 4165)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 4830)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:49:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1109)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6858)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 7908)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:49:53 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.5ms | Allocations: 3570)
+Completed 200 OK in 5ms (Views: 4.9ms | Allocations: 3789)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:50:26 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 4197)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 4876)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:50:27 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.7ms | Allocations: 2877)
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 6725)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:50:27 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.6ms | Allocations: 1963)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2698)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:50:28 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 522)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1109)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 6841)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7912)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:50:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 535)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6838)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7988)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:50:52 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.9ms | Allocations: 4217)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4814)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:50:59 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 9.3ms | Allocations: 2565)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 3657)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:50:59 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.9ms | Allocations: 1899)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2619)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:51:04 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 811)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 5254)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 5528)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:51:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6830)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 7972)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:51:39 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.5ms | Allocations: 4207)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4802)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:51:41 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1788)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:52:15 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 567)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:52:21 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1297)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:52:24 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.0ms | Allocations: 2581)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 3753)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:52:25 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 522)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.0ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6801)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7843)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:52:35 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 5.3ms | Allocations: 4218)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4910)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:52:36 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.6ms | Allocations: 2553)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3655)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:52:36 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.0ms | Allocations: 1890)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2610)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:52:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6791)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 7830)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:53:00 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6824)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 7973)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:53:00 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 5.6ms | Allocations: 4223)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4817)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:53:01 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 3.0ms | Allocations: 2573)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3664)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:53:01 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.9ms | Allocations: 1909)
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2631)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:53:02 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3638)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3841)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:53:04 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.7ms | Allocations: 2283)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3245)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:53:04 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.5ms | Allocations: 1532)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:53:06 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 826)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5276)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5550)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:53:07 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.6ms | Allocations: 3609)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3814)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:53:08 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1238)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:53:44 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 573)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:3:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:53:45 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 0ms (Allocations: 266)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:3:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:53:52 -0700
+Processing by TictactoeController#show as HTML
+Completed 406 Not Acceptable in 1ms (Allocations: 1053)
+
+
+  
+ActionController::MissingExactTemplate (TictactoeController#show is missing a template for request formats: text/html):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:54:13 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 1068)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:55:09 -0700
+Processing by TictactoeController#show as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 1312)
+
+
+  
+ActionView::MissingTemplate (Missing template tictactoe/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/tictactoe_controller.rb:4:in `show'
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:55:10 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 2260)
+Completed 200 OK in 3ms (Views: 3.1ms | Allocations: 3252)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:55:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 4.3ms | Allocations: 1534)
+  Rendered users/_existing.html.erb (Duration: 1.3ms | Allocations: 804)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 7237)
+Completed 200 OK in 13ms (Views: 12.2ms | Allocations: 8406)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:55:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 1131)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6839)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 7984)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:55:39 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.9ms | Allocations: 4227)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 4888)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:55:40 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.1ms | Allocations: 2211)
+Completed 200 OK in 3ms (Views: 3.1ms | Allocations: 3088)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 09:55:40 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.1ms | Allocations: 1721)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 2233)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:55:41 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.7ms | Allocations: 3615)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 3814)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:55:41 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.4ms | Allocations: 2159)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 3109)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 09:55:41 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1535)
+Completed 200 OK in 2ms (Views: 2.3ms | Allocations: 2046)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:55:43 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3627)
+Completed 200 OK in 4ms (Views: 3.9ms | Allocations: 3826)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:55:43 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.7ms | Allocations: 2570)
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 5757)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 09:55:43 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.6ms | Allocations: 1896)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2615)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:55:44 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3633)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3838)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:55:45 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 811)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5231)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5511)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:56:58 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.9ms | Allocations: 3599)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3804)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:58:05 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.7ms | Allocations: 4239)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4909)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:58:19 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.0ms | Allocations: 4216)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:58:41 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.4ms | Allocations: 3620)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3846)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:58:42 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3606)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3807)
+
+
+Started GET "/games" for ::1 at 2024-05-20 09:58:45 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 4214)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4885)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:01:20 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.3ms | Allocations: 3600)
+Completed 200 OK in 4ms (Views: 3.6ms | Allocations: 3815)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 10:01:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.2ms | Allocations: 2220)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 3080)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 10:01:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1727)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2239)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:01:25 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.6ms | Allocations: 3618)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 3817)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 10:01:25 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.0ms | Allocations: 2104)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 2959)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 10:01:25 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.0ms | Allocations: 1541)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 2053)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:01:29 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3609)
+Completed 200 OK in 4ms (Views: 3.9ms | Allocations: 3808)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 10:01:30 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1724)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2219)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 10:01:30 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1724)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2214)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:01:31 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3588)
+Completed 200 OK in 4ms (Views: 3.9ms | Allocations: 3786)
+
+
+Started GET "/" for ::1 at 2024-05-20 10:01:32 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 519)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.8ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6805)
+Completed 200 OK in 10ms (Views: 9.8ms | Allocations: 7847)
+
+
+Started GET "/games" for ::1 at 2024-05-20 10:01:33 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 7.7ms | Allocations: 3599)
+Completed 200 OK in 8ms (Views: 8.1ms | Allocations: 3819)
+
+
