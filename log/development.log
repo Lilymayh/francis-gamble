@@ -22970,3 +22970,27 @@ Processing by GamesController#show as HTML
 Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 4421)
 
 
+Started GET "/" for ::1 at 2024-05-21 14:46:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.5ms | Allocations: 773)
+  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 7134)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2024-05-21 14:46:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 772)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7127)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 7394)
+
+
