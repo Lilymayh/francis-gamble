@@ -13,11 +13,11 @@
 </head>
 
 <body>
+  <%= render 'partials/header' %>
 	 <%= link_to "Home", root_path %>
-	 <%= link_to "Buy Tokens!", new_token_purchase_path %>
 	 <h2>Games:</h2>
-  <%= link_to "Tic Tac Toe", tictactoe_show_path %>
-  <%= link_to "Checkers", checkers_show_path %>
+  <%= link_to "Tic Tac Toe", tictactoe_index_path %>
+  
 </body>
 
 </html>

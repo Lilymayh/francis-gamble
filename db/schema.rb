@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_05_18_020907) do
+ActiveRecord::Schema.define(version: 2024_05_21_194239) do
 
 # Could not dump table "bets" because of following StandardError
 #   Unknown type 'uuid' for column 'id'
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 2024_05_18_020907) do
 
 # Could not dump table "games" because of following StandardError
 #   Unknown type 'uuid' for column 'id'
+
+  create_table "tictactoes", force: :cascade do |t|
+    t.text "board", default: "[]"
+    t.string "current_turn", default: "X"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 # Could not dump table "winnings" because of following StandardError
 #   Unknown type 'uuid' for column 'id'

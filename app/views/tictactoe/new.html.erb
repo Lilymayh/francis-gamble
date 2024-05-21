@@ -1,0 +1,19 @@
+<h1>Start a New Tic Tac Toe Game</h1>
+
+
+
+<%= form_with(model: @tictactoe, url: tictactoe_index_path, local: true) do |form| %>
+
+  <%= form.hidden_field :board, value: Array.new(9, nil).to_json %>
+
+  <div class="actions">
+
+    <%= form.submit "Start Game" %>
+
+  </div>
+
+<% end %>
+
+
+
+<%= link_to 'Back', tictactoe_index_path %>

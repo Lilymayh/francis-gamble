@@ -1,126 +1,51 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Tic Tac Toe</title>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <%= csrf_meta_tags %>
+
     <%= csp_meta_tag %>
+
     <%= stylesheet_link_tag 'tictactoe', media: 'all', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+
     <h1>Tic Tac Toe</h1>
+
     <div class="boardContainer">
-      <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+
+      <div class="board" id="board" data-game-id="<%= @tictactoe.id %>">
+
+        <% @tictactoe.board.each_with_index do |cell, index| %>
+
+          <div class="cell" data-cell data-index="<%= index %>"><%= cell %></div>
+
+        <% end %>
+
       </div>
+
     </div>
 
     <div class="winning-message" id="winningMessage">
+
       <div data-winning-message-text></div>
-      <button id="restartButton">Restart</button>
+
+     <%= link_to "Play Some More!", games_show_path %>
+
     </div>
 
-    <%= link_to "Back", games_show_path %>
+    <%= link_to "Back", tictactoe_index_path %>
 
-    <script>
-      const X_CLASS = 'x';
-      const CIRCLE_CLASS = 'circle';
-      const WINNING_COMBINATIONS = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6]
-      ];
-      const cellElements = document.querySelectorAll('[data-cell]');
-      const board = document.getElementById('board');
-      const winningMessageElement = document.getElementById('winningMessage');
-      const restartButton = document.getElementById('restartButton');
-      const winningMessageTextElement = document.querySelector('[data-winning-message-text]');
-      let circleTurn;
+    <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
 
-      startGame();
-
-      restartButton.addEventListener('click', startGame);
-
-      function startGame() {
-        circleTurn = false;
-        cellElements.forEach(cell => {
-          cell.classList.remove(X_CLASS);
-          cell.classList.remove(CIRCLE_CLASS);
-          cell.removeEventListener('click', handleClick);
-          cell.addEventListener('click', handleClick, { once: true });
-        });
-        setBoardHoverClass();
-        winningMessageElement.classList.remove('show');
-      }
-
-      function handleClick(e) {
-        const cell = e.target;
-        const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS;
-        placeMark(cell, currentClass);
-        if (checkWin(currentClass)) {
-          endGame(false);
-        } else if (isDraw()) {
-          endGame(true);
-        } else {
-          swapTurns();
-          setBoardHoverClass();
-        }
-      }
-
-      function endGame(draw) {
-        if (draw) {
-          winningMessageTextElement.innerText = 'Draw!';
-        } else {
-          winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`;
-        }
-        winningMessageElement.classList.add('show');
-      }
-
-      function isDraw() {
-        return [...cellElements].every(cell => {
-          return cell.classList.contains(X_CLASS) || cell.classList.contains(CIRCLE_CLASS);
-        });
-      }
-
-      function placeMark(cell, currentClass) {
-        cell.classList.add(currentClass);
-      }
-
-      function swapTurns() {
-        circleTurn = !circleTurn;
-      }
-
-      function setBoardHoverClass() {
-        board.classList.remove(X_CLASS);
-        board.classList.remove(CIRCLE_CLASS);
-        if (circleTurn) {
-          board.classList.add(CIRCLE_CLASS);
-        } else {
-          board.classList.add(X_CLASS);
-        }
-      }
-
-      function checkWin(currentClass) {
-        return WINNING_COMBINATIONS.some(combination => {
-          return combination.every(index => {
-            return cellElements[index].classList.contains(currentClass);
-          });
-        });
-      }
-    </script>
   </body>
+
 </html>
