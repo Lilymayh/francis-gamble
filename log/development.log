@@ -10960,3 +10960,273 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 7056)
 
 
+Started GET "/" for ::1 at 2024-05-20 18:49:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.9ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6767)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 7031)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:50:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6767)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 7030)
+
+
+Started GET "/games" for ::1 at 2024-05-20 18:50:45 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.0ms | Allocations: 3846)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 4047)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 18:51:04 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 1860)
+Completed 200 OK in 3ms (Views: 2.3ms | Allocations: 2354)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 18:51:04 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.5ms | Allocations: 1880)
+Completed 200 OK in 3ms (Views: 3.0ms | Allocations: 2371)
+
+
+Started GET "/games" for ::1 at 2024-05-20 18:51:14 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 229.1ms | Allocations: 12810)
+Completed 200 OK in 230ms (Views: 229.5ms | Allocations: 13008)
+
+
+Started GET "/games" for ::1 at 2024-05-20 18:51:14 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 3861)
+Completed 200 OK in 4ms (Views: 4.2ms | Allocations: 4060)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:51:16 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6749)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 7015)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:52:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 236.7ms | Allocations: 15609)
+Completed 200 OK in 237ms (Views: 237.1ms | Allocations: 15872)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:52:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6744)
+Completed 200 OK in 7ms (Views: 7.1ms | Allocations: 7007)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:53:07 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 229.8ms | Allocations: 15540)
+Completed 200 OK in 230ms (Views: 230.1ms | Allocations: 15803)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:53:48 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 491)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 8499)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 9641)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:54:37 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 234.8ms | Allocations: 15738)
+Completed 200 OK in 235ms (Views: 235.1ms | Allocations: 16018)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:54:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 6749)
+Completed 200 OK in 6ms (Views: 6.1ms | Allocations: 7013)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:55:23 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 241.8ms | Allocations: 15557)
+Completed 200 OK in 242ms (Views: 242.2ms | Allocations: 15820)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:58:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 226.5ms | Allocations: 15573)
+Completed 200 OK in 227ms (Views: 227.1ms | Allocations: 15837)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:59:06 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 231.7ms | Allocations: 15604)
+Completed 200 OK in 232ms (Views: 232.0ms | Allocations: 15867)
+
+
+Started GET "/" for ::1 at 2024-05-20 18:59:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 236.4ms | Allocations: 15577)
+Completed 200 OK in 237ms (Views: 236.8ms | Allocations: 15840)
+
+
+Started POST "/" for ::1 at 2024-05-20 19:00:17 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2024-05-20 19:00:20 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2024-05-20 19:00:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 830)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6895)
+Completed 200 OK in 6ms (Views: 6.1ms | Allocations: 7193)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:00:24 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 5.0ms | Allocations: 4468)
+Completed 200 OK in 6ms (Views: 6.0ms | Allocations: 5040)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:01:00 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 827)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6850)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 7137)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:01:14 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 249)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 228.0ms | Allocations: 15715)
+Completed 200 OK in 229ms (Views: 228.4ms | Allocations: 15978)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:01:22 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 231.6ms | Allocations: 15607)
+Completed 200 OK in 232ms (Views: 232.0ms | Allocations: 15871)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:01:30 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6789)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 7052)
+
+

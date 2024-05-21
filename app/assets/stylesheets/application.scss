@@ -14,7 +14,7 @@
  *= require_self
  */
 
- body {
+ html {
   background: linear-gradient(180deg, #B8DEF3 11.83%, #D8EEFA 92.33%);
   height: 100%;
  }
@@ -76,10 +76,18 @@ img {
 
 #registerBtn{
 background-color: #B2404E;
+color: white;
+width: 8%;
+font-size: 30px;
+margin: 20px;
 }
 
 #loginBtn{
 background-color: #B2404E;
+color: white;
+width: 8%;
+font-size: 30px;
+margin: 20px;
 }
 
 #logoz {
@@ -88,4 +96,10 @@ background-color: #B2404E;
 
 audio {
   display: none;
+}
+
+.buttonContainer {
+  margin-top: 45px;
+  display: block;
+  text-align: center;
 }
