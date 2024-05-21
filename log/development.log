@@ -11230,3 +11230,2001 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 7052)
 
 
+Started GET "/games" for ::1 at 2024-05-20 19:02:34 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.9ms | Allocations: 3916)
+Completed 200 OK in 5ms (Views: 5.3ms | Allocations: 4119)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:02:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7155)
+Completed 200 OK in 13ms (Views: 13.1ms | Allocations: 7649)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:02:52 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.3ms | Allocations: 3852)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 4053)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 19:02:53 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 2.5ms | Allocations: 2725)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 4356)
+
+
+Started GET "/token_purchases/new" for ::1 at 2024-05-20 19:02:53 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 1.8ms | Allocations: 2052)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2772)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:02:54 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.5ms | Allocations: 3882)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4084)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:02:55 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.4ms | Allocations: 2371)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3240)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:02:55 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 1862)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2378)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:07:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 2331)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3295)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:07:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1849)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2365)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:07:42 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1879)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2372)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:07:42 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1859)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:08:37 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 2529)
+Completed 200 OK in 3ms (Views: 3.2ms | Allocations: 3486)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:09:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 471.9ms | Allocations: 20304)
+Completed 200 OK in 473ms (Views: 473.0ms | Allocations: 21283)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:09:52 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2151)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:10:11 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 243.5ms | Allocations: 15979)
+Completed 200 OK in 245ms (Views: 244.4ms | Allocations: 16536)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:10:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 230.4ms | Allocations: 5330)
+Completed 200 OK in 231ms (Views: 230.8ms | Allocations: 5845)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:10:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:10:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1652)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2142)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:11:10 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 232.0ms | Allocations: 6311)
+Completed 200 OK in 233ms (Views: 232.4ms | Allocations: 6801)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:11:34 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 269.6ms | Allocations: 6325)
+Completed 200 OK in 270ms (Views: 270.0ms | Allocations: 6815)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:11:46 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 234.0ms | Allocations: 6302)
+Completed 200 OK in 235ms (Views: 234.4ms | Allocations: 6792)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:12:04 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1679)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2169)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:13:08 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:13:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 232.7ms | Allocations: 6301)
+Completed 200 OK in 233ms (Views: 233.2ms | Allocations: 6791)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:13:34 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 237.0ms | Allocations: 13713)
+Completed 200 OK in 237ms (Views: 237.3ms | Allocations: 13912)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:13:37 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.1ms | Allocations: 3926)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 4124)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:13:55 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 231.3ms | Allocations: 14493)
+Completed 200 OK in 232ms (Views: 231.7ms | Allocations: 14691)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 19:13:57 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.5ms | Allocations: 2275)
+Completed 200 OK in 4ms (Views: 3.6ms | Allocations: 3131)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 19:13:57 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 3.1ms | Allocations: 1695)
+Completed 200 OK in 4ms (Views: 3.6ms | Allocations: 2207)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:13:58 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.1ms | Allocations: 3933)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 4132)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:13:59 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1636)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2131)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:13:59 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:14:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 234.8ms | Allocations: 6528)
+Completed 200 OK in 235ms (Views: 235.2ms | Allocations: 7019)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:15:01 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:15:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:16:09 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:16:10 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:17:02 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.3ms | Allocations: 2296)
+Completed 200 OK in 4ms (Views: 3.6ms | Allocations: 3255)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:17:32 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 231.8ms | Allocations: 6543)
+Completed 200 OK in 232ms (Views: 232.2ms | Allocations: 7055)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:17:41 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 232.2ms | Allocations: 6332)
+Completed 200 OK in 233ms (Views: 232.5ms | Allocations: 6822)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:17:48 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 235.1ms | Allocations: 6307)
+Completed 200 OK in 236ms (Views: 235.5ms | Allocations: 6797)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:19:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 234.8ms | Allocations: 6352)
+Completed 200 OK in 236ms (Views: 235.3ms | Allocations: 6844)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:20 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 229.3ms | Allocations: 6332)
+Completed 200 OK in 230ms (Views: 229.8ms | Allocations: 6823)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:20 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:44 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 233.9ms | Allocations: 6338)
+Completed 200 OK in 235ms (Views: 234.3ms | Allocations: 6828)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:21:46 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 226.5ms | Allocations: 15438)
+Completed 200 OK in 228ms (Views: 227.7ms | Allocations: 15995)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:47 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2136)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:47 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2120)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:21:49 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.6ms | Allocations: 3921)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 4120)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:50 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2120)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:50 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1633)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2123)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:21:53 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.3ms | Allocations: 3922)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 4121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:55 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1631)
+Completed 200 OK in 3ms (Views: 2.2ms | Allocations: 2125)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:55 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2114)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:21:57 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.4ms | Allocations: 3911)
+Completed 200 OK in 4ms (Views: 3.7ms | Allocations: 4110)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:58 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1619)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2112)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:21:58 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2105)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:21:59 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 3918)
+Completed 200 OK in 4ms (Views: 4.3ms | Allocations: 4116)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2129)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:22:02 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 3939)
+Completed 200 OK in 4ms (Views: 4.2ms | Allocations: 4137)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:03 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1620)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2115)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:03 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2102)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:22:30 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.0ms | Allocations: 3921)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 4119)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:31 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1613)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:31 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2105)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:22:33 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 3927)
+Completed 200 OK in 4ms (Views: 4.2ms | Allocations: 4125)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:34 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.0ms | Allocations: 1613)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 2106)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:34 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1609)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2099)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:22:36 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 3945)
+Completed 200 OK in 4ms (Views: 4.2ms | Allocations: 4143)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:42 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1630)
+Completed 200 OK in 3ms (Views: 2.1ms | Allocations: 2125)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:42 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1625)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2115)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:22:51 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.2ms | Allocations: 3919)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 4118)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:52 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2116)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:52 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2111)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:22:55 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.7ms | Allocations: 3915)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 4114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:56 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2116)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:22:56 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2129)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:23:04 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 3924)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 4122)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:05 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1616)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:05 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1635)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2127)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2112)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1634)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2124)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1628)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2118)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2118)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.0ms | Allocations: 1623)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2113)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1636)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2126)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1606)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2096)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1633)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2123)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1607)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2098)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2120)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1609)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2099)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:29 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:30 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:51 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 227.3ms | Allocations: 6347)
+Completed 200 OK in 228ms (Views: 227.9ms | Allocations: 6837)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1613)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2104)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:23:54 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2129)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 244.1ms | Allocations: 6320)
+Completed 200 OK in 245ms (Views: 244.6ms | Allocations: 6810)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1628)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2118)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1645)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2135)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:20 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1603)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2093)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1625)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2115)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:22 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1639)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 2131)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1629)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1619)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1634)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2124)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2112)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1609)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2100)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2120)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2113)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1642)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2132)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1631)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2115)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:37 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:40 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.6ms | Allocations: 1621)
+Completed 200 OK in 3ms (Views: 3.0ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:41 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:42 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:42 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:43 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:43 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:44 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1606)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2096)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:45 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1649)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2139)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:45 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 1624)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:54 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:55 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.3ms | Allocations: 1639)
+Completed 200 OK in 3ms (Views: 2.7ms | Allocations: 2130)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:55 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1626)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2118)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:56 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1634)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2124)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:24:57 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1604)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2094)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1627)
+Completed 200 OK in 3ms (Views: 2.3ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1636)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2127)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1616)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2107)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:26 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1603)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2094)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1619)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:28 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:29 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:29 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1600)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2090)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:32 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:33 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:37 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1606)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2096)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:38 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1633)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2123)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:38 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2116)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:39 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1631)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:40 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1611)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2101)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:40 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:45 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2130)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:46 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:48 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:49 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1628)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2118)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:49 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:50 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2129)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:51 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2120)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:51 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:52 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:52 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1619)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:52 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.8ms | Allocations: 1621)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2116)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:53 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1636)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2126)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:56 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:56 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:57 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1625)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2115)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:58 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:58 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1618)
+Completed 200 OK in 3ms (Views: 1.6ms | Allocations: 2110)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:59 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1617)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:25:59 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1620)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2110)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1600)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2090)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1633)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2124)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:00 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:13 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1642)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2132)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:14 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1606)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2096)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:14 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:14 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1609)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2099)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:14 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2130)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1609)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2099)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1633)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2124)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1606)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2096)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1627)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2117)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1618)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2108)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1630)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2122)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1617)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2107)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1636)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2126)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2106)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1615)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2105)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1610)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2101)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1633)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2123)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1609)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2099)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2114)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.0ms | Allocations: 1639)
+Completed 200 OK in 2ms (Views: 2.3ms | Allocations: 2129)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1603)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2094)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:20 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1631)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2121)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:45 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1636)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2126)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:47 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1624)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2115)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:48 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1612)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:26:59 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.9ms | Allocations: 1661)
+Completed 200 OK in 3ms (Views: 2.3ms | Allocations: 2151)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:27:29 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1621)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2111)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:29:27 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.4ms | Allocations: 2318)
+Completed 200 OK in 4ms (Views: 3.5ms | Allocations: 3276)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:29:28 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.2ms | Allocations: 4550)
+Completed 200 OK in 5ms (Views: 5.1ms | Allocations: 5123)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:29:30 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1598)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2116)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:29:30 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1604)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2094)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:31:23 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 257.9ms | Allocations: 6504)
+Completed 200 OK in 259ms (Views: 258.4ms | Allocations: 6995)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:31:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1607)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2097)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:31:24 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1607)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2097)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:31:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1601)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2091)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:31:25 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1607)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2098)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 276.3ms | Allocations: 6351)
+Completed 200 OK in 277ms (Views: 276.8ms | Allocations: 6841)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:15 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.0ms | Allocations: 1609)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 2100)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1586)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2076)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:16 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1610)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2102)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1592)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2082)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:17 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1601)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2091)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1613)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2103)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:18 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1598)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2089)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:19 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1607)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2097)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:20 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1610)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2100)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:20 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1601)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2091)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1619)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2109)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.2ms | Allocations: 1595)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2085)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1592)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2083)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:21 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1613)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2103)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:32:22 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1598)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2088)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:34:07 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.3ms | Allocations: 1653)
+Completed 200 OK in 3ms (Views: 2.8ms | Allocations: 2143)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:34:23 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 226.2ms | Allocations: 14684)
+Completed 200 OK in 227ms (Views: 226.6ms | Allocations: 14883)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 19:34:37 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 2.3ms | Allocations: 2260)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 3117)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 19:34:38 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.6ms | Allocations: 1683)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2195)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:34:41 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.7ms | Allocations: 3951)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 4151)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:34:43 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 479)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.6ms | Allocations: 1132)
+  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 8491)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 9533)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:34:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 770)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6812)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 7092)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:35:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6846)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 7110)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:35:47 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.7ms | Allocations: 3916)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 4119)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:35:49 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.6ms | Allocations: 1592)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2092)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:35:49 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.1ms | Allocations: 1607)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 2097)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:36:32 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.3ms | Allocations: 1604)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 2094)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:37:18 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 4.2ms | Allocations: 3941)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 4139)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 19:37:20 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.8ms | Allocations: 1689)
+Completed 200 OK in 2ms (Views: 2.2ms | Allocations: 2184)
+
+
+Started GET "/games/checkers" for ::1 at 2024-05-20 19:37:20 -0700
+Processing by CheckersController#show as HTML
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.7ms | Allocations: 1686)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2176)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:37:21 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.8ms | Allocations: 3921)
+Completed 200 OK in 4ms (Views: 4.2ms | Allocations: 4120)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:37:22 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.7ms | Allocations: 1598)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 2093)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:37:22 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1604)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2094)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:37:23 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 3924)
+Completed 200 OK in 4ms (Views: 4.3ms | Allocations: 4122)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:41:44 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.5ms | Allocations: 1613)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2107)
+
+
+Started GET "/games/tictactoe" for ::1 at 2024-05-20 19:41:44 -0700
+Processing by TictactoeController#show as HTML
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 1.4ms | Allocations: 1595)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2085)
+
+
+Started GET "/games" for ::1 at 2024-05-20 19:43:44 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 3930)
+Completed 200 OK in 4ms (Views: 4.3ms | Allocations: 4128)
+
+
+Started GET "/" for ::1 at 2024-05-20 19:43:45 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.2ms | Allocations: 771)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6846)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 7113)
+
+
