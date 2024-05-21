@@ -6,18 +6,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "new_token_purchase", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
   </head>
 
-  <body>
-  <h1>Purchase Tokens</h1>
+  <body class="token-body">
+  <h1>Tokens</h1>
+  <div class="tokens">
   <%= form_with(url: tokens_path, method: :post) do |form| %>
     <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
   <%= form.hidden_field :amount, id: "purchase_amount" %>
     <%= form.button "Purchase $100.00", onclick: "purchaseTokens(100)" %>
     <%= form.button "Purchase $200.00", onclick: "purchaseTokens(200)" %>
     <%= form.button "Purchase $300.00", onclick: "purchaseTokens(300)" %>
+    <%= form.button "Purchase $100.00", onclick: "purchaseTokens(100)" %>
+    <%= form.button "Purchase $200.00", onclick: "purchaseTokens(200)" %>
+    <%= form.button "Purchase $300.00", onclick: "purchaseTokens(300)" %>
   <% end %>
+  </div>
   <script>
   function purchaseTokens(amount) {
     document.getElementById('purchase_amount').value = amount;

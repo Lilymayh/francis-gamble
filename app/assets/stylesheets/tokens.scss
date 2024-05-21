@@ -1,0 +1,28 @@
+.token-body {
+	position: relative;
+}
+
+.token-body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://img.freepik.com/free-vector/dollar-sign-pattern-background_23-2150938966.jpg?w=1380&t=st=1716239903~exp=1716240503~hmac=a0de6a8d606c6552fe9c4cd45e59cdb2cc5f67ba17d0dbd0683bc9c772d5fd09");
+	background-repeat: repeat;
+	background-size: cover;
+	animation: flowDown 10s linear infinite;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+@keyframes flowDown {
+	from {
+			background-position: top left;
+	}
+	to {
+			background-position: top -100% left;
+	}
+}
+
