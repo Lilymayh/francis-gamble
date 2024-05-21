@@ -27,4 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 Rails.start();
 Turbolinks.start();
+<<<<<<< HEAD
 ActiveStorage.start();
+=======
+ActiveStorage.start();
+>>>>>>> origin/style/tokens

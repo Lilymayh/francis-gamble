@@ -7,19 +7,28 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
-  </head>
+    <%= javascript_pack_tag "checkers" %>
+
+    </head>
 
   <body>
 <h1>Checkers!</h1>
   <div class="game-board">
     <% @game_board.squares.each do |square| %>
       <div class="square <%= square.colour %>">
-			<% if square.piece.present? %>
-			<div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>"></div>
-		<% end %>
-      </div>
-    <% end %>
+        <% if square.piece.present? %>
+        <div class="piece <%= square.piece.color %> 
+        <%= 'king' if square.piece.king? %>"  
+        id="piece_<%= square.piece.id %>">
+        </div>
+        <% end %>  
+        </div>
+        <% end %>
   </div>
+<<<<<<< HEAD
   <%= link_to "Back", games_show_path %>
   </body>
+=======
+    </body>
+>>>>>>> origin/style/tokens
 </html>
