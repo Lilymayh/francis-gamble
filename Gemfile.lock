@@ -173,10 +173,7 @@ GEM
       sprockets-rails
       tilt
     semantic_range (3.0.0)
-<<<<<<< HEAD
     spring (4.2.1)
-=======
->>>>>>> origin/style/tokens
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -223,11 +220,7 @@ DEPENDENCIES
   spring
   sqlite3 (~> 1.4)
   stripe (~> 11.4)
-<<<<<<< HEAD
   webpacker (~> 5.0)
-=======
-  webpacker
->>>>>>> origin/style/tokens
 
 RUBY VERSION
    ruby 3.1.1p18

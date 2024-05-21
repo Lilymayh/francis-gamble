@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   resources :token_purchases, only: [:new, :create]
 
-
+  get '/tokens' => 'token_purchases#new_token_purchase'
+  post '/tokens' => 'token_purchases#create_token_purchase'
 
   root 'pages#home'
 

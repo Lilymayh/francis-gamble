@@ -1,15 +1,21 @@
 class TokenPurchasesController < ApplicationController
-  def new
+  def new_token_purchase
     @user = FakeUser.find_by(email: 'a@a.a')
     render layout: false
   end
     
-  def create
+  def create_token_purchase
     amount = params[:amount].to_f
     @user = FakeUser.find_by(email: 'a@a.a')
     if @user
-      @user.update_attribute(:balance, @user.balance + amount)
+      if @user.update(balance: @user.balance + amount)
+        flash[:notice] = "Token purchase successful!"
+      else
+        flash[:alert] = "Failed to update balance."
+      end
+    else
+      flash[:alert] = "User not found."
     end
-    puts @user.inspect
+    redirect_to tokens_path
   end
 end
