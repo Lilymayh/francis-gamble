@@ -12,9 +12,25 @@
 	background-image: url("https://img.freepik.com/free-vector/dollar-sign-pattern-background_23-2150938966.jpg?w=1380&t=st=1716239903~exp=1716240503~hmac=a0de6a8d606c6552fe9c4cd45e59cdb2cc5f67ba17d0dbd0683bc9c772d5fd09");
 	background-repeat: repeat;
 	background-size: cover;
-	animation: flowDown 10s linear infinite;
-	opacity: 0.5;
+	// animation: flowDown 10s linear infinite;
+	opacity: 0.2;
 	z-index: -1;
+}
+
+.tokens {
+	margin-bottom: 5em;
+}
+
+.tokens button {
+	background-image: linear-gradient(-45deg, #ffd700, #fbef70, #ffd700);
+	border: none;
+	padding: 15px 30px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 8px;
+	width: 20vw;
+	height: 20vh;
+	margin-top: 6em;
 }
 
 @keyframes flowDown {
@@ -25,4 +41,3 @@
 			background-position: top -100% left;
 	}
 }
-

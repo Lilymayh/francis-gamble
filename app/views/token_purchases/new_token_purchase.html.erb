@@ -14,13 +14,41 @@
   <div class="tokens">
   <%= form_with(url: tokens_path, method: :post) do |form| %>
     <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
-  <%= form.hidden_field :amount, id: "purchase_amount" %>
-    <%= form.button "Purchase $100.00", onclick: "purchaseTokens(100)" %>
-    <%= form.button "Purchase $200.00", onclick: "purchaseTokens(200)" %>
-    <%= form.button "Purchase $300.00", onclick: "purchaseTokens(300)" %>
-    <%= form.button "Purchase $100.00", onclick: "purchaseTokens(100)" %>
-    <%= form.button "Purchase $200.00", onclick: "purchaseTokens(200)" %>
-    <%= form.button "Purchase $300.00", onclick: "purchaseTokens(300)" %>
+    <span class="token-wrapper">
+    <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+    <span class="top-banner">100</span>
+    <span class="bottom-banner">$1.99</span>
+</span>
+
+<span class="token-wrapper">
+    <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+    <span class="top-banner">600</span>
+    <span class="bottom-banner">$4.99</span>
+</span>
+
+<span class="token-wrapper">
+    <%= form.button "", onclick: "purchaseTokens(300)" %>
+    <span class="top-banner">1500</span>
+    <span class="bottom-banner">$9.99</span>
+</span>
+
+<span class="token-wrapper">
+    <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+    <span class="top-banner">100</span>
+    <span class="bottom-banner">$29.99</span>
+</span>
+
+<span class="token-wrapper">
+    <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+    <span class="top-banner">200</span>
+    <span class="bottom-banner">$49.99</span>
+</span>
+
+<span class="token-wrapper">
+    <%= form.button "", type: 'button', onclick: "purchaseTokens(300)" %>
+    <span class="top-banner">2</span>
+    <span class="bottom-banner">$300000000.99</span>
+</span>
   <% end %>
   </div>
   <script>
