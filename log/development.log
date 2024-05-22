@@ -26092,3 +26092,425 @@ Processing by TokenPurchasesController#new_token_purchase as HTML
 Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 10376)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-05-21 17:02:15 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 239)
+  Rendered games/show.html.erb (Duration: 19.6ms | Allocations: 13022)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 15497)
+
+
+Started GET "/" for ::1 at 2024-05-21 17:02:18 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 513)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 4.9ms | Allocations: 3005)
+  Rendered users/_existing.html.erb (Duration: 1.4ms | Allocations: 834)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 10986)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 12211)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:19:21 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered games/show.html.erb (Duration: 4.8ms | Allocations: 4415)
+Completed 200 OK in 5ms (Views: 5.2ms | Allocations: 4651)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:19:21 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered games/show.html.erb (Duration: 14.6ms | Allocations: 4331)
+Completed 200 OK in 15ms (Views: 15.2ms | Allocations: 4529)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/new_token_purchase.source.scss"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:23 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 15.0ms | Allocations: 6810)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.7ms | Allocations: 8249)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:23 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.3ms | Allocations: 2341)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2578)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:19:32 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered games/show.html.erb (Duration: 5.1ms | Allocations: 4431)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4633)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:33 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 3.0ms | Allocations: 2347)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2576)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:33 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.3ms | Allocations: 2340)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 2553)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-21 17:19:34 -0700
+Processing by TictactoeController#new as HTML
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 1.4ms | Allocations: 1048)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1454)
+
+
+Started POST "/tictactoe" for ::1 at 2024-05-21 17:19:36 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.2ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-22 00:19:36.085153"], ["updated_at", "2024-05-22 00:19:36.085153"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/43
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms | Allocations: 5506)
+
+
+Started GET "/tictactoe/43" for ::1 at 2024-05-21 17:19:36 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 15.0ms | Allocations: 4006)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms | Allocations: 5589)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:37 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.3ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- \n- \n- \n- X\n- \n- \n- \n- \n"], ["updated_at", "2024-05-22 00:19:37.014019"], ["id", 43]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 46ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 5449)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:37 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"0"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 857)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:37 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"2"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- \n- X\n- \n- X\n- O\n- \n- \n- \n"], ["updated_at", "2024-05-22 00:19:37.577452"], ["id", 43]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 5.8ms | Allocations: 5067)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:37 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- \n- X\n- X\n- X\n- O\n- \n- O\n- \n"], ["updated_at", "2024-05-22 00:19:37.918449"], ["id", 43]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 6.4ms | Allocations: 5107)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:38 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.3ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- X\n- X\n- X\n- X\n- O\n- O\n- O\n- \n"], ["updated_at", "2024-05-22 00:19:38.193029"], ["id", 43]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 6.1ms | Allocations: 5125)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:38 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 822)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:38 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.4ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- X\n- X\n- X\n- X\n- O\n- O\n- O\n- X\n"], ["updated_at", "2024-05-22 00:19:38.724751"], ["id", 43]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 5.8ms | Allocations: 5134)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:38 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"7"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 852)
+
+
+Started PATCH "/tictactoe/43" for ::1 at 2024-05-21 17:19:39 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"6"}, "id"=>"43"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 846)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:41 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.1ms | Allocations: 2390)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2605)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-21 17:19:43 -0700
+Processing by TictactoeController#new as HTML
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 0.9ms | Allocations: 533)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 752)
+
+
+Started POST "/tictactoe" for ::1 at 2024-05-21 17:19:45 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.2ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-22 00:19:45.623031"], ["updated_at", "2024-05-22 00:19:45.623031"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/44
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms | Allocations: 4398)
+
+
+Started GET "/tictactoe/44" for ::1 at 2024-05-21 17:19:45 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 2.1ms | Allocations: 3151)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 3849)
+
+
+Started PATCH "/tictactoe/44" for ::1 at 2024-05-21 17:19:46 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"44"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- \n- X\n- \n- \n- \n- \n- O\n- \n- \n"], ["updated_at", "2024-05-22 00:19:46.591275"], ["id", 44]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 5042)
+
+
+Started PATCH "/tictactoe/44" for ::1 at 2024-05-21 17:19:52 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"44"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- X\n- \n- \n- X\n- \n- O\n- \n- \n"], ["updated_at", "2024-05-22 00:19:52.005129"], ["id", 44]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 4.4ms | Allocations: 5088)
+
+
+Started PATCH "/tictactoe/44" for ::1 at 2024-05-21 17:19:54 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"44"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- X\n- \n- X\n- X\n- \n- O\n- O\n- \n"], ["updated_at", "2024-05-22 00:19:54.471230"], ["id", 44]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 7.2ms | Allocations: 5124)
+
+
+Started PATCH "/tictactoe/44" for ::1 at 2024-05-21 17:19:56 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"44"}
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n- O\n- X\n- \n- X\n- X\n- X\n- O\n- O\n- \n"], ["updated_at", "2024-05-22 00:19:56.381720"], ["id", 44]]
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tictactoe.rb:17:in `make_player_move'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 5.0ms | Allocations: 5073)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:19:57 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered games/show.html.erb (Duration: 6.4ms | Allocations: 4378)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 4579)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:59 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.3ms | Allocations: 2424)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 2640)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-21 17:19:59 -0700
+Processing by TictactoeController#index as HTML
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.2ms | Allocations: 2424)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2637)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:20:02 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered games/show.html.erb (Duration: 6.7ms | Allocations: 4328)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4530)
+
+
+Started GET "/tokens" for ::1 at 2024-05-21 17:20:04 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new_token_purchase'
+  Rendering token_purchases/new_token_purchase.html.erb
+  Rendered token_purchases/new_token_purchase.html.erb (Duration: 13.7ms | Allocations: 11221)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.7ms | Allocations: 13487)
+
+
+Started GET "/tokens" for ::1 at 2024-05-21 17:20:05 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new_token_purchase'
+  Rendering token_purchases/new_token_purchase.html.erb
+  Rendered token_purchases/new_token_purchase.html.erb (Duration: 5.3ms | Allocations: 9742)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms | Allocations: 10460)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:20:06 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 4334)
+Completed 200 OK in 4ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4537)
+
+
+Started GET "/" for ::1 at 2024-05-21 17:20:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.4ms | Allocations: 813)
+  Rendered users/_existing.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 7291)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 7567)
+
+
+Started GET "/games" for ::1 at 2024-05-21 17:20:20 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered games/show.html.erb (Duration: 5.8ms | Allocations: 4299)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4503)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
