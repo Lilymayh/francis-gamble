@@ -9,8 +9,14 @@ class TokenPurchasesController < ApplicationController
   def create
     amount = params[:amount].to_f
     @user = current_user
+    puts "User balance: #{@user.balance}"
+
     if @user
-      @user.update_attribute(:balance, @user.balance + amount)
-    end
+      new_balance = @user.balance.to_f + amount
+      if @user.update(balance: new_balance)
+        puts "Balance updated successfully!"
+        puts "User balance: #{new_balance}"
+      end
   end
+end
 end
