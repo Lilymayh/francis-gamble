@@ -22994,3 +22994,930 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 7394)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-21 19:10:27 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 6 pending migrations:
+
+20240513173845_create_games.rb
+20240513174057_create_bets.rb
+20240513174225_create_winnings.rb
+20240518020747_create_fake_users.rb
+20240518020907_add_email_to_fake_users.rb
+20240521194239_create_tictactoes.rb
+
+
+):
+  
+activerecord (6.1.5.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.5.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.5.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.5.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.5.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGames (20240513173845)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "games" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar, "game_type" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513173845"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bets" ("id" uuid NOT NULL PRIMARY KEY, "user_id" uuid NOT NULL, "game_id" uuid NOT NULL, "bet_amount" decimal(10,2) NOT NULL, "bet_date" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_87dbfdd206"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_65def5c9e5"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bets_on_user_id" ON "bets" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bets_on_game_id" ON "bets" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWinnings (20240513174225)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "winnings" ("id" uuid NOT NULL PRIMARY KEY, "bet_id" uuid NOT NULL, "winnings_amount" decimal(10,2), "win_date" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_e261ff059d"
+FOREIGN KEY ("bet_id")
+  REFERENCES "bets" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_winnings_on_bet_id" ON "winnings" ("bet_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174225"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFakeUsers (20240518020747)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "fake_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240518020747"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddEmailToFakeUsers (20240518020907)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "email" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240518020907"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTictactoes (20240521194239)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "tictactoes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "board" text DEFAULT '[]', "current_turn" varchar DEFAULT 'X', "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240521194239"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-05-22 02:10:49.677549"], ["updated_at", "2024-05-22 02:10:49.677549"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-21 19:10:57 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/tokens"):
+  
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-21 19:13:16 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 8.0ms | Allocations: 7079)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 11971)
+
+
+  
+ActionView::Template::Error (The asset "new_token_purchase.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "new_token_purchase", "data-turbo-track": "reload" %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/token_purchases/new.html.erb:9
+app/controllers/token_purchases_controller.rb:4:in `new'
+Started GET "/tokens" for ::1 at 2024-05-21 19:14:07 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 1582)
+
+
+  
+ActionView::MissingTemplate (Missing template token_purchases/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/Users/lilyhenderson/francis-gamble/app/views"
+  * "/Users/lilyhenderson/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actiontext-6.1.5.1/app/views"
+  * "/Users/lilyhenderson/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/token_purchases_controller.rb:4:in `new'
+Started GET "/tokens" for ::1 at 2024-05-21 19:14:19 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms | Allocations: 3616)
+
+
+  
+ActionController::MissingExactTemplate (TokenPurchasesController#new is missing a template for request formats: text/html):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/tokens" for ::1 at 2024-05-21 19:14:43 -0700
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for TokenPurchasesController
+Did you mean?  new_token_purchase
+               create):
+  
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/tokens" for ::1 at 2024-05-21 19:15:03 -0700
+Processing by TokenPurchasesController#new_token_purchase as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new_token_purchase'
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new_token_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new_token_purchase.html.erb within layouts/application
+  Rendered token_purchases/new_token_purchase.html.erb within layouts/application (Duration: 0.8ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1024)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 4777)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<head>
+  <title>Tokens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
+</head>
+
+<body class="token-body">
+  <div class="header">
+    <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
+    <a class="home-button" href="/">Home</a>
+  </div>
+
+  </div>
+<% end %>
+  <div class="tokens">
+    <%= form_with(url: tokens_path, method: :post, id: 'tokenForm') do |form| %>
+      <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
+      
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+        <span class="top-banner">100</span>
+        <span class="bottom-banner">$1.99</span>
+        <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+        <span class="top-banner">600</span>
+        <span class="bottom-banner">$4.99</span>
+        <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", onclick: "purchaseTokens(300)" %>
+        <span class="top-banner">1500</span>
+        <span class="bottom-banner">$9.99</span>
+        <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+        <span class="top-banner">100</span>
+        <span class="bottom-banner">$29.99</span>
+        <img class="coin7" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin8" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin9" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin10" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+        <span class="top-banner">200</span>
+        <span class="bottom-banner">$49.99</span>
+        <img class="coin11" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin12" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin13" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin14" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin15" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(300)" %>
+        <span class="top-banner">2</span>
+        <span class="bottom-banner">$300000000.99</span>
+        <img class="coin16" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin17" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin18" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin19" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin20" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin21" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+    <% end %>
+  </div>
+  
+  <script>
+    function purchaseTokens(amount) {
+      document.getElementById('purchase_amount').value = amount;
+      document.querySelector('form').submit();
+    }
+  </script>
+
+  <%= yield %>
+</body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <head>
+4:      <title>Tokens</title>
+5:      <meta name="viewport" content="width=device-width, initial-scale=1">
+6:      <%= csrf_meta_tags %>
+7:      <%= csp_meta_tag %>
+8:      <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
+9:      <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
+10:    </head>
+11:    
+12:    <body class="token-body">
+13:      <div class="header">
+14:        <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
+15:        <a class="home-button" href="/">Home</a>
+16:      </div>
+17:    
+18:      </div>
+19:    <% end %>
+20:      <div class="tokens">
+21:        <%= form_with(url: tokens_path, method: :post, id: 'tokenForm') do |form| %>
+22:          <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
+23:          
+24:          <span class="token-wrapper">
+25:            <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+26:            <span class="top-banner">100</span>
+27:            <span class="bottom-banner">$1.99</span>
+28:            <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
+29:          </span>
+30:    
+31:          <span class="token-wrapper">
+32:            <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+33:            <span class="top-banner">600</span>
+34:            <span class="bottom-banner">$4.99</span>
+35:            <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
+36:            <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
+37:          </span>
+38:    
+39:          <span class="token-wrapper">
+40:            <%= form.button "", onclick: "purchaseTokens(300)" %>
+41:            <span class="top-banner">1500</span>
+42:            <span class="bottom-banner">$9.99</span>
+43:            <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
+44:            <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
+45:            <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
+46:          </span>
+47:    
+48:          <span class="token-wrapper">
+49:            <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+50:            <span class="top-banner">100</span>
+51:            <span class="bottom-banner">$29.99</span>
+52:            <img class="coin7" src="<%= asset_path('coin.png') %>" alt="tokens">
+53:            <img class="coin8" src="<%= asset_path('coin.png') %>" alt="tokens">
+54:            <img class="coin9" src="<%= asset_path('coin.png') %>" alt="tokens">
+55:            <img class="coin10" src="<%= asset_path('coin.png') %>" alt="tokens">
+56:          </span>
+57:    
+58:          <span class="token-wrapper">
+59:            <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+60:            <span class="top-banner">200</span>
+61:            <span class="bottom-banner">$49.99</span>
+62:            <img class="coin11" src="<%= asset_path('coin.png') %>" alt="tokens">
+63:            <img class="coin12" src="<%= asset_path('coin.png') %>" alt="tokens">
+64:            <img class="coin13" src="<%= asset_path('coin.png') %>" alt="tokens">
+65:            <img class="coin14" src="<%= asset_path('coin.png') %>" alt="tokens">
+66:            <img class="coin15" src="<%= asset_path('coin.png') %>" alt="tokens">
+67:          </span>
+68:    
+69:          <span class="token-wrapper">
+70:            <%= form.button "", type: 'button', onclick: "purchaseTokens(300)" %>
+71:            <span class="top-banner">2</span>
+72:            <span class="bottom-banner">$300000000.99</span>
+73:            <img class="coin16" src="<%= asset_path('coin.png') %>" alt="tokens">
+74:            <img class="coin17" src="<%= asset_path('coin.png') %>" alt="tokens">
+75:            <img class="coin18" src="<%= asset_path('coin.png') %>" alt="tokens">
+76:            <img class="coin19" src="<%= asset_path('coin.png') %>" alt="tokens">
+77:            <img class="coin20" src="<%= asset_path('coin.png') %>" alt="tokens">
+78:            <img class="coin21" src="<%= asset_path('coin.png') %>" alt="tokens">
+79:          </span>
+80:        <% end %>
+81:      </div>
+82:      
+83:      <script>
+84:        function purchaseTokens(amount) {
+85:          document.getElementById('purchase_amount').value = amount;
+86:          document.querySelector('form').submit();
+87:        }
+88:      </script>
+89:    
+90:      <%= yield %>
+91:    </body>
+92:    </html>
+  
+app/views/token_purchases/new_token_purchase.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+app/views/token_purchases/new_token_purchase.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+app/views/token_purchases/new_token_purchase.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+app/views/token_purchases/new_token_purchase.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tokens" for ::1 at 2024-05-21 19:16:33 -0700
+  
+AbstractController::ActionNotFound (The action 'new_token_purchase' could not be found for TokenPurchasesController
+Did you mean?  new
+               create):
+  
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/tokens" for ::1 at 2024-05-21 19:17:08 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new.html.erb within layouts/application
+  Rendered token_purchases/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 929)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 1010)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 4795)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<head>
+  <title>Tokens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
+</head>
+
+<body class="token-body">
+  <div class="header">
+    <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
+    <a class="home-button" href="/">Home</a>
+  </div>
+
+  </div>
+<% end %>
+  <div class="tokens">
+    <%= form_with(url: tokens_path, method: :post, id: 'tokenForm') do |form| %>
+      <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
+      
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+        <span class="top-banner">100</span>
+        <span class="bottom-banner">$1.99</span>
+        <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+        <span class="top-banner">600</span>
+        <span class="bottom-banner">$4.99</span>
+        <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", onclick: "purchaseTokens(300)" %>
+        <span class="top-banner">1500</span>
+        <span class="bottom-banner">$9.99</span>
+        <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+        <span class="top-banner">100</span>
+        <span class="bottom-banner">$29.99</span>
+        <img class="coin7" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin8" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin9" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin10" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+        <span class="top-banner">200</span>
+        <span class="bottom-banner">$49.99</span>
+        <img class="coin11" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin12" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin13" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin14" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin15" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(300)" %>
+        <span class="top-banner">2</span>
+        <span class="bottom-banner">$300000000.99</span>
+        <img class="coin16" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin17" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin18" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin19" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin20" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin21" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+    <% end %>
+  </div>
+  
+  <script>
+    function purchaseTokens(amount) {
+      document.getElementById('purchase_amount').value = amount;
+      document.querySelector('form').submit();
+    }
+  </script>
+
+  <%= yield %>
+</body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <head>
+4:      <title>Tokens</title>
+5:      <meta name="viewport" content="width=device-width, initial-scale=1">
+6:      <%= csrf_meta_tags %>
+7:      <%= csp_meta_tag %>
+8:      <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
+9:      <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
+10:    </head>
+11:    
+12:    <body class="token-body">
+13:      <div class="header">
+14:        <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
+15:        <a class="home-button" href="/">Home</a>
+16:      </div>
+17:    
+18:      </div>
+19:    <% end %>
+20:      <div class="tokens">
+21:        <%= form_with(url: tokens_path, method: :post, id: 'tokenForm') do |form| %>
+22:          <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
+23:          
+24:          <span class="token-wrapper">
+25:            <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+26:            <span class="top-banner">100</span>
+27:            <span class="bottom-banner">$1.99</span>
+28:            <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
+29:          </span>
+30:    
+31:          <span class="token-wrapper">
+32:            <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+33:            <span class="top-banner">600</span>
+34:            <span class="bottom-banner">$4.99</span>
+35:            <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
+36:            <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
+37:          </span>
+38:    
+39:          <span class="token-wrapper">
+40:            <%= form.button "", onclick: "purchaseTokens(300)" %>
+41:            <span class="top-banner">1500</span>
+42:            <span class="bottom-banner">$9.99</span>
+43:            <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
+44:            <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
+45:            <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
+46:          </span>
+47:    
+48:          <span class="token-wrapper">
+49:            <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+50:            <span class="top-banner">100</span>
+51:            <span class="bottom-banner">$29.99</span>
+52:            <img class="coin7" src="<%= asset_path('coin.png') %>" alt="tokens">
+53:            <img class="coin8" src="<%= asset_path('coin.png') %>" alt="tokens">
+54:            <img class="coin9" src="<%= asset_path('coin.png') %>" alt="tokens">
+55:            <img class="coin10" src="<%= asset_path('coin.png') %>" alt="tokens">
+56:          </span>
+57:    
+58:          <span class="token-wrapper">
+59:            <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+60:            <span class="top-banner">200</span>
+61:            <span class="bottom-banner">$49.99</span>
+62:            <img class="coin11" src="<%= asset_path('coin.png') %>" alt="tokens">
+63:            <img class="coin12" src="<%= asset_path('coin.png') %>" alt="tokens">
+64:            <img class="coin13" src="<%= asset_path('coin.png') %>" alt="tokens">
+65:            <img class="coin14" src="<%= asset_path('coin.png') %>" alt="tokens">
+66:            <img class="coin15" src="<%= asset_path('coin.png') %>" alt="tokens">
+67:          </span>
+68:    
+69:          <span class="token-wrapper">
+70:            <%= form.button "", type: 'button', onclick: "purchaseTokens(300)" %>
+71:            <span class="top-banner">2</span>
+72:            <span class="bottom-banner">$300000000.99</span>
+73:            <img class="coin16" src="<%= asset_path('coin.png') %>" alt="tokens">
+74:            <img class="coin17" src="<%= asset_path('coin.png') %>" alt="tokens">
+75:            <img class="coin18" src="<%= asset_path('coin.png') %>" alt="tokens">
+76:            <img class="coin19" src="<%= asset_path('coin.png') %>" alt="tokens">
+77:            <img class="coin20" src="<%= asset_path('coin.png') %>" alt="tokens">
+78:            <img class="coin21" src="<%= asset_path('coin.png') %>" alt="tokens">
+79:          </span>
+80:        <% end %>
+81:      </div>
+82:      
+83:      <script>
+84:        function purchaseTokens(amount) {
+85:          document.getElementById('purchase_amount').value = amount;
+86:          document.querySelector('form').submit();
+87:        }
+88:      </script>
+89:    
+90:      <%= yield %>
+91:    </body>
+92:    </html>
+  
+app/views/token_purchases/new.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+app/views/token_purchases/new.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+app/views/token_purchases/new.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+app/views/token_purchases/new.html.erb:95: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tokens" for ::1 at 2024-05-21 19:17:32 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new.html.erb within layouts/application
+  Rendered token_purchases/new.html.erb within layouts/application (Duration: 1284.7ms | Allocations: 51826)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning package.json: "dependencies" has dependency "webpack" with range "^4.46.0" that collides with a dependency in "devDependencies" of the same name with version "^5.91.0"
+warning package.json: "dependencies" has dependency "webpack-cli" with range "^3.3.12" that collides with a dependency in "devDependencies" of the same name with version "^5.1.4"
+/Users/lilyhenderson/francis-gamble/node_modules/string-width/index.js:159
+undefined
+                   ^
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/lilyhenderson/francis-gamble/node_modules/strip-ansi/index.js from /Users/lilyhenderson/francis-gamble/node_modules/string-width/index.js not supported.
+Instead change the require of /Users/lilyhenderson/francis-gamble/node_modules/strip-ansi/index.js in /Users/lilyhenderson/francis-gamble/node_modules/string-width/index.js to a dynamic import() which is available in all CommonJS modules.
+    at require (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/francis-gamble/node_modules/string-width/index.js:2:19)
+    at Module._compile (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at require (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/francis-gamble/node_modules/yargs/lib/usage.js:5:21)
+    at Module._compile (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at require (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/francis-gamble/node_modules/yargs/yargs.js:8:15)
+    at Module._compile (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at require (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/francis-gamble/node_modules/yargs/index.js:5:15)
+    at Module._compile (/Users/lilyhenderson/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at /Users/lilyhenderson/francis-gamble/node_modules/webpack-cli/bin/cli.js:35:16
+    at Object.<anonymous> (/Users/lilyhenderson/francis-gamble/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Object.<anonymous> (/Users/lilyhenderson/francis-gamble/node_modules/webpack/bin/webpack.js:156:2) {
+  code: 'ERR_REQUIRE_ESM'
+}
+
+  Rendered users/_new.html.erb (Duration: 5.2ms | Allocations: 3228)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 836)
+  Rendered layout layouts/application.html.erb (Duration: 2066.4ms | Allocations: 74591)
+Completed 500 Internal Server Error in 2070ms (ActiveRecord: 0.1ms | Allocations: 76203)
+
+
+  
+ActionView::Template::Error (Asset `poker.mp3` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link poker.mp3
+
+and restart your server):
+    54: 
+    55:   
+    56: <audio controls autoplay>
+    57:   <source src="<%= asset_path('poker.mp3') %>" type="audio/mpeg">
+    58:   Your browser does not support the audio element.
+    59: </audio>
+    60: 
+  
+app/views/layouts/application.html.erb:57
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-21 19:18:27 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new.html.erb within layouts/application
+  Rendered token_purchases/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 27938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 2.2ms | Allocations: 2830)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 836)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 38636)
+Completed 200 OK in 47ms (Views: 34.3ms | ActiveRecord: 0.3ms | Allocations: 44301)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-21 19:18:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/tokens" for ::1 at 2024-05-21 19:18:33 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new.html.erb within layouts/application
+  Rendered token_purchases/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 11429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.1ms | Allocations: 806)
+  Rendered users/_existing.html.erb (Duration: 9.8ms | Allocations: 594)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 18553)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.2ms | Allocations: 19398)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-21 19:18:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/tokens" for ::1 at 2024-05-21 19:18:36 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new.html.erb within layouts/application
+  Rendered token_purchases/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 11382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.8ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 18470)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.1ms | Allocations: 19189)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-21 19:18:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/tokens" for ::1 at 2024-05-21 19:18:44 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering token_purchases/new.html.erb within layouts/application
+  Rendered token_purchases/new.html.erb within layouts/application (Duration: 29.9ms | Allocations: 11380)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.3ms | Allocations: 765)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 18433)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.2ms | Allocations: 19150)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-21 19:18:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  

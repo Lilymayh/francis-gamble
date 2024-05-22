@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tokens</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Tokens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
+</head>
 
-    <%= stylesheet_link_tag "new_token_purchase", "data-turbo-track": "reload" %>
-  </head>
-
-  <body>
-    <h1>Purchase Tokens</h1>
-    <%= form_with(url: token_purchases_path, method: :post) do |form| %>
+<body class="token-body">
+  <div class="header">
+    <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
+    <a class="home-button" href="/">Home</a>
+  </div>
+  
+  <div class="tokens">
+    <%= form_with(url: tokens_path, method: :post, id: 'tokenForm') do |form| %>
       <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
-      <%= form.hidden_field :amount, id: "purchase_amount" %>
-      <%= form.button "Purchase $100.00", onclick: "purchaseTokens(100)" %>
-      <%= form.button "Purchase $200.00", onclick: "purchaseTokens(200)" %>
-      <%= form.button "Purchase $300.00", onclick: "purchaseTokens(300)" %>
-    <% end %>
-    
-    <script>
-      function purchaseTokens(amount) {
-        document.getElementById('purchase_amount').value = amount;
-        document.querySelector('form').submit();
-      }
-    </script>
+      
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+        <span class="top-banner">100</span>
+        <span class="bottom-banner">$1.99</span>
+        <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
 
-    <%= yield %>
-    <%= link_to "Back", games_show_path %>
-  </body>
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+        <span class="top-banner">600</span>
+        <span class="bottom-banner">$4.99</span>
+        <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", onclick: "purchaseTokens(300)" %>
+        <span class="top-banner">1500</span>
+        <span class="bottom-banner">$9.99</span>
+        <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(100)" %>
+        <span class="top-banner">100</span>
+        <span class="bottom-banner">$29.99</span>
+        <img class="coin7" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin8" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin9" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin10" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(200)" %>
+        <span class="top-banner">200</span>
+        <span class="bottom-banner">$49.99</span>
+        <img class="coin11" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin12" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin13" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin14" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin15" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+
+      <span class="token-wrapper">
+        <%= form.button "", type: 'button', onclick: "purchaseTokens(300)" %>
+        <span class="top-banner">2</span>
+        <span class="bottom-banner">$300000000.99</span>
+        <img class="coin16" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin17" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin18" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin19" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin20" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin21" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
+    <% end %>
+  </div>
+  
+  <script>
+    function purchaseTokens(amount) {
+      document.getElementById('purchase_amount').value = amount;
+      document.querySelector('form').submit();
+    }
+  </script>
+
+  <%= yield %>
+</body>
 </html>

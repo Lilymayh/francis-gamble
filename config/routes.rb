@@ -22,6 +22,9 @@ Rails.application.routes.draw do
 
   resources :tictactoe, only: [:create, :show, :update, :index, :new]
 
+  get '/tokens', to: 'token_purchases#new'
+
+  post '/tokens', to: 'token_purchases#create'
 
 
   get '/games', to: 'games#show', as: 'games_show'
