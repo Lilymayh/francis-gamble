@@ -1,15 +1,14 @@
 class TokenPurchasesController < ApplicationController
   #update 
   def new_token_purchase
-    @user = FakeUser.find_by(email: 'a@a.a')
+    @user = Users.find_by(email: 'a@a.a')
   end
     
   def create_token_purchase
     amount = params[:amount].to_f
-    @user = FakeUser.find_by(email: 'a@a.a')
+    @user = Users.find_by(email: 'a@a.a')
     if @user
       @user.update_attribute(:balance, @user.balance + amount)
-      flash[:success] = "Purchase successful! Your balance has been updated."
     end
     render json: { message: flash[:success] }
   end
