@@ -6,10 +6,16 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Flowers
+module FrancisGamble
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+
+    # Conditionally load Dotenv in development and test environments
+    if ['development', 'test'].include?(Rails.env)
+      require 'dotenv-rails'
+      Dotenv::Railtie.load
+    end
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -18,5 +24,9 @@ module Flowers
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Add the host configuration
+    config.hosts << "blogzilla.blog"
   end
 end
+

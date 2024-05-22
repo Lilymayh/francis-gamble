@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html {
+  background: linear-gradient(180deg, #B8DEF3 11.83%, #D8EEFA 92.33%);
+  height: 100%;
+ }
+
+
+ .main_logo {
+	text-align: center;
+	font-size: 50px;
+ }
+
+ .buttonz {
+	text-align: center;
+	margin-bottom: 5%;
+ }
+
+ #registerForm {
+	display:inline-block;
+	text-align: center;
+ }
+
+#loginForm {
+	display:inline-block;
+	text-align: center;
+}
+
+
+#board {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+#board td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#board tr:first-child td {
+  border-top: 2px solid #000;
+}
+
+#board tr:last-child td {
+  border-bottom: 2px solid #000;
+}
+
+#board td:first-child {
+  border-left: 2px solid #000;
+}
+
+#board td:last-child {
+  border-right: 2px solid #000;
+}
+
+img {
+  text-align: center;
+  margin: 4% 20% 0 20%;
+}
+
+#registerBtn{
+background-color: #B2404E;
+color: white;
+width: 8%;
+font-size: 30px;
+margin: 20px;
+}
+
+#loginBtn{
+background-color: #B2404E;
+color: white;
+width: 8%;
+font-size: 30px;
+margin: 20px;
+}
+
+#logoz {
+  animation: bounce 1s infinite ;
+}
+
+audio {
+  display: none;
+}
+
+.buttonContainer {
+  margin-top: 45px;
+  display: block;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+}
+
+.container img {
+  text-align: right;
+  margin: 0;
+  width: 10%;
+}
+
+.moneyContainer {
+  text-align: center;
+  margin: 0;
+  width: 10%;
+  float: right;
+}

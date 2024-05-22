@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FrancisGamble</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  </head>
+<head>
+  <title>FrancisGamble</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
+</head>
+
+<body>
+
+  <div class='main_logo'>
+  <img src='assets/FrancisGamble.png' id='logoz'>
+  </div>
+
+  <div class='buttonContainer'>
+  <button id="loginBtn">Login</button>
+  <button id="registerBtn">Register</button>
+  </div>
+
+  <div id="registerForm" style="display: none;">
+    <%= render 'users/new' %>
+  </div>
+
+  <div id="loginForm" style="display: none;">
+    <%= render 'users/existing' %>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const registerBtn = document.getElementById('registerBtn');
+      const loginBtn = document.getElementById('loginBtn');
+      const registerForm = document.getElementById('registerForm');
+      const loginForm = document.getElementById('loginForm');
+
+      registerBtn.addEventListener('click', function () {
+        registerForm.style.display = 'block';
+        loginForm.style.display = 'none';
+      });
+
+      loginBtn.addEventListener('click', function () {
+        registerForm.style.display = 'none';
+        loginForm.style.display = 'block';
+      });
+    });
+  </script>
+  <%= link_to "Games", games_show_path %>
+
+  
+<audio controls autoplay>
+  <source src="<%= asset_path('poker.mp3') %>" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+</body>
+
 </html>

@@ -21,15 +21,30 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'cypress-on-rails', '~> 1.17'
 
 #Styling with bootstrap
-gem 'bootstrap'
+gem 'bootstrap', '~> 5.3'
 
 gem 'greensock-rails', '~> 1.20', '>= 1.20.4.0'
 
+# dotenv
+gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'spring'
+
 gem 'bootsnap'
+
+gem 'listen'
 
 gem 'puma'
 
 gem 'sqlite3', '~> 1.4'
 
+<<<<<<< HEAD
+gem 'esbuild-rails', '~> 0.1.4'
+
+gem 'importmap-rails', '~> 0.6.2'
+
+gem 'webpacker', '~> 5.0'
+=======
 gem 'webpacker'
 
+>>>>>>> origin/style/tokens
