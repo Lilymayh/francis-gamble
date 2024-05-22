@@ -29903,3 +29903,1005 @@ NoMethodError (undefined method `balance' for nil:NilClass
                                ^^^^^^^^):
   
 app/controllers/token_purchases_controller.rb:12:in `create'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-22 12:50:13 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 11.5ms | Allocations: 18428)
+Completed 200 OK in 30ms (Views: 17.6ms | ActiveRecord: 0.4ms | Allocations: 24304)
+
+
+Started GET "/games" for ::1 at 2024-05-22 12:50:16 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 224)
+  Rendered games/show.html.erb (Duration: 16.5ms | Allocations: 5988)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.1ms | Allocations: 7470)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 12:50:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/" for ::1 at 2024-05-22 12:50:46 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 572)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 7925)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 9126)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 12:50:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started POST "/login" for ::1 at 2024-05-22 12:50:52 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"b@b.b", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "b@b.b"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms | Allocations: 1269)
+
+
+Started GET "/" for ::1 at 2024-05-22 12:50:52 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6771)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 7078)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 12:50:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/" for ::1 at 2024-05-22 12:50:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 327)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 6549)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 6822)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 12:50:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started POST "/register" for ::1 at 2024-05-22 12:51:06 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-22 19:51:07.240911"], ["updated_at", "2024-05-22 19:51:07.240911"], ["email", "a@a.a"], ["password_digest", "$2a$12$cuU9lfY6Sxnf3WX3Uk.El.uXjs8iLf6kez75t9w2brp7glIhKCNuK"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 253ms (ActiveRecord: 3.0ms | Allocations: 7415)
+
+
+Started GET "/games" for ::1 at 2024-05-22 12:51:07 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered games/show.html.erb (Duration: 3.9ms | Allocations: 4955)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 5909)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 12:51:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/tokens" for ::1 at 2024-05-22 12:51:18 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 11.3ms | Allocations: 10725)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 11619)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 12:51:27 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 11ms (ActiveRecord: 0.5ms | Allocations: 4444)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 12:52:13 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 12.8ms | Allocations: 10686)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 11574)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 12:52:14 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 0.3ms | Allocations: 3043)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 12:53:23 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 14.1ms | Allocations: 10688)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms | Allocations: 11577)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 12:58:20 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 0.3ms | Allocations: 3039)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-22 13:01:11 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 2773)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/application_controller.rb:5:in `current_user'
+app/controllers/token_purchases_controller.rb:4:in `new'
+Started GET "/tokens" for ::1 at 2024-05-22 13:01:14 -0700
+Processing by TokenPurchasesController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 546)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/application_controller.rb:5:in `current_user'
+app/controllers/token_purchases_controller.rb:4:in `new'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afake_users" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL, "balance" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "afake_users" ("id","created_at","updated_at","email","password_digest","balance")
+                     SELECT "id","created_at","updated_at","email","password_digest","balance" FROM "fake_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "fake_users"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "fake_users" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "fake_users" ("id","created_at","updated_at","email","password_digest")
+                     SELECT "id","created_at","updated_at","email","password_digest" FROM "afake_users"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "afake_users"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "balance" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGames (20240513173845)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "games" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar, "game_type" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513173845"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBets (20240513174057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bets" ("id" uuid NOT NULL PRIMARY KEY, "user_id" uuid NOT NULL, "game_id" uuid NOT NULL, "bet_amount" decimal(10,2) NOT NULL, "bet_date" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_87dbfdd206"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_65def5c9e5"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bets_on_user_id" ON "bets" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bets_on_game_id" ON "bets" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174057"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWinnings (20240513174225)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "winnings" ("id" uuid NOT NULL PRIMARY KEY, "bet_id" uuid NOT NULL, "winnings_amount" decimal(10,2), "win_date" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_e261ff059d"
+FOREIGN KEY ("bet_id")
+  REFERENCES "bets" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_winnings_on_bet_id" ON "winnings" ("bet_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240513174225"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFakeUsers (20240518020747)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "fake_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240518020747"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddEmailToFakeUsers (20240518020907)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "email" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240518020907"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTictactoes (20240521194239)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "tictactoes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "board" text DEFAULT '[]', "current_turn" varchar DEFAULT 'X', "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240521194239"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToFakeUsers (20240522063254)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "password_digest" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240522063254"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "balance" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-05-22 20:41:37.354095"], ["updated_at", "2024-05-22 20:41:37.354095"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-22 14:14:01 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2605)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/application_controller.rb:5:in `current_user'
+app/controllers/token_purchases_controller.rb:4:in `new'
+Started GET "/tokens" for ::1 at 2024-05-22 14:22:05 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 1135)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/application_controller.rb:5:in `current_user'
+app/controllers/token_purchases_controller.rb:4:in `new'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-22 14:30:24 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2606)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/application_controller.rb:5:in `current_user'
+app/controllers/token_purchases_controller.rb:4:in `new'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-05-22 14:32:48 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 17.2ms | Allocations: 18428)
+Completed 200 OK in 35ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 24089)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:33:18 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 1836)
+
+
+  
+NoMethodError (undefined method `balance' for nil:NilClass
+
+    puts "User balance: #{@user.balance}"
+                               ^^^^^^^^):
+  
+app/controllers/token_purchases_controller.rb:12:in `create'
+Started POST "/tokens" for ::1 at 2024-05-22 14:34:48 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mFakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE FakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 4325)
+
+
+  
+NoMethodError (undefined method `balance' for nil:NilClass
+
+    puts "User balance: #{@user.balance}"
+                               ^^^^^^^^):
+  
+app/controllers/token_purchases_controller.rb:12:in `create'
+Started POST "/tokens" for ::1 at 2024-05-22 14:34:49 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE FakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 1993)
+
+
+  
+NoMethodError (undefined method `balance' for nil:NilClass
+
+    puts "User balance: #{@user.balance}"
+                               ^^^^^^^^):
+  
+app/controllers/token_purchases_controller.rb:12:in `create'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/tokens" for ::1 at 2024-05-22 14:35:27 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mFakeUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 4253)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/token_purchases_controller.rb:10:in `abort'
+app/controllers/token_purchases_controller.rb:10:in `create'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mFakeUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users"[0m
+Started GET "/" for ::1 at 2024-05-22 14:36:58 -0700
+Processing by PagesController#home as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 14363)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.1ms | Allocations: 16590)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 14:36:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started POST "/register" for ::1 at 2024-05-22 14:37:09 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"d@d.d", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1838)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/register" for ::1 at 2024-05-22 14:38:12 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"d@d.d", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "d@d.d"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-22 21:38:13.079064"], ["updated_at", "2024-05-22 21:38:13.079064"], ["email", "d@d.d"], ["password_digest", "$2a$12$.yxF3Ndj08cNCadBImF/Fe5IlkZ31UfDscOyMvaLWxDxHpB6ojsCa"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 261ms (ActiveRecord: 2.7ms | Allocations: 10483)
+
+
+Started GET "/games" for ::1 at 2024-05-22 14:38:13 -0700
+Processing by GamesController#show as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE FakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 187)
+  Rendered games/show.html.erb (Duration: 7.8ms | Allocations: 5574)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 9867)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 14:38:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/" for ::1 at 2024-05-22 14:38:22 -0700
+Processing by PagesController#home as HTML
+  [1m[36mFakeUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 30)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6656)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.3ms | Allocations: 8092)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 14:38:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+  [1m[36mFakeUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users"[0m
+Started GET "/" for ::1 at 2024-05-22 14:39:04 -0700
+Processing by PagesController#home as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mFakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6939)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 12781)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 14:39:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/games" for ::1 at 2024-05-22 14:39:10 -0700
+Processing by GamesController#show as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE FakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered games/show.html.erb (Duration: 9.9ms | Allocations: 5345)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 6785)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 14:39:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/tokens" for ::1 at 2024-05-22 14:39:13 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE FakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 14.6ms | Allocations: 12156)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 13746)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:39:15 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1010)
+
+
+  
+TypeError (no implicit conversion of FakeUser into String):
+  
+app/controllers/token_purchases_controller.rb:10:in `abort'
+app/controllers/token_purchases_controller.rb:10:in `create'
+Started GET "/tokens" for ::1 at 2024-05-22 14:39:20 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE FakeUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 13.0ms | Allocations: 10973)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 12045)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 14:40:08 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 4.1ms | Allocations: 11225)
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 17452)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:40:10 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 0.4ms | Allocations: 5213)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:40:14 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 0.3ms | Allocations: 3425)
+
+
+  [1m[36mFakeUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users"[0m
+Started GET "/tokens" for ::1 at 2024-05-22 14:41:28 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 8.7ms | Allocations: 11220)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.5ms | Allocations: 17387)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:41:29 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+Completed 422 Unprocessable Entity in 9ms (ActiveRecord: 0.4ms | Allocations: 5066)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/token_purchases_controller.rb:16:in `create'
+Started POST "/tokens" for ::1 at 2024-05-22 14:41:50 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = ?, "balance" = ? WHERE "fake_users"."id" = ?[0m  [["updated_at", "2024-05-22 21:41:50.783728"], ["balance", 0], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 1.2ms | Allocations: 9472)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:41:51 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 0.3ms | Allocations: 3424)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 14:41:53 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 12.1ms | Allocations: 11212)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 12561)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:41:54 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.4ms | Allocations: 3571)
+
+
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users"[0m
+Started GET "/tokens" for ::1 at 2024-05-22 14:43:15 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 8.6ms | Allocations: 10966)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 12035)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 14:46:05 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 11.1ms | Allocations: 11885)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.1ms | Allocations: 13411)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 14:46:40 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 13.0ms | Allocations: 11926)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.1ms | Allocations: 13532)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 14:47:55 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 10.2ms | Allocations: 11918)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 13525)
+
+
+Started GET "/tokens" for ::1 at 2024-05-22 14:48:17 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 9.7ms | Allocations: 11895)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 13500)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:48:18 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"200"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = ?, "balance" = ? WHERE "fake_users"."id" = ?[0m  [["updated_at", "2024-05-22 21:48:18.108901"], ["balance", 200], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 11ms (ActiveRecord: 1.2ms | Allocations: 5453)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:48:27 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"100"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = ?, "balance" = ? WHERE "fake_users"."id" = ?[0m  [["updated_at", "2024-05-22 21:48:27.686052"], ["balance", 300], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms | Allocations: 3990)
+
+
+  [1m[36mFakeUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users"[0m
+Started GET "/tokens" for ::1 at 2024-05-22 14:51:48 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 4.2ms | Allocations: 11300)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 0.6ms | Allocations: 17086)
+
+
+Started POST "/tokens" for ::1 at 2024-05-22 14:51:50 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"200"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = ?, "balance" = ? WHERE "fake_users"."id" = ?[0m  [["updated_at", "2024-05-22 21:51:50.449498"], ["balance", 500], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 12ms (ActiveRecord: 1.9ms | Allocations: 4495)
+
+
+Started GET "/games" for ::1 at 2024-05-22 14:51:53 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.1ms | Allocations: 183)
+  Rendered games/show.html.erb (Duration: 15.0ms | Allocations: 5879)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 7475)
+
+
+Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 14:51:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-22 14:54:14 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.0ms | Allocations: 1013)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 2730)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 14:54:16 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 4.3ms | Allocations: 1134)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 4592)
+
+
+Started POST "/tictactoe" for ::1 at 2024-05-22 14:54:17 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.8ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-05-22 21:54:17.982029"], ["updated_at", "2024-05-22 21:54:17.982029"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/1
+Completed 302 Found in 13ms (ActiveRecord: 2.4ms | Allocations: 3206)
+
+
+Started GET "/tictactoe/1" for ::1 at 2024-05-22 14:54:17 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 9.7ms | Allocations: 7899)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms | Allocations: 9423)
+
+
+  
+ActionView::Template::Error (Asset `tictactoe.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link tictactoe.js
+
+and restart your server):
+    44: 
+    45:     <%= link_to "Back", tictactoe_index_path %>
+    46: 
+    47:     <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
+    48: 
+    49:   </body>
+    50: 
+  
+app/views/tictactoe/show.html.erb:47
+app/controllers/tictactoe_controller.rb:25:in `show'

@@ -18,7 +18,7 @@
   <div class="tokens">
   <form action="/tokens" method="post" id="tokenForm">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token, id: "purchase_amount" %>
-    
+  <%= hidden_field_tag :amount, 0, id: "tokenValue" %>
       <span class="token-wrapper">
         <button type="button" onclick="purchaseTokens(100)"></button>
         <span class="top-banner">100</span>
@@ -80,7 +80,7 @@
   
   <script>
     function purchaseTokens(amount) {
-      document.querySelector('#tokenForm').value = amount;
+      document.getElementById('tokenValue').value = amount;
       document.querySelector('form').submit();
     }
   </script>

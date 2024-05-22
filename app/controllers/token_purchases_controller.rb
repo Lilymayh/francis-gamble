@@ -1,7 +1,7 @@
 class TokenPurchasesController < ApplicationController
 
   def new
-    @user = current_user
+    @current_user
     render layout: false
 
   end
@@ -13,7 +13,7 @@ class TokenPurchasesController < ApplicationController
 
     if @user
       new_balance = @user.balance.to_f + amount
-      if @user.update(balance: new_balance)
+      if @user.update!(balance: new_balance)
         puts "Balance updated successfully!"
         puts "User balance: #{new_balance}"
       end
