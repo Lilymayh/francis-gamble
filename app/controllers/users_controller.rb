@@ -2,9 +2,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path, notice: "Registration successful!"
+      redirect_to "/games"
     else
-      # Handle validation errors or other cases
+      # Handle validation errors
       render 'pages/home'
     end
   end
