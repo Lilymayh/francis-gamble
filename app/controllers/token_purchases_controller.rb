@@ -9,8 +9,9 @@ class TokenPurchasesController < ApplicationController
     @user = FakeUser.find_by(email: 'a@a.a')
     if @user
       @user.update_attribute(:balance, @user.balance + amount)
+      flash[:success] = "Purchase successful! Your balance has been updated."
     end
-    puts @user.inspect
+    render json: { message: flash[:success] }
   end
 
 end

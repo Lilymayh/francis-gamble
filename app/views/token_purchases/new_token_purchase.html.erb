@@ -7,7 +7,6 @@
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
-
 </head>
 
 <body class="token-body">
@@ -15,9 +14,13 @@
     <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
     <a class="home-button" href="/">Home</a>
   </div>
-
+  <% if flash[:success] %>
+  <div class="alert alert-success">
+    <%= flash[:success] %>
+  </div>
+<% end %>
   <div class="tokens">
-    <%= form_with(url: tokens_path, method: :post) do |form| %>
+    <%= form_with(url: tokens_path, method: :post, id: 'tokenForm') do |form| %>
       <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
       
       <span class="token-wrapper">
@@ -78,7 +81,7 @@
       </span>
     <% end %>
   </div>
-
+  
   <script>
     function purchaseTokens(amount) {
       document.getElementById('purchase_amount').value = amount;
