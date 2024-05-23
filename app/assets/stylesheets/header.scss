@@ -15,8 +15,6 @@
 	margin-top: 1.5em;
 }
 
-.moneyContainer {
-}
 
 .balance {
 	width: 15vw;
@@ -40,4 +38,28 @@
 	background-color: white;
 	border: 2px solid #3568A8;
 	border-radius: 8px;
+}
+
+.cell {
+	background-color: #B2404E;
+}
+
+p {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	align-content: center;
+}
+
+.logout-link {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	align-content: center;
+	text-decoration: none;
+	color:#3568A8;
+}
+
+.logout-link :hover {
+	color: #19385f;
 }

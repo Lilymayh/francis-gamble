@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'balanceFont'; /* Choose a custom name */
+	src: asset-url('Pokemon_Hollow.ttf') format('truetype'); /* Path to your font file */
+}
+
+.games {
+	width: 55vw;
+	height: 50vh;
+	background-color: #B2404E;
+	border: 40px solid #99001F;
+	border-radius: 8px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10em;
+	margin-left: 22.5vw;
+}
+
+.play {
+	margin-top: 1.5em;
+	padding: 0.5em;
+	font-family: "gameFont";
+	background-color: white;
+	color: #B2404E;
+	border-radius: 8px;
+}
+
+.tictactoe-route {
+	height: 10vh;
+	width: 10vw;
+	margin-top: 2em;
+	text-decoration: none;
+	background-color: white;
+	color: transparent;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1200px-Tic_tac_toe.svg.png');
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	background-size: 70%; 
+	border-radius: 8px;
+}
+
+.checkers-route {
+	height: 10vh;
+	width: 10vw;
+	margin-top: 2em;
+	text-decoration: none;
+	background-color: white;
+	color: transparent;
+	background-image: url('https://www.boardgamecentral.com/img/misc/checkerboard-br.png');
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	background-size: 70%; 
+	border-radius: 8px;
+}
+
+.gameContainer {
+  background-color: #4a3da9;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.338);
+  border-radius: 8px;
+	margin: 7%;
+	padding: 5%;
+}
+
+.tictacA {
+	background-color: #B2404E;
+	text-align: center;
+	margin: 5% 30% 5% 30%;
+	padding: 2%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.338);
+}
+
+.tictacA a {
+	font-size: 40px;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 55px;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

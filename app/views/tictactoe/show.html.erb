@@ -19,7 +19,8 @@
 
   <body>
     <%= render 'partials/header' %>
-    <h1>Tic Tac Toe</h1>
+    <div class='gameContainer'>
+    <h2>Tic-Tac-Toe!</h2>
     <div class="boardContainer">
 
       <div class="board" id="board" data-game-id="<%= @tictactoe.id %>">
@@ -36,13 +37,13 @@
 
     <div class="winning-message" id="winningMessage">
 
-      <div data-winning-message-text></div>
-      <h3>+<%= @tictactoe.bet_amount * 2 %> Tokens!<h3>
-      <%= link_to "Play Again!", new_tictactoe_path, class: "btn btn-primary" %>
+      <div id='winText' data-winning-message-text></div>
+      <h3 id='wonTokens'>+<%= @tictactoe.bet_amount * 2 %> Tokens!<h3>
+      <%= link_to "Play Again!", new_tictactoe_path, class: "playAgain" %>
 
     </div>
 
-    <%= link_to "Back", tictactoe_index_path %>
+    </div>
 
     <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
 

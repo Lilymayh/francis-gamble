@@ -9,13 +9,21 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+   <%= stylesheet_link_tag "games", "data-turbo-track": "reload" %>
 </head>
 
 <body>
   <%= render 'partials/header' %>
+  <div class='gameContainer'>
 	 <h2>Games:</h2>
+   <div class='tictacA'>
   <%= link_to "Tic Tac Toe", tictactoe_index_path %>
-  
+  </div>
+
+  <div class='tictacA'>
+  <a>Checkers</a>
+  </div>
+  </div>
 </body>
 
 </html>

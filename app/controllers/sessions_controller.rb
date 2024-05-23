@@ -9,8 +9,10 @@ class SessionsController < ApplicationController
       redirect_to "/games"
     else
       flash.now[:alert] = "Invalid email/password combination"
+      render :new
     end
   end
+  
   
 
 

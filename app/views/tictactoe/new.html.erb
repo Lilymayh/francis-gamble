@@ -1,8 +1,10 @@
 <%= render 'partials/header' %>
 
-<h2>Tic Tac Toe</h2>
+<div class='gameContainer'>
+  <%= link_to 'Back', tictactoe_index_path %>
+<h2>Tic-Tac-Toe!</h2>
 <h3>Place your bet to start the game!</h3>
-
+<div id='bets'>
 <%= form_with(model: @tictactoe, url: start_tictactoe_index_path, local: true) do |form| %>
   <%= form.hidden_field :board, value: Array.new(9, nil).to_json %>
   <%= form.hidden_field :amount, id: "bet_amount" %>
@@ -14,12 +16,13 @@
 
     <button type="button" class="subtract-balance-button" onclick="updateBetAndSubmit(20);">Bet 20 Tokens</button>
 
-    <button type="button" class="subtract-balance-button" onclick="updateBetAndSubmit(50);">Get 50 Tokens</button>
+    <button type="button" class="subtract-balance-button" onclick="updateBetAndSubmit(50);">Bet 50 Tokens</button>
     
+  </div>
   </div>
 <% end %>
 
-<%= link_to 'Back', tictactoe_index_path %>
+</div>
 
 <script>
   function updateBetAndSubmit(amount) {
