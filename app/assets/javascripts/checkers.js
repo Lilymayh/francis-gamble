@@ -1,71 +1,83 @@
 document.addEventListener('DOMContentLoaded', () => {
   const squares = document.querySelectorAll('.square');
   let selectedSquare = null;
-	console.log("successfull")
+  console.log("successfully initialized");
 
-    squares.forEach(square => {
-      square.addEventListener('click', (event) => {        
-        const clickedSquare = event.target.closest('.square');
+  squares.forEach(square => {
+    square.addEventListener('click', (event) => {        
+      const clickedSquare = event.target.closest('.square');
+      console.log('click', event.target);
+      console.log(clickedSquare.dataset);
 
-			console.log('click', event.target);
-      console.log(square.dataset)
-
-      if (selectedSquare) {
+      if (!selectedSquare) {
+        selectedSquare = clickedSquare;
+        console.log('Selected square', selectedSquare.dataset);
+      } else {
         const destinationSquare = clickedSquare;
         console.log('Moving piece from', selectedSquare.dataset, 'to', destinationSquare.dataset);
 
-        movePiece(selectedSquare, destinationSquare);
-        selectedSquare = null;
+        if (validMove(selectedSquare, destinationSquare)) {
+          movePiece(selectedSquare, destinationSquare);
+          selectedSquare = null;
+        } else {
+          console.log('Invalid move');
+        }
       }
     });
-  })
-})
+  });
 
-//     piece.addEventListener('dragover', (event) => {
-//       event.preventDefault();
-//     });
+  function movePiece(sourceSquare, destinationSquare) {
+    if (sourceSquare && destinationSquare && sourceSquare !== destinationSquare) {
+      const piece = sourceSquare.querySelector('.piece');
+      if (piece) {
+        destinationSquare.appendChild(piece);
+        console.log('Piece moved from', sourceSquare.dataset, 'to', destinationSquare.dataset);
+      }
+    }
+  }
+  
+  function validMove(sourceSquare, destinationSquare) {
+    // Extracting row and column information from dataset attributes
+    const sourceRow = parseInt(sourceSquare.dataset.row);
+    const sourceCol = parseInt(sourceSquare.dataset.col);
+    const destRow = parseInt(destinationSquare.dataset.row);
+    const destCol = parseInt(destinationSquare.dataset.col);
 
-// 		piece.addEventListener('drop', async (event) => {
-//       event.preventDefault();
-//       const id = event.dataTransfer.getData('text/plain');
-//       const draggedElement = document.getElementById(id);
-//       const targetElement = event.target.closest('.square');
+    // Selecting the piece in the source square
+    const piece = sourceSquare.querySelector('.piece');
+    if (!piece) return false;
 
-// 			//Validate move
-//       if (draggedElement && targetElement) {
-//         const sourceSquareId = draggedElement.closest('.square').dataset.squareId;
-//         const destinationSquareId = targetElement.dataset.squareId;
+    // Determining the color of the piece
+    const color = piece.dataset.piece;
+    // Adjusting direction of movement based on color
+    const direction = (color === "black") ? 1 : -1;
 
-//         try {
-//           const response = await fetch('/pieces/validate_move', {
-//             method: 'POST',
-//             headers: {
-//               'Content-Type': 'application/json',
-//               'X-CSRF-Token': Rails.csrfToken()
-//             },
-//             body: JSON.stringify({ source_square_id: sourceSquareId, destination_square_id: destinationSquareId })
-//           });
+    // Calculating row and column differences
+    const rowDiff = Math.abs(destRow - sourceRow);
+    const colDiff = Math.abs(destCol - sourceCol);
 
-//           const data = await response.json();
-//           if (data.valid) {
-//             targetElement.appendChild(draggedElement);
-//           } else {
-//             console.log('Invalid move');
-//           }
-//         } catch (error) {
-//           console.error('Error:', error);
-//         }
-//       }
-//     });
+    // Calculating the row and column of the potentially captured piece
+    const capturedRow = (sourceRow + destRow) / 2;
+    const capturedCol = (sourceCol + destCol) / 2;
 
-//     piece.addEventListener('dragend', (event) => {
-//       const id = event.dataTransfer.getData('text/plain');
-//       const draggedElement = document.getElementById(id);
-//       if (draggedElement) {
-//         draggedElement.removeAttribute('data-dnd-id');
-//       }
-//     });
+    // Check if destination square is empty
+    if (destinationSquare.querySelector('.piece')) return false;
 
-//     piece.draggable = true;
-//   });
-// });
+    // Check if source and destination squares are the same
+    if (sourceSquare === destinationSquare) return false;
+
+    // Check if piece is moving in the correct direction
+    if (!piece.classList.contains('king') && (direction * (destRow - sourceRow)) <= 0) return false;
+
+    // Check if the destination square is a valid diagonal move
+    if ((rowDiff !== 1 || colDiff !== 1)) return false;
+
+    // Check if the destination square is of the opposite color
+    if ((sourceSquare.classList.contains('white') && destinationSquare.classList.contains('black')) ||
+        (sourceSquare.classList.contains('black') && destinationSquare.classList.contains('white'))) {
+      return true;
+    }
+    // If none of the conditions are met, return false
+    return false;
+  }
+});
