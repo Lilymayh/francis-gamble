@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_05_23_084807) do
+ActiveRecord::Schema.define(version: 2024_05_23_093716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2024_05_23_084807) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "email"
     t.string "password_digest"
-    t.integer "balance"
+    t.decimal "balance", precision: 10, scale: 2
   end
 
   create_table "games", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|

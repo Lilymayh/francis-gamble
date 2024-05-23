@@ -8,22 +8,22 @@
 // import * as ActiveStorage from '@rails/activestorage';
 // import 'channels';
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const registerBtn = document.getElementById('registerBtn');
-//   const loginBtn = document.getElementById('loginBtn');
-//   const registerForm = document.getElementById('registerForm');
-//   const loginForm = document.getElementById('loginForm');
-//   const registrationForm = document.getElementById('registrationForm');
-//   const existingUsers = document.getElementById('existingUsers');
+document.addEventListener('DOMContentLoaded', function () {
+   const registerBtn = document.getElementById('registerBtn');
+   const loginBtn = document.getElementById('loginBtn');
+   const registerForm = document.getElementById('registerForm');
+   const loginForm = document.getElementById('loginForm');
+   const registrationForm = document.getElementById('registrationForm');
+   const existingUsers = document.getElementById('existingUsers');
 
-//   registerBtn.addEventListener('click', function () {
-//     registerForm.submit();
-//   });
+   registerBtn.addEventListener('click', function () {
+     registerForm.submit();
+   });
 
-//   loginBtn.addEventListener('click', function () {
-//     loginForm.submit();
-//   });
-// });
+   loginBtn.addEventListener('click', function () {
+     loginForm.submit();
+   });
+ });
 
 // Rails.start();
 // Turbolinks.start();

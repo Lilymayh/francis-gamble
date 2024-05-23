@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :password_digest # This column is for storing hashed passwords
       t.string :email
       t.datetime :registration_date
-      t.decimal :balance, precision: 10, scale: 2
+      t.decimal :balance, precision: 10, scale: 2, default: 0
 
       t.timestamps
     end

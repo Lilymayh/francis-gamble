@@ -4,6 +4,12 @@
 		<img src="<%= asset_path('FrancisGamble.png') %>" alt="Francis Gamble" id="logozHeader">
 </a>
 
+<% if @current_user %>
+      <p>Logged in as: <%= @current_user.email %></p>
+    <% else %>
+      <p>Not logged in</p>
+    <% end %>
+
 	 <div class="moneyContainer">
 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
