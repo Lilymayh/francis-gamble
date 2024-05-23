@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_05_23_055850) do
+ActiveRecord::Schema.define(version: 2024_05_23_084807) do
 
-# Could not dump table "bets" because of following StandardError
-#   Unknown type 'uuid' for column 'id'
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "fake_users", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -23,8 +23,12 @@ ActiveRecord::Schema.define(version: 2024_05_23_055850) do
     t.integer "balance"
   end
 
-# Could not dump table "games" because of following StandardError
-#   Unknown type 'uuid' for column 'id'
+  create_table "games", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
+    t.string "game_type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "tictactoes", force: :cascade do |t|
     t.text "board", default: "[]"
@@ -34,10 +38,15 @@ ActiveRecord::Schema.define(version: 2024_05_23_055850) do
     t.integer "bet_amount"
   end
 
-# Could not dump table "winnings" because of following StandardError
-#   Unknown type 'uuid' for column 'id'
+  create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.string "email"
+    t.datetime "registration_date"
+    t.decimal "balance", precision: 10, scale: 2
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+  end
 
-  add_foreign_key "bets", "games"
-  add_foreign_key "bets", "users"
-  add_foreign_key "winnings", "bets"
 end
