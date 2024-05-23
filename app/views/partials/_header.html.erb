@@ -6,6 +6,7 @@
 
 <% if @current_user %>
       <p>Logged in as: <%= @current_user.email %></p>
+			<%= link_to "Logout", logout_path, method: :delete, class: "logout-link" %>
     <% else %>
       <p>Not logged in</p>
     <% end %>

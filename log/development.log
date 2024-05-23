@@ -61216,3 +61216,797 @@ Processing by TictactoeController#index as HTML
 Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.8ms | Allocations: 4570)
 
 
+Started GET "/games/tictactoe/1" for ::1 at 2024-05-23 02:38:53 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 2536)
+  Rendered tictactoe/show.html.erb (Duration: 6.7ms | Allocations: 8775)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 10177)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-23 02:39:02 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 2975)
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:7
+  Rendered tictactoe/index.html.erb (Duration: 4.3ms | Allocations: 3662)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 4546)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:39:05 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.1ms | Allocations: 1734)
+  Rendered games/show.html.erb (Duration: 5.6ms | Allocations: 6521)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 7429)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-23 02:39:05 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 2975)
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:7
+  Rendered tictactoe/index.html.erb (Duration: 3.6ms | Allocations: 3662)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 4555)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-23 02:39:06 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.4ms | Allocations: 2975)
+  Rendered tictactoe/new.html.erb (Duration: 3.1ms | Allocations: 3464)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 4375)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-05-23 02:39:07 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"50"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "tester@kills.com"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-05-23 09:39:07.540591"], ["balance", "270.0"], ["id", 8]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (0.3ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-23 09:39:07.543457"], ["updated_at", "2024-05-23 09:39:07.543457"], ["bet_amount", 50]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/2
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms | Allocations: 5687)
+
+
+Started GET "/games/tictactoe/2" for ::1 at 2024-05-23 02:39:07 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 1.6ms | Allocations: 2511)
+  Rendered tictactoe/show.html.erb (Duration: 5.4ms | Allocations: 8738)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 10134)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-05-23 02:39:08 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"0"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- \n- \n- \n- \n- \n- \n- O\n- \n"], ["updated_at", "2024-05-23 09:39:08.736408"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 3493)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-05-23 02:39:10 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- \n- O\n- \n- X\n- \n- \n- O\n- \n"], ["updated_at", "2024-05-23 09:39:10.386434"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 3542)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-05-23 02:39:12 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.2ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- \n- O\n- \n- X\n- \n- \n- O\n- X\n"], ["updated_at", "2024-05-23 09:39:12.438265"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "tester@kills.com"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-05-23 09:39:12.442467"], ["balance", "370.0"], ["id", 8]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 6.0ms | Allocations: 5710)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-23 02:39:13 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 2975)
+  Rendered tictactoe/new.html.erb (Duration: 3.1ms | Allocations: 3464)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 4348)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:39:32 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1735)
+  Rendered games/show.html.erb (Duration: 6.7ms | Allocations: 6531)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 7438)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2749693393994392230)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2749693393994392230)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/games" for ::1 at 2024-05-23 02:43:56 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 1785)
+  Rendered games/show.html.erb (Duration: 6.0ms | Allocations: 6834)
+Completed 200 OK in 15ms (Views: 6.7ms | ActiveRecord: 1.9ms | Allocations: 14585)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:43:56 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 1734)
+  Rendered games/show.html.erb (Duration: 4.6ms | Allocations: 6506)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 7500)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:44:04 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 1734)
+  Rendered games/show.html.erb (Duration: 5.5ms | Allocations: 6499)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 7385)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:45:37 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 1785)
+  Rendered games/show.html.erb (Duration: 9.8ms | Allocations: 6832)
+Completed 200 OK in 19ms (Views: 10.5ms | ActiveRecord: 2.2ms | Allocations: 14504)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:45:40 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1735)
+  Rendered games/show.html.erb (Duration: 5.1ms | Allocations: 6509)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 7522)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:45:46 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1734)
+  Rendered games/show.html.erb (Duration: 5.4ms | Allocations: 6499)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 7385)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:45:50 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 1785)
+  Rendered games/show.html.erb (Duration: 5.3ms | Allocations: 6832)
+Completed 200 OK in 17ms (Views: 6.1ms | ActiveRecord: 3.0ms | Allocations: 14580)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:45:50 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.1ms | Allocations: 1734)
+  Rendered games/show.html.erb (Duration: 5.4ms | Allocations: 6499)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 7505)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:46:22 -0700
+  
+ArgumentError (Invalid route name, already in use: 'logout' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:16:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/games" for ::1 at 2024-05-23 02:46:49 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 2087)
+  Rendered games/show.html.erb (Duration: 7.3ms | Allocations: 7511)
+Completed 200 OK in 18ms (Views: 8.2ms | ActiveRecord: 2.1ms | Allocations: 15500)
+
+
+Started GET "/logout" for ::1 at 2024-05-23 02:46:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2024-05-23 02:47:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2024-05-23 02:48:36 -0700
+  
+ArgumentError (Invalid route name, already in use: 'logout' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:16:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/logout" for ::1 at 2024-05-23 02:49:07 -0700
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms | Allocations: 7444)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:49:07 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 283)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 7704)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 9161)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:49:18 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"tester@kill.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "tester@kill.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "tester@kill.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms | Allocations: 1668)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:49:18 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 1.7ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6424)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6906)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:49:31 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"tester@kill.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "tester@kill.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:49:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 6379)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 6838)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:50:25 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 184ms (ActiveRecord: 0.4ms | Allocations: 880)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:50:25 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1831)
+  Rendered games/show.html.erb (Duration: 5.9ms | Allocations: 6871)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 7634)
+
+
+Started GET "/logout" for ::1 at 2024-05-23 02:50:29 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:50:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6380)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 6883)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:51:46 -0700
+Processing by GamesController#show as HTML
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 1834)
+  Rendered games/show.html.erb (Duration: 5.1ms | Allocations: 6897)
+Completed 200 OK in 17ms (Views: 5.7ms | ActiveRecord: 1.7ms | Allocations: 13871)
+
+
+Started GET "/logout" for ::1 at 2024-05-23 02:51:47 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 480)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:51:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6732)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7578)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:51:51 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 184ms (ActiveRecord: 0.3ms | Allocations: 1297)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:51:51 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.1ms | Allocations: 1784)
+  Rendered games/show.html.erb (Duration: 5.4ms | Allocations: 6549)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 7532)
+
+
+Started GET "/logout" for ::1 at 2024-05-23 02:51:53 -0700
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 798)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:51:53 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6379)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 6851)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1741)
+
+
+  
+ActionView::MissingTemplate (Missing template sessions/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/home/animward/Projects/francis-gamble/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actiontext-6.1.5.1/app/views"
+  * "/home/animward/.rvm/gems/ruby-3.1.1/gems/actionmailbox-6.1.5.1/app/views"
+):
+  
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for ::1 at 2024-05-23 02:52:15 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 11ms (ActiveRecord: 2.6ms | Allocations: 8756)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:52:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 30)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6769)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7596)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:20 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 1008)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:22 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 846)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:22 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:23 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 867)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:23 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 852)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:52:24 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"poopy@loo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "poopy@loo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms | Allocations: 843)
+
+
+Started POST "/register" for ::1 at 2024-05-23 02:52:31 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"fire@fire.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "fire@fire.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2024-05-23 09:52:31.714038"], ["updated_at", "2024-05-23 09:52:31.714038"], ["email", "fire@fire.com"], ["password_digest", "$2a$12$7iMnc6rlkDNoMG8040eZUOTbY1uxLZeDzJEC8tG7PYHLLfXY3lQLy"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 188ms (ActiveRecord: 2.5ms | Allocations: 3696)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:52:31 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.1ms | Allocations: 1834)
+  Rendered games/show.html.erb (Duration: 5.3ms | Allocations: 6874)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 8338)
+
+
+Started GET "/tokens" for ::1 at 2024-05-23 02:52:35 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 31.8ms | Allocations: 11711)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.2ms | Allocations: 13156)
+
+
+Started POST "/tokens" for ::1 at 2024-05-23 02:52:35 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"300"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "fire@fire.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-05-23 09:52:35.881683"], ["balance", "300.0"], ["id", 9]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 2.1ms | Allocations: 4499)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:52:36 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1797)
+  Rendered games/show.html.erb (Duration: 6.3ms | Allocations: 6626)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 7484)
+
+
+Started GET "/logout" for ::1 at 2024-05-23 02:52:38 -0700
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 791)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:52:38 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6417)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 6883)
+
+
+Started POST "/register" for ::1 at 2024-05-23 02:52:43 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 6732)
+Completed 200 OK in 191ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 9933)
+
+
+Started POST "/register" for ::1 at 2024-05-23 02:53:12 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"banana@bread.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "banana@bread.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2024-05-23 09:53:12.215153"], ["updated_at", "2024-05-23 09:53:12.215153"], ["email", "banana@bread.com"], ["password_digest", "$2a$12$kFmX2wtINmeHerzUqEzOqO6YuRwbl5jnb.Gd9vcPhrcgBUJ3smDt6"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 188ms (ActiveRecord: 1.5ms | Allocations: 3389)
+
+
+Started GET "/games" for ::1 at 2024-05-23 02:53:12 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1784)
+  Rendered games/show.html.erb (Duration: 6.1ms | Allocations: 6549)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 7447)
+
+
+Started GET "/logout" for ::1 at 2024-05-23 02:54:05 -0700
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 788)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:54:05 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6386)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 6878)
+
+
+Started POST "/register" for ::1 at 2024-05-23 02:54:10 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 6372)
+Completed 200 OK in 191ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 9034)
+
+
+Started POST "/register" for ::1 at 2024-05-23 02:54:15 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"hamhands@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "hamhands@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 6372)
+Completed 200 OK in 191ms (Views: 6.1ms | ActiveRecord: 0.7ms | Allocations: 9007)
+
+
+Started POST "/register" for ::1 at 2024-05-23 02:54:21 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tester@kills.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "tester@kills.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6372)
+Completed 200 OK in 192ms (Views: 6.2ms | ActiveRecord: 0.5ms | Allocations: 9027)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:54:26 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"tester@kill.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "tester@kill.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 863)
+
+
+Started GET "/" for ::1 at 2024-05-23 02:54:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6379)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 6852)
+
+
+Started POST "/login" for ::1 at 2024-05-23 02:54:47 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"tester@kill.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "tester@kill.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 843)
+
+
