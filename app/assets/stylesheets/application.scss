@@ -69,11 +69,6 @@
   border-right: 2px solid #000;
 }
 
-img {
-  text-align: center;
-  margin: 4% 20% 0 20%;
-}
-
 #registerBtn{
 background-color: #B2404E;
 cursor: pointer;
@@ -112,17 +107,4 @@ audio {
 
 header {
   width: 100%;
-}
-
-.container img {
-  text-align: right;
-  margin: 0;
-  width: 10%;
-}
-
-.moneyContainer {
-  text-align: center;
-  margin: 0;
-  width: 10%;
-  float: right;
 }

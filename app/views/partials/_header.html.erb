@@ -3,8 +3,10 @@
    <img src='assets/FrancisGamble.png' id='logozHeader'>
 
 	 <div class="moneyContainer">
-	 <h2>Balance: <%= @current_user.balance %></h2>
-	 <%= link_to "Get tokens", tokens_path %>
+	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
 	 </div>
   </div>
+
+	<link rel="stylesheet" href="header.scss">
 </header>

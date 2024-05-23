@@ -7,7 +7,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
-    <%= javascript_pack_tag "checkers" %>
+    <%= javascript_include_tag 'checkers', 'data-turbolinks-track': 'reload' %>
 
     </head>
 
@@ -15,7 +15,7 @@
 <h1>Checkers!</h1>
   <div class="game-board">
     <% @game_board.squares.each do |square| %>
-      <div class="square <%= square.colour %>">
+      <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
         <% if square.piece.present? %>
         <div class="piece <%= square.piece.color %> 
         <%= 'king' if square.piece.king? %>"  
@@ -23,8 +23,8 @@
         </div>
         <% end %>  
         </div>
-        <% end %>
+      <% end %>
   </div>
-  <%= link_to "Back", games_show_path %>
+  <%= link_to "Home", games_show_path %>
   </body>
 </html>
