@@ -34570,3 +34570,577 @@ Processing by CheckersController#show as HTML
 Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.2ms | Allocations: 8002)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-22 19:31:43 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 747)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 1945.8ms | Allocations: 67500)
+Completed 200 OK in 1953ms (Views: 1947.7ms | ActiveRecord: 0.2ms | Allocations: 73091)
+
+
+Started GET "/games" for ::1 at 2024-05-22 19:31:47 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1091)
+  Rendered games/show.html.erb (Duration: 7.0ms | Allocations: 6747)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 8328)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/" for ::1 at 2024-05-22 19:31:52 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6821)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 7648)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afake_users" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL, "balance" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "afake_users" ("id","created_at","updated_at","email","password_digest","balance")
+                     SELECT "id","created_at","updated_at","email","password_digest","balance" FROM "fake_users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "fake_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "fake_users" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "fake_users" ("id","created_at","updated_at","email","password_digest")
+                     SELECT "id","created_at","updated_at","email","password_digest" FROM "afake_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afake_users"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "balance" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-22 19:32:55 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 16300)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.3ms | Allocations: 21856)
+
+
+Started GET "/" for ::1 at 2024-05-22 19:32:56 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6545)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 7372)
+
+
+Started GET "/games" for ::1 at 2024-05-22 19:32:57 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 1089)
+  Rendered games/show.html.erb (Duration: 8.2ms | Allocations: 6698)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 8276)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-05-22 19:33:18 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 830)
+  Rendered games/show.html.erb (Duration: 6.6ms | Allocations: 6478)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 8057)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_users.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-05-22 19:33:19 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.8ms | Allocations: 688)
+  Rendered games/show.html.erb (Duration: 5.0ms | Allocations: 5618)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 6703)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_users.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-05-22 19:36:14 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:36:14 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:36:14 -0700
+Started POST "/register" for ::1 at 2024-05-22 19:36:14 -0700
+Started POST "/register" for ::1 at 2024-05-22 19:36:14 -0700
+Processing by UsersController#create as HTML
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Processing by GamesController#show as HTML
+Processing by GamesController#show as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#show as HTML
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 919)
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered games/show.html.erb (Duration: 34.5ms | Allocations: 13874)
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 688)
+  Rendered games/show.html.erb (Duration: 36.4ms | Allocations: 14586)
+  Rendered games/show.html.erb (Duration: 41.4ms | Allocations: 17872)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.3ms | Allocations: 22666)
+
+
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.5ms | Allocations: 22979)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.3ms | Allocations: 21663)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-23 02:36:15.208377"], ["updated_at", "2024-05-23 02:36:15.208377"], ["email", "anim@anim.com"], ["password_digest", "$2a$12$cS7Fzl4450kbBN1CuHOyKOx8teO9f4scfhDqEwBZ1O5KLGbOa1dfO"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-23 02:36:15.211487"], ["updated_at", "2024-05-23 02:36:15.211487"], ["email", "anim@anim.com"], ["password_digest", "$2a$12$yfPbaInRwbed8pW48k0uFu93UMAqhX9ZwwVIabtUdKokOkvTtEn1O"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Completed   in 158034ms (ActiveRecord: 1.1ms | Allocations: 633610)
+
+
+  [1m[36mTRANSACTION (157263.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Completed   in 158033ms (ActiveRecord: 157264.0ms | Allocations: 632661)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-22 19:39:01 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 16280)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.3ms | Allocations: 22591)
+
+
+Started GET "/games" for ::1 at 2024-05-22 19:39:05 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 1089)
+  Rendered games/show.html.erb (Duration: 6.8ms | Allocations: 6713)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 8295)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/" for ::1 at 2024-05-22 19:39:12 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.5ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6849)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms | Allocations: 7676)
+
+
+Started POST "/register" for ::1 at 2024-05-22 19:39:17 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-23 02:39:17.627911"], ["updated_at", "2024-05-23 02:39:17.627911"], ["email", "anim@anim.com"], ["password_digest", "$2a$12$AKfbEfvbKxFNs7cjqj3eJ.DzEbsCnFKQZk3l04NIo7PHKZsgjVH4u"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 198ms (ActiveRecord: 4.9ms | Allocations: 11097)
+
+
+Started GET "/games" for ::1 at 2024-05-22 19:39:17 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered games/show.html.erb (Duration: 4.9ms | Allocations: 5194)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 6325)
+
+
+Started GET "/header.scss" for ::1 at 2024-05-22 19:39:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/header.scss"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-22 19:39:22 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 6.2ms | Allocations: 5418)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.6ms | Allocations: 7152)
+
+
+Started GET "/tictactoe" for ::1 at 2024-05-22 19:39:23 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/index.html.erb
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
+  ↳ app/views/tictactoe/index.html.erb:5
+  Rendered tictactoe/index.html.erb (Duration: 2.1ms | Allocations: 2420)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 3133)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 19:39:38 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 4.4ms | Allocations: 2122)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 2985)
+
+
+Started POST "/tictactoe" for ::1 at 2024-05-22 19:39:39 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.2ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-23 02:39:39.338312"], ["updated_at", "2024-05-23 02:39:39.338312"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/45
+Completed 302 Found in 10ms (ActiveRecord: 3.3ms | Allocations: 5287)
+
+
+Started GET "/tictactoe/45" for ::1 at 2024-05-22 19:39:39 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 58.2ms | Allocations: 25941)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.2ms | Allocations: 27458)
+
+
+  
+ActionView::Template::Error (Asset `tictactoe.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link tictactoe.js
+
+and restart your server):
+    44: 
+    45:     <%= link_to "Back", tictactoe_index_path %>
+    46: 
+    47:     <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
+    48: 
+    49:   </body>
+    50: 
+  
+app/views/tictactoe/show.html.erb:47
+app/controllers/tictactoe_controller.rb:25:in `show'
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 19:40:00 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 0.7ms | Allocations: 507)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1185)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 19:40:01 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 0.6ms | Allocations: 504)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1175)
+
+
+Started POST "/tictactoe" for ::1 at 2024-05-22 19:40:01 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.2ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-23 02:40:01.818044"], ["updated_at", "2024-05-23 02:40:01.818044"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/46
+Completed 302 Found in 9ms (ActiveRecord: 3.0ms | Allocations: 4820)
+
+
+Started GET "/tictactoe/46" for ::1 at 2024-05-22 19:40:01 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTictactoe Load (0.0ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 16.5ms | Allocations: 16722)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms | Allocations: 17868)
+
+
