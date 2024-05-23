@@ -1,12 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Tic Tac Toe</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'tictactoe', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
 <h1>All Tic Tac Toe Games</h1>
 
-<ul>
+<ul class="games-list>
 
   <% @games.each do |game| %>
 
     <li>
 
-      <%= link_to "Game ##{game.id}", tictactoe_show_path(game) %>
+      <%= link_to "Game##{game.id}", tictactoe_show_path(game) %>
 
     </li>
 
