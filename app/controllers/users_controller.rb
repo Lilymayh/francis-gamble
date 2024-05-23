@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      session[:user_id] = @user.id # Set the session for the newly created user
       redirect_to "/games"
     else
       # Handle validation errors
@@ -19,10 +20,10 @@ class UsersController < ApplicationController
     end
     redirect_back(fallback_location: tictactoe_index_path)
   end
+
   private
 
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation, :balance)
   end
-
 end

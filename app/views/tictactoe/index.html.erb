@@ -1,17 +1,10 @@
-<%= render 'partials/header' %>
-<h3>Play Tic-TacToe!</h3>
-<%= link_to "Back", games_show_path, class="back" %>
-<%= link_to "Start a New Game", new_tictactoe_path, class: "btn btn-primary" %>
-<ul>
-<h3>Your Game History</h3>
-  <% @games.each do |game| %>
-
-    <li>
-
-      <%= link_to "Game ##{game.id}", tictactoe_show_path(game) %>
-
-    </li>
-
-  <% end %>
-
-</ul>
+<body>
+  <%= render 'partials/header' %>
+  <div class='gameContainer'>
+    <%= link_to "Back", games_show_path %>
+	 <h2>Tic-Tac-Toe!</h2>
+   <div class='tictacA'>
+  <%= link_to "Start a New Game", new_tictactoe_path, class: "btn btn-primary" %>
+  </div>
+  </div>
+</body>

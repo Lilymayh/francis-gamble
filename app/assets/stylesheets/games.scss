@@ -51,3 +51,34 @@
 	background-size: 70%; 
 	border-radius: 8px;
 }
+
+.gameContainer {
+  background-color: #4a3da9;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.338);
+  border-radius: 8px;
+	margin: 7%;
+	padding: 5%;
+}
+
+.tictacA {
+	background-color: #B2404E;
+	text-align: center;
+	margin: 5% 30% 5% 30%;
+	padding: 2%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.338);
+}
+
+.tictacA a {
+	font-size: 40px;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 55px;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
