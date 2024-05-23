@@ -2,9 +2,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path, notice: "Registration successful!"
+      redirect_to "/games"
     else
-      # Handle validation errors or other cases
+      flash[:error] = @user.errors.full_messages.join(', ')
       render 'pages/home'
     end
   end
@@ -12,6 +12,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:users).permit(:email, :password, :password_confirmation)
   end
 end

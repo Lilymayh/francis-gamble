@@ -76,18 +76,24 @@ img {
 
 #registerBtn{
 background-color: #B2404E;
+cursor: pointer;
 color: white;
-width: 8%;
+width: 12vw;
 font-size: 30px;
 margin: 20px;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+border-radius: 8px;
 }
 
 #loginBtn{
 background-color: #B2404E;
+cursor: pointer;
 color: white;
-width: 8%;
+width: 10vw;
 font-size: 30px;
 margin: 20px;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+border-radius: 8px;
 }
 
 #logoz {

@@ -14,7 +14,7 @@ module FrancisGamble
     # Conditionally load Dotenv in development and test environments
     if ['development', 'test'].include?(Rails.env)
       require 'dotenv-rails'
-      Dotenv::Railtie.load
+      Dotenv::Rails.load
     end
 
     # Configuration for the application, engines, and railties goes here.

@@ -1,6 +1,12 @@
 class User < ApplicationRecord
+	self.table_name = "users"
+	has_secure_password
 
-	  # Model attributes
+	validates :email, presence: true, uniqueness: true
+  validates :password, presence: true
+  validates :username, presence: true
+
+	  #Model attributes
 		attribute :username, :string
 		attribute :password, :string
 		attribute :email, :string

@@ -1,21 +1,30 @@
 class TokenPurchasesController < ApplicationController
-  def new_token_purchase
-    @user = FakeUser.find_by(email: 'a@a.a')
-    render layout: false
+
+  def new
+    @user = current_user
+    if @user
+      puts "Current user: #{@user.inspect}"
+      render layout: false
+    else
+      # Redirect or handle unauthorized access
+      redirect_to login_path, alert: "Please log in to access this feature."
+    end
   end
     
-  def create_token_purchase
+  def create
     amount = params[:amount].to_f
-    @user = FakeUser.find_by(email: 'a@a.a')
+    @user = current_user
+
     if @user
-      if @user.update(balance: @user.balance + amount)
-        flash[:notice] = "Token purchase successful!"
-      else
-        flash[:alert] = "Failed to update balance."
+      puts "User balance before purchase: #{@user.balance}"
+      new_balance = @user.balance.to_f + amount
+      if @user.update(balance: new_balance)
+        puts "Balance updated successfully!"
+        puts "User balance after purchase: #{new_balance}"
       end
     else
-      flash[:alert] = "User not found."
+      # Redirect or handle unauthorized access
+      redirect_to login_path, alert: "Please log in to access this feature."
     end
-    redirect_to tokens_path
   end
 end

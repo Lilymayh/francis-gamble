@@ -3,10 +3,7 @@
   "private": true,
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
-<<<<<<< HEAD
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
+    "@dnd-kit/sortable": "^8.0.0",
     "@rails/webpacker": "5.4.4",
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",
@@ -16,17 +13,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-methods": "^7.18.6",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "webpack-dev-server": "^5.0.4"
-=======
-    "@dnd-kit/sortable": "^8.0.0",
-    "@rails/webpacker": "5.4.4",
-    "webpack": "^5.0.0"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-methods": "^7.18.6",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^3"
->>>>>>> origin/style/tokens
   }
 }

@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
   resources :token_purchases, only: [:new, :create]
 
-  get '/tokens' => 'token_purchases#new_token_purchase'
-  post '/tokens' => 'token_purchases#create_token_purchase'
+  get '/tokens' => 'token_purchases#new'
+  post '/tokens' => 'token_purchases#create'
 
   root 'pages#home'
 
@@ -13,9 +13,11 @@ Rails.application.routes.draw do
 
   
 
-  get '/login', to: 'users#new'
+ get '/login', to: 'users#create'
 
   post '/login', to: 'users#create'
+
+  post '/register', to: 'users#create'
 
   delete '/logout', to: 'sessions#destroy'
 
