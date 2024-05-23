@@ -1,7 +1,6 @@
 class TokenPurchasesController < ApplicationController
 
   def new
-    @current_user
     render layout: false
 
   end

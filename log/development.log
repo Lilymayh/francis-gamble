@@ -34574,1593 +34574,27 @@ Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.2ms | Allocations: 800
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
-Started GET "/games/checkers" for ::1 at 2024-05-22 19:37:09 -0700
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 91.2ms | Allocations: 23033)
-Completed 200 OK in 109ms (Views: 93.8ms | ActiveRecord: 0.4ms | Allocations: 32239)
-
-
-Started GET "/" for ::1 at 2024-05-22 19:37:13 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 560)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 140)
-  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 128)
-  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8511)
-Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.2ms | Allocations: 10269)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:37:13 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
 [dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
-Started GET "/" for ::1 at 2024-05-22 19:38:44 -0700
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 965)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 147)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 128)
-  Rendered layout layouts/application.html.erb (Duration: 418.9ms | Allocations: 49466)
-Completed 200 OK in 435ms (Views: 423.9ms | ActiveRecord: 0.4ms | Allocations: 58556)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:38:45 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:41:35 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 561)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 135)
-  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 192.4ms | Allocations: 21763)
-Completed 200 OK in 196ms (Views: 193.8ms | ActiveRecord: 0.1ms | Allocations: 23444)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:41:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:41:48 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 351)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 183.3ms | Allocations: 20211)
-Completed 200 OK in 185ms (Views: 183.6ms | ActiveRecord: 0.1ms | Allocations: 21033)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:41:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:42:07 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 185.9ms | Allocations: 20255)
-Completed 200 OK in 187ms (Views: 186.1ms | ActiveRecord: 0.1ms | Allocations: 20990)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:42:07 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:42:46 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 549)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 134)
-  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 8056)
-Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 9640)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:42:46 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:43:33 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 540)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 134)
-  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 8105)
-Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 9766)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:43:33 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:46:32 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 549)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 135)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 247.1ms | Allocations: 21756)
-Completed 200 OK in 250ms (Views: 248.7ms | ActiveRecord: 0.1ms | Allocations: 23413)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:46:32 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:46:46 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 186.6ms | Allocations: 20269)
-Completed 200 OK in 188ms (Views: 186.9ms | ActiveRecord: 0.1ms | Allocations: 21066)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:46:47 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:49:06 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 327)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6755)
-Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 7494)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:49:06 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:50:03 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 345)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 264.5ms | Allocations: 20313)
-Completed 200 OK in 266ms (Views: 264.8ms | ActiveRecord: 0.1ms | Allocations: 21048)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:50:03 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:50:11 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 315)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 6756)
-Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 7477)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:50:11 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:50:39 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 309)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 189.6ms | Allocations: 20293)
-Completed 200 OK in 191ms (Views: 189.9ms | ActiveRecord: 0.1ms | Allocations: 21015)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:50:39 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:51:17 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 321)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 184.7ms | Allocations: 20287)
-Completed 200 OK in 186ms (Views: 185.1ms | ActiveRecord: 0.1ms | Allocations: 21008)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:51:17 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:52:00 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 558)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 134)
-  Rendered users/_existing.html.erb (Duration: 0.7ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 8120)
-Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.1ms | Allocations: 9706)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:52:00 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 19:52:55 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 540)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.5ms | Allocations: 134)
-  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 188.6ms | Allocations: 21771)
-Completed 200 OK in 192ms (Views: 190.4ms | ActiveRecord: 0.1ms | Allocations: 23427)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:52:55 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-Started GET "/" for ::1 at 2024-05-22 19:56:29 -0700
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 959)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 147)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 128)
-  Rendered layout layouts/application.html.erb (Duration: 362.4ms | Allocations: 50674)
-Completed 200 OK in 381ms (Views: 364.3ms | ActiveRecord: 0.6ms | Allocations: 59753)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 19:56:30 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-Started GET "/" for ::1 at 2024-05-22 20:32:05 -0700
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 974)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 142)
-  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
-  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 16497)
-Completed 200 OK in 43ms (Views: 29.5ms | ActiveRecord: 0.6ms | Allocations: 25539)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:32:05 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:32:20 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 341)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 418.8ms | Allocations: 32845)
-Completed 200 OK in 421ms (Views: 419.1ms | ActiveRecord: 0.1ms | Allocations: 33704)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:32:21 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:32:31 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 315)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 193.0ms | Allocations: 20198)
-Completed 200 OK in 194ms (Views: 193.2ms | ActiveRecord: 0.1ms | Allocations: 20918)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:32:32 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:33:02 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 333)
-  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4204)
-Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms | Allocations: 4935)
-
-
-  
-ActionView::Template::Error (Error: Invalid CSS after "  padding": expected "}", was ": 1em; "
-        on line 40:3 of app/assets/stylesheets/application.scss
->>   padding: 1em; 
-
-   --^
-):
-     7:   <%= csrf_meta_tags %>
-     8:   <%= csp_meta_tag %>
-     9: 
-    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    11:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    12:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    13:     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
-  
-app/assets/stylesheets/application.scss:40
-app/views/layouts/application.html.erb:10
-Started GET "/" for ::1 at 2024-05-22 20:33:12 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 402)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 261.5ms | Allocations: 20664)
-Completed 200 OK in 263ms (Views: 261.9ms | ActiveRecord: 0.1ms | Allocations: 21470)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:33:12 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:33:49 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 324)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 187.4ms | Allocations: 20249)
-Completed 200 OK in 189ms (Views: 187.7ms | ActiveRecord: 0.1ms | Allocations: 20992)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:33:49 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:34:39 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 315)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 184.0ms | Allocations: 20270)
-Completed 200 OK in 185ms (Views: 184.3ms | ActiveRecord: 0.1ms | Allocations: 20991)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:34:39 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:34:53 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 303)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 184.6ms | Allocations: 20250)
-Completed 200 OK in 186ms (Views: 184.9ms | ActiveRecord: 0.1ms | Allocations: 20985)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:34:53 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:35:27 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 202.7ms | Allocations: 20295)
-Completed 200 OK in 204ms (Views: 203.1ms | ActiveRecord: 0.1ms | Allocations: 21017)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:35:27 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:35:48 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 321)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 187.2ms | Allocations: 20277)
-Completed 200 OK in 189ms (Views: 187.7ms | ActiveRecord: 0.1ms | Allocations: 20998)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:35:49 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:36:36 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 351)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 248.9ms | Allocations: 20300)
-Completed 200 OK in 250ms (Views: 249.2ms | ActiveRecord: 0.1ms | Allocations: 21021)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:36:36 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:36:57 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 253.2ms | Allocations: 20270)
-Completed 200 OK in 255ms (Views: 253.6ms | ActiveRecord: 0.1ms | Allocations: 20990)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:36:57 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:37:11 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 185.9ms | Allocations: 20299)
-Completed 200 OK in 187ms (Views: 186.1ms | ActiveRecord: 0.1ms | Allocations: 21019)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:37:11 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:37:36 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 318)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 184.1ms | Allocations: 20280)
-Completed 200 OK in 185ms (Views: 184.4ms | ActiveRecord: 0.1ms | Allocations: 21001)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:37:36 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:37:45 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 327)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6777)
-Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 7513)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:37:45 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:38:07 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 327)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 187.2ms | Allocations: 20303)
-Completed 200 OK in 189ms (Views: 187.5ms | ActiveRecord: 0.1ms | Allocations: 21024)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:38:07 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:38:26 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 318)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 183.0ms | Allocations: 20262)
-Completed 200 OK in 184ms (Views: 183.3ms | ActiveRecord: 0.1ms | Allocations: 20984)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:38:26 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:38:34 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 318)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6760)
-Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 7481)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:38:34 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:45:35 -0700
-Processing by PagesController#home as HTML
-  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 544)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 137)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 126)
-  Rendered layout layouts/application.html.erb (Duration: 263.6ms | Allocations: 21760)
-Completed 200 OK in 269ms (Views: 265.5ms | ActiveRecord: 0.6ms | Allocations: 23911)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:45:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:46:37 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 333)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 186.3ms | Allocations: 20303)
-Completed 200 OK in 188ms (Views: 186.6ms | ActiveRecord: 0.1ms | Allocations: 21099)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:46:37 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:46:54 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 327)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 198.9ms | Allocations: 20312)
-Completed 200 OK in 204ms (Views: 199.2ms | ActiveRecord: 0.1ms | Allocations: 21033)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:46:54 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:47:13 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 333)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6795)
-Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 7516)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:47:13 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:47:29 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 321)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 258.8ms | Allocations: 20307)
-Completed 200 OK in 260ms (Views: 259.1ms | ActiveRecord: 0.1ms | Allocations: 21028)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:47:29 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:47:44 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 315)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 186.6ms | Allocations: 20290)
-Completed 200 OK in 188ms (Views: 186.9ms | ActiveRecord: 0.1ms | Allocations: 21011)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:47:44 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:48:05 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 183.7ms | Allocations: 20309)
-Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.1ms | Allocations: 21030)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:48:05 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:48:23 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 186.0ms | Allocations: 20308)
-Completed 200 OK in 187ms (Views: 186.3ms | ActiveRecord: 0.1ms | Allocations: 21029)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:48:23 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:48:52 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 339)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 188.3ms | Allocations: 20316)
-Completed 200 OK in 190ms (Views: 188.6ms | ActiveRecord: 0.1ms | Allocations: 21037)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:48:52 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:49:01 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 324)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6815)
-Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 7536)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:49:01 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:49:57 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 549)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 135)
-  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8076)
-Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms | Allocations: 9661)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:49:57 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 20:50:16 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 327)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 6788)
-Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 7585)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:50:16 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-Started GET "/games" for ::1 at 2024-05-22 20:53:35 -0700
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 282)
-  Rendered games/show.html.erb (Duration: 61.8ms | Allocations: 35949)
-Completed 200 OK in 78ms (Views: 64.3ms | ActiveRecord: 0.5ms | Allocations: 44791)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:53:35 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 20:53:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/tictactoe" for ::1 at 2024-05-22 20:53:38 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.8ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 7.9ms | Allocations: 3646)
-Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 1.4ms | Allocations: 5563)
-
-
-Started GET "/games/tictactoe/1" for ::1 at 2024-05-22 20:53:40 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"1"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 14.8ms | Allocations: 9083)
-Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms | Allocations: 10681)
-
-
-  
-ActionView::Template::Error (Asset `tictactoe.js` was not declared to be precompiled in production.
-Declare links to your assets in `app/assets/config/manifest.js`.
-
-  //= link tictactoe.js
-
-and restart your server):
-    44: 
-    45:     <%= link_to "Back", tictactoe_index_path %>
-    46: 
-    47:     <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
-    48: 
-    49:   </body>
-    50: 
-  
-app/views/tictactoe/show.html.erb:47
-app/controllers/tictactoe_controller.rb:25:in `show'
-Started GET "/tictactoe/new" for ::1 at 2024-05-22 20:53:44 -0700
-Processing by TictactoeController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/new.html.erb
-  Rendered tictactoe/new.html.erb (Duration: 3.2ms | Allocations: 1143)
-Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 2104)
-
-
-Started GET "/games" for ::1 at 2024-05-22 20:53:49 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 56)
-  Rendered games/show.html.erb (Duration: 10.2ms | Allocations: 5358)
-Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6508)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 20:53:49 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:53:49 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tictactoe/new" for ::1 at 2024-05-22 20:53:51 -0700
-Processing by TictactoeController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/new.html.erb
-  Rendered tictactoe/new.html.erb (Duration: 0.8ms | Allocations: 566)
-Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1239)
-
-
-Started POST "/tictactoe" for ::1 at 2024-05-22 20:53:52 -0700
-Processing by TictactoeController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
-  [1m[36mTictactoe Create (0.7ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-05-23 03:53:52.818771"], ["updated_at", "2024-05-23 03:53:52.818771"]]
-  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
-  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
-Redirected to http://localhost:3000/tictactoe/2
-Completed 302 Found in 9ms (ActiveRecord: 1.5ms | Allocations: 3718)
-
-
-Started GET "/tictactoe/2" for ::1 at 2024-05-22 20:53:52 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"2"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 7.9ms | Allocations: 7984)
-Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 9137)
-
-
-  
-ActionView::Template::Error (Asset `tictactoe.js` was not declared to be precompiled in production.
-Declare links to your assets in `app/assets/config/manifest.js`.
-
-  //= link tictactoe.js
-
-and restart your server):
-    44: 
-    45:     <%= link_to "Back", tictactoe_index_path %>
-    46: 
-    47:     <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
-    48: 
-    49:   </body>
-    50: 
-  
-app/views/tictactoe/show.html.erb:47
-app/controllers/tictactoe_controller.rb:25:in `show'
-Started GET "/tictactoe/2" for ::1 at 2024-05-22 20:54:17 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"2"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 20.5ms | Allocations: 16700)
-Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 17852)
-
-
-Started PATCH "/tictactoe/2" for ::1 at 2024-05-22 20:54:20 -0700
-Processing by TictactoeController#update as */*
-  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"2"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n-\n-\n-\n- X\n-\n-\n- O\n-\n-\n"], ["updated_at", "2024-05-23 03:54:20.886297"], ["id", 2]]
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 2.0ms | Allocations: 3751)
-
-
-Started PATCH "/tictactoe/2" for ::1 at 2024-05-22 20:54:23 -0700
-Processing by TictactoeController#update as */*
-  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"2"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.0ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-  [1m[36mTictactoe Update (0.3ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n-\n-\n-\n- X\n- O\n- X\n- O\n-\n-\n"], ["updated_at", "2024-05-23 03:54:23.899838"], ["id", 2]]
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 3485)
-
-
-Started PATCH "/tictactoe/2" for ::1 at 2024-05-22 20:54:26 -0700
-Processing by TictactoeController#update as */*
-  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"2"}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:61:in `update'
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-  [1m[36mTictactoe Update (0.8ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = ?, "updated_at" = ? WHERE "tictactoes"."id" = ?[0m  [["board", "---\n-\n-\n-\n- X\n- O\n- X\n- O\n- O\n- X\n"], ["updated_at", "2024-05-23 03:54:26.124178"], ["id", 2]]
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/models/tictactoe.rb:17:in `make_player_move'
-Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 3512)
-
-
-Started GET "/tictactoe" for ::1 at 2024-05-22 20:56:08 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.9ms | Allocations: 672)
-Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1342)
-
-
-Started GET "/games/tictactoe/2" for ::1 at 2024-05-22 20:56:11 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"2"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 4.8ms | Allocations: 3495)
-Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 4640)
-
-
-Started GET "/tictactoe" for ::1 at 2024-05-22 20:56:12 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.6ms | Allocations: 655)
-Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1322)
-
-
-Started GET "/tictactoe/2" for ::1 at 2024-05-22 20:56:17 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"2"}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 6.4ms | Allocations: 3501)
-Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 4663)
-
-
-Started GET "/tictactoe" for ::1 at 2024-05-22 20:56:19 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.0ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 0.5ms | Allocations: 655)
-Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 1322)
-
-
-Started GET "/tictactoe" for ::1 at 2024-05-22 20:57:36 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 0.9ms | Allocations: 655)
-Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1322)
-
-
-Started GET "/" for ::1 at 2024-05-22 20:57:39 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 569)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 140)
-  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
-  Rendered layout layouts/application.html.erb (Duration: 349.3ms | Allocations: 24404)
-Completed 200 OK in 352ms (Views: 350.6ms | ActiveRecord: 0.1ms | Allocations: 26127)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 20:57:39 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games/checkers" for ::1 at 2024-05-22 20:57:40 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 180.7ms | Allocations: 8504)
-Completed 200 OK in 186ms (Views: 182.1ms | ActiveRecord: 0.1ms | Allocations: 10228)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 20:58:53 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 165.8ms | Allocations: 8372)
-Completed 200 OK in 167ms (Views: 166.1ms | ActiveRecord: 0.1ms | Allocations: 9401)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 20:59:32 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 162.6ms | Allocations: 8370)
-Completed 200 OK in 164ms (Views: 162.9ms | ActiveRecord: 0.1ms | Allocations: 9317)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 20:59:43 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 161.0ms | Allocations: 8369)
-Completed 200 OK in 163ms (Views: 161.3ms | ActiveRecord: 0.1ms | Allocations: 9317)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 20:59:44 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 2.9ms | Allocations: 3790)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 4737)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:00:44 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 231.0ms | Allocations: 8355)
-Completed 200 OK in 232ms (Views: 231.4ms | ActiveRecord: 0.1ms | Allocations: 9302)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:00:55 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 171.2ms | Allocations: 8401)
-Completed 200 OK in 173ms (Views: 171.6ms | ActiveRecord: 0.1ms | Allocations: 9348)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:01:02 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.4ms | Allocations: 3818)
-Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 4765)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:01:10 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 195.9ms | Allocations: 8407)
-Completed 200 OK in 197ms (Views: 196.2ms | ActiveRecord: 0.1ms | Allocations: 9354)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:01:45 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 164.3ms | Allocations: 8377)
-Completed 200 OK in 166ms (Views: 164.7ms | ActiveRecord: 0.1ms | Allocations: 9325)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:04:10 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 163.5ms | Allocations: 8409)
-Completed 200 OK in 165ms (Views: 163.9ms | ActiveRecord: 0.1ms | Allocations: 9357)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:04:43 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 169.3ms | Allocations: 8389)
-Completed 200 OK in 171ms (Views: 169.7ms | ActiveRecord: 0.1ms | Allocations: 9336)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:06:10 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 0.6ms | Allocations: 499)
-Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 1890)
-
-
-  
-ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
-<html>
-  <head>
-    <title>checkers</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag 'checkers', 'data-turbolinks-track': 'reload' %>
-
-    </head>
-
-  <body>
-<h1>Checkers!</h1>
-  <div class="game-board">
-    <% @game_board.squares.each do |square| %>
-      <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
-        <% if square.piece.present? %>
-        <div class="piece <%= square.piece.color %> 
-        <%= 'king' if square.piece.king? %>"  
-        id="piece_<%= square.piece.id %>">
-        </div>
-        <% end %>  
-        </div>
-      <% end %>
-  </div>
-  <%= link_to "Home", games_show_path, class="home" %>
-  </body>
-</html>
-):
-1:    <!DOCTYPE html>
-2:    <html>
-3:      <head>
-4:        <title>checkers</title>
-5:        <meta name="viewport" content="width=device-width,initial-scale=1">
-6:        <%= csrf_meta_tags %>
-7:        <%= csp_meta_tag %>
-8:    
-9:        <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
-10:        <%= javascript_include_tag 'checkers', 'data-turbolinks-track': 'reload' %>
-11:    
-12:        </head>
-13:    
-14:      <body>
-15:    <h1>Checkers!</h1>
-16:      <div class="game-board">
-17:        <% @game_board.squares.each do |square| %>
-18:          <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
-19:            <% if square.piece.present? %>
-20:            <div class="piece <%= square.piece.color %> 
-21:            <%= 'king' if square.piece.king? %>"  
-22:            id="piece_<%= square.piece.id %>">
-23:            </div>
-24:            <% end %>  
-25:            </div>
-26:          <% end %>
-27:      </div>
-28:      <%= link_to "Home", games_show_path, class="home" %>
-29:      </body>
-30:    </html>
-  
-app/views/checkers/show.html.erb:28: syntax error, unexpected '='
-app/views/checkers/show.html.erb:28: syntax error, unexpected '='
-app/views/checkers/show.html.erb:28: syntax error, unexpected '='
-app/views/checkers/show.html.erb:28: syntax error, unexpected '='
-app/controllers/checkers_controller.rb:4:in `show'
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:06:48 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 227.8ms | Allocations: 14779)
-Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.2ms | Allocations: 16240)
-
-
-  
-ActionView::Template::Error (undefined local variable or method `home' for #<ActionView::Base:0x0000000000a8e8>):
-    25:         </div>
-    26:       <% end %>
-    27:   </div>
-    28:   <%= link_to "Home", games_show_path, class: home %>
-    29:   </body>
-    30: </html>
-  
-app/views/checkers/show.html.erb:28
-app/controllers/checkers_controller.rb:4:in `show'
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:07:17 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 7.1ms | Allocations: 4776)
-Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 6272)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:07:43 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.9ms | Allocations: 4752)
-Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 6252)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:07:58 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 8.5ms | Allocations: 4754)
-Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 6255)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:08:39 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.7ms | Allocations: 4753)
-Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 6254)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:08:41 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 5.7ms | Allocations: 4093)
-Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 5123)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:08:55 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.9ms | Allocations: 4732)
-Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 6149)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:09:38 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 6.3ms | Allocations: 4102)
-Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 5132)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:09:57 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 234.6ms | Allocations: 10628)
-Completed 200 OK in 237ms (Views: 234.9ms | ActiveRecord: 0.1ms | Allocations: 11575)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:10:07 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.3ms | Allocations: 4136)
-Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 5083)
-
-
-Started GET "/games/checkers" for ::1 at 2024-05-22 21:10:27 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 234.8ms | Allocations: 10434)
-Completed 200 OK in 236ms (Views: 235.1ms | ActiveRecord: 0.1ms | Allocations: 11381)
-
-
-Started GET "/games" for ::1 at 2024-05-22 21:11:37 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 212)
-  Rendered games/show.html.erb (Duration: 186.5ms | Allocations: 21225)
-Completed 200 OK in 189ms (Views: 187.6ms | ActiveRecord: 0.1ms | Allocations: 22643)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:11:37 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:11:37 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/" for ::1 at 2024-05-22 21:11:48 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 542)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 134)
-  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8051)
-Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 9620)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:11:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:11:50 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.2ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 9.1ms | Allocations: 5202)
-Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6336)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:11:50 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 21:11:50 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-[dotenv] Loaded [33m.env[0m
-Started GET "/games" for ::1 at 2024-05-22 21:17:09 -0700
+Started GET "/" for ::1 at 2024-05-22 19:31:43 -0700
   [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 747)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 282)
-  Rendered games/show.html.erb (Duration: 100.0ms | Allocations: 37390)
-Completed 200 OK in 114ms (Views: 102.3ms | ActiveRecord: 0.3ms | Allocations: 46391)
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 1945.8ms | Allocations: 67500)
+Completed 200 OK in 1953ms (Views: 1947.7ms | ActiveRecord: 0.2ms | Allocations: 73091)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:17:10 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:17:10 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:17:50 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 208)
-  Rendered games/show.html.erb (Duration: 463.9ms | Allocations: 44267)
-Completed 200 OK in 469ms (Views: 466.5ms | ActiveRecord: 0.2ms | Allocations: 45933)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:17:50 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:17:50 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:18:22 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:31:47 -0700
 Processing by GamesController#show as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
@@ -36168,131 +34602,116 @@ Processing by GamesController#show as HTML
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 207)
-  Rendered games/show.html.erb (Duration: 9.9ms | Allocations: 7527)
-Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 9148)
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 1091)
+  Rendered games/show.html.erb (Duration: 7.0ms | Allocations: 6747)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 8328)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:18:22 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:18:22 -0700
   
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:19:35 -0700
-Processing by GamesController#show as HTML
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/" for ::1 at 2024-05-22 19:31:52 -0700
+Processing by PagesController#home as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 407.4ms | Allocations: 27703)
-Completed 200 OK in 409ms (Views: 407.6ms | ActiveRecord: 0.1ms | Allocations: 28835)
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6821)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 7648)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:19:36 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:19:36 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
 [dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
-Started GET "/games" for ::1 at 2024-05-22 21:22:02 -0700
   [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.5ms | Allocations: 287)
-  Rendered games/show.html.erb (Duration: 604.0ms | Allocations: 62775)
-Completed 200 OK in 617ms (Views: 606.8ms | ActiveRecord: 0.5ms | Allocations: 71568)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:22:02 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:22:02 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:22:15 -0700
-Processing by GamesController#show as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afake_users" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL, "balance" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "afake_users" ("id","created_at","updated_at","email","password_digest","balance")
+                     SELECT "id","created_at","updated_at","email","password_digest","balance" FROM "fake_users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "fake_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "fake_users" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "fake_users" ("id","created_at","updated_at","email","password_digest")
+                     SELECT "id","created_at","updated_at","email","password_digest" FROM "afake_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afake_users"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBalanceToFakeUsers (20240522070405)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "fake_users" ADD "balance" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240522070405"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-05-22 19:32:55 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 898)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 65)
-  Rendered games/show.html.erb (Duration: 333.8ms | Allocations: 27876)
-Completed 200 OK in 336ms (Views: 334.1ms | ActiveRecord: 0.1ms | Allocations: 29042)
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 16300)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.3ms | Allocations: 21856)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:22:16 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:22:16 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:22:31 -0700
-Processing by GamesController#show as HTML
+Started GET "/" for ::1 at 2024-05-22 19:32:56 -0700
+Processing by PagesController#home as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 336.7ms | Allocations: 27560)
-Completed 200 OK in 338ms (Views: 337.0ms | ActiveRecord: 0.1ms | Allocations: 28638)
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6545)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 7372)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:22:32 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:22:32 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:22:52 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 343.2ms | Allocations: 27631)
-Completed 200 OK in 345ms (Views: 343.5ms | ActiveRecord: 0.1ms | Allocations: 28687)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:22:52 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:22:52 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:23:40 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:32:57 -0700
 Processing by GamesController#show as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
@@ -36300,20 +34719,25 @@ Processing by GamesController#show as HTML
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 420.5ms | Allocations: 27582)
-Completed 200 OK in 423ms (Views: 420.8ms | ActiveRecord: 0.1ms | Allocations: 28638)
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 1089)
+  Rendered games/show.html.erb (Duration: 8.2ms | Allocations: 6698)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 8276)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:23:40 -0700
   
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-Started GET "/header.scss" for ::1 at 2024-05-22 21:23:41 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:23:50 -0700
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-05-22 19:33:18 -0700
 Processing by GamesController#show as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
@@ -36321,20 +34745,25 @@ Processing by GamesController#show as HTML
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 8.7ms | Allocations: 6626)
-Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 7698)
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 830)
+  Rendered games/show.html.erb (Duration: 6.6ms | Allocations: 6478)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 8057)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:23:51 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:23:51 -0700
   
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_users.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:23:58 -0700
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-05-22 19:33:19 -0700
 Processing by GamesController#show as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
@@ -36342,1071 +34771,391 @@ Processing by GamesController#show as HTML
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 412.9ms | Allocations: 27564)
-Completed 200 OK in 415ms (Views: 413.2ms | ActiveRecord: 0.1ms | Allocations: 28635)
+  Rendered partials/_header.html.erb (Duration: 0.8ms | Allocations: 688)
+  Rendered games/show.html.erb (Duration: 5.0ms | Allocations: 5618)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 6703)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:23:59 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:23:59 -0700
   
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_users.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:24:24 -0700
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-05-22 19:36:14 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:36:14 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:36:14 -0700
+Started POST "/register" for ::1 at 2024-05-22 19:36:14 -0700
+Started POST "/register" for ::1 at 2024-05-22 19:36:14 -0700
+Processing by UsersController#create as HTML
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
 Processing by GamesController#show as HTML
+Processing by GamesController#show as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#show as HTML
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 338.2ms | Allocations: 27590)
-Completed 200 OK in 343ms (Views: 338.5ms | ActiveRecord: 0.1ms | Allocations: 28646)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:24:24 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:24:24 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:25:34 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 395.6ms | Allocations: 27587)
-Completed 200 OK in 403ms (Views: 396.0ms | ActiveRecord: 0.1ms | Allocations: 28658)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:25:34 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:25:34 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:25:51 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 331.7ms | Allocations: 27544)
-Completed 200 OK in 334ms (Views: 332.0ms | ActiveRecord: 0.1ms | Allocations: 28600)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:25:51 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:25:51 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:25:58 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering games/show.html.erb
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 9.2ms | Allocations: 6663)
-Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 7734)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:25:58 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 21:25:58 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:26:04 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 336.9ms | Allocations: 27558)
-Completed 200 OK in 339ms (Views: 337.2ms | ActiveRecord: 0.1ms | Allocations: 28614)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:26:05 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:26:05 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:26:12 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 919)
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 688)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 8.3ms | Allocations: 6659)
-Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 7715)
+  Rendered games/show.html.erb (Duration: 34.5ms | Allocations: 13874)
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 688)
+  Rendered games/show.html.erb (Duration: 36.4ms | Allocations: 14586)
+  Rendered games/show.html.erb (Duration: 41.4ms | Allocations: 17872)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.3ms | Allocations: 22666)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:26:12 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:26:12 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:26:20 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 328.3ms | Allocations: 27572)
-Completed 200 OK in 330ms (Views: 328.7ms | ActiveRecord: 0.1ms | Allocations: 28628)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.5ms | Allocations: 22979)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:26:21 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:26:21 -0700
   
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:26:32 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 339.4ms | Allocations: 27592)
-Completed 200 OK in 342ms (Views: 339.7ms | ActiveRecord: 0.1ms | Allocations: 28648)
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.3ms | Allocations: 21663)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:26:32 -0700
   
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:26:32 -0700
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
   
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
   
-Started GET "/games" for ::1 at 2024-05-22 21:27:30 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 338.8ms | Allocations: 27635)
-Completed 200 OK in 341ms (Views: 339.0ms | ActiveRecord: 0.1ms | Allocations: 28691)
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-23 02:36:15.208377"], ["updated_at", "2024-05-23 02:36:15.208377"], ["email", "anim@anim.com"], ["password_digest", "$2a$12$cS7Fzl4450kbBN1CuHOyKOx8teO9f4scfhDqEwBZ1O5KLGbOa1dfO"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-23 02:36:15.211487"], ["updated_at", "2024-05-23 02:36:15.211487"], ["email", "anim@anim.com"], ["password_digest", "$2a$12$yfPbaInRwbed8pW48k0uFu93UMAqhX9ZwwVIabtUdKokOkvTtEn1O"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Completed   in 158034ms (ActiveRecord: 1.1ms | Allocations: 633610)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:27:30 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:27:30 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:27:42 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 338.0ms | Allocations: 27597)
-Completed 200 OK in 340ms (Views: 338.2ms | ActiveRecord: 0.1ms | Allocations: 28654)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:27:42 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:27:42 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:28:00 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 9.2ms | Allocations: 6668)
-Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 7724)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:28:00 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 21:28:00 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:28:23 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 8.5ms | Allocations: 6608)
-Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 7664)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:28:23 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 21:28:23 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:28:56 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 392.5ms | Allocations: 27592)
-Completed 200 OK in 395ms (Views: 392.7ms | ActiveRecord: 0.2ms | Allocations: 28648)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:28:56 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:28:56 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:29:34 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 332.2ms | Allocations: 27581)
-Completed 200 OK in 334ms (Views: 332.5ms | ActiveRecord: 0.1ms | Allocations: 28637)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:29:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:29:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:29:44 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 333.9ms | Allocations: 27580)
-Completed 200 OK in 336ms (Views: 334.2ms | ActiveRecord: 0.1ms | Allocations: 28636)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:29:44 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:29:44 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tictactoe" for ::1 at 2024-05-22 21:32:31 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 6.5ms | Allocations: 3725)
-Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 1.0ms | Allocations: 5559)
-
-
-Started GET "/games/tictactoe/1" for ::1 at 2024-05-22 21:32:32 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"1"}
-  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 11.3ms | Allocations: 4308)
-Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 2.4ms | Allocations: 5879)
-
-
-Started GET "/tictactoe" for ::1 at 2024-05-22 21:32:34 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.4ms | Allocations: 655)
-Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1323)
-
-
-Started GET "/games/tictactoe/2" for ::1 at 2024-05-22 21:32:35 -0700
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"2"}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 4.7ms | Allocations: 3497)
-Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 4642)
+  [1m[36mTRANSACTION (157263.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Completed   in 158033ms (ActiveRecord: 157264.0ms | Allocations: 632661)
 
 
 [dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
-Started GET "/games/tictactoe/2" for ::1 at 2024-05-22 21:35:03 -0700
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by TictactoeController#show as HTML
-  Parameters: {"id"=>"2"}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2024-05-22 19:39:01 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
-  Rendering tictactoe/show.html.erb
-  Rendered tictactoe/show.html.erb (Duration: 567.9ms | Allocations: 50708)
-Completed 200 OK in 588ms (Views: 570.4ms | ActiveRecord: 1.0ms | Allocations: 63156)
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 16280)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.3ms | Allocations: 22591)
 
 
-Started GET "/tictactoe" for ::1 at 2024-05-22 21:35:05 -0700
+Started GET "/games" for ::1 at 2024-05-22 19:39:05 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 1089)
+  Rendered games/show.html.erb (Duration: 6.8ms | Allocations: 6713)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 8295)
+
+
+  
+ActionView::Template::Error (undefined method `balance' for nil:NilClass):
+    3:    <img src='assets/FrancisGamble.png' id='logozHeader'>
+    4: 
+    5: 	 <div class="moneyContainer">
+    6: 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    7: 	 <%= link_to "Get tokens =>", tokens_path, class: "tokens-route" %>
+    8: 	 </div>
+    9:   </div>
+  
+app/views/partials/_header.html.erb:6
+app/views/games/show.html.erb:16
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/" for ::1 at 2024-05-22 19:39:12 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.5ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6849)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms | Allocations: 7676)
+
+
+Started POST "/register" for ::1 at 2024-05-22 19:39:17 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anim@anim.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "anim@anim.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "fake_users" ("created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?)[0m  [["created_at", "2024-05-23 02:39:17.627911"], ["updated_at", "2024-05-23 02:39:17.627911"], ["email", "anim@anim.com"], ["password_digest", "$2a$12$AKfbEfvbKxFNs7cjqj3eJ.DzEbsCnFKQZk3l04NIo7PHKZsgjVH4u"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 198ms (ActiveRecord: 4.9ms | Allocations: 11097)
+
+
+Started GET "/games" for ::1 at 2024-05-22 19:39:17 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered games/show.html.erb (Duration: 4.9ms | Allocations: 5194)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 6325)
+
+
+Started GET "/header.scss" for ::1 at 2024-05-22 19:39:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/header.scss"):
+  
+Started GET "/tictactoe" for ::1 at 2024-05-22 19:39:22 -0700
 Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering tictactoe/index.html.erb
   [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
   ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 2.9ms | Allocations: 946)
-Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 1895)
+  Rendered tictactoe/index.html.erb (Duration: 6.2ms | Allocations: 5418)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.6ms | Allocations: 7152)
 
 
-Started GET "/tictactoe" for ::1 at 2024-05-22 21:35:08 -0700
+Started GET "/tictactoe" for ::1 at 2024-05-22 19:39:23 -0700
 Processing by TictactoeController#index as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
   Rendering tictactoe/index.html.erb
   [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
   ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.2ms | Allocations: 656)
-Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1341)
+  Rendered tictactoe/index.html.erb (Duration: 2.1ms | Allocations: 2420)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 3133)
 
 
-Started GET "/games" for ::1 at 2024-05-22 21:35:10 -0700
-Processing by GamesController#show as HTML
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 19:39:38 -0700
+Processing by TictactoeController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 227)
-  Rendered games/show.html.erb (Duration: 39.5ms | Allocations: 19380)
-Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.1ms | Allocations: 20997)
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 4.4ms | Allocations: 2122)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 2985)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:35:10 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:35:10 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/assets/images/tictactoe.png"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:35:14 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 65)
-  Rendered games/show.html.erb (Duration: 15.0ms | Allocations: 6760)
-Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.3ms | Allocations: 7915)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:35:14 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:35:14 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:35:25 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:35:25 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:36:48 -0700
-Processing by GamesController#show as HTML
+Started POST "/tictactoe" for ::1 at 2024-05-22 19:39:39 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 425.4ms | Allocations: 27802)
-Completed 200 OK in 427ms (Views: 425.7ms | ActiveRecord: 0.1ms | Allocations: 28858)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.2ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-23 02:39:39.338312"], ["updated_at", "2024-05-23 02:39:39.338312"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/45
+Completed 302 Found in 10ms (ActiveRecord: 3.3ms | Allocations: 5287)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:36:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:36:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/assets/images/tictactoe.png"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:36:56 -0700
-Processing by GamesController#show as HTML
+Started GET "/tictactoe/45" for ::1 at 2024-05-22 19:39:39 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"45"}
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 10.9ms | Allocations: 6660)
-Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 7717)
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 58.2ms | Allocations: 25941)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.2ms | Allocations: 27458)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:36:56 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:36:56 -0700
   
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
+ActionView::Template::Error (Asset `tictactoe.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link tictactoe.js
+
+and restart your server):
+    44: 
+    45:     <%= link_to "Back", tictactoe_index_path %>
+    46: 
+    47:     <%= javascript_include_tag 'tictactoe', 'data-turbolinks-track': 'reload' %>
+    48: 
+    49:   </body>
+    50: 
   
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/assets/images/tictactoe.png"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:37:11 -0700
-Processing by GamesController#show as HTML
+app/views/tictactoe/show.html.erb:47
+app/controllers/tictactoe_controller.rb:25:in `show'
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 19:40:00 -0700
+Processing by TictactoeController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 341.2ms | Allocations: 27707)
-Completed 200 OK in 343ms (Views: 341.5ms | ActiveRecord: 0.1ms | Allocations: 28764)
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 0.7ms | Allocations: 507)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1185)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:37:12 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:37:12 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 21:37:12 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:37:40 -0700
-Processing by GamesController#show as HTML
+Started GET "/tictactoe/new" for ::1 at 2024-05-22 19:40:01 -0700
+Processing by TictactoeController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 341.9ms | Allocations: 27690)
-Completed 200 OK in 344ms (Views: 342.2ms | ActiveRecord: 0.1ms | Allocations: 28746)
+  Rendering tictactoe/new.html.erb
+  Rendered tictactoe/new.html.erb (Duration: 0.6ms | Allocations: 504)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1175)
 
 
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:37:40 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:37:40 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 21:37:40 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/tictactoe" for ::1 at 2024-05-22 21:37:57 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.9ms | Allocations: 689)
-Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 1360)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:37:58 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:38:02 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:38:02 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:44:32 -0700
-Processing by GamesController#show as HTML
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 430.1ms | Allocations: 25710)
-Completed 200 OK in 434ms (Views: 430.4ms | ActiveRecord: 0.9ms | Allocations: 27350)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:44:33 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 21:44:33 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 21:44:33 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:44:47 -0700
-Processing by GamesController#show as HTML
+Started POST "/tictactoe" for ::1 at 2024-05-22 19:40:01 -0700
+Processing by TictactoeController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]"}, "commit"=>"Start Game"}
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 7.4ms | Allocations: 6606)
-Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7663)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTictactoe Create (0.2ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["board", "---\n- \n- \n- \n- \n- \n- \n- \n- \n- \n"], ["created_at", "2024-05-23 02:40:01.818044"], ["updated_at", "2024-05-23 02:40:01.818044"]]
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tictactoe_controller.rb:45:in `create'
+Redirected to http://localhost:3000/tictactoe/46
+Completed 302 Found in 9ms (ActiveRecord: 3.0ms | Allocations: 4820)
 
 
-Started GET "/header.scss" for ::1 at 2024-05-22 21:44:47 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:44:47 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 21:44:47 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/" for ::1 at 2024-05-22 21:44:48 -0700
-Processing by PagesController#home as HTML
+Started GET "/tictactoe/46" for ::1 at 2024-05-22 19:40:01 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"46"}
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 566)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 137)
-  Rendered users/_existing.html.erb (Duration: 0.5ms | Allocations: 128)
-  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8189)
-Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 9913)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:44:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 21:44:51 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 348)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 6823)
-Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 7619)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:44:51 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started POST "/login" for ::1 at 2024-05-22 21:45:00 -0700
-Processing by SessionsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"d@d.d", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = ? LIMIT ?[0m  [["email", "d@d.d"], ["LIMIT", 1]]
-  ↳ app/controllers/sessions_controller.rb:6:in `create'
-Redirected to http://localhost:3000/games
-Completed 302 Found in 251ms (ActiveRecord: 0.3ms | Allocations: 1793)
-
-
-Started GET "/games" for ::1 at 2024-05-22 21:45:00 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 62)
-  Rendered games/show.html.erb (Duration: 4.8ms | Allocations: 6793)
-Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 7887)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:45:00 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:45:00 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tokens" for ::1 at 2024-05-22 21:45:14 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 17.4ms | Allocations: 12365)
-Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.1ms | Allocations: 13551)
-
-
-Started GET "/games" for ::1 at 2024-05-22 21:45:16 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 60)
-  Rendered games/show.html.erb (Duration: 15.0ms | Allocations: 6673)
-Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 7808)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:45:16 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:45:16 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tokens" for ::1 at 2024-05-22 21:45:20 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 17.3ms | Allocations: 11143)
-Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.3ms | Allocations: 11800)
-
-
-Started GET "/games" for ::1 at 2024-05-22 21:45:21 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.2ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 13.5ms | Allocations: 6643)
-Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 7698)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:45:21 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:45:21 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tokens" for ::1 at 2024-05-22 21:45:22 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 13.1ms | Allocations: 11135)
-Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 11792)
-
-
-Started GET "/games" for ::1 at 2024-05-22 21:45:24 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.2ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 16.6ms | Allocations: 6644)
-Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 7700)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:45:24 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:45:24 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tokens" for ::1 at 2024-05-22 21:45:24 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 15.2ms | Allocations: 11147)
-Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 1.2ms | Allocations: 11802)
-
-
-Started POST "/tokens" for ::1 at 2024-05-22 21:45:25 -0700
-Processing by TokenPurchasesController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"300"}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
-  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = ? AND "fake_users"."id" != ? LIMIT ?[0m  [["email", "d@d.d"], ["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
-  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = ?, "balance" = ? WHERE "fake_users"."id" = ?[0m  [["updated_at", "2024-05-23 04:45:25.938936"], ["balance", 2300], ["id", 1]]
-  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
-  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/token_purchases_controller.rb:16:in `create'
-No template found for TokenPurchasesController#create, rendering head :no_content
-Completed 204 No Content in 17ms (ActiveRecord: 2.4ms | Allocations: 6264)
-
-
-Started GET "/tokens" for ::1 at 2024-05-22 21:46:51 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 15.1ms | Allocations: 12080)
-Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms | Allocations: 13207)
-
-
-Started GET "/tokens" for ::1 at 2024-05-22 21:46:59 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 10.8ms | Allocations: 11137)
-Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 11871)
-
-
-Started GET "/tokens" for ::1 at 2024-05-22 21:50:44 -0700
-Processing by TokenPurchasesController#new as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering token_purchases/new.html.erb
-  Rendered token_purchases/new.html.erb (Duration: 270.1ms | Allocations: 17795)
-Completed 200 OK in 272ms (Views: 270.4ms | ActiveRecord: 0.1ms | Allocations: 18450)
-
-
-Started GET "/games" for ::1 at 2024-05-22 21:51:28 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 210)
-  Rendered games/show.html.erb (Duration: 413.1ms | Allocations: 27523)
-Completed 200 OK in 418ms (Views: 414.9ms | ActiveRecord: 0.2ms | Allocations: 28965)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:51:29 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/header.scss" for ::1 at 2024-05-22 21:51:29 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 21:51:29 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/games" for ::1 at 2024-05-22 21:51:47 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.1ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 327.4ms | Allocations: 27074)
-Completed 200 OK in 330ms (Views: 327.7ms | ActiveRecord: 0.1ms | Allocations: 28207)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 21:51:48 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 21:51:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 21:51:48 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/tictactoe" for ::1 at 2024-05-22 21:53:11 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.8ms | Allocations: 1019)
-Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 2056)
-
-
-Started GET "/tictactoe" for ::1 at 2024-05-22 22:08:28 -0700
-Processing by TictactoeController#index as HTML
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.2ms | Allocations: 680)
-Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.7ms | Allocations: 1963)
-
-
-Started GET "/" for ::1 at 2024-05-22 22:08:31 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 542)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.8ms | Allocations: 134)
-  Rendered users/_existing.html.erb (Duration: 0.6ms | Allocations: 125)
-  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 8136)
-Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.2ms | Allocations: 9632)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 22:08:31 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games/checkers" for ::1 at 2024-05-22 22:08:32 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 9.8ms | Allocations: 5091)
-Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 6816)
-
-
-Started GET "/games" for ::1 at 2024-05-22 22:08:35 -0700
-Processing by GamesController#show as HTML
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering games/show.html.erb
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered partials/_header.html.erb (Duration: 0.2ms | Allocations: 55)
-  Rendered games/show.html.erb (Duration: 15.3ms | Allocations: 6679)
-Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 7813)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 22:08:35 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 22:08:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 22:08:35 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/games/checkers" for ::1 at 2024-05-22 22:09:01 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.4ms | Allocations: 4111)
-Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 5064)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 22:09:08 -0700
-Started GET "/header.scss" for ::1 at 2024-05-22 22:09:08 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-Started GET "/app/assets/images/tictactoe.png" for ::1 at 2024-05-22 22:09:08 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/app/assets/images/tictactoe.png"):
-  
-Started GET "/tictactoe" for ::1 at 2024-05-22 22:09:09 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.5ms | Allocations: 689)
-Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1360)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 22:09:11 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 22:09:11 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/tictactoe" for ::1 at 2024-05-22 22:09:15 -0700
-Processing by TictactoeController#index as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering tictactoe/index.html.erb
-  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes"[0m
-  ↳ app/views/tictactoe/index.html.erb:5
-  Rendered tictactoe/index.html.erb (Duration: 1.1ms | Allocations: 655)
-Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1323)
-
-
-Started GET "/header.scss" for ::1 at 2024-05-22 22:09:23 -0700
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 22:09:23 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/header.scss"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/" for ::1 at 2024-05-22 22:10:00 -0700
-Processing by PagesController#home as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 321)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
-  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
-  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 6846)
-Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.1ms | Allocations: 7573)
-
-
-Started GET "/packs/js/application-1ce57dc84c43dd65af67.js" for ::1 at 2024-05-22 22:10:00 -0700
-  
-ActionController::RoutingError (No route matches [GET] "/packs/js/application-1ce57dc84c43dd65af67.js"):
-  
-Started GET "/games/checkers" for ::1 at 2024-05-22 22:10:09 -0700
-Processing by CheckersController#show as HTML
-  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/application_controller.rb:6:in `current_user'
-  Rendering checkers/show.html.erb
-  Rendered checkers/show.html.erb (Duration: 4.4ms | Allocations: 4122)
-Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 5071)
+  [1m[36mTictactoe Load (0.0ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:15:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered tictactoe/show.html.erb (Duration: 16.5ms | Allocations: 16722)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms | Allocations: 17868)
 
 
 [dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games/checkers" for ::1 at 2024-05-22 22:24:58 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 120.7ms | Allocations: 41489)
+Completed 200 OK in 142ms (Views: 123.0ms | ActiveRecord: 0.6ms | Allocations: 52515)
+
+
