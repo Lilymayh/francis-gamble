@@ -1,6 +1,8 @@
 <header>
   <div class="container">
-   <img src='assets/FrancisGamble.png' id='logozHeader'>
+		<a href="/games">
+		<img src="<%= asset_path('FrancisGamble.png') %>" alt="Francis Gamble" id="logozHeader">
+</a>
 
 	 <div class="moneyContainer">
 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
@@ -8,5 +10,5 @@
 	 </div>
   </div>
 
-	<link rel="stylesheet" href="header.scss">
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 </header>
