@@ -1,3 +1,9 @@
+//optional pokemon font
+@font-face {
+	font-family: 'tokenFont'; //can rename variable
+	src: asset-url('Pokemon_Hollow.ttf') format('truetype'); /* Path to font file */
+}
+
 html {
   background: linear-gradient(180deg, #B8DEF3 11.83%, #D8EEFA 92.33%);
 	height: 100%;
@@ -167,4 +173,22 @@ h1 {
 .games-list.index {
   list-style: none;
   background-color: white;
+}
+
+.actions.new {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subtract-balance-button {
+  // margin-left: 6.5em; adjust
+	// margin-top: 4em;
+	// background-image: linear-gradient(-45deg, #ffd700, #fff589, #ffd700); adjustable
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	border: none;
+	// font-size: 16px; optional
+	cursor: pointer;
+	border-radius: 8px;
+	// width: 20vw; adjust
+	// height: 20vh;
 }
