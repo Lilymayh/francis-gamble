@@ -1,17 +1,17 @@
 <form action="/login" method="post" class="row g-3">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-  <div class="col-md-6">
+  <div class="authenticate-form">
     <label for="email" class="form-label">Email:</label>
     <input type="email" name="session[email]" id="email" class="form-control">
   </div>
 
-  <div class="col-md-6">
+  <div class="authenticate-form">
     <label for="password" class="form-label">Password:</label>
     <input type="password" name="session[password]" id="password" class="form-control">
   </div>
 
-  <div class="col-12">
+  <div class="authenticate-form">
     <input type="submit" value="Login" class="btn btn-primary">
   </div>
 </form> 
