@@ -192,3 +192,19 @@ h1 {
 	// width: 20vw; adjust
 	// height: 20vh;
 }
+
+.back {
+  display: flex;
+	justify-content: center;
+	align-items: center;	
+	background-color: darkblue;
+	font-size: 1rem;
+	font-family: 'tokenFont'; //rename if you renamed the variable
+	text-decoration: none;
+	color: white;
+	// width: 10vw; adjust
+	// height: 7vh;
+	// margin-right: 2em;
+	// margin-top: 1em;
+	border-radius: 8px;
+}
