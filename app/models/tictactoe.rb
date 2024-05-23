@@ -2,7 +2,15 @@ class Tictactoe < ApplicationRecord
 
   serialize :board, Array
 
+  after_save :update_winnings
 
+  def update_winnings
+    if game_over? && who_won? == "X"
+      current_user = User.last
+      current_user.balance = current_user.balance + (bet_amount * 2)
+      current_user.save
+    end
+  end
 
   def make_player_move(index)
 
@@ -42,7 +50,19 @@ class Tictactoe < ApplicationRecord
 
   end
 
+  def who_won?
 
+    WINNING_COMBINATIONS.each do |combo|
+
+      return "X" if combo.all? { |index| board[index] == 'X' }
+
+      return "O" if combo.all? { |index| board[index] == 'O' }
+
+    end
+
+    false
+
+  end
 
   def check_winner
 

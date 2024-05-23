@@ -7,19 +7,19 @@
     <title>Tic Tac Toe</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
     <%= csrf_meta_tags %>
-
     <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'tictactoe', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'header', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= stylesheet_link_tag 'tictactoe', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
 
   <body>
-
+    <%= render 'partials/header' %>
     <h1>Tic Tac Toe</h1>
-
     <div class="boardContainer">
 
       <div class="board" id="board" data-game-id="<%= @tictactoe.id %>">
@@ -37,8 +37,8 @@
     <div class="winning-message" id="winningMessage">
 
       <div data-winning-message-text></div>
-
-     <%= link_to "Play Some More!", games_show_path %>
+      <h3>+<%= @tictactoe.bet_amount * 2 %> Tokens!<h3>
+      <%= link_to "Play Again!", new_tictactoe_path, class: "btn btn-primary" %>
 
     </div>
 

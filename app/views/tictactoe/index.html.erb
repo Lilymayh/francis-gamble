@@ -1,7 +1,9 @@
-<h1>All Tic Tac Toe Games</h1>
-
+<%= render 'partials/header' %>
+<h3>Play Tic-TacToe!</h3>
+<%= link_to "Back", games_show_path %>
+<%= link_to "Start a New Game", new_tictactoe_path, class: "btn btn-primary" %>
 <ul>
-
+<h3>Your Game History</h3>
   <% @games.each do |game| %>
 
     <li>
@@ -13,8 +15,3 @@
   <% end %>
 
 </ul>
-
-
-
-<%= link_to "Start a New Game", new_tictactoe_path, class: "btn btn-primary" %>
-<%= link_to "Home", games_show_path %>

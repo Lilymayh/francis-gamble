@@ -1,19 +1,33 @@
-<h1>Start a New Tic Tac Toe Game</h1>
+<%= render 'partials/header' %>
 
+<h2>Tic Tac Toe</h2>
+<h3>Place your bet to start the game!</h3>
 
-
-<%= form_with(model: @tictactoe, url: tictactoe_index_path, local: true) do |form| %>
-
+<%= form_with(model: @tictactoe, url: start_tictactoe_index_path, local: true) do |form| %>
   <%= form.hidden_field :board, value: Array.new(9, nil).to_json %>
+  <%= form.hidden_field :amount, id: "bet_amount" %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
   <div class="actions">
 
-    <%= form.submit "Start Game" %>
+    <button type="button" class="subtract-balance-button" onclick="updateBetAndSubmit(10);">Bet 10 Tokens</button>
 
+    <button type="button" class="subtract-balance-button" onclick="updateBetAndSubmit(20);">Bet 20 Tokens</button>
+
+    <button type="button" class="subtract-balance-button" onclick="updateBetAndSubmit(50);">Get 50 Tokens</button>
+    
   </div>
-
 <% end %>
 
-
-
 <%= link_to 'Back', tictactoe_index_path %>
+
+<script>
+  function updateBetAndSubmit(amount) {
+    document.getElementById('bet_amount').value = amount;
+    document.querySelector('form').submit();
+  }
+</script>
+
+
+
+

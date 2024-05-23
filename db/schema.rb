@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_05_22_070405) do
+ActiveRecord::Schema.define(version: 2024_05_23_055850) do
 
 # Could not dump table "bets" because of following StandardError
 #   Unknown type 'uuid' for column 'id'
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2024_05_22_070405) do
     t.string "current_turn", default: "X"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "bet_amount"
   end
 
 # Could not dump table "winnings" because of following StandardError

@@ -6,3 +6,5 @@
 //= link checkers.js
 
   //= link tictactoe.js
+
+  //= link FrancisGamble.png
