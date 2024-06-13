@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2024_05_23_093716) do
     t.string "password_digest"
     t.string "email"
     t.datetime "registration_date"
-    t.decimal "balance", precision: 10, scale: 2
+    t.decimal "balance", precision: 10, scale: 2, default: "0.0"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true

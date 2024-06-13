@@ -7,9 +7,9 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       redirect_to "/games"
-    else
-      flash.now[:alert] = "Invalid email/password combination"
-      render :new
+    # else
+    #   flash.now[:alert] = "Invalid email/password combination"
+    #   render :new
     end
   end
   
