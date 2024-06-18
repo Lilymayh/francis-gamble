@@ -12,7 +12,11 @@
     </head>
 
   <body>
-<h1>Checkers!</h1>
+  <div>
+  <h1>Checkers!</h1>
+  <%= link_to "Home", games_show_path, class: "home" %>
+  </div>
+
   <div class="game-board">
     <% @game_board.squares.each do |square| %>
       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
@@ -25,6 +29,5 @@
         </div>
       <% end %>
   </div>
-  <%= link_to "Home", games_show_path %>
   </body>
 </html>

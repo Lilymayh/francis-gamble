@@ -7,6 +7,8 @@
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag "tokens", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag "coins", "data-turbo-track": "reload" %>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="token-body">
@@ -16,74 +18,91 @@
   </div>
   
   <div class="tokens">
-  <form action="/tokens" method="post" id="tokenForm">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token, id: "purchase_amount" %>
-  <%= hidden_field_tag :amount, 0, id: "tokenValue" %>
+    <form action="/tokens" method="post" id="tokenForm">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token, id: "purchase_amount" %>
+      <%= hidden_field_tag :amount, 0, id: "tokenValue" %>
+      
+      <!-- Token buttons -->
       <span class="token-wrapper">
-        <button type="button" onclick="purchaseTokens(100)"></button>
-        <span class="top-banner">100</span>
+        <button type="button" onclick="purchaseTokens(140)"></button>
+        <span class="top-banner">100 + 40</span>
         <span class="bottom-banner">$1.99</span>
         <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
       </span>
       
       <span class="token-wrapper">
-        <button type="button" onclick="purchaseTokens(200)"></button>
-        <span class="top-banner">600</span>
+        <button type="button" onclick="purchaseTokens(400)"></button>
+        <span class="top-banner">400</span>
         <span class="bottom-banner">$4.99</span>
         <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
         <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
       </span>
       
       <span class="token-wrapper">
-        <button type="button" onclick="purchaseTokens(300)"></button>
-        <span class="top-banner">1500</span>
+        <button type="button" onclick="purchaseTokens(650)"></button>
+        <span class="top-banner">650</span>
         <span class="bottom-banner">$9.99</span>
         <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
         <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
         <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
       </span>
+
+            <span class="token-wrapper">
+        <button type="button" onclick="purchaseTokens(1400)"></button>
+        <span class="top-banner">1400</span>
+        <span class="bottom-banner">$19.99</span>
+        <img class="coin1" src="<%= asset_path('coin.png') %>" alt="tokens">
+      </span>
       
       <span class="token-wrapper">
-        <button type="button" onclick="purchaseTokens(100)"></button>
-        <span class="top-banner">100</span>
+        <button type="button" onclick="purchaseTokens(2400)"></button>
+        <span class="top-banner">2400</span>
         <span class="bottom-banner">$29.99</span>
-        <img class="coin7" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin8" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin9" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin10" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin2" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin3" src="<%= asset_path('coin.png') %>" alt="tokens">
       </span>
       
       <span class="token-wrapper">
-        <button type="button" onclick="purchaseTokens(200)"></button>
-        <span class="top-banner">200</span>
+        <button type="button" onclick="purchaseTokens(4200)"></button>
+        <span class="top-banner">4200</span>
         <span class="bottom-banner">$49.99</span>
-        <img class="coin11" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin12" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin13" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin14" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin15" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin4" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin5" src="<%= asset_path('coin.png') %>" alt="tokens">
+        <img class="coin6" src="<%= asset_path('coin.png') %>" alt="tokens">
       </span>
-      
-      <span class="token-wrapper">
-        <button type="button" onclick="purchaseTokens(300)"></button>
-        <span class="top-banner">2</span>
-        <span class="bottom-banner">$300000000.99</span>
-        <img class="coin16" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin17" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin18" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin19" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin20" src="<%= asset_path('coin.png') %>" alt="tokens">
-        <img class="coin21" src="<%= asset_path('coin.png') %>" alt="tokens">
-      </span>
-      
+    </form>
   </div>
   
+  <!-- Pop-up div for displaying purchase message -->
+  <div id="purchase-popup" class="purchase-popup">
+    <p id="purchase-message"></p>
+  </div>
+  
+  <!-- Custom JavaScript for displaying the pop-up -->
   <script>
     function purchaseTokens(amount) {
       document.getElementById('tokenValue').value = amount;
       document.querySelector('form').submit();
+      
+      // Display the purchase message
+      displayPurchaseMessage("You've purchased " + amount + " tokens!");
+    }
+    
+    function displayPurchaseMessage(message) {
+      var popup = document.getElementById('purchase-popup');
+      var popupMessage = document.getElementById('purchase-message');
+      popupMessage.innerText = message;
+      popup.style.display = 'block';
+      popup.classList.add('animate__animated', 'animate__fadeIn');
+      setTimeout(function() {
+        popup.classList.remove('animate__fadeIn');
+        popup.classList.add('animate__fadeOut');
+        setTimeout(function() {
+          popup.style.display = 'none';
+          popup.classList.remove('animate__fadeOut');
+        }, 1000); // Adjust this value to match the duration of the fade-out animation in milliseconds
+      }, 2000); // Adjust this value to match the duration of how long the message should be displayed in milliseconds
     }
   </script>
-
 </body>
 </html>

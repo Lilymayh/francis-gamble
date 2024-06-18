@@ -1,9 +1,34 @@
-h1 {
+@font-face {
+	font-family: 'tokenFont';
+	src: asset-url('Pokemon_Hollow.ttf') format('truetype'); /* Path to font file */
+}
+
+html {
+  background: linear-gradient(180deg, #B8DEF3 11.83%, #D8EEFA 92.33%);
+ }
+
+ h1 {
 	font-size: 5rem;
-	color: rgb(0, 0, 0);
+	color: pink;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	background-color: darkblue;
+	font-size: 1rem;
+	font-family: 'tokenFont';
+	text-decoration: none;
+	color: white;
+	width: 10vw;
+	height: 7vh;
+	margin-right: 2em;
+	margin-top: 1em;
+	border-radius: 8px;
 }
 
 .game-board {
@@ -12,7 +37,8 @@ h1 {
 	grid-template-rows: repeat(8, 5em);    
 	border: 2px solid black;
 	width: 55%;
-	justify-content: center
+	justify-content: center;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .square.black-square {
@@ -24,6 +50,9 @@ h1 {
 }
 
 .piece {
+	display: flex;
+	justify-content: center;
+	align-items: center;
   width: 60%;
   height: 60%;
   border-radius: 50%;
@@ -32,7 +61,7 @@ h1 {
 }
 
 .red {
-  background-color: red;
+  background-color: rgb(252, 211, 211);
 }
 
 .black {

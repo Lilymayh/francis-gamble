@@ -1,3 +1,9 @@
+//optional pokemon font
+@font-face {
+	font-family: 'tokenFont'; //can rename variable
+	src: asset-url('Pokemon_Hollow.ttf') format('truetype'); /* Path to font file */
+}
+
 html {
   background: linear-gradient(180deg, #B8DEF3 11.83%, #D8EEFA 92.33%);
 	height: 100%;
@@ -23,6 +29,11 @@ h1 {
 
 .boardContainer{
 	display: block;
+  margin: 2% 30% 5% 30%;
+  background-color: #99001F;
+  padding: 10% 20% 20% 20%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.338);
+  border-radius: 8px;
 }
 
 :root {
@@ -127,7 +138,7 @@ h1 {
 .board.circle .cell:not(.x):not(.circle):hover::after {
   width: calc(var(--mark-size) * .7);
   height: calc(var(--mark-size) * .7);
-  background-color: white;
+  background-color: #B2404E;
 }
 
 .winning-message {
@@ -137,12 +148,16 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 5rem;
   flex-direction: column;
+  background-image: url("https://img.freepik.com/premium-vector/financial-icon-set-seamless-background-backdrop-financial-website-economical-theme-ads-information-dollar-currency-money-signs-vector-wallpaper-web-site-background_570429-16170.jpg?w=1380");
+	background-repeat: repeat;
+	background-size: cover;
+	animation: flowDown 30s infinite;
 }
 
 .winning-message button {
@@ -161,4 +176,115 @@ h1 {
 
 .winning-message.show {
   display: flex;
+}
+
+.games-list.index {
+  list-style: none;
+  background-color: white;
+}
+
+.actions.new {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subtract-balance-button {
+  // margin-left: 6.5em; adjust
+	// margin-top: 4em;
+	background-image: linear-gradient(-45deg, #ffd700, #fff589, #ffd700);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	border: none;
+	// font-size: 16px; optional
+	cursor: pointer;
+	border-radius: 8px;
+	// width: 20vw; adjust
+	// height: 20vh;
+}
+
+.back {
+  display: flex;
+	justify-content: center;
+	align-items: center;	
+	background-color: darkblue;
+	font-size: 1rem;
+	font-family: 'tokenFont'; //rename if you renamed the variable
+	text-decoration: none;
+	color: white;
+	// width: 10vw; adjust
+	// height: 7vh;
+	// margin-right: 2em;
+	// margin-top: 1em;
+	border-radius: 8px;
+}
+
+#winText{
+color: black;
+font-weight: 600;
+text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+#wonTokens{
+	background-color: #296939;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.playAgain{
+  font-size: 20px;
+  padding: 20px;
+  background-color: #3176b3;
+  text-underline-offset: revert;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.subtract-balance-button {
+
+  display: inline-block;
+  margin: 10% 10% 10% 10%;
+  text-align: center;
+  padding: 20px;
+  color: #19385f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  animation: animate__flash 2s infinite;
+}
+
+h2 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+#bets form {
+  animation: animate__flash 2s infinite;
+}
+
+.actions button {
+  animation: animate__flash 2s infinite;
+}
+
+.gameContainer a {
+  text-decoration: none;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gameContainer {
+  background-color: #545084;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.338);
+  border-radius: 8px;
+	margin: 7%;
+	padding: 5%;
 }

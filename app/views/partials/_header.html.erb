@@ -1,6 +1,22 @@
+<head>
+  <%= csrf_meta_tags %>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+</head>
+
+
 <header>
   <div class="container">
-   <img src='assets/FrancisGamble.png' id='logozHeader'>
+		<a href="/games">
+		<img src="<%= asset_path('FrancisGamble.png') %>" alt="Francis Gamble" id="logozHeader">
+</a>
+
+<% if @current_user %>
+      <p>Logged in as: <%= @current_user.email %></p>
+			<%= link_to "Logout", logout_path, method: :delete, class: "logout-link" %>
+    <% else %>
+      <p>Not logged in</p>
+    <% end %>
 
 	 <div class="moneyContainer">
 	 <h2 class="balance">Balance: <%= @current_user.balance %></h2>
@@ -8,5 +24,7 @@
 	 </div>
   </div>
 
-	<link rel="stylesheet" href="header.scss">
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<%= stylesheet_link_tag "tictactoe", "data-turbo-track": "reload" %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </header>

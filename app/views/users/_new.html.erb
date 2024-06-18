@@ -1,22 +1,22 @@
-<form action="/register" method="post" class="row g-3">
+<form action="/users" method="post" class="row g-3">
 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-  <div class="col-md-6">
+  <div class="cauthenticate-form">
     <label for="user_email" class="form-label">Email:</label>
     <input type="email" name="user[email]" id="user_email" class="form-control">
   </div>
 
-  <div class="col-md-6">
+  <div class="authenticate-form">
     <label for="user_password" class="form-label">Password:</label>
     <input type="password" name="user[password]" id="user_password" class="form-control">
   </div>
 
-  <div class="col-md-6">
+  <div class="authenticate-form">
     <label for="user_password_confirmation" class="form-label">Password Confirmation:</label>
     <input type="password" name="user[password_confirmation]" id="user_password_confirmation" class="form-control">
   </div>
 
-  <div class="col-12">
+  <div class="authenticate-form">
     <input type="submit" value="Register" class="btn btn-primary">
   </div>
 </form>

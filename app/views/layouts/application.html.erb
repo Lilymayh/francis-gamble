@@ -14,22 +14,22 @@
 </head>
 
 <body>
-
   <div class='main_logo'>
-  <img src='assets/FrancisGamble.png' id='logoz'>
+    <img src='assets/FrancisGamble.png' id='logoz'>
   </div>
 
-  <div class='buttonContainer'>
-  <button id="loginBtn">Login</button>
-  <button id="registerBtn">Register</button>
+  <div class="authentication-buttons">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
   </div>
 
-  <div id="registerForm" style="display: none;">
-    <%= render 'users/new' %>
-  </div>
-
-  <div id="loginForm" style="display: none;">
-    <%= render 'users/existing' %>
+  <div class="authentication">
+    <div id="registerForm" style="display: none;">
+      <%= render 'users/new' %>
+    </div>
+    <div id="loginForm" style="display: none;">
+      <%= render 'users/existing' %>
+    </div>
   </div>
 
   <script>
@@ -50,7 +50,7 @@
       });
     });
   </script>
-  <%= link_to "Games", games_show_path %>
+
 
   
 <audio controls autoplay>

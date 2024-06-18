@@ -13,12 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
  html {
   background: linear-gradient(180deg, #B8DEF3 11.83%, #D8EEFA 92.33%);
   height: 100%;
  }
-
 
  .main_logo {
 	text-align: center;
@@ -30,20 +28,44 @@
 	margin-bottom: 5%;
  }
 
- #registerForm {
-	display:inline-block;
-	text-align: center;
+ .authentication-buttons {
+  display: flex;
+  justify-content: center;
  }
 
-#loginForm {
-	display:inline-block;
-	text-align: center;
+ .authenticate-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+ }
+
+ .authentication {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+ #loginForm,
+ #registerForm {
+  background-color: white;
+  margin-bottom: 2em;
+  width: 25vw;
+  height: 20vh;
+  padding: 1em; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	border-radius: 8px;
+	border: 2px solid #3568A8;
+ }
+
 
 
 #board {
   border-collapse: collapse;
-  width: 300px;
 }
 
 #board td {
