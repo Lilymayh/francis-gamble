@@ -38,3 +38,6 @@ gem 'puma'
 
 gem 'sqlite3', '~> 1.4'
 
+gem 'webpacker'
+
+

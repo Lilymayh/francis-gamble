@@ -51,3 +51,230 @@ Did you mean?  javascript_path
     14: </head>
   
 app/views/layouts/application.html.erb:11
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-06-18 15:30:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 524)
+  Rendered layout layouts/application.html.erb (Duration: 147.5ms | Allocations: 42226)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 6.6ms | Allocations: 53986)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008a20>
+Did you mean?  javascript_path
+               javascript_tag):
+     8:   <%= csp_meta_tag %>
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    13:     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
+    14: </head>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2024-06-18 15:30:04 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6120)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 7189)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008c28>
+Did you mean?  javascript_path
+               javascript_tag):
+     8:   <%= csp_meta_tag %>
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    13:     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
+    14: </head>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2024-06-18 15:30:05 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5975)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 6888)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008db8>
+Did you mean?  javascript_path
+               javascript_tag):
+     8:   <%= csp_meta_tag %>
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    13:     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
+    14: </head>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2024-06-18 15:30:05 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5975)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 6888)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008f48>
+Did you mean?  javascript_path
+               javascript_tag):
+     8:   <%= csp_meta_tag %>
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    13:     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
+    14: </head>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2024-06-18 15:30:05 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5973)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 6868)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009088>
+Did you mean?  javascript_path
+               javascript_tag):
+     8:   <%= csp_meta_tag %>
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    13:     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', media: 'all' %>
+    14: </head>
+  
+app/views/layouts/application.html.erb:11
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-06-18 15:31:32 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 524)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 94db375d3297e9fb2003
+Version: webpack 4.47.0
+Time: 70ms
+Built at: 06/18/2024 3:31:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-52f4b0cecda5df31ae22.js   8.88 KiB  application  [emitted] [immutable]  application
+js/application-52f4b0cecda5df31ae22.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-52f4b0cecda5df31ae22.js js/application-52f4b0cecda5df31ae22.js.map
+[./app/javascript/packs/application.js] 4.98 KiB {application} [not cacheable] [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find module './common'
+Require stack:
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/debug/src/node.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/debug/src/index.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/full.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/index.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/transform-file.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/files/module-types.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/files/configuration.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/files/index.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/index.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/babel-loader/lib/index.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/loader-runner/lib/loadLoader.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/loader-runner/lib/LoaderRunner.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack/lib/NormalModule.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack/lib/NormalModuleFactory.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack/lib/Compiler.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack/lib/webpack.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack-cli/bin/utils/validate-options.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack-cli/bin/cli.js
+- /Users/lilyhenderson/lighthouse/francis-gamble/node_modules/webpack/bin/webpack.js
+ babel-loader@8 requires Babel 7.x (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/debug/src/node.js:240:18)
+    at Module._compile (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/debug/src/index.js:9:19)
+    at Module._compile (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at _debug (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:17:16)
+    at Object.<anonymous> (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/config-chain.js:31:15)
+    at Module._compile (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/@babel/core/lib/config/full.js:19:20)
+    at Module._compile (/Users/lilyhenderson/lighthouse/francis-gamble/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+
+  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 1077.0ms | Allocations: 18265)
+Completed 200 OK in 1091ms (Views: 1078.2ms | ActiveRecord: 4.0ms | Allocations: 30082)
+
+
+Started GET "/" for ::1 at 2024-06-18 15:31:33 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 6742)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 7827)
+
+
