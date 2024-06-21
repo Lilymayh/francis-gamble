@@ -962,3 +962,893 @@ Processing by CheckersController#show as HTML
 Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.3ms | Allocations: 8338)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:07:57 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 56.3ms | Allocations: 56159)
+Completed 200 OK in 73ms (Views: 57.9ms | ActiveRecord: 6.8ms | Allocations: 67985)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:08:20 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.3ms | Allocations: 7176)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 1.0ms | Allocations: 8514)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:10:00 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 12.7ms | Allocations: 7198)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.5ms | Allocations: 8378)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:12:20 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 26.0ms | Allocations: 7173)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.3ms | Allocations: 8336)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:12:38 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.5ms | Allocations: 7182)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.4ms | Allocations: 8339)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:13:26 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 24.6ms | Allocations: 7180)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.2ms | Allocations: 8344)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:13:44 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.2ms | Allocations: 3874)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 5022)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:14:38 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.2ms | Allocations: 7190)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 8328)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:15:04 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 36.8ms | Allocations: 7174)
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 0.5ms | Allocations: 8345)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:16:09 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.5ms | Allocations: 7188)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms | Allocations: 8338)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:16:24 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 11.4ms | Allocations: 7170)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 8305)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:16:28 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.3ms | Allocations: 3874)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 5021)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:17:28 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.1ms | Allocations: 7164)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 8319)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:17:35 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 4.9ms | Allocations: 3874)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 5021)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:17:45 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.5ms | Allocations: 3874)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 5019)
+
+
+Started GET "/games" for ::1 at 2024-06-20 12:17:52 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.9ms | Allocations: 4157)
+  Rendered games/show.html.erb (Duration: 21.2ms | Allocations: 12091)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.2ms | Allocations: 13541)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:17:53 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.9ms | Allocations: 3882)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 5164)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:20:50 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 23.3ms | Allocations: 7245)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.4ms | Allocations: 8411)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:21:01 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 25.1ms | Allocations: 7157)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.3ms | Allocations: 8292)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:21:08 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 5.6ms | Allocations: 3874)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 5009)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:21:21 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 8.5ms | Allocations: 3929)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 5073)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:21:30 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 22.0ms | Allocations: 7163)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.2ms | Allocations: 8316)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 12:21:42 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 10.3ms | Allocations: 3914)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 5067)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:55:40 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 17.9ms | Allocations: 7178)
+Completed 200 OK in 48ms (Views: 18.5ms | ActiveRecord: 7.6ms | Allocations: 12476)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:56:13 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.8ms | Allocations: 7157)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.4ms | Allocations: 8316)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:56:26 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.3ms | Allocations: 7162)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.7ms | Allocations: 8297)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:56:48 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 8.2ms | Allocations: 3883)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.6ms | Allocations: 5035)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:57:09 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 22.7ms | Allocations: 7155)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.3ms | Allocations: 8323)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:57:14 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.9ms | Allocations: 3878)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5022)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:57:21 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 52.3ms | Allocations: 54245)
+Completed 200 OK in 66ms (Views: 53.6ms | ActiveRecord: 5.0ms | Allocations: 66068)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:57:33 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.6ms | Allocations: 7208)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.4ms | Allocations: 8529)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 19:58:19 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 17.5ms | Allocations: 7172)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.2ms | Allocations: 8343)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:03:00 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 281.9ms | Allocations: 13935)
+Completed 200 OK in 286ms (Views: 282.7ms | ActiveRecord: 0.3ms | Allocations: 15112)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:04:54 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.3ms | Allocations: 7156)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.4ms | Allocations: 8327)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:05:14 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 169.7ms | Allocations: 10216)
+Completed 200 OK in 174ms (Views: 170.1ms | ActiveRecord: 0.6ms | Allocations: 11349)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:05:26 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 165.9ms | Allocations: 10221)
+Completed 200 OK in 170ms (Views: 167.1ms | ActiveRecord: 0.2ms | Allocations: 11376)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:06:14 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 196.1ms | Allocations: 10220)
+Completed 200 OK in 200ms (Views: 197.3ms | ActiveRecord: 0.2ms | Allocations: 11381)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:06:21 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 9.1ms | Allocations: 3914)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 5052)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:06:59 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 168.7ms | Allocations: 10219)
+Completed 200 OK in 174ms (Views: 169.7ms | ActiveRecord: 0.3ms | Allocations: 11395)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:07:09 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 8.3ms | Allocations: 3914)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 5058)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:07:42 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 169.5ms | Allocations: 10213)
+Completed 200 OK in 173ms (Views: 170.2ms | ActiveRecord: 0.4ms | Allocations: 11375)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:08:07 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 172.0ms | Allocations: 10236)
+Completed 200 OK in 176ms (Views: 172.5ms | ActiveRecord: 0.4ms | Allocations: 11383)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:08:47 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 172.6ms | Allocations: 10216)
+Completed 200 OK in 177ms (Views: 173.6ms | ActiveRecord: 0.2ms | Allocations: 11366)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:09:21 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 173.0ms | Allocations: 10223)
+Completed 200 OK in 178ms (Views: 174.1ms | ActiveRecord: 0.5ms | Allocations: 11378)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:09:27 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.7ms | Allocations: 3874)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 5018)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:10:05 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 5.8ms | Allocations: 3881)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 5030)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:10:34 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 169.2ms | Allocations: 10234)
+Completed 200 OK in 172ms (Views: 169.8ms | ActiveRecord: 0.2ms | Allocations: 11381)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:13:13 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 174.2ms | Allocations: 13527)
+Completed 200 OK in 178ms (Views: 174.9ms | ActiveRecord: 0.3ms | Allocations: 14671)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:15:03 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 170.3ms | Allocations: 10286)
+Completed 200 OK in 173ms (Views: 170.7ms | ActiveRecord: 0.2ms | Allocations: 11421)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:15:49 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 180.4ms | Allocations: 10233)
+Completed 200 OK in 184ms (Views: 180.9ms | ActiveRecord: 0.2ms | Allocations: 11371)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:16:13 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 169.8ms | Allocations: 10261)
+Completed 200 OK in 185ms (Views: 170.5ms | ActiveRecord: 0.3ms | Allocations: 11417)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:20:19 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 29.1ms | Allocations: 7155)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.3ms | Allocations: 8295)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:21:47 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 17.1ms | Allocations: 7144)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.1ms | Allocations: 8294)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:26:07 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.5ms | Allocations: 7131)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.2ms | Allocations: 8296)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:26:17 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.7ms | Allocations: 7134)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 8284)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:28:30 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 8.1ms | Allocations: 3929)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.6ms | Allocations: 5097)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:28:59 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.0ms | Allocations: 7146)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 8290)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:29:33 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.7ms | Allocations: 3929)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 5085)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:29:40 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 5.7ms | Allocations: 3874)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 5027)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:29:45 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 9.7ms | Allocations: 3914)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 5061)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:29:58 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 22.1ms | Allocations: 7133)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.2ms | Allocations: 8265)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:30:09 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 18.7ms | Allocations: 7149)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.6ms | Allocations: 8305)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:30:20 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 23.6ms | Allocations: 7138)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.3ms | Allocations: 8288)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:30:48 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.7ms | Allocations: 3929)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 5070)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:32:37 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 16.9ms | Allocations: 7146)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.4ms | Allocations: 8287)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:32:57 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.7ms | Allocations: 7144)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.2ms | Allocations: 8285)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:33:29 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 9.6ms | Allocations: 3914)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5076)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:34:40 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.5ms | Allocations: 7151)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 8316)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:38:52 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.8ms | Allocations: 7151)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 8322)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:39:08 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.7ms | Allocations: 7151)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.2ms | Allocations: 8289)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:39:26 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.2ms | Allocations: 7166)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 8310)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:39:42 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.5ms | Allocations: 3914)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 5067)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:40:04 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.5ms | Allocations: 7177)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.3ms | Allocations: 8330)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:40:22 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 22.1ms | Allocations: 7160)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms | Allocations: 8310)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:41:31 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 16.8ms | Allocations: 7175)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.2ms | Allocations: 8325)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:44:25 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 5.3ms | Allocations: 3874)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 5042)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:45:45 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.2ms | Allocations: 7178)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.1ms | Allocations: 8327)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:49:53 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.6ms | Allocations: 7172)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.4ms | Allocations: 8340)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:50:17 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 171.8ms | Allocations: 10236)
+Completed 200 OK in 175ms (Views: 172.3ms | ActiveRecord: 0.2ms | Allocations: 11386)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:50:22 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.9ms | Allocations: 3874)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.7ms | Allocations: 5012)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:50:35 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 171.9ms | Allocations: 10220)
+Completed 200 OK in 176ms (Views: 172.3ms | ActiveRecord: 0.5ms | Allocations: 11388)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:50:54 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 173.4ms | Allocations: 10228)
+Completed 200 OK in 178ms (Views: 174.2ms | ActiveRecord: 0.4ms | Allocations: 11398)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:51:17 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 172.0ms | Allocations: 10233)
+Completed 200 OK in 176ms (Views: 172.9ms | ActiveRecord: 0.2ms | Allocations: 11380)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:51:50 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 170.8ms | Allocations: 10219)
+Completed 200 OK in 175ms (Views: 171.3ms | ActiveRecord: 0.5ms | Allocations: 11375)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:53:13 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.9ms | Allocations: 4489)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.3ms | Allocations: 6117)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:53:38 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 24.5ms | Allocations: 9096)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms | Allocations: 10854)
+
+
+  
+ActionView::Template::Error (The asset "tictacttoe.css" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
+    10:     <%= stylesheet_link_tag "tictacttoe", "data-turbo-track": "reload" %>
+    11: 
+    12:     <%= javascript_include_tag 'checkers', 'data-turbolinks-track': 'reload' %>
+    13: 
+  
+app/views/checkers/show.html.erb:10
+app/controllers/checkers_controller.rb:4:in `show'
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:53:49 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 12.1ms | Allocations: 6344)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 8098)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:54:14 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 9.2ms | Allocations: 5548)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 6846)
+
+
+Started GET "/games" for ::1 at 2024-06-20 20:54:15 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 3983)
+  Rendered games/show.html.erb (Duration: 186.9ms | Allocations: 29633)
+Completed 200 OK in 191ms (Views: 188.4ms | ActiveRecord: 0.3ms | Allocations: 31073)
+
+
+Started GET "/tictactoe" for ::1 at 2024-06-20 20:54:16 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 15.9ms | Allocations: 5172)
+  Rendered tictactoe/index.html.erb (Duration: 16.7ms | Allocations: 5494)
+Completed 200 OK in 25ms (Views: 19.2ms | ActiveRecord: 0.2ms | Allocations: 7630)
+
+
+Started GET "/games" for ::1 at 2024-06-20 20:54:18 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.7ms | Allocations: 3619)
+  Rendered games/show.html.erb (Duration: 16.6ms | Allocations: 10288)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.2ms | Allocations: 11274)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:54:19 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.4ms | Allocations: 5547)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 6689)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:56:26 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 59.9ms | Allocations: 62063)
+Completed 200 OK in 74ms (Views: 61.3ms | ActiveRecord: 4.9ms | Allocations: 73883)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:57:20 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 24.0ms | Allocations: 8804)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.6ms | Allocations: 10124)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-20 20:57:53 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 37.5ms | Allocations: 8811)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.4ms | Allocations: 9961)
+
+

@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const destinationSquare = clickedSquare;
 
-      // Ensure selectedSquare is not the same as destinationSquare
-      if (selectedSquare === destinationSquare) {
-        console.log('Selected the same square');
-        selectedSquare = null;
-        return;
-      }
+     // Ensure selectedSquare is not the same as destinationSquare
+     if (selectedSquare === destinationSquare) {
+      console.log('Selected the same square');
+      selectedSquare = null;
+      return;
+    }
 
       const piece = selectedSquare.querySelector('.piece');
 
@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
       destinationSquare.appendChild(piece);
       console.log('Piece moved from', sourceSquare.dataset, 'to', destinationSquare.dataset);
     }
+
+
   }
 
   function validMove(sourceSquare, destinationSquare, piece) {
@@ -56,40 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const destRow = parseInt(destinationSquare.dataset.row);
     const destCol = parseInt(destinationSquare.dataset.col);
 
+      const direction = "black" ? 1 : -1;    
 
-    // // Selecting the piece in the source square
-    if (destinationSquare.querySelector('.piece')) {
-      return false;
-    }
+    // Calculating row and column differences
+    const rowDiff = Math.abs(destRow - sourceRow);
+    const colDiff = Math.abs(destCol - sourceCol);
 
-    // // // Determining the color of the piece
-    // const color = piece.classList.contains('black') ? 'black' : 'red';
-    // // Adjusting direction of movement based on color
-    // const direction = (color === 'black') ? -1 : 1;
+    // Check if the destination square is a valid diagonal move
+    if ((rowDiff !== direction || colDiff !== 1)) return false;
 
-    // // Calculating row and column differences
-    // const rowDiff = Math.abs(destRow - sourceRow);
-    // const colDiff = Math.abs(destCol - sourceCol);
-
-    // // Calculating the row and column of the potentially captured piece
-    // const capturedRow = (sourceRow + destRow) / 2;
-    // const capturedCol = (sourceCol + destCol) / 2;
-
-    // // Check if source and destination squares are the same
-    // if (sourceSquare === destinationSquare) return false;
-
-    // // Check if piece is moving in the correct direction
-    // if (!piece.classList.contains('king') && (direction * (destRow - sourceRow)) <= 0) return false;
-
-    // // Check if the destination square is a valid diagonal move
-    // if ((rowDiff !== 1 || colDiff !== 1)) return false;
-
-    // // Check if the destination square is of the opposite color
-    // if ((sourceSquare.classList.contains('white') && destinationSquare.classList.contains('black')) ||
-    //     (sourceSquare.classList.contains('black') && destinationSquare.classList.contains('white'))) {
-    //   return true;
-    // }
-    // // If none of the conditions are met, return false
     return true;
   }
 });
