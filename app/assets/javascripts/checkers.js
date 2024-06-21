@@ -57,16 +57,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const sourceCol = parseInt(sourceSquare.dataset.col);
     const destRow = parseInt(destinationSquare.dataset.row);
     const destCol = parseInt(destinationSquare.dataset.col);
-
-      const direction = "black" ? 1 : -1;    
-
+    
     // Calculating row and column differences
-    const rowDiff = Math.abs(destRow - sourceRow);
+    const rowDiff = destRow - sourceRow;
     const colDiff = Math.abs(destCol - sourceCol);
-
-    // Check if the destination square is a valid diagonal move
-    if ((rowDiff !== direction || colDiff !== 1)) return false;
-
-    return true;
+    
+    // Determine direction based on piece color
+    const pieceColor = piece.classList.contains('black') ? 'black' : 'red';
+    const direction = pieceColor === 'black' ? 1 : -1;
+    
+    // Log move details for debugging
+    console.log(`Attempting move from (${sourceRow}, ${sourceCol}) to (${destRow}, ${destCol})`);
+    console.log(`Piece color: ${pieceColor}, Direction: ${direction}`);
+    console.log(`Row diff: ${rowDiff}, Col diff: ${colDiff}`);
+    
+    // rowDiff === -direction ensures the pieces move diagonally and prevents them from moving backwards
+    if (Math.abs(rowDiff) === 1 && colDiff === 1 && rowDiff === -direction) {
+      return true;
+    }
+    
+    // If none, the move is invalid
+    return false;
   }
 });
