@@ -71,11 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(`Piece color: ${pieceColor}, Direction: ${direction}`);
     console.log(`Row diff: ${rowDiff}, Col diff: ${colDiff}`);
     
-    // rowDiff === -direction ensures the pieces move diagonally and prevents them from moving backwards
+    // 'rowDiff === -direction' ensures the pieces move diagonally and prevents them from moving backwards
     if (Math.abs(rowDiff) === 1 && colDiff === 1 && rowDiff === -direction) {
       return true;
     }
+
+    // Check for capturing move 
+    const middleRow = (sourceRow + destRow) / 2;
+    const middleCol = (sourceCol + destCol) / 2;
+    const middleSquare = document.querySelector(`.square[data-row="${middleRow}"][data-col="${middleCol}"]`);
+    const middlePiece = middleSquare.querySelector('.piece');
     
+    if (middlePiece && !middleSquare.classList.contains(pieceColor)) {
+      return true;
+    }
     // If none, the move is invalid
     return false;
   }
