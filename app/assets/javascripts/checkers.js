@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const middlePiece = middleSquare.querySelector('.piece');
     
     if (middlePiece && !middleSquare.classList.contains(pieceColor)) {
+      // Remove captured piece
+      middleSquare.removeChild(middlePiece);
       return true;
     }
     // If none, the move is invalid
