@@ -51,6 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  function promoteToKing(piece, destRow, pieceColor) {
+    const backRow = pieceColor === 'black' ? 1 : 8;
+    
+    if (destRow === backRow) {
+      piece.classList.add('king');
+      console.log(`Piece promoted to king at row ${destRow}`);
+    }
+  }
+
   function validMove(sourceSquare, destinationSquare, piece) {
     // Extracting row and column information from dataset attributes
     const sourceRow = parseInt(sourceSquare.dataset.row);
@@ -73,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 'rowDiff === -direction' ensures the pieces move diagonally and prevents them from moving backwards
     if (Math.abs(rowDiff) === 1 && colDiff === 1 && rowDiff === -direction) {
+      promoteToKing(piece, destRow, pieceColor);
       return true;
     }
 
