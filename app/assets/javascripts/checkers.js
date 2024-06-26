@@ -80,8 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(`Piece color: ${pieceColor}, Direction: ${direction}`);
     console.log(`Row diff: ${rowDiff}, Col diff: ${colDiff}`);
     
-    // 'rowDiff === -direction' ensures the pieces move diagonally and prevents them from moving backwards
-    if (Math.abs(rowDiff) === 1 && colDiff === 1 && rowDiff === -direction) {
+    const isKing = piece.classList.contains('king');
+
+    // 'rowDiff === -direction' ensures the pieces move diagonally and prevents them from moving backwards if not king
+    if (Math.abs(rowDiff) === 1 && colDiff === 1 && (isKing || rowDiff === -direction)) {
       promoteToKing(piece, destRow, pieceColor);
       return true;
     }
