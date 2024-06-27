@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const destinationSquare = clickedSquare;
 
-     // Ensure selectedSquare is not the same as destinationSquare
-     if (selectedSquare === destinationSquare) {
-      console.log('Selected the same square');
-      selectedSquare = null;
-      return;
-    }
+      // Ensure selectedSquare is not the same as destinationSquare
+      if (selectedSquare === destinationSquare) {
+        console.log('Selected the same square');
+        selectedSquare = null;
+        return;
+      }
 
       const piece = selectedSquare.querySelector('.piece');
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function promoteToKing(piece, destRow, pieceColor) {
     const backRow = pieceColor === 'black' ? 1 : 8;
-    
+
     if (destRow === backRow) {
       piece.classList.add('king');
       console.log(`Piece promoted to king at row ${destRow}`);
@@ -66,20 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const sourceCol = parseInt(sourceSquare.dataset.col);
     const destRow = parseInt(destinationSquare.dataset.row);
     const destCol = parseInt(destinationSquare.dataset.col);
-    
+
     // Calculating row and column differences
     const rowDiff = destRow - sourceRow;
     const colDiff = Math.abs(destCol - sourceCol);
-    
+
     // Determine direction based on piece color
     const pieceColor = piece.classList.contains('black') ? 'black' : 'red';
     const direction = pieceColor === 'black' ? 1 : -1;
-    
+
     // Log move details for debugging
     console.log(`Attempting move from (${sourceRow}, ${sourceCol}) to (${destRow}, ${destCol})`);
     console.log(`Piece color: ${pieceColor}, Direction: ${direction}`);
     console.log(`Row diff: ${rowDiff}, Col diff: ${colDiff}`);
-    
+
     const isKing = piece.classList.contains('king');
 
     // 'rowDiff === -direction' ensures the pieces move diagonally and prevents them from moving backwards if not king
@@ -89,16 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check for capturing move 
-    const middleRow = (sourceRow + destRow) / 2;
-    const middleCol = (sourceCol + destCol) / 2;
-    const middleSquare = document.querySelector(`.square[data-row="${middleRow}"][data-col="${middleCol}"]`);
-    const middlePiece = middleSquare.querySelector('.piece');
-    
-    if (middlePiece && !middleSquare.classList.contains(pieceColor)) {
-      // Remove captured piece
-      middleSquare.removeChild(middlePiece);
-      return true;
-    }
+    if (Math.abs(rowDiff) === 2 && colDiff === 2) {
+      const middleRow = (sourceRow + destRow) / 2;
+      const middleCol = (sourceCol + destCol) / 2;
+      const middleSquare = document.querySelector(`.square[data-row="${middleRow}"][data-col="${middleCol}"]`);
+      const middlePiece = middleSquare.querySelector('.piece');
+
+      // Check for middle piece & piece color
+      if (middlePiece && !middlePiece.classList.contains(pieceColor)) {
+          middleSquare.removeChild(middlePiece);
+          return true;
+      }
+  }
     // If none, the move is invalid
     return false;
   }
