@@ -2990,3 +2990,1372 @@ Processing by CheckersController#show as HTML
 Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 5178)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:02:01 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.7ms | Allocations: 13797)
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 3.7ms | Allocations: 25645)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:02:15 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.5ms | Allocations: 3876)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.5ms | Allocations: 5191)
+
+
+Started GET "/games" for ::1 at 2024-06-26 17:02:15 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.6ms | Allocations: 4158)
+  Rendered games/show.html.erb (Duration: 26.0ms | Allocations: 12078)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.6ms | Allocations: 13537)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:02:17 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 5.7ms | Allocations: 3876)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.5ms | Allocations: 5184)
+
+
+Started GET "/games" for ::1 at 2024-06-26 17:02:19 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.4ms | Allocations: 3615)
+  Rendered games/show.html.erb (Duration: 17.0ms | Allocations: 10258)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.8ms | Allocations: 11149)
+
+
+Started GET "/tictactoe" for ::1 at 2024-06-26 17:02:20 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 8.5ms | Allocations: 5164)
+  Rendered tictactoe/index.html.erb (Duration: 10.3ms | Allocations: 5486)
+Completed 200 OK in 20ms (Views: 12.3ms | ActiveRecord: 0.7ms | Allocations: 7622)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:02:21 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.4ms | Allocations: 4912)
+  Rendered tictactoe/new.html.erb (Duration: 11.4ms | Allocations: 6189)
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 2.7ms | Allocations: 10368)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:02:22 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (2.3ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:02:22.173148"], ["balance", "1030.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (3.1ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:02:22.182843"], ["updated_at", "2024-06-27 00:02:22.182843"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/1
+Completed 302 Found in 44ms (ActiveRecord: 10.1ms | Allocations: 7269)
+
+
+Started GET "/games/tictactoe/1" for ::1 at 2024-06-26 17:02:22 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 4126)
+  Rendered tictactoe/show.html.erb (Duration: 69.6ms | Allocations: 51367)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.4ms | Allocations: 53163)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:23 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.7ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- X\n-\n-\n- O\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:02:23.847585"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 2.6ms | Allocations: 3662)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:25 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1358)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:26 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.5ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n-\n- X\n- O\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:02:26.064904"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 3535)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:26 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"0"}, "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (1.0ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 1378)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:27 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.7ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.7ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n-\n- X\n- O\n-\n-\n- O\n- X\n"], ["updated_at", "2024-06-27 00:02:27.275173"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 3.2ms | Allocations: 3561)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:28 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"7"}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 1374)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:29 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n- O\n- X\n- O\n- X\n-\n- O\n- X\n"], ["updated_at", "2024-06-27 00:02:29.597585"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 3591)
+
+
+Started PATCH "/tictactoe/1" for ::1 at 2024-06-26 17:02:32 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"6"}, "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n- O\n- X\n- O\n- X\n- X\n- O\n- X\n"], ["updated_at", "2024-06-27 00:02:32.365682"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 3590)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:02:33 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 9.2ms | Allocations: 4918)
+  Rendered tictactoe/new.html.erb (Duration: 10.6ms | Allocations: 5425)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.4ms | Allocations: 6338)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:02:36 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:02:36.278896"], ["balance", "1010.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (0.4ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:02:36.282907"], ["updated_at", "2024-06-27 00:02:36.282907"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/2
+Completed 302 Found in 20ms (ActiveRecord: 2.8ms | Allocations: 5627)
+
+
+Started GET "/games/tictactoe/2" for ::1 at 2024-06-26 17:02:36 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.1ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 1.6ms | Allocations: 4111)
+  Rendered tictactoe/show.html.erb (Duration: 22.1ms | Allocations: 10853)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.3ms | Allocations: 12264)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-06-26 17:02:37 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n-\n-\n- O\n- X\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:02:37.119379"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 3495)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-06-26 17:02:37 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- X\n- O\n- O\n- X\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:02:37.787631"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 2.4ms | Allocations: 3507)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-06-26 17:02:38 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"0"}, "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.5ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- X\n- O\n- O\n- X\n-\n-\n-\n- O\n"], ["updated_at", "2024-06-27 00:02:38.321504"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 3556)
+
+
+Started PATCH "/tictactoe/2" for ::1 at 2024-06-26 17:02:41 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"7"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.5ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- X\n- O\n- O\n- X\n-\n-\n- X\n- O\n"], ["updated_at", "2024-06-27 00:02:41.315552"], ["id", 2]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:02:41.321584"], ["balance", "1050.0"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 5859)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:02:44 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 9.2ms | Allocations: 4929)
+  Rendered tictactoe/new.html.erb (Duration: 10.4ms | Allocations: 5419)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 6350)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:02:45 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:02:45.828194"], ["balance", "1030.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (0.5ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:02:45.834504"], ["updated_at", "2024-06-27 00:02:45.834504"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/3
+Completed 302 Found in 20ms (ActiveRecord: 4.3ms | Allocations: 5634)
+
+
+Started GET "/games/tictactoe/3" for ::1 at 2024-06-26 17:02:45 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.8ms | Allocations: 4086)
+  Rendered tictactoe/show.html.erb (Duration: 10.2ms | Allocations: 10832)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 12242)
+
+
+Started PATCH "/tictactoe/3" for ::1 at 2024-06-26 17:02:46 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (1.3ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- X\n-\n-\n-\n-\n-\n-\n- O\n"], ["updated_at", "2024-06-27 00:02:46.567391"], ["id", 3]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 5.6ms | Allocations: 3482)
+
+
+Started PATCH "/tictactoe/3" for ::1 at 2024-06-26 17:02:47 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- X\n-\n-\n- X\n- O\n-\n-\n- O\n"], ["updated_at", "2024-06-27 00:02:47.398901"], ["id", 3]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 3.7ms | Allocations: 3500)
+
+
+Started PATCH "/tictactoe/3" for ::1 at 2024-06-26 17:02:49 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"7"}, "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- X\n-\n-\n- X\n- O\n-\n- X\n- O\n"], ["updated_at", "2024-06-27 00:02:49.272728"], ["id", 3]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mUser Update (1.7ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:02:49.288622"], ["balance", "1070.0"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 31ms (Views: 0.5ms | ActiveRecord: 8.0ms | Allocations: 5666)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:02:51 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 11.7ms | Allocations: 4938)
+  Rendered tictactoe/new.html.erb (Duration: 13.2ms | Allocations: 5426)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 0.4ms | Allocations: 6316)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:02:51 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:02:51.914028"], ["balance", "1050.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (1.1ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:02:51.919653"], ["updated_at", "2024-06-27 00:02:51.919653"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/4
+Completed 302 Found in 21ms (ActiveRecord: 4.5ms | Allocations: 5645)
+
+
+Started GET "/games/tictactoe/4" for ::1 at 2024-06-26 17:02:51 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.8ms | Allocations: 4085)
+  Rendered tictactoe/show.html.erb (Duration: 12.2ms | Allocations: 10826)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 12230)
+
+
+Started PATCH "/tictactoe/4" for ::1 at 2024-06-26 17:02:52 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.7ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- X\n-\n-\n-\n- O\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:02:52.822812"], ["id", 4]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 16ms (Views: 1.2ms | ActiveRecord: 2.9ms | Allocations: 3481)
+
+
+Started PATCH "/tictactoe/4" for ::1 at 2024-06-26 17:02:55 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.8ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n-\n-\n- X\n- O\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:02:55.622773"], ["id", 4]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 18ms (Views: 1.0ms | ActiveRecord: 3.3ms | Allocations: 3515)
+
+
+Started PATCH "/tictactoe/4" for ::1 at 2024-06-26 17:02:59 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (1.0ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n-\n-\n- X\n- O\n- O\n-\n- X\n"], ["updated_at", "2024-06-27 00:02:59.767645"], ["id", 4]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 3.6ms | Allocations: 3556)
+
+
+Started PATCH "/tictactoe/4" for ::1 at 2024-06-26 17:03:03 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (2.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n- O\n- X\n- X\n- O\n- O\n-\n- X\n"], ["updated_at", "2024-06-27 00:03:03.628062"], ["id", 4]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 20ms (Views: 1.1ms | ActiveRecord: 5.1ms | Allocations: 3581)
+
+
+Started PATCH "/tictactoe/4" for ::1 at 2024-06-26 17:03:06 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"7"}, "id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- X\n- O\n- X\n- X\n- O\n- O\n- X\n- X\n"], ["updated_at", "2024-06-27 00:03:06.656282"], ["id", 4]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mUser Exists? (3.5ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:03:06.670681"], ["balance", "1090.0"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 8.6ms | Allocations: 5707)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:03:07 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 9.7ms | Allocations: 4958)
+  Rendered tictactoe/new.html.erb (Duration: 10.7ms | Allocations: 5448)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 6351)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:03:08 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:03:08.298202"], ["balance", "1070.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (1.1ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:03:08.303282"], ["updated_at", "2024-06-27 00:03:08.303282"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/5
+Completed 302 Found in 20ms (ActiveRecord: 4.7ms | Allocations: 5624)
+
+
+Started GET "/games/tictactoe/5" for ::1 at 2024-06-26 17:03:08 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.1ms | Allocations: 4092)
+  Rendered tictactoe/show.html.erb (Duration: 11.3ms | Allocations: 10840)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.6ms | Allocations: 12229)
+
+
+Started PATCH "/tictactoe/5" for ::1 at 2024-06-26 17:03:09 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.8ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- O\n-\n-\n- X\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:03:09.056254"], ["id", 5]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 18ms (Views: 2.0ms | ActiveRecord: 3.2ms | Allocations: 3492)
+
+
+Started PATCH "/tictactoe/5" for ::1 at 2024-06-26 17:03:11 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"2"}, "id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.5ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- O\n- X\n-\n- X\n-\n- O\n-\n-\n"], ["updated_at", "2024-06-27 00:03:11.479033"], ["id", 5]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 2.4ms | Allocations: 3499)
+
+
+Started PATCH "/tictactoe/5" for ::1 at 2024-06-26 17:03:14 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (1.4ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- O\n- X\n- X\n- X\n-\n- O\n- O\n-\n"], ["updated_at", "2024-06-27 00:03:14.563182"], ["id", 5]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 3.7ms | Allocations: 3560)
+
+
+Started PATCH "/tictactoe/5" for ::1 at 2024-06-26 17:03:16 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.8ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- O\n- X\n- X\n- X\n-\n- O\n- O\n- X\n"], ["updated_at", "2024-06-27 00:03:16.857279"], ["id", 5]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 4.2ms | Allocations: 3598)
+
+
+Started PATCH "/tictactoe/5" for ::1 at 2024-06-26 17:03:19 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- O\n- X\n- X\n- X\n- X\n- O\n- O\n- X\n"], ["updated_at", "2024-06-27 00:03:19.459487"], ["id", 5]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:03:19.471039"], ["balance", "1110.0"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 5.6ms | Allocations: 5711)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:03:20 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 8.7ms | Allocations: 4946)
+  Rendered tictactoe/new.html.erb (Duration: 9.7ms | Allocations: 5434)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 6346)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:03:20 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:03:20.969610"], ["balance", "1090.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (0.6ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:03:20.974730"], ["updated_at", "2024-06-27 00:03:20.974730"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/6
+Completed 302 Found in 21ms (ActiveRecord: 4.4ms | Allocations: 5621)
+
+
+Started GET "/games/tictactoe/6" for ::1 at 2024-06-26 17:03:20 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.6ms | Allocations: 4106)
+  Rendered tictactoe/show.html.erb (Duration: 11.2ms | Allocations: 10857)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.6ms | Allocations: 12246)
+
+
+Started PATCH "/tictactoe/6" for ::1 at 2024-06-26 17:03:21 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n-\n- O\n-\n-\n- X\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:03:21.803966"], ["id", 6]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 3.3ms | Allocations: 3492)
+
+
+Started PATCH "/tictactoe/6" for ::1 at 2024-06-26 17:03:23 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"2"}, "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.7ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- O\n- X\n-\n- X\n-\n-\n-\n-\n"], ["updated_at", "2024-06-27 00:03:23.807706"], ["id", 6]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 16ms (Views: 1.2ms | ActiveRecord: 3.5ms | Allocations: 3532)
+
+
+Started PATCH "/tictactoe/6" for ::1 at 2024-06-26 17:03:26 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (1.1ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- O\n- X\n-\n- X\n-\n-\n- O\n- X\n"], ["updated_at", "2024-06-27 00:03:26.960717"], ["id", 6]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 3.4ms | Allocations: 3561)
+
+
+Started PATCH "/tictactoe/6" for ::1 at 2024-06-26 17:03:29 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"6"}, "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- O\n- O\n- X\n-\n- X\n-\n- X\n- O\n- X\n"], ["updated_at", "2024-06-27 00:03:29.597799"], ["id", 6]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:03:29.607874"], ["balance", "1130.0"], ["id", 1]]
+  ↳ app/models/tictactoe.rb:11:in `update_winnings'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 4.2ms | Allocations: 5719)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-06-26 17:03:30 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 8.7ms | Allocations: 4958)
+  Rendered tictactoe/new.html.erb (Duration: 10.6ms | Allocations: 5448)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 6358)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-06-26 17:03:31 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:03:31.473139"], ["balance", "1110.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (0.5ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-06-27 00:03:31.477552"], ["updated_at", "2024-06-27 00:03:31.477552"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/7
+Completed 302 Found in 17ms (ActiveRecord: 3.4ms | Allocations: 5619)
+
+
+Started GET "/games/tictactoe/7" for ::1 at 2024-06-26 17:03:31 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.5ms | Allocations: 4106)
+  Rendered tictactoe/show.html.erb (Duration: 11.4ms | Allocations: 10876)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 12269)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:03:32 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"0"}, "id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n-\n-\n-\n-\n-\n-\n-\n- O\n"], ["updated_at", "2024-06-27 00:03:32.265726"], ["id", 7]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 3.1ms | Allocations: 3506)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:03:39 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.6ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n-\n-\n-\n-\n- X\n-\n- O\n- O\n"], ["updated_at", "2024-06-27 00:03:39.273537"], ["id", 7]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 2.5ms | Allocations: 3513)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:03:44 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"2"}, "id"=>"7"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.8ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n-\n-\n- X\n-\n- O\n- O\n"], ["updated_at", "2024-06-27 00:03:44.431223"], ["id", 7]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 2.7ms | Allocations: 3550)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:03:48 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"3"}, "id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.7ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n- X\n- O\n- X\n-\n- O\n- O\n"], ["updated_at", "2024-06-27 00:03:48.599680"], ["id", 7]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 3.6ms | Allocations: 3600)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:03:56 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"6"}, "id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 8ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 1394)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:04:01 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"1"}, "id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 7ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 1359)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:04:01 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.3ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1383)
+
+
+Started GET "/games/tictactoe/7" for ::1 at 2024-06-26 17:04:05 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.7ms | Allocations: 4086)
+  Rendered tictactoe/show.html.erb (Duration: 12.0ms | Allocations: 10856)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.4ms | Allocations: 12275)
+
+
+Started PATCH "/tictactoe/7" for ::1 at 2024-06-26 17:04:07 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"6"}, "id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.5ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+Completed 422 Unprocessable Entity in 6ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 1376)
+
+
+Started GET "/games/tictactoe/7" for ::1 at 2024-06-26 17:04:09 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.9ms | Allocations: 4085)
+  Rendered tictactoe/show.html.erb (Duration: 13.1ms | Allocations: 10849)
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 0.6ms | Allocations: 12252)
+
+
+Started GET "/games/tictactoe/7" for ::1 at 2024-06-26 17:04:10 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.9ms | Allocations: 4106)
+  Rendered tictactoe/show.html.erb (Duration: 15.3ms | Allocations: 10865)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 12261)
+
+
+Started GET "/games/tictactoe/7" for ::1 at 2024-06-26 17:04:10 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.3ms | Allocations: 4085)
+  Rendered tictactoe/show.html.erb (Duration: 13.3ms | Allocations: 10833)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 0.6ms | Allocations: 12247)
+
+
+Started GET "/tictactoe" for ::1 at 2024-06-26 17:04:17 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering tictactoe/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 10.3ms | Allocations: 4917)
+  Rendered tictactoe/index.html.erb (Duration: 10.9ms | Allocations: 5048)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 5943)
+
+
+Started GET "/games" for ::1 at 2024-06-26 17:04:17 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.7ms | Allocations: 3617)
+  Rendered games/show.html.erb (Duration: 17.6ms | Allocations: 10323)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 11215)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:04:18 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.9ms | Allocations: 3888)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 5064)
+
+
+Started GET "/games" for ::1 at 2024-06-26 17:04:19 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.0ms | Allocations: 3617)
+  Rendered games/show.html.erb (Duration: 16.6ms | Allocations: 10290)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.5ms | Allocations: 11179)
+
+
+Started GET "/tokens" for ::1 at 2024-06-26 17:04:21 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 14.7ms | Allocations: 9174)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.3ms | Allocations: 10642)
+
+
+Started POST "/tokens" for ::1 at 2024-06-26 17:04:23 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"400"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:04:23.522318"], ["balance", "1510.0"], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 2.6ms | Allocations: 5187)
+
+
+Started POST "/tokens" for ::1 at 2024-06-26 17:04:25 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"650"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-06-27 00:04:25.694379"], ["balance", "2160.0"], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 2.7ms | Allocations: 3623)
+
+
+Started GET "/games" for ::1 at 2024-06-26 17:04:27 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 5.2ms | Allocations: 3622)
+  Rendered games/show.html.erb (Duration: 16.0ms | Allocations: 10298)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 11177)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:04:33 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.7ms | Allocations: 3874)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 5076)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:05:43 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 331.9ms | Allocations: 10649)
+Completed 200 OK in 335ms (Views: 332.4ms | ActiveRecord: 0.2ms | Allocations: 11812)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:06:07 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 169.6ms | Allocations: 10240)
+Completed 200 OK in 174ms (Views: 170.3ms | ActiveRecord: 0.3ms | Allocations: 11400)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:06:43 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.7ms | Allocations: 3874)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 5049)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 17:06:58 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.2ms | Allocations: 3874)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5046)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 20:45:42 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 18.4ms | Allocations: 7223)
+Completed 200 OK in 38ms (Views: 18.9ms | ActiveRecord: 6.5ms | Allocations: 12531)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 20:46:30 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 5.1ms | Allocations: 3886)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.7ms | Allocations: 5065)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:01:33 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.5ms | Allocations: 7265)
+Completed 200 OK in 40ms (Views: 20.0ms | ActiveRecord: 7.2ms | Allocations: 12409)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:01:43 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 7.1ms | Allocations: 3881)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 5070)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:02:29 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 8.0ms | Allocations: 3881)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 5067)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:08:34 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 18.0ms | Allocations: 7266)
+Completed 200 OK in 37ms (Views: 18.6ms | ActiveRecord: 6.6ms | Allocations: 12451)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:22:03 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.1ms | Allocations: 7261)
+Completed 200 OK in 39ms (Views: 19.7ms | ActiveRecord: 7.8ms | Allocations: 12413)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:22:54 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 27.5ms | Allocations: 7279)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.2ms | Allocations: 8448)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:25:09 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.1ms | Allocations: 7276)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.3ms | Allocations: 8471)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:28:48 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 18.0ms | Allocations: 7290)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.5ms | Allocations: 8464)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:34:36 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.2ms | Allocations: 7292)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.3ms | Allocations: 8440)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:40:24 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.7ms | Allocations: 7293)
+Completed 200 OK in 43ms (Views: 21.5ms | ActiveRecord: 6.9ms | Allocations: 12484)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:44:56 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 22.2ms | Allocations: 7334)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.3ms | Allocations: 8500)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:45:09 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 6.4ms | Allocations: 3886)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.4ms | Allocations: 5037)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:46:30 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 19.4ms | Allocations: 7243)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.4ms | Allocations: 8413)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:50:06 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 18.8ms | Allocations: 7258)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 8428)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-26 21:54:29 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 21.0ms | Allocations: 7239)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.5ms | Allocations: 8429)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-06-28 10:23:29 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 147)
+  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 336.4ms | Allocations: 84145)
+Completed 200 OK in 349ms (Views: 337.8ms | ActiveRecord: 3.3ms | Allocations: 94406)
+
+
+Started GET "/" for ::1 at 2024-06-28 10:23:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6853)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7285)
+
+
+Started POST "/login" for ::1 at 2024-06-28 10:25:31 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"a@a.a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 235ms (ActiveRecord: 0.9ms | Allocations: 2088)
+
+
+Started GET "/games" for ::1 at 2024-06-28 10:25:32 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.8ms | Allocations: 4159)
+  Rendered games/show.html.erb (Duration: 9.1ms | Allocations: 11666)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 13310)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-28 10:25:32 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 20.3ms | Allocations: 4800)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 0.2ms | Allocations: 6798)
+
+

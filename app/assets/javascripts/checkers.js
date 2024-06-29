@@ -92,15 +92,36 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Math.abs(rowDiff) === 2 && colDiff === 2) {
       const middleRow = (sourceRow + destRow) / 2;
       const middleCol = (sourceCol + destCol) / 2;
+
       const middleSquare = document.querySelector(`.square[data-row="${middleRow}"][data-col="${middleCol}"]`);
       const middlePiece = middleSquare.querySelector('.piece');
 
       // Check for middle piece & piece color
       if (middlePiece && !middlePiece.classList.contains(pieceColor)) {
-          middleSquare.removeChild(middlePiece);
-          return true;
+        middleSquare.removeChild(middlePiece);
+        return true;
       }
-  }
+
+      if (Math.abs(rowDiff) === 4 && colDiff === 4) {
+        const middleRow1 = sourceRow + (destRow - sourceRow) / 2;
+        const middleCol1 = sourceCol + (destCol - sourceCol) / 2;
+        const middleRow2 = sourceRow + 3 * (destRow - sourceRow) / 4;
+        const middleCol2 = sourceCol + 3 * (destCol - sourceCol) / 4;
+    
+        const middleSquare1 = document.querySelector(`.square[data-row="${middleRow1}"][data-col="${middleCol1}"]`);
+        const middleSquare2 = document.querySelector(`.square[data-row="${middleRow2}"][data-col="${middleCol2}"]`);
+        const middlePiece1 = middleSquare1.querySelector('.piece');
+        const middlePiece2 = middleSquare2.querySelector('.piece');
+    
+        if (middlePiece1 && middlePiece2 && !middlePiece1.classList.contains(pieceColor) && !middlePiece2.classList.contains(pieceColor)) {
+            middleSquare1.removeChild(middlePiece1);
+            middleSquare2.removeChild(middlePiece2);
+            promoteToKing(piece, destRow, pieceColor);
+            console.log("Double capture performed");
+            return true;
+        }
+    }
+    }
     // If none, the move is invalid
     return false;
   }
