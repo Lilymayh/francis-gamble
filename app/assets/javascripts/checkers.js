@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return true;
     }
 
-    // Check for capturing move 
+    // Check for capture move 
     if (Math.abs(rowDiff) === 2 && colDiff === 2) {
       const middleRow = (sourceRow + destRow) / 2;
       const middleCol = (sourceCol + destCol) / 2;

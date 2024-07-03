@@ -4359,3 +4359,783 @@ Processing by CheckersController#show as HTML
 Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 0.2ms | Allocations: 6798)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-06-28 19:41:55 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.4ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 17488)
+Completed 200 OK in 37ms (Views: 22.1ms | ActiveRecord: 7.7ms | Allocations: 27749)
+
+
+Started GET "/" for ::1 at 2024-06-28 19:41:59 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6750)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started POST "/login" for ::1 at 2024-06-28 19:42:04 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"a@a.a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 240ms (ActiveRecord: 0.9ms | Allocations: 2042)
+
+
+Started GET "/games" for ::1 at 2024-06-28 19:42:05 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 4160)
+  Rendered games/show.html.erb (Duration: 7.2ms | Allocations: 11672)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 13328)
+
+
+Started GET "/games/checkers" for ::1 at 2024-06-28 19:42:07 -0700
+Processing by CheckersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 8.2ms | Allocations: 4802)
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 6836)
+
+
+Started GET "/games" for ::1 at 2024-06-28 19:42:31 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.8ms | Allocations: 3937)
+  Rendered games/show.html.erb (Duration: 37.1ms | Allocations: 16036)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms | Allocations: 17501)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009718>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:42:50 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.6ms | Allocations: 3939)
+  Rendered games/show.html.erb (Duration: 32.0ms | Allocations: 14686)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.4ms | Allocations: 16125)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_checkers_path' for #<ActionView::Base:0x000000000098f8>):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', index_checkers_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:43:35 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.1ms | Allocations: 3939)
+  Rendered games/show.html.erb (Duration: 31.3ms | Allocations: 14777)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms | Allocations: 16232)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009b00>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:43:49 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.7ms | Allocations: 3939)
+  Rendered games/show.html.erb (Duration: 31.3ms | Allocations: 14754)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.5ms | Allocations: 16205)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_new_path' for #<ActionView::Base:0x00000000009d58>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_new_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-06-28 19:44:00 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 4210)
+  Rendered games/show.html.erb (Duration: 17.6ms | Allocations: 24832)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 5.5ms | Allocations: 36070)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_new_path' for #<ActionView::Base:0x00000000009150>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_new_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:44:01 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 3634)
+  Rendered games/show.html.erb (Duration: 29.3ms | Allocations: 13895)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.5ms | Allocations: 14907)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_new_path' for #<ActionView::Base:0x00000000009330>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_new_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:44:16 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.5ms | Allocations: 3939)
+  Rendered games/show.html.erb (Duration: 31.2ms | Allocations: 14780)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.7ms | Allocations: 16101)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009538>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-06-28 19:44:59 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.4ms | Allocations: 4210)
+  Rendered games/show.html.erb (Duration: 18.1ms | Allocations: 24859)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 5.2ms | Allocations: 36092)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009150>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-06-28 19:45:52 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.6ms | Allocations: 4210)
+  Rendered games/show.html.erb (Duration: 20.5ms | Allocations: 24860)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.9ms | Allocations: 36093)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009150>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:45:53 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 3634)
+  Rendered games/show.html.erb (Duration: 12.3ms | Allocations: 13922)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 14934)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009330>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:53:04 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.2ms | Allocations: 3674)
+  Rendered games/show.html.erb (Duration: 12.6ms | Allocations: 14189)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 6.6ms | Allocations: 25803)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x0000000000ad98>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:53:06 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 3617)
+  Rendered games/show.html.erb (Duration: 21.0ms | Allocations: 13824)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.5ms | Allocations: 14813)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x0000000000af50>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-06-28 19:53:14 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 4195)
+  Rendered games/show.html.erb (Duration: 97.0ms | Allocations: 74951)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 5.8ms | Allocations: 86184)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009358>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:53:15 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.2ms | Allocations: 3642)
+  Rendered games/show.html.erb (Duration: 30.5ms | Allocations: 14000)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms | Allocations: 15012)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009538>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:53:36 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 3682)
+  Rendered games/show.html.erb (Duration: 14.1ms | Allocations: 14178)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.4ms | Allocations: 21900)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x0000000000aff0>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:54:11 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 3682)
+  Rendered games/show.html.erb (Duration: 13.2ms | Allocations: 14178)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 4.3ms | Allocations: 21890)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x0000000000cb98>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:55:32 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.5ms | Allocations: 3947)
+  Rendered games/show.html.erb (Duration: 30.6ms | Allocations: 14866)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.5ms | Allocations: 16310)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x0000000000cda0>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-06-28 19:55:34 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.8ms | Allocations: 3625)
+  Rendered games/show.html.erb (Duration: 32.4ms | Allocations: 13811)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.3ms | Allocations: 14779)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x0000000000cf30>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-07-03 16:03:01 -0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 4210)
+  Rendered games/show.html.erb (Duration: 23.7ms | Allocations: 24948)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 5.7ms | Allocations: 36181)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009498>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-07-03 16:03:53 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.3ms | Allocations: 3939)
+  Rendered games/show.html.erb (Duration: 32.5ms | Allocations: 14867)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.4ms | Allocations: 16357)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009718>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-07-03 16:04:00 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 4210)
+  Rendered games/show.html.erb (Duration: 17.8ms | Allocations: 24948)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 5.7ms | Allocations: 36181)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009498>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-07-03 16:04:02 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.6ms | Allocations: 3634)
+  Rendered games/show.html.erb (Duration: 32.1ms | Allocations: 14011)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms | Allocations: 15023)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `checkers_index_path' for #<ActionView::Base:0x00000000009678>
+Did you mean?  checkers_show_path):
+    19:         <%= link_to 'Tic Tac Toe', tictactoe_index_path %>
+    20:       </div>
+    21:       <div class='tictacA'>
+    22:         <%= link_to 'Checkers', checkers_index_path %>
+    23:       </div>
+    24:     </div>
+    25: 
+  
+app/views/games/show.html.erb:22
+app/controllers/games_controller.rb:5:in `show'
+Started GET "/games" for ::1 at 2024-07-03 16:04:20 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.9ms | Allocations: 3939)
+  Rendered games/show.html.erb (Duration: 16.6ms | Allocations: 11307)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.7ms | Allocations: 12708)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:04:22 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/index.html.erb within layouts/application
+  Rendered partials/_header.html.erb (Duration: 8.4ms | Allocations: 5164)
+  Rendered checkers/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 5484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.6ms | Allocations: 136)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 11770)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.2ms | Allocations: 13703)
+
+
+Started POST "/login" for ::1 at 2024-07-03 16:04:29 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"a@a.a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 234ms (ActiveRecord: 0.7ms | Allocations: 1764)
+
+
+Started GET "/games" for ::1 at 2024-07-03 16:04:29 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.1ms | Allocations: 3627)
+  Rendered games/show.html.erb (Duration: 4.6ms | Allocations: 10453)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 11340)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:04:30 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/index.html.erb within layouts/application
+  Rendered partials/_header.html.erb (Duration: 6.1ms | Allocations: 4912)
+  Rendered checkers/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5043)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.3ms | Allocations: 25)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 10389)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 11304)
+
+
+Started POST "/login" for ::1 at 2024-07-03 16:04:36 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"a@a.a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 239ms (ActiveRecord: 0.4ms | Allocations: 1281)
+
+
+Started GET "/games" for ::1 at 2024-07-03 16:04:37 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.0ms | Allocations: 3615)
+  Rendered games/show.html.erb (Duration: 4.4ms | Allocations: 10256)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 11126)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:04:38 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering checkers/index.html.erb within layouts/application
+  Rendered partials/_header.html.erb (Duration: 4.7ms | Allocations: 4913)
+  Rendered checkers/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 5044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.2ms | Allocations: 25)
+  Rendered users/_existing.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 10390)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 11333)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:06:11 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 5.6ms | Allocations: 5211)
+  Rendered checkers/index.html.erb (Duration: 5.8ms | Allocations: 5360)
+Completed 200 OK in 15ms (Views: 6.1ms | ActiveRecord: 3.9ms | Allocations: 13695)
+
+
+Started GET "/games" for ::1 at 2024-07-03 16:06:13 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 3.8ms | Allocations: 3674)
+  Rendered games/show.html.erb (Duration: 15.1ms | Allocations: 10621)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 11974)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:06:14 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.2ms | Allocations: 4925)
+  Rendered checkers/index.html.erb (Duration: 7.7ms | Allocations: 5056)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 6059)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:06:15 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 5.6ms | Allocations: 4912)
+  Rendered checkers/index.html.erb (Duration: 6.0ms | Allocations: 5043)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5929)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:06:16 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.8ms | Allocations: 4912)
+  Rendered checkers/index.html.erb (Duration: 7.2ms | Allocations: 5043)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 5908)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:06:35 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.9ms | Allocations: 9547)
+
+
+  
+NameError (uninitialized constant CheckersController::Checkers
+
+    @games = Checkers.all
+             ^^^^^^^^):
+  
+app/controllers/checkers_controller.rb:5:in `index'
