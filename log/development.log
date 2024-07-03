@@ -5240,3 +5240,49 @@ Processing by CheckersController#index as HTML
 Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 3.0ms | Allocations: 13418)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers" for ::1 at 2024-07-03 16:22:10 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.5ms | Allocations: 14750)
+  Rendered checkers/index.html.erb (Duration: 8.1ms | Allocations: 15442)
+Completed 200 OK in 22ms (Views: 9.3ms | ActiveRecord: 5.0ms | Allocations: 27100)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:22:12 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.7ms | Allocations: 4913)
+  Rendered checkers/index.html.erb (Duration: 7.2ms | Allocations: 5045)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.5ms | Allocations: 6072)
+
+
+Started GET "/games" for ::1 at 2024-07-03 16:22:14 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 3666)
+  Rendered games/show.html.erb (Duration: 13.9ms | Allocations: 11162)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.5ms | Allocations: 12679)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:22:14 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 5.2ms | Allocations: 4913)
+  Rendered checkers/index.html.erb (Duration: 5.6ms | Allocations: 5045)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 6053)
+
+

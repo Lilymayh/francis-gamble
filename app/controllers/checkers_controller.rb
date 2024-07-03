@@ -8,76 +8,25 @@ class CheckersController < ApplicationController
 
   def start
     amount = params[:checkers][:amount].to_i
-    board = JSON.parse(params[:tictactoe][:board])  # Parse the board string into an array
+
     if @current_user.balance >= amount
       # Deduct balance before starting the game
-      subtract_balance(amount)
-      flash[:notice] = "#{amount} tokens have been subtracted from your balance."
-      
-      # Logic to start the game and initialize @tictactoe
-      @tictactoe = Tictactoe.new(board: board)  # Pass the parsed board array
-      @tictactoe.bet_amount = amount
-      if @tictactoe.save
-        redirect_to tictactoe_show_path(@tictactoe)
-      else
-        flash[:alert] = "Failed to start the game."
-        redirect_back(fallback_location: tictactoe_index_path)
-      end
+      @current_user.update(balance: @current_user.balance - amount)
+
+      # Logic to start the game and initialize @checkers
+      @checkers = Checkers.create!  # Replace with your logic for creating a new game
+      @checkers.update(board: Array.new(64, nil), bet_amount: amount)
+
+      redirect_to checkers_show_path(@checkers)
     else
       flash[:alert] = "Insufficient balance to start the game."
-      redirect_back(fallback_location: tictactoe_index_path)
+      redirect_back(fallback_location: checkers_index_path)
     end
   end
 
   def show
-    @tictactoe = Tictactoe.find(params[:id])
-
-    # Ensure board is an array
-    @tictactoe.board = JSON.parse(@tictactoe.board) if @tictactoe.board.is_a?(String)
-
+    @checkers = Checkers.find(params[:id])
+    @checkers.board = JSON.parse(@checkers.board) if @checkers.board.is_a?(String)
     render layout: false
-  end
-
-  def new
-    @tictactoe = Tictactoe.new
-    render layout: false
-  end
-
-  def create
-    @tictactoe = Tictactoe.new(board: Array.new(9, nil), current_turn: 'X')
-    if @tictactoe.save
-      redirect_to tictactoe_path(@tictactoe)
-    else
-      render :new
-    end
-  end
-
-  def update
-    @game = Tictactoe.find(params[:id])
-    index = game_params[:index].to_i
-
-    if @game.make_player_move(index)
-      render json: @game
-    else
-      render json: { error: 'Invalid move or game over' }, status: :unprocessable_entity
-    end
-  end
-
-  def check_game_over
-    # Add logic to check if game is over
-  end
-
-  private
-
-  def game_params
-    params.require(:tictactoe).permit(:index)
-  end
-
-  def subtract_balance(amount)
-    if @current_user.balance >= amount
-      @current_user.update(balance: @current_user.balance - amount)
-    else
-      flash[:alert] = "Insufficient balance to subtract #{amount} tokens."
-    end
   end
 end
