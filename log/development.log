@@ -5139,3 +5139,104 @@ NameError (uninitialized constant CheckersController::Checkers
              ^^^^^^^^):
   
 app/controllers/checkers_controller.rb:5:in `index'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers" for ::1 at 2024-07-03 16:15:33 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.8ms | Allocations: 10610)
+
+
+  
+Zeitwerk::NameError (expected file /Users/lilyhenderson/lighthouse/francis-gamble/app/models/concerns/checkers.rb to define constant Checkers, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^):
+  
+app/controllers/checkers_controller.rb:5:in `index'
+Started GET "/checkers" for ::1 at 2024-07-03 16:16:06 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 5.0ms | Allocations: 7994)
+
+
+  
+Zeitwerk::NameError (expected file /Users/lilyhenderson/lighthouse/francis-gamble/app/models/concerns/checkers.rb to define constant Checkers, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^):
+  
+app/controllers/checkers_controller.rb:5:in `index'
+Started GET "/checkers" for ::1 at 2024-07-03 16:18:02 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.1ms | Allocations: 8174)
+
+
+  
+Zeitwerk::NameError (expected file /Users/lilyhenderson/lighthouse/francis-gamble/app/models/concerns/checkers.rb to define constant Checkers, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^):
+  
+app/controllers/checkers_controller.rb:5:in `index'
+Started GET "/checkers" for ::1 at 2024-07-03 16:18:03 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 3121)
+
+
+  
+NameError (uninitialized constant CheckersController::Checkers
+
+    @games = Checkers.all
+             ^^^^^^^^):
+  
+app/controllers/checkers_controller.rb:5:in `index'
+Started GET "/checkers" for ::1 at 2024-07-03 16:18:32 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 9.0ms | Allocations: 14710)
+  Rendered checkers/index.html.erb (Duration: 9.3ms | Allocations: 15164)
+Completed 200 OK in 23ms (Views: 10.1ms | ActiveRecord: 6.1ms | Allocations: 23717)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:18:34 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.9ms | Allocations: 4912)
+  Rendered checkers/index.html.erb (Duration: 7.3ms | Allocations: 5043)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 6049)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:18:35 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.1ms | Allocations: 4912)
+  Rendered checkers/index.html.erb (Duration: 8.4ms | Allocations: 5043)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.6ms | Allocations: 5914)
+
+
+Started GET "/checkers" for ::1 at 2024-07-03 16:18:58 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 5172)
+  Rendered checkers/index.html.erb (Duration: 2.2ms | Allocations: 5322)
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 3.0ms | Allocations: 13418)
+
+
