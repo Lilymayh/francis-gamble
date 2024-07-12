@@ -1,0 +1,3 @@
+class Checkers < ApplicationRecord
+
+end

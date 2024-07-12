@@ -6,18 +6,38 @@ class CheckersController < ApplicationController
     render layout: false
   end
 
-  def start
-    amount = params[:checkers][:amount].to_i
+  def new
+    @checkers = Checkers.new
+    render layout: false
+  end
 
+  def create
+    @checkers = Checkers.new(game_params)
+    if @checkers.save
+      redirect_to @checkers, notice: 'Checkers game was successfully created.'
+    else
+      render :new
+    end
+  end
+
+  def start
+    puts "Session data: #{session.inspect}"
+    puts "User ID from session: #{session[:user_id]}"
+    amount = params[:checkers][:amount].to_i
     if @current_user.balance >= amount
       # Deduct balance before starting the game
-      @current_user.update(balance: @current_user.balance - amount)
-
-      # Logic to start the game and initialize @checkers
-      @checkers = Checkers.create!  # Replace with your logic for creating a new game
-      @checkers.update(board: Array.new(64, nil), bet_amount: amount)
-
-      redirect_to checkers_show_path(@checkers)
+      subtract_balance(amount)
+      flash[:notice] = "#{amount} tokens have been subtracted from your balance."
+      
+      # Example logic to start the game and initialize @checkers
+      @checkers = Checkers.new(bet_amount: amount)  # Adjust attributes as needed
+  
+      if @checkers.save
+        redirect_to @checkers, notice: 'Checkers game was successfully created.'
+      else
+        flash[:alert] = "Failed to start the game."
+        redirect_back(fallback_location: checkers_index_path)
+      end
     else
       flash[:alert] = "Insufficient balance to start the game."
       redirect_back(fallback_location: checkers_index_path)
@@ -26,7 +46,23 @@ class CheckersController < ApplicationController
 
   def show
     @checkers = Checkers.find(params[:id])
-    @checkers.board = JSON.parse(@checkers.board) if @checkers.board.is_a?(String)
     render layout: false
   end
+  
+  private
+  
+  def game_params
+    params.require(:checkers).permit(:index)
+  end
+
+  def subtract_balance(amount)
+    if @current_user.balance >= amount
+      @current_user.update(balance: @current_user.balance - amount)
+      logger.debug "Balance subtracted: #{@current_user.balance}"
+    else
+      flash[:alert] = "Insufficient balance to subtract #{amount} tokens."
+      logger.debug "Insufficient balance: #{@current_user.balance}"
+    end
+  end
+  
 end
