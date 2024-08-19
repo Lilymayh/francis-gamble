@@ -15368,3 +15368,1615 @@ Processing by CheckersController#show as HTML
 Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.6ms | Allocations: 11592)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/66" for ::1 at 2024-07-11 17:34:03 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"66"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.7ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.1ms | Allocations: 5256)
+  Rendered checkers/show.html.erb (Duration: 21.2ms | Allocations: 21334)
+Completed 200 OK in 46ms (Views: 23.2ms | ActiveRecord: 10.5ms | Allocations: 36796)
+
+
+Started GET "/games" for ::1 at 2024-07-11 17:34:12 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 3666)
+  Rendered games/show.html.erb (Duration: 19.1ms | Allocations: 11152)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.4ms | Allocations: 12696)
+
+
+Started GET "/checkers" for ::1 at 2024-07-11 17:34:25 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.9ms | Allocations: 4912)
+  Rendered checkers/index.html.erb (Duration: 9.5ms | Allocations: 5200)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 6388)
+
+
+Started GET "/checkers/new" for ::1 at 2024-07-11 17:34:29 -0700
+Processing by CheckersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering checkers/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.2ms | Allocations: 4912)
+  Rendered checkers/new.html.erb (Duration: 11.5ms | Allocations: 6061)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.5ms | Allocations: 7154)
+
+
+Started POST "/checkers/start" for ::1 at 2024-07-11 17:34:30 -0700
+Processing by CheckersController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "checkers"=>{"amount"=>"20"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-07-12 00:34:30.828520"], ["balance", "6240.0"], ["id", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+Balance subtracted: 6240.0
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mCheckers Create (0.5ms)[0m  [1m[32mINSERT INTO "checkers" ("bet_amount", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bet_amount", 20], ["created_at", "2024-07-12 00:34:30.832505"], ["updated_at", "2024-07-12 00:34:30.832505"]]
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+Redirected to http://localhost:3000/checkers/67
+Completed 302 Found in 17ms (ActiveRecord: 4.4ms | Allocations: 7003)
+
+
+Started GET "/checkers/67" for ::1 at 2024-07-11 17:34:30 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.2ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 14.8ms | Allocations: 4398)
+  Rendered checkers/show.html.erb (Duration: 18.8ms | Allocations: 10391)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 11783)
+
+
+Started GET "/checkers/67" for ::1 at 2024-07-11 17:35:48 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.3ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.2ms | Allocations: 4702)
+  Rendered checkers/show.html.erb (Duration: 17.6ms | Allocations: 11338)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.6ms | Allocations: 13157)
+
+
+Started GET "/checkers/67" for ::1 at 2024-07-11 17:35:53 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.6ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.2ms | Allocations: 4383)
+  Rendered checkers/show.html.erb (Duration: 12.8ms | Allocations: 10240)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.8ms | Allocations: 11718)
+
+
+Started GET "/checkers/67" for ::1 at 2024-07-11 17:36:26 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.4ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.2ms | Allocations: 4387)
+  Rendered checkers/show.html.erb (Duration: 11.1ms | Allocations: 10251)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.6ms | Allocations: 11617)
+
+
+Started GET "/checkers/67" for ::1 at 2024-07-11 17:37:15 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.4ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.1ms | Allocations: 4383)
+  Rendered checkers/show.html.erb (Duration: 15.2ms | Allocations: 10240)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.6ms | Allocations: 11591)
+
+
+Started GET "/checkers/67" for ::1 at 2024-07-11 17:37:44 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.3ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.8ms | Allocations: 4384)
+  Rendered checkers/show.html.erb (Duration: 12.4ms | Allocations: 10242)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 11628)
+
+
+Started GET "/games" for ::1 at 2024-07-11 17:37:45 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 3660)
+  Rendered games/show.html.erb (Duration: 10.9ms | Allocations: 10876)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 12103)
+
+
+Started GET "/checkers" for ::1 at 2024-07-11 17:37:47 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.0ms | Allocations: 4912)
+  Rendered checkers/index.html.erb (Duration: 8.4ms | Allocations: 5190)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 6346)
+
+
+Started GET "/checkers/new" for ::1 at 2024-07-11 17:37:48 -0700
+Processing by CheckersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering checkers/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.1ms | Allocations: 4913)
+  Rendered checkers/new.html.erb (Duration: 8.1ms | Allocations: 5582)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 6639)
+
+
+Started POST "/checkers/start" for ::1 at 2024-07-11 17:37:49 -0700
+Processing by CheckersController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "checkers"=>{"amount"=>"20"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-07-12 00:37:49.119652"], ["balance", "6220.0"], ["id", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+Balance subtracted: 6220.0
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mCheckers Create (0.6ms)[0m  [1m[32mINSERT INTO "checkers" ("bet_amount", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bet_amount", 20], ["created_at", "2024-07-12 00:37:49.123745"], ["updated_at", "2024-07-12 00:37:49.123745"]]
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+Redirected to http://localhost:3000/checkers/68
+Completed 302 Found in 17ms (ActiveRecord: 3.5ms | Allocations: 5627)
+
+
+Started GET "/checkers/68" for ::1 at 2024-07-11 17:37:49 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.3ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.6ms | Allocations: 4384)
+  Rendered checkers/show.html.erb (Duration: 6.9ms | Allocations: 10249)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 11567)
+
+
+Started GET "/logout" for ::1 at 2024-07-11 17:38:14 -0700
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1023)
+
+
+Started GET "/" for ::1 at 2024-07-11 17:38:14 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered users/_existing.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 8605)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 10085)
+
+
+Started POST "/login" for ::1 at 2024-07-12 09:55:20 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"a@a.a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 255ms (ActiveRecord: 7.7ms | Allocations: 5332)
+
+
+Started GET "/games" for ::1 at 2024-07-12 09:55:20 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 3626)
+  Rendered games/show.html.erb (Duration: 17.5ms | Allocations: 10289)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 11173)
+
+
+Started GET "/checkers" for ::1 at 2024-07-12 10:05:16 -0700
+Processing by CheckersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering checkers/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 6.3ms | Allocations: 5437)
+  Rendered checkers/index.html.erb (Duration: 8.1ms | Allocations: 5882)
+Completed 200 OK in 32ms (Views: 10.6ms | ActiveRecord: 8.2ms | Allocations: 11246)
+
+
+Started GET "/checkers/new" for ::1 at 2024-07-12 10:05:17 -0700
+Processing by CheckersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering checkers/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 7.8ms | Allocations: 4912)
+  Rendered checkers/new.html.erb (Duration: 10.6ms | Allocations: 5578)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 6714)
+
+
+Started POST "/checkers/start" for ::1 at 2024-07-12 10:05:18 -0700
+Processing by CheckersController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "checkers"=>{"amount"=>"20"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-07-12 17:05:18.014801"], ["balance", "6200.0"], ["id", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+Balance subtracted: 6200.0
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mCheckers Create (1.2ms)[0m  [1m[32mINSERT INTO "checkers" ("bet_amount", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bet_amount", 20], ["created_at", "2024-07-12 17:05:18.021769"], ["updated_at", "2024-07-12 17:05:18.021769"]]
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+Redirected to http://localhost:3000/checkers/69
+Completed 302 Found in 23ms (ActiveRecord: 6.5ms | Allocations: 5659)
+
+
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:05:18 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.7ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 4404)
+  Rendered checkers/show.html.erb (Duration: 19.2ms | Allocations: 14815)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.1ms | Allocations: 16336)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `square' for #<ActionView::Base:0x0000000000a4d8>):
+    27:       <% 8.times do |col| %>
+    28:         <% square_color = (row + col).even? ? 'black-square' : 'white-square' %>
+    29:         <div class="square <%= square_color %>" data-row="<%= row %>" data-col="<%= col %>">
+    30:         <% if square.piece.present? %>
+    31:         <div class="piece <%= square.piece.color %> 
+    32:         <%= 'king' if square.piece.king? %>"  
+    33:         id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:30
+app/views/checkers/show.html.erb:27:in `times'
+app/views/checkers/show.html.erb:27
+app/views/checkers/show.html.erb:26:in `times'
+app/views/checkers/show.html.erb:26
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:05:57 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (1.4ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.5ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 24.3ms | Allocations: 21545)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 20.8ms | Allocations: 36939)
+
+
+  
+ActionView::Template::Error (undefined method `squares' for nil:NilClass):
+    23: 
+    24: 
+    25:   <div class="game-board">
+    26:     <% @game_board.squares.each do |square| %>
+    27:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    28:         <% if square.piece.present? %>
+    29:         <div class="piece <%= square.piece.color %> 
+  
+app/views/checkers/show.html.erb:26
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:07:36 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.7ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 5256)
+  Rendered checkers/show.html.erb (Duration: 20.2ms | Allocations: 21334)
+Completed 200 OK in 44ms (Views: 22.1ms | ActiveRecord: 9.6ms | Allocations: 36787)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:09:54 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.5ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.2ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 20.6ms | Allocations: 21535)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 10.7ms | Allocations: 36925)
+
+
+  
+ActionView::Template::Error (undefined method `squares' for nil:NilClass):
+    22:   </div>
+    23: 
+    24:   <div class="game-board">
+    25:     <% @game_board.squares.each do |square| %>
+    26:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    27:         <% if square.piece.present? %>
+    28:           <div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>" id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:25
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:13:19 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.9ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.3ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 20.3ms | Allocations: 21534)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 8.2ms | Allocations: 36925)
+
+
+  
+ActionView::Template::Error (undefined method `squares' for nil:NilClass):
+    22:   </div>
+    23: 
+    24:   <div class="game-board">
+    25:   <% @game_board.squares.each do |square| %>
+    26:     <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    27:       <% if square.piece.present? %>
+    28:         <div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>" id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:25
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:18:00 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.8ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.3ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 24.3ms | Allocations: 24087)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 11.4ms | Allocations: 39984)
+
+
+  
+ActionView::Template::Error (undefined method `game_board' for #<ActionView::Base:0x000000000094e8>
+Did you mean?  games_show_url):
+    21:     </div>
+    22: 
+    23:     <div class="game-board">
+    24:     <% game_board(@checkers).squares.each do |square| %>
+    25:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    26:         <% if square.piece.present? %>
+    27:           <div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>" id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:24
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:19:33 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.8ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 14.6ms | Allocations: 24087)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 10.2ms | Allocations: 39954)
+
+
+  
+ActionView::Template::Error (undefined method `game_board' for #<ActionView::Base:0x000000000094e8>
+Did you mean?  games_show_url):
+    21:     </div>
+    22: 
+    23:     <div class="game-board">
+    24:     <% game_board(@checkers).squares.each do |square| %>
+    25:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    26:         <% if square.piece.present? %>
+    27:           <div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>" id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:24
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-12 10:20:06 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.4ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 23.8ms | Allocations: 24087)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 11.3ms | Allocations: 39959)
+
+
+  
+ActionView::Template::Error (undefined method `game_board' for #<ActionView::Base:0x000000000094e8>
+Did you mean?  games_show_url):
+    21:     </div>
+    22: 
+    23:     <div class="game-board">
+    24:     <% game_board(@checkers).squares.each do |square| %>
+    25:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    26:         <% if square.piece.present? %>
+    27:           <div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>" id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:24
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:34:17 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (2.0ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.7ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 29.9ms | Allocations: 24087)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 15.0ms | Allocations: 39954)
+
+
+  
+ActionView::Template::Error (undefined method `game_board' for #<ActionView::Base:0x000000000094e8>
+Did you mean?  games_show_url):
+    21:     </div>
+    22: 
+    23:     <div class="game-board">
+    24:     <% game_board(@checkers).squares.each do |square| %>
+    25:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    26:         <% if square.piece.present? %>
+    27:           <div class="piece <%= square.piece.color %> <%= 'king' if square.piece.king? %>" id="piece_<%= square.piece.id %>">
+  
+app/views/checkers/show.html.erb:24
+app/controllers/checkers_controller.rb:49:in `show'
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:52:14 -0700
+  
+Zeitwerk::NameError (expected file /Users/lilyhenderson/lighthouse/francis-gamble/app/helpers/checkers_helper.rb to define constant CheckersHelper, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/checkers_controller.rb:1:in `<main>'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:55:11 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /Users/lilyhenderson/lighthouse/francis-gamble/app/helpers/checkers_helper.rb to define constant CheckersHelper, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/checkers_controller.rb:1:in `<main>'
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:55:13 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4321)
+
+
+  
+NameError (uninitialized constant CheckersHelper
+
+        Object.const_get(camel_cased_word)
+              ^^^^^^^^^^):
+  
+activesupport (6.1.5.1) lib/active_support/inflector/methods.rb:274:in `const_get'
+activesupport (6.1.5.1) lib/active_support/inflector/methods.rb:274:in `constantize'
+activesupport (6.1.5.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:176:in `block in modules_for_helpers'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:169:in `map!'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:169:in `modules_for_helpers'
+actionpack (6.1.5.1) lib/action_controller/metal/helpers.rb:104:in `modules_for_helpers'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:147:in `helper'
+actionpack (6.1.5.1) lib/action_controller/railties/helpers.rb:19:in `inherited'
+actiontext (6.1.5.1) lib/action_text/engine.rb:53:in `initialize'
+actiontext (6.1.5.1) lib/action_text/engine.rb:53:in `new'
+actiontext (6.1.5.1) lib/action_text/engine.rb:53:in `block (2 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:71:in `class_eval'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:51:in `each'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+actiontext (6.1.5.1) lib/action_text/content.rb:128:in `<main>'
+bootsnap (1.18.3) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+bootsnap (1.18.3) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+zeitwerk (2.6.13) lib/zeitwerk/kernel.rb:34:in `require'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:55:15 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3693)
+
+
+  
+NameError (uninitialized constant CheckersHelper
+
+        Object.const_get(camel_cased_word)
+              ^^^^^^^^^^):
+  
+activesupport (6.1.5.1) lib/active_support/inflector/methods.rb:274:in `const_get'
+activesupport (6.1.5.1) lib/active_support/inflector/methods.rb:274:in `constantize'
+activesupport (6.1.5.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:176:in `block in modules_for_helpers'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:169:in `map!'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:169:in `modules_for_helpers'
+actionpack (6.1.5.1) lib/action_controller/metal/helpers.rb:104:in `modules_for_helpers'
+actionpack (6.1.5.1) lib/abstract_controller/helpers.rb:147:in `helper'
+actionpack (6.1.5.1) lib/action_controller/railties/helpers.rb:19:in `inherited'
+actiontext (6.1.5.1) lib/action_text/engine.rb:53:in `initialize'
+actiontext (6.1.5.1) lib/action_text/engine.rb:53:in `new'
+actiontext (6.1.5.1) lib/action_text/engine.rb:53:in `block (2 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:71:in `class_eval'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:51:in `each'
+activesupport (6.1.5.1) lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+actiontext (6.1.5.1) lib/action_text/content.rb:128:in `<main>'
+bootsnap (1.18.3) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+bootsnap (1.18.3) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+zeitwerk (2.6.13) lib/zeitwerk/kernel.rb:34:in `require'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+cypress-on-rails (1.17.0) lib/cypress_on_rails/middleware.rb:25:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:55:53 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.6ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 11.9ms | Allocations: 17758)
+
+
+  
+NoMethodError (undefined method `game_board' for #<CheckersController:0x000000000092b8>
+
+    @game_board = game_board(@checkers)
+                  ^^^^^^^^^^
+Did you mean?  game_params):
+  
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:57:02 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.7ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 9.6ms | Allocations: 17759)
+
+
+  
+NoMethodError (undefined method `game_board' for #<CheckersController:0x000000000092b8>
+
+    @game_board = game_board(@checkers)
+                  ^^^^^^^^^^
+Did you mean?  game_params):
+  
+app/controllers/checkers_controller.rb:49:in `show'
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:57:03 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.3ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms | Allocations: 4499)
+
+
+  
+NoMethodError (undefined method `game_board' for #<CheckersController:0x00000000009588>
+
+    @game_board = game_board(@checkers)
+                  ^^^^^^^^^^
+Did you mean?  game_params):
+  
+app/controllers/checkers_controller.rb:49:in `show'
+Started GET "/checkers/69" for ::1 at 2024-07-15 10:58:26 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.3ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:49:in `show'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 10.6ms | Allocations: 15896)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "game_boards" does not exist
+LINE 8:  WHERE a.attrelid = '"game_boards"'::regclass
+                            ^
+):
+  
+app/helpers/checkers_helper.rb:3:in `game_board'
+app/controllers/checkers_controller.rb:50:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 11:04:08 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.9ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.7ms | Allocations: 5257)
+  Rendered checkers/show.html.erb (Duration: 20.2ms | Allocations: 21545)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 9.3ms | Allocations: 37414)
+
+
+  
+ActionView::Template::Error (undefined method `squares' for nil:NilClass):
+    21:     </div>
+    22: 
+    23:     <div class="game-board">
+    24:     <% @game_board.squares.each do |square| %>
+    25:       <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
+    26:         <% if square.piece.present? %>
+    27:         <div class="piece <%= square.piece.color %> 
+  
+app/views/checkers/show.html.erb:24
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 11:10:13 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.6ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered checkers/show.html.erb (Duration: 1.0ms | Allocations: 921)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 8.5ms | Allocations: 16793)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>checkers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'checkers', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'header', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'checkers', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    </head>
+
+  <body>
+    <%= render 'partials/header' %>
+    <div>
+      <h1>Checkers!</h1
+      <%= link_to "Home", games_show_path, class: "home" %>
+    </div>
+
+    <div class="game-board">
+  <% 8.times do |row| %>
+    <% 8.times do |col| %>
+      <% square_color = (row + col).even? ? 'black-square' : 'white-square' %>
+      <div class="square <%= square_color %>" data-row="<%= row %>" data-col="<%= col %>">
+        <% if row < 3 && square_color == 'black-square' %>
+          <div class="piece red" id="piece_<%= row %>_<%= col %>"></div>
+        <% elsif row > 4 && square_color == 'black-square' %>
+          <div class="piece black" id="
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>checkers</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'checkers', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= stylesheet_link_tag 'header', media: 'all', 'data-turbolinks-track': 'reload' %>
+11:    
+12:        <%= javascript_include_tag 'checkers', media: 'all', 'data-turbolinks-track': 'reload' %>
+13:    
+14:        </head>
+15:    
+16:      <body>
+17:        <%= render 'partials/header' %>
+18:        <div>
+19:          <h1>Checkers!</h1
+20:          <%= link_to "Home", games_show_path, class: "home" %>
+21:        </div>
+22:    
+23:        <div class="game-board">
+24:      <% 8.times do |row| %>
+25:        <% 8.times do |col| %>
+26:          <% square_color = (row + col).even? ? 'black-square' : 'white-square' %>
+27:          <div class="square <%= square_color %>" data-row="<%= row %>" data-col="<%= col %>">
+28:            <% if row < 3 && square_color == 'black-square' %>
+29:              <div class="piece red" id="piece_<%= row %>_<%= col %>"></div>
+30:            <% elsif row > 4 && square_color == 'black-square' %>
+31:              <div class="piece black" id="
+32:    
+33:      </body>
+34:    </html>
+  
+app/views/checkers/show.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/checkers/show.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/checkers/show.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/checkers/show.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/checkers_controller.rb:49:in `show'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/checkers/69" for ::1 at 2024-07-15 11:11:00 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.5ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 5256)
+  Rendered checkers/show.html.erb (Duration: 20.2ms | Allocations: 21224)
+Completed 200 OK in 47ms (Views: 22.0ms | ActiveRecord: 12.3ms | Allocations: 37157)
+
+
+Started GET "/checkers/69" for ::1 at 2024-07-15 11:11:48 -0700
+Processing by CheckersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mCheckers Load (0.5ms)[0m  [1m[34mSELECT "checkers".* FROM "checkers" WHERE "checkers"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:48:in `show'
+  Rendering checkers/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 4.6ms | Allocations: 4383)
+  Rendered checkers/show.html.erb (Duration: 11.9ms | Allocations: 10073)
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 0.8ms | Allocations: 11599)
+
+
+Started POST "/checkers/start" for ::1 at 2024-07-15 11:37:11 -0700
+Processing by CheckersController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "checkers"=>{"amount"=>"20"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Update (3.2ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-07-15 18:37:12.000621"], ["balance", "6180.0"], ["id", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+Balance subtracted: 6180.0
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mCheckers Create (1.4ms)[0m  [1m[32mINSERT INTO "checkers" ("bet_amount", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bet_amount", 20], ["created_at", "2024-07-15 18:37:12.007692"], ["updated_at", "2024-07-15 18:37:12.007692"]]
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 16.9ms | Allocations: 14076)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "game_boards" does not exist
+LINE 8:  WHERE a.attrelid = '"game_boards"'::regclass
+                            ^
+):
+  
+app/models/checkers.rb:8:in `initialize_game_board'
+app/controllers/checkers_controller.rb:35:in `start'
+Started POST "/checkers/start" for ::1 at 2024-07-15 11:37:17 -0700
+Processing by CheckersController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "checkers"=>{"amount"=>"20"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-07-15 18:37:17.142067"], ["balance", "6160.0"], ["id", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+Balance subtracted: 6160.0
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mCheckers Create (1.4ms)[0m  [1m[32mINSERT INTO "checkers" ("bet_amount", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bet_amount", 20], ["created_at", "2024-07-15 18:37:17.146966"], ["updated_at", "2024-07-15 18:37:17.146966"]]
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 5.5ms | Allocations: 6078)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "game_boards" does not exist
+LINE 8:  WHERE a.attrelid = '"game_boards"'::regclass
+                            ^
+):
+  
+app/models/checkers.rb:8:in `initialize_game_board'
+app/controllers/checkers_controller.rb:35:in `start'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/checkers/start" for ::1 at 2024-07-15 11:37:51 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CheckersController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "checkers"=>{"amount"=>"20"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-07-15 18:37:51.593713"], ["balance", "6140.0"], ["id", 1]]
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkers_controller.rb:60:in `subtract_balance'
+Balance subtracted: 6140.0
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mCheckers Create (0.7ms)[0m  [1m[32mINSERT INTO "checkers" ("bet_amount", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bet_amount", 20], ["created_at", "2024-07-15 18:37:51.602211"], ["updated_at", "2024-07-15 18:37:51.602211"]]
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/checkers_controller.rb:35:in `start'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 9.6ms | Allocations: 23216)
+
+
+  
+NameError (uninitialized constant Checkers::GameBoard
+
+            raise NameError.new("uninitialized constant #{candidates.first}", candidates.first)
+            ^^^^^):
+  
+app/models/checkers.rb:8:in `initialize_game_board'
+app/controllers/checkers_controller.rb:35:in `start'
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2024-08-19 12:14:55 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/_new.html.erb (Duration: 0.5ms | Allocations: 142)
+  Rendered users/_existing.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 18069)
+Completed 200 OK in 59ms (Views: 31.9ms | ActiveRecord: 15.4ms | Allocations: 28328)
+
+
+Started POST "/login" for ::1 at 2024-08-19 12:15:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"a@a.a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/games
+Completed 302 Found in 336ms (ActiveRecord: 1.4ms | Allocations: 2076)
+
+
+Started GET "/games" for ::1 at 2024-08-19 12:15:01 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.7ms | Allocations: 4160)
+  Rendered games/show.html.erb (Duration: 9.9ms | Allocations: 11671)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 13315)
+
+
+Started GET "/tictactoe" for ::1 at 2024-08-19 12:15:11 -0700
+Processing by TictactoeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering tictactoe/index.html.erb
+  Rendered partials/_header.html.erb (Duration: 9.2ms | Allocations: 5164)
+  Rendered tictactoe/index.html.erb (Duration: 10.2ms | Allocations: 5487)
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 0.7ms | Allocations: 7645)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-08-19 12:15:12 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 8.8ms | Allocations: 4912)
+  Rendered tictactoe/new.html.erb (Duration: 13.2ms | Allocations: 6188)
+Completed 200 OK in 29ms (Views: 14.4ms | ActiveRecord: 4.6ms | Allocations: 10317)
+
+
+Started POST "/tictactoe/start" for ::1 at 2024-08-19 12:15:13 -0700
+Processing by TictactoeController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tictactoe"=>{"board"=>"[null,null,null,null,null,null,null,null,null]", "amount"=>"20"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-08-19 19:15:13.752444"], ["balance", "6120.0"], ["id", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:78:in `subtract_balance'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTictactoe Create (1.9ms)[0m  [1m[32mINSERT INTO "tictactoes" ("board", "created_at", "updated_at", "bet_amount") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board", "---\n-\n-\n-\n-\n-\n-\n-\n-\n-\n"], ["created_at", "2024-08-19 19:15:13.759892"], ["updated_at", "2024-08-19 19:15:13.759892"], ["bet_amount", 20]]
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tictactoe_controller.rb:20:in `start'
+Redirected to http://localhost:3000/games/tictactoe/13
+Completed 302 Found in 26ms (ActiveRecord: 6.1ms | Allocations: 7216)
+
+
+Started GET "/games/tictactoe/13" for ::1 at 2024-08-19 12:15:13 -0700
+Processing by TictactoeController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:33:in `show'
+  Rendering tictactoe/show.html.erb
+  Rendered partials/_header.html.erb (Duration: 2.6ms | Allocations: 4113)
+  Rendered tictactoe/show.html.erb (Duration: 12.0ms | Allocations: 11702)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 1.0ms | Allocations: 13509)
+
+
+Started PATCH "/tictactoe/13" for ::1 at 2024-08-19 12:15:14 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"0"}, "id"=>"13"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.5ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n-\n-\n-\n-\n-\n-\n- O\n-\n"], ["updated_at", "2024-08-19 19:15:14.715339"], ["id", 13]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 2.9ms | Allocations: 3643)
+
+
+Started PATCH "/tictactoe/13" for ::1 at 2024-08-19 12:15:20 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"2"}, "id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.8ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.4ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n-\n-\n-\n-\n- O\n-\n"], ["updated_at", "2024-08-19 19:15:20.498972"], ["id", 13]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 3528)
+
+
+Started PATCH "/tictactoe/13" for ::1 at 2024-08-19 12:15:25 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"8"}, "id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.6ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.7ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n- O\n-\n-\n-\n- O\n- X\n"], ["updated_at", "2024-08-19 19:15:25.692578"], ["id", 13]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 3.0ms | Allocations: 3550)
+
+
+Started PATCH "/tictactoe/13" for ::1 at 2024-08-19 12:15:28 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"4"}, "id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.4ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.8ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n- O\n- X\n-\n-\n- O\n- X\n"], ["updated_at", "2024-08-19 19:15:28.136964"], ["id", 13]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.0ms | Allocations: 5285)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass
+
+      current_user.balance = current_user.balance + (bet_amount * 2)
+                                                  ^):
+  
+app/models/tictactoe.rb:10:in `update_winnings'
+app/models/tictactoe.rb:25:in `make_player_move'
+app/controllers/tictactoe_controller.rb:59:in `update'
+Started PATCH "/tictactoe/13" for ::1 at 2024-08-19 12:15:33 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"5"}, "id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.7ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (1.1ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n- O\n-\n- X\n-\n- O\n- X\n"], ["updated_at", "2024-08-19 19:15:33.226010"], ["id", 13]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" ORDER BY "fake_users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/tictactoe.rb:9:in `update_winnings'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 4.0ms | Allocations: 5384)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass
+
+      current_user.balance = current_user.balance + (bet_amount * 2)
+                                                  ^):
+  
+app/models/tictactoe.rb:10:in `update_winnings'
+app/models/tictactoe.rb:25:in `make_player_move'
+app/controllers/tictactoe_controller.rb:59:in `update'
+Started PATCH "/tictactoe/13" for ::1 at 2024-08-19 12:15:34 -0700
+Processing by TictactoeController#update as */*
+  Parameters: {"tictactoe"=>{"index"=>"6"}, "id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTictactoe Load (0.2ms)[0m  [1m[34mSELECT "tictactoes".* FROM "tictactoes" WHERE "tictactoes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tictactoe_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTictactoe Update (0.9ms)[0m  [1m[33mUPDATE "tictactoes" SET "board" = $1, "updated_at" = $2 WHERE "tictactoes"."id" = $3[0m  [["board", "---\n- X\n- O\n- X\n- O\n- O\n-\n- X\n- O\n- X\n"], ["updated_at", "2024-08-19 19:15:34.407310"], ["id", 13]]
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/tictactoe.rb:25:in `make_player_move'
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 2.4ms | Allocations: 3646)
+
+
+Started GET "/tictactoe/new" for ::1 at 2024-08-19 12:15:45 -0700
+Processing by TictactoeController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering tictactoe/new.html.erb
+  Rendered partials/_header.html.erb (Duration: 8.4ms | Allocations: 5076)
+  Rendered tictactoe/new.html.erb (Duration: 9.9ms | Allocations: 5584)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 6497)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:15:47 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 20.3ms | Allocations: 9168)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 10633)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:16:59 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 607.0ms | Allocations: 52392)
+Completed 200 OK in 613ms (Views: 607.7ms | ActiveRecord: 0.6ms | Allocations: 53400)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:18:25 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 352.6ms | Allocations: 14539)
+Completed 200 OK in 357ms (Views: 354.0ms | ActiveRecord: 0.4ms | Allocations: 15406)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:18:45 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 240.9ms | Allocations: 14509)
+Completed 200 OK in 244ms (Views: 241.5ms | ActiveRecord: 0.2ms | Allocations: 15372)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:19:02 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 241.1ms | Allocations: 14508)
+Completed 200 OK in 247ms (Views: 242.2ms | ActiveRecord: 0.2ms | Allocations: 15388)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:19:19 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 242.0ms | Allocations: 14511)
+Completed 200 OK in 246ms (Views: 242.8ms | ActiveRecord: 0.2ms | Allocations: 15394)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:20:21 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 256.0ms | Allocations: 14508)
+Completed 200 OK in 263ms (Views: 257.1ms | ActiveRecord: 0.6ms | Allocations: 15397)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:02 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 303.0ms | Allocations: 14508)
+Completed 200 OK in 307ms (Views: 304.0ms | ActiveRecord: 0.3ms | Allocations: 15373)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:11 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 255.1ms | Allocations: 14524)
+Completed 200 OK in 261ms (Views: 256.0ms | ActiveRecord: 0.3ms | Allocations: 15407)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:19 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 238.5ms | Allocations: 14511)
+Completed 200 OK in 241ms (Views: 239.3ms | ActiveRecord: 0.2ms | Allocations: 15385)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:30 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 246.6ms | Allocations: 14508)
+Completed 200 OK in 252ms (Views: 247.4ms | ActiveRecord: 0.4ms | Allocations: 15400)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:39 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 248.4ms | Allocations: 14548)
+Completed 200 OK in 253ms (Views: 249.5ms | ActiveRecord: 0.5ms | Allocations: 15429)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:46 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 242.1ms | Allocations: 14509)
+Completed 200 OK in 248ms (Views: 243.1ms | ActiveRecord: 0.5ms | Allocations: 15392)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:21:54 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 242.9ms | Allocations: 14508)
+Completed 200 OK in 246ms (Views: 243.6ms | ActiveRecord: 0.2ms | Allocations: 15391)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:23:53 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 249.5ms | Allocations: 14512)
+Completed 200 OK in 256ms (Views: 250.5ms | ActiveRecord: 0.4ms | Allocations: 15398)
+
+
+Started POST "/tokens" for ::1 at 2024-08-19 12:24:40 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"2400"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-08-19 19:24:40.856301"], ["balance", "8520.0"], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 20ms (ActiveRecord: 4.6ms | Allocations: 5064)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:26:27 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 249.1ms | Allocations: 15583)
+Completed 200 OK in 256ms (Views: 251.0ms | ActiveRecord: 0.2ms | Allocations: 16928)
+
+
+Started POST "/tokens" for ::1 at 2024-08-19 12:26:31 -0700
+Processing by TokenPurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"650"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "fake_users" WHERE "fake_users"."email" = $1 AND "fake_users"."id" != $2 LIMIT $3[0m  [["email", "a@a.a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "fake_users" SET "updated_at" = $1, "balance" = $2 WHERE "fake_users"."id" = $3[0m  [["updated_at", "2024-08-19 19:26:31.097161"], ["balance", "9170.0"], ["id", 1]]
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/token_purchases_controller.rb:12:in `create'
+No template found for TokenPurchasesController#create, rendering head :no_content
+Completed 204 No Content in 33ms (ActiveRecord: 3.1ms | Allocations: 5108)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:26:34 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 39.2ms | Allocations: 8067)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 0.3ms | Allocations: 8953)
+
+
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/games" for ::1 at 2024-08-19 12:27:28 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.8ms | Allocations: 4190)
+  Rendered games/show.html.erb (Duration: 546.9ms | Allocations: 88891)
+Completed 200 OK in 570ms (Views: 550.3ms | ActiveRecord: 6.1ms | Allocations: 100195)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:27:31 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 13.2ms | Allocations: 9153)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 10660)
+
+
+Started GET "/games" for ::1 at 2024-08-19 12:27:32 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 4.3ms | Allocations: 3623)
+  Rendered games/show.html.erb (Duration: 15.4ms | Allocations: 10295)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.4ms | Allocations: 11323)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:27:33 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 24.3ms | Allocations: 8043)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.5ms | Allocations: 8938)
+
+
+Started GET "/games" for ::1 at 2024-08-19 12:27:34 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 7.7ms | Allocations: 3615)
+  Rendered games/show.html.erb (Duration: 51.2ms | Allocations: 10258)
+Completed 200 OK in 59ms (Views: 51.7ms | ActiveRecord: 0.3ms | Allocations: 11165)
+
+
+Started GET "/games" for ::1 at 2024-08-19 12:27:44 -0700
+Processing by GamesController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering games/show.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 2.9ms | Allocations: 3945)
+  Rendered games/show.html.erb (Duration: 26.1ms | Allocations: 11285)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 0.5ms | Allocations: 12634)
+
+
+Started GET "/tokens" for ::1 at 2024-08-19 12:27:45 -0700
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 5.0ms | Allocations: 8852)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 10236)
+
+

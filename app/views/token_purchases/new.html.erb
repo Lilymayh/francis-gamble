@@ -14,7 +14,10 @@
 <body class="token-body">
   <div class="header">
     <img class="token-logo" src="<%= asset_path('logo.png') %>" alt="tokens">
-    <a class="home-button" href="/games">Home</a>
+    <div>
+    <h2 class="balance">Balance: <%= @current_user.balance %></h2>
+    <a class="home-button" href="/games">Home =></a>
+    </div>
   </div>
   
   <div class="tokens">
