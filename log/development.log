@@ -16980,3 +16980,17 @@ Processing by TokenPurchasesController#new as HTML
 Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 10236)
 
 
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-08-19 12:47:37 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 490.0ms | Allocations: 77980)
+Completed 200 OK in 509ms (Views: 492.7ms | ActiveRecord: 4.5ms | Allocations: 89288)
+
+
