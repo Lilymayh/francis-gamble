@@ -13,7 +13,7 @@ class Piece
   end
 
   def update_to_king
-    if (color == "red" && square.row == 8) || (color == "black" && square.row == 1)
+    if (color == "black" && square.row == 8) || (color == "red" && square.row == 1)
       @king = true
     end
   end

@@ -6,28 +6,33 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "checkers", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag 'checkers', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'checkers', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'header', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'checkers', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     </head>
 
   <body>
-  <div>
-  <h1>Checkers!</h1>
-  <%= link_to "Home", games_show_path, class: "home" %>
-  </div>
+    <%= render 'partials/header' %>
+    <div>
+      <h1>Checkers!</h1
+      <%= link_to "Home", games_show_path, class: "home" %>
+    </div>
 
-  <div class="game-board">
-    <% @game_board.squares.each do |square| %>
-      <div class="square <%= square.colour %>" data-row="<%= square.row %>" data-col="<%= square.column %>">
-        <% if square.piece.present? %>
-        <div class="piece <%= square.piece.color %> 
-        <%= 'king' if square.piece.king? %>"  
-        id="piece_<%= square.piece.id %>">
-        </div>
-        <% end %>  
-        </div>
-      <% end %>
-  </div>
+    <div class="game-board">
+  <% 8.times do |row| %>
+    <% 8.times do |col| %>
+      <% square_color = (row + col).even? ? 'black-square' : 'white-square' %>
+      <div class="square <%= square_color %>" data-row="<%= row %>" data-col="<%= col %>">
+        <% if row < 3 && square_color == 'black-square' %>
+          <div class="piece red" id="piece_<%= row %>_<%= col %>"></div>
+          <% elsif row > 4 && square_color == 'black-square' %>
+          <div class="piece black" id="piece_<%= row %>_<%= col %>"></div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
   </body>
 </html>

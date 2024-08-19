@@ -1,10 +1,28 @@
 @font-face {
 	font-family: 'tokenFont';
-	src: asset-url('Pokemon_Hollow.ttf') format('truetype'); /* Path to font file */
+	src: asset-url('Pokemon_Solid.ttf') format('truetype'); /* Path to font file */
 }
 
 .token-body {
 	position: relative;
+}
+
+.balance {
+	width: 15vw;
+	margin-right: 2.5em;
+	margin-top: 1.5em;
+	padding: 0.4em;
+	color: #19385f;
+	font-family: 'gameFont';
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(-45deg, #ffbf00, #fff589, #ffbf00);
+	animation: gradient-animation 8s ease infinite;
+	background-size: 400% 400%;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	border-radius: 8px;
+	border: 2px solid #3568A8;
 }
 
 .token-body::before {
@@ -48,13 +66,16 @@
 
 .top-banner,
 .bottom-banner {
+	background-image: linear-gradient(-45deg, #ffbf00, #fff589, #ffbf00);
+	animation: gradient-animation 8s ease infinite;
+	-webkit-text-stroke: 1px black;
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 		background-color: #99001F;
 		color: white;
-		padding-top: 7px;
-		padding-bottom:7px;
-		font-size: 16px;
+		padding-top: 5px;
+		padding-bottom:5px;
+		font-size: 18px;
 		font-family: 'tokenFont';
 		position: absolute;
 		z-index: 2;
@@ -62,8 +83,8 @@
 
 .top-banner {
 	width: 7.5vw;
-	bottom: 8em;
-	left: 6em;
+	bottom: 7em;
+	left: 5.5em;
 	display: flex;
 	justify-content: center;
 	border-bottom-right-radius: 20px;
