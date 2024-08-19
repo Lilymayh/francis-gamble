@@ -1217,3 +1217,17 @@ Started GET "/packs/js/application-2b99cab96272f1ded778.js" for ::1 at 2024-06-1
   
 ActionController::RoutingError (No route matches [GET] "/packs/js/application-2b99cab96272f1ded778.js"):
   
+[dotenv] Set [36mPOSTGRES_USERNAME[0m, [36mPOSTGRES_PASSWORD[0m, [36mDB_HOST[0m, [36mDB_PORT[0m, and [36mDB_NAME_DEVELOPMENT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/tokens" for ::1 at 2024-08-19 12:29:42 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TokenPurchasesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "fake_users".* FROM "fake_users" WHERE "fake_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `find_current_user'
+  Rendering token_purchases/new.html.erb
+  Rendered token_purchases/new.html.erb (Duration: 96.9ms | Allocations: 56498)
+Completed 200 OK in 117ms (Views: 99.3ms | ActiveRecord: 5.0ms | Allocations: 67808)
+
+
