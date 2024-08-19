@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'tokenFont';
-	src: asset-url('Pokemon_Solid.ttf') format('truetype'); /* Path to font file */
+	src: asset-url('Pokemon_Solid.ttf') format('truetype');
+	/* Path to font file */
 }
 
 .token-body {
@@ -12,13 +13,14 @@
 	margin-right: 2.5em;
 	margin-top: 1.5em;
 	padding: 0.4em;
-	color: #19385f;
+	color: white;
+	-webkit-text-stroke: 1px black;
 	font-family: 'tokenFont';
-		font-size: 20px;
+	font-size: 20px;
 	display: flex;
 	justify-content: center;
-	background-image: linear-gradient(-45deg, #ffbf00, #fff589, #ffbf00);
-	animation: gradient-animation 8s ease infinite;
+	background-image: linear-gradient(-45deg, #E0A83E, #f7e771, #E0A83E);
+	animation: gradient-animation 6s ease infinite;
 	background-size: 400% 400%;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 	border-radius: 8px;
@@ -36,20 +38,22 @@
 	animation: flowDown 30s infinite;
 	opacity: 0.1;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tokens {
 	height: 80vh;
 	margin-top: 5vh;
 }
+
 .token-wrapper {
 	position: relative;
 }
 
 .tokens button {
-	margin-left: 6.5em;
+	margin-left: 8em;
 	margin-bottom: 4em;
-	background-image: linear-gradient(-45deg, #ffd700, #fff589, #ffd700);
+	background-image: linear-gradient(-45deg, #E0A83E, #fff589, #E0A83E);
 	border: none;
 	font-size: 16px;
 	cursor: pointer;
@@ -66,25 +70,37 @@
 
 .top-banner,
 .bottom-banner {
-	background-image: linear-gradient(-45deg, #3904ea, #a3a6fc, #2e00c3);;
-	animation: gradient-animation 8s ease infinite;
-	-webkit-text-stroke: 1px black;
-	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+	background-image: linear-gradient(-45deg, #3568A8, #D8EEFA, #3568A8);;
+	animation: gradient-animation 6s ease infinite;
+	background-size: 400% 400%;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-		background-color: #99001F;
-		color: white;
-		padding-top: 5px;
-		padding-bottom:5px;
-		font-size: 18px;
-		font-family: 'tokenFont';
-		position: absolute;
-		z-index: 2;
+	-webkit-text-stroke: 1px black;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	font-family: 'tokenFont';
+	position: absolute;
+	z-index: 2;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .top-banner {
 	width: 7.5vw;
 	bottom: 7em;
-	left: 5.5em;
+	left: 7em;
 	display: flex;
 	justify-content: center;
 	border-bottom-right-radius: 20px;
@@ -95,7 +111,7 @@
 .bottom-banner {
 	width: 9.6vw;
 	bottom: 1em;
-	left: 12.8em;
+	left: 14em;
 	padding-left: 8%;
 	border-top-left-radius: 20px;
 	border-bottom-right-radius: 5px;
@@ -104,21 +120,22 @@
 
 .header {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	align-items: center;
 	color: black;
-	background-color: transparent; 
+	background-color: transparent;
 }
 
 .home-button {
 	display: flex;
 	justify-content: center;
-	align-items: center;	
-	background-color: darkblue;
+	align-items: center;
+	background-color: #3568A8;
 	font-size: 1rem;
 	font-family: 'tokenFont';
 	text-decoration: none;
 	color: white;
+	-webkit-text-stroke: 1px black;
 	width: 10vw;
 	height: 5vh;
 	margin-right: 2em;
@@ -130,15 +147,16 @@
 	width: 12vw;
 	margin-left: 1em;
 	margin-top: 1em;
-	z-index: 1; 
+	z-index: 1;
 }
 
 @keyframes flowDown {
 	from {
-			background-position: top left;
+		background-position: top left;
 	}
+
 	to {
-			background-position: top -100% left;
+		background-position: top -100% left;
 	}
 }
 
