@@ -20,8 +20,6 @@ node_modules# See https://help.github.com/articles/ignoring-files for more about
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-/log/development.log
-/tmp/cache/
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -47,3 +45,5 @@ yarn-debug.log*
 .yarn-integrity
 
 node_modules
+/log/development.log
+/tmp/cache/
